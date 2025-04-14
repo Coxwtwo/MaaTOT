@@ -1,0 +1,355 @@
+{
+    "异常副本": {
+        "next": [
+            "Click_事件簿_异常"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_事件簿_异常": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/Story.png",
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            596,
+            990,
+            66,
+            26
+        ],
+        "next": [
+            "Click_主线"
+        ]
+    },
+    "Click_主线": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "主线",
+        "post_delay": 1000,
+        "roi": [
+            108,
+            1196,
+            94,
+            46
+        ],
+        "next": [
+            "Flag_异常",
+            "Click_异常"
+        ]
+    },
+    "Flag_异常": {
+        "recognition": "TemplateMatch",
+        "template": "Debate/异常亮.png",
+        "pre_delay": 1000,
+        "roi": [
+            609,
+            166,
+            65,
+            35
+        ],
+        "next": [
+            "Click_主线换篇章按钮"
+        ]
+    },
+    "Click_异常": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/异常暗.png",
+        "pre_delay": 1000,
+        "roi": [
+            603,
+            167,
+            64,
+            34
+        ],
+        "next": [
+            "Click_主线换篇章按钮"
+        ]
+    },
+    "Click_主线换篇章按钮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/换篇章.png",
+        "pre_delay": 1000,
+        "post_delay": 2000,
+        "green_mask": true,
+        "roi": [
+            180,
+            157,
+            90,
+            44
+        ],
+        "target": true,
+        "next": [
+            "Click_主线选择篇章"
+        ]
+    },
+    "Click_主线选择篇章": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "post_delay": 2000,
+        "roi": [
+            115,
+            230,
+            140,
+            130
+        ],
+        "next": [
+            "Click_主线选择篇章确认"
+        ]
+    },
+    "Click_主线选择篇章确认": {
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            0,
+            120,
+            40,
+            40
+        ],
+        "next": [
+            "Click_进入异常副本",
+            "Flag_异常副本列表最下端"
+        ],
+        "interrupt": [
+            "Swipe_向上滑动寻找异常副本"
+        ]
+    },
+    "Flag_异常副本列表最下端": {
+        "recognition": "OCR",
+        "expected": [
+            "Episode.8",
+            "Episode\\.(14)\\s+\\(Part\\s+(2)"
+        ],
+        "pre_delay": 1000,
+        "roi": [
+            60,
+            960,
+            252,
+            100
+        ],
+        "next": [
+            "Click_进入异常副本",
+            "Flag_异常副本列表最上端"
+        ],
+        "interrupt": [
+            "Swipe_向下滑动寻找异常副本"
+        ]
+    },
+    "Swipe_向上滑动寻找异常副本": {
+        "action": "Swipe",
+        "post_delay": 1000,
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            400,
+            30,
+            30
+        ]
+    },
+    "Swipe_向下滑动寻找异常副本": {
+        "action": "Swipe",
+        "post_delay": 1000,
+        "begin": [
+            75,
+            400,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            650,
+            30,
+            30
+        ]
+    },
+    "Flag_异常副本列表最上端": {
+        "recognition": "OCR",
+        "expected": [
+            "Episode.1",
+            "Episode.9",
+            "Episode.16"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            61,
+            380,
+            160,
+            120
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_进入异常副本": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            60,
+            300,
+            252,
+            720
+        ],
+        "next": [
+            "Click_进入异常关卡",
+            "Flag_异常关卡列表最下端"
+        ],
+        "interrupt": [
+            "Swipe_向上滑动寻找异常关卡"
+        ]
+    },
+    "Flag_异常关卡列表最下端": {
+        "recognition": "OCR",
+        "threshold": 0.7,
+        "expected": [
+            "12",
+            "24",
+            "36"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            567,
+            960,
+            67,
+            100
+        ],
+        "next": [
+            "Click_进入异常关卡",
+            "Flag_异常关卡列表最上端"
+        ],
+        "interrupt": [
+            "Swipe_向下滑动寻找异常关卡"
+        ]
+    },
+    "Flag_异常关卡列表最上端": {
+        "recognition": "OCR",
+        "threshold": 0.7,
+        "expected": [
+            "01",
+            "13",
+            "25"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            200,
+            160,
+            58,
+            120
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Swipe_向上滑动寻找异常关卡": {
+        "action": "Swipe",
+        "post_delay": 1000,
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            400,
+            30,
+            30
+        ]
+    },
+    "Swipe_向下滑动寻找异常关卡": {
+        "action": "Swipe",
+        "post_delay": 1000,
+        "begin": [
+            75,
+            400,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            650,
+            30,
+            30
+        ]
+    },
+    "Click_进入异常关卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "target_offset": [
+            -20,
+            125,
+            0,
+            0
+        ],
+        "roi": [
+            160,
+            105,
+            480,
+            985
+        ],
+        "next": [
+            "Click_复盘异常关卡"
+        ]
+    },
+    "Click_复盘异常关卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "复盘",
+        "roi": [
+            194,
+            860,
+            70,
+            47
+        ],
+        "next": [
+            "Click_副本复盘结算界面",
+            "Flag_体力不足弹窗",
+            "Flag_剩余次数不足"
+        ],
+        "interrupt": [
+            "Click_复盘确认"
+        ]
+    },
+    "Flag_剩余次数不足": {
+        "recognition": "OCR",
+        "expected": "剩余次数不足",
+        "roi": [
+            280,
+            357,
+            185,
+            43
+        ],
+        "next": [
+            "Click_取消使用晶片重置次数"
+        ]
+    },
+    "Click_取消使用晶片重置次数": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    }
+}
