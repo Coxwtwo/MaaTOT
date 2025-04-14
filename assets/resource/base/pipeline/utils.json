@@ -284,5 +284,97 @@
             120,
             50
         ]
+    },
+    "Flag_体力不足弹窗": {
+        "recognition": "OCR",
+        "expected": "体力补充",
+        "roi": [
+            260,
+            290,
+            112,
+            36
+        ],
+        "next": [
+            "Click_取消喝饮料"
+        ]
+    },
+    "Click_取消喝饮料": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_复盘确认": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "复盘确认",
+        "post_delay": 5000,
+        "roi": [
+            300,
+            360,
+            114,
+            43
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            40
+        ]
+    },
+    "Click_副本复盘结算界面": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_wait_freezes": 500,
+        "pre_delay": 1500,
+        "roi": [
+            300,
+            800,
+            120,
+            460
+        ]
+    },
+    "Click_居中开始辩论": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 3000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ]
+    },
+    "Flag_战力不足": {
+        "recognition": "ColorMatch",
+        "roi": [
+            570,
+            130,
+            100,
+            36
+        ],
+        "lower": [
+            155,
+            71,
+            58
+        ],
+        "upper": [
+            213,
+            82,
+            63
+        ],
+        "count": 100
     }
 }

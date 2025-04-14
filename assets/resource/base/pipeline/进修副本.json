@@ -1,0 +1,225 @@
+{
+    "进修副本": {
+        "next": [
+            "Click_事件簿_进修"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_事件簿_进修": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/Story.png",
+        "pre_delay": 500,
+        "roi": [
+            596,
+            990,
+            66,
+            26
+        ],
+        "next": [
+            "Click_进修"
+        ]
+    },
+    "Click_进修": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "进修",
+        "pre_delay": 1000,
+        "post_delay": 3000,
+        "roi": [
+            319,
+            1191,
+            93,
+            54
+        ],
+        "next": [
+            "Click_进入进修副本",
+            "Flag_进修副本列表最下端"
+        ],
+        "interrupt": [
+            "Swipe_向上滑动寻找进修副本"
+        ]
+    },
+    "Flag_进修副本列表最下端": {
+        "recognition": "OCR",
+        "expected": "可限时开启该进修副本",
+        "pre_delay": 1000,
+        "roi": [
+            281,
+            724,
+            246,
+            100
+        ],
+        "next": [
+            "Click_进入进修副本",
+            "Flag_进修副本列表最上端"
+        ],
+        "interrupt": [
+            "Swipe_向下滑动寻找进修副本"
+        ]
+    },
+    "Swipe_向上滑动寻找进修副本": {
+        "action": "Swipe",
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            400,
+            30,
+            30
+        ]
+    },
+    "Flag_进修副本列表最上端": {
+        "recognition": "OCR",
+        "expected": "会展顾问",
+        "pre_delay": 1000,
+        "roi": [
+            95,
+            275,
+            185,
+            300
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Swipe_向下滑动寻找进修副本": {
+        "action": "Swipe",
+        "begin": [
+            75,
+            400,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            650,
+            30,
+            30
+        ]
+    },
+    "Click_进入进修副本": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "post_delay": 1500,
+        "roi": [
+            95,
+            275,
+            185,
+            860
+        ],
+        "next": [
+            "进修关卡"
+        ]
+    },
+    "进修关卡": {
+        "next": [
+            "Flag_该副本今日未开启",
+            "Click_进入进修关卡"
+        ]
+    },
+    "Flag_该副本今日未开启": {
+        "recognition": "OCR",
+        "expected": "该副本今日未开启",
+        "roi": [
+            253,
+            357,
+            216,
+            43
+        ],
+        "next": [
+            "Click_取消消耗晶片开启副本"
+        ]
+    },
+    "Click_取消消耗晶片开启副本": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_进入进修关卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "post_delay": 2000,
+        "target_offset": [
+            50,
+            100,
+            0,
+            0
+        ],
+        "roi": [
+            93,
+            191,
+            445,
+            862
+        ],
+        "next": [
+            "Click_复盘进修关卡"
+        ]
+    },
+    "Click_复盘进修关卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "post_delay": 2000,
+        "expected": "复盘",
+        "roi": [
+            194,
+            860,
+            70,
+            47
+        ],
+        "next": [
+            "Click_副本复盘结算界面",
+            "Flag_体力不足弹窗",
+            "Flag_使用工作证页面"
+        ],
+        "interrupt": [
+            "Click_复盘确认"
+        ]
+    },
+    "Flag_使用工作证页面": {
+        "recognition": "OCR",
+        "expected": "当前关卡可进行次数",
+        "roi": [
+            271,
+            328,
+            257,
+            41
+        ],
+        "next": [
+            "Click_取消使用工作证"
+        ]
+    },
+    "Click_取消使用工作证": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    }
+}

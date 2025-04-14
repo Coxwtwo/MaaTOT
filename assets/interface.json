@@ -99,6 +99,13 @@
             "entry": "专属甜心"
         },
         {
+            "name": "进修副本",
+            "entry": "进修副本",
+            "option": [
+                "进修关卡"
+            ]
+        },
+        {
             "name": "退出游戏",
             "entry": "CloseTOT"
         }
@@ -135,6 +142,109 @@
                     "pipeline_override": {
                         "Click_选择好感男主": {
                             "template": "好感/好感陆景和.png"
+                        }
+                    }
+                }
+            ]
+        },
+        "进修关卡": {
+            "cases": [
+                {
+                    "name": "会展顾问（未名币）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "会展顾问"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "05"
+                        }
+                    }
+                },
+                {
+                    "name": "业务考核（思绪经验）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "业务考核"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "05"
+                        }
+                    }
+                },
+                {
+                    "name": "推理应用（夏彦）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "推理应用"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "案件分析（左然）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "案件分析"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "心理治疗（莫弈）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "心理治疗"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "法务咨询（陆景和）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "法务咨询"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "危机干预（逻辑）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "危机干预"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "问题疏导（共情）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "问题疏导"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "心理咨询（直觉）",
+                    "pipeline_override": {
+                        "Click_进入进修副本": {
+                            "expected": "心理咨询"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
                         }
                     }
                 }
