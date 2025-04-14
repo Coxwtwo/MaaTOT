@@ -2,6 +2,9 @@
     "StartUp": {
         "next": [
             "Flag_主界面任务",
+            "MihoyoSlogan"
+        ],
+        "interrupt": [
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
@@ -14,7 +17,21 @@
     },
     "StartTOT": {
         "action": "StartApp",
-        "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity",
+        "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity"
+    },
+    "MihoyoSlogan": {
+        "recognition": "OCR",
+        "expected": [
+            "TECHOTAKUSSAVETHEWORLD",
+            "TECH OTAKUS SAVE THE WORLD"
+        ],
+        "post_delay": 800,
+        "roi": [
+            166,
+            436,
+            384,
+            33
+        ],
         "next": [
             "StartApp"
         ]

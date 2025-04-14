@@ -1,10 +1,7 @@
 {
     "StartTOT": {
         "action": "StartApp",
-        "package": "com.miHoYo.wd.bilibili/com.miHoYo.wd.MainActivity",
-        "next": [
-            "StartApp"
-        ]
+        "package": "com.miHoYo.wd.bilibili/com.miHoYo.wd.MainActivity"
     },
     "StartApp": {
         "next": [

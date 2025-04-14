@@ -1,4 +1,4 @@
-name: install and build
+name: install
 
 on:
   push:
@@ -19,11 +19,15 @@ on:
       - "**.py"
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   meta:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - id: set_tag
@@ -58,35 +62,58 @@ jobs:
       fail-fast: false
 
     steps:
-
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11.5'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Copy DLL files to Python directory
-        run: |
-          cp ./msvcp140.dll C:\hostedtoolcache\windows\Python\3.11.5\x64
-          cp ./vcruntime140.dll C:\hostedtoolcache\windows\Python\3.11.5\x64
-
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
 
       - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-win-${{ matrix.arch }}*"
-          latest: true
+          tag: "v4.0.0"
+          out-file-path: "deps"
+          extract: true
+
+      - name: Download MFAAvalonia  
+        uses: robinraju/release-downloader@v1  
+        with:
+          repository: SweetSmellFox/MFAAvalonia
+          fileName: "MFAAvalonia-*-win-x64*"
+          tag: "v1.1.2"
+          out-file-path: "MFA"
+          extract: true
+
+      - name: Install
+        shell: bash
+        run: |
+          python ./install.py ${{ needs.meta.outputs.tag }}
+          cp MFA/MFAAvalonia.exe MFA/MFAUpdater.exe MFA/MFAUpdater.dll MFA/MFAUpdater.runtimeconfig.json MFA/av_libglesv2.dll MFA/libHarfBuzzSharp.dll MFA/libonigwrap.dll MFA/libSkiaSharp.dll MFA/uiohook.dll install/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MaaTOT-win-${{ matrix.arch }}
+          path: "install"
+
+  ubuntu:
+    needs: meta
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch: [aarch64, x86_64]
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Download MaaFramework
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: MaaXYZ/MaaFramework
+          fileName: "MAA-linux-${{ matrix.arch }}*"
+          tag: "v4.0.0"
           out-file-path: "deps"
           extract: true
 
@@ -95,24 +122,49 @@ jobs:
         run: |
           python ./install.py ${{ needs.meta.outputs.tag }}
 
-      - name: Build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MaaTOT-linux-${{ matrix.arch }}
+          path: "install"
+
+  macos:
+    needs: meta
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        arch: [aarch64, x86_64]
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Download MaaFramework
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: MaaXYZ/MaaFramework
+          fileName: "MAA-macos-${{ matrix.arch }}*"
+          tag: "v4.0.0"
+          out-file-path: "deps"
+          extract: true
+
+      - name: Install
         shell: bash
         run: |
-          python ./build.py ${{ needs.meta.outputs.tag }}
+          python ./install.py ${{ needs.meta.outputs.tag }}
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
-          name: MATOT-win-${{ matrix.arch }}
+          name: MaaTOT-macos-${{ matrix.arch }}
           path: "install"
 
   release:
     if: ${{ needs.meta.outputs.is_release == 'true' }}
-    needs: [meta, windows]
+    needs: [meta, windows, ubuntu, macos]
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           path: assets
 
@@ -121,7 +173,14 @@ jobs:
           for f in *; do
             (cd $f && zip -r ../$f-${{ needs.meta.outputs.tag }}.zip .)
           done
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: assets/*
           tag_name: ${{ needs.meta.outputs.tag }}
+
+      - name: Trigger MirrorChyanUploading
+        run: |
+          gh workflow run --repo $GITHUB_REPOSITORY mirrorchyan
+          gh workflow run --repo $GITHUB_REPOSITORY mirrorchyan_release_note
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

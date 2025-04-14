@@ -1,7 +1,9 @@
 {
+    "version": "v4.0.0-alpha",
+    "message": "欢迎食用生煎包OvO",
     "controller": [
         {
-            "name": "ADB 默认方式",
+            "name": "默认方式 ADB",
             "type": "Adb"
         }
     ],
@@ -38,14 +40,7 @@
         },
         {
             "name": "领取友谊徽章",
-            "entry": "领取友谊徽章",
-            "pipeline_override": {
-                "Click_一键领取亮": {
-                    "next": [
-                        "返回主界面"
-                    ]
-                }
-            }
+            "entry": "领取友谊徽章"
         },
         {
             "name": "领取资源申请",
@@ -141,6 +136,5 @@
                 }
             ]
         }
-    },
-    "version": "v2.0.0-alpha"
+    }
 }

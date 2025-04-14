@@ -111,15 +111,16 @@
         ]
     },
     "Click_X按钮": {
+        "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/XKey.png",
         "green_mask": true,
-        "threshold": 0.45,
+        "threshold": 0.6,
         "pre_delay": 1000,
         "roi": [
             340,
             1000,
-            38,
+            40,
             200
         ]
     },

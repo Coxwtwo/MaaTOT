@@ -417,7 +417,7 @@ FodyWeavers.xsd
 !.vscode/settings.json
 # !.vscode/tasks.json
 # !.vscode/launch.json
-# !.vscode/extensions.json
+!.vscode/extensions.json
 *.code-workspace
 
 # Local History for Visual Studio Code
@@ -447,10 +447,9 @@ install
 # Tools
 tools/ImageCropper/**/*.png
 
-# else
-venv
-GitReference.txt
+config
+debug
+
+#other
 assets/config
-!assets/python/dll/*.dll
-!msvcp140.dll
-!vcruntime140.dll
+GitReference.txt

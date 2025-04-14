@@ -1,14 +1,15 @@
 <!-- markdownlint-disable MD033 MD041 -->
+<div align="center">
+  <img alt="LOGO" src="./logo.png" width="64" height="64" />
 
-## MATOT
+## MaaTOT
 
-基于MAA全新架构的未定小助手。图像技术 + 模拟控制，解放双手！
+基于全新架构的夏左莫陆小助手。图像技术 + 模拟控制，解放双手！
 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
 
+</div>
 
 ## 可能会有的功能
-
-目前项目正在逐步更新到MaaFw2.0，以下是v1.6.4的可用功能：
 
 - [x] 启动游戏
   - [x] 官服
@@ -52,12 +53,12 @@
 
 4. 启动未定事件簿并登录账号（只需要登录一次，除非登录失效或者你希望切换账号）。
 
-5. 下载对应平台的压缩包并解压（大多数情况下选择 MATOT-win-x86_64-vXXX.zip，除非你确定自己的电脑是 arm 架构）。
+5. 下载对应平台的压缩包并解压（大多数情况下选择 MaaTOT-win-x86_64-vXXX.zip，除非你确定自己的电脑是 arm 架构）。
 
 6. 确认解压完整，请勿将压缩包解压到有中文的目录下，也不要解压到如 `C:\`、`C:\Program Files\` 等需要 UAC 权限的路径。
 
 开始使用:
-1. 首次使用，双击打开 `MATOT.exe`。
+1. 首次使用，双击打开 `MaaTOT(或MaaPiCli.exe)`。
 
 2. 设置连接设备。通常输入 `1` 即可，程序会自动检测正在运行的模拟器，你也可以选择手动输入 `adb.exe` 的完整路径。
 
