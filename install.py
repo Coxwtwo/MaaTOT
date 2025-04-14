@@ -88,6 +88,8 @@ def create_shortcut():
         shortcut_name = "MaaTOT.lnk"  
     elif platform.system() == "Linux": 
         shortcut_name = "MaaTOT.desktop"
+    else:
+        return 0
     icon_file = "logo.ico"
 
     exe_path = install_path / exe_name
