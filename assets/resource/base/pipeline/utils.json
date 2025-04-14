@@ -138,12 +138,14 @@
             ]
         },
         "pre_delay": 6000,
+        "post_delay": 4000,
         "roi": [
             300,
-            800,
+            500,
             300,
-            300
-        ]
+            700
+        ],
+        "target": true
     },
     "Click_退出手机": {
         "action": "Click",
@@ -331,32 +333,6 @@
             40
         ]
     },
-    "Click_副本复盘结算界面": {
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "结束",
-        "pre_wait_freezes": 500,
-        "pre_delay": 1500,
-        "roi": [
-            300,
-            800,
-            120,
-            460
-        ]
-    },
-    "Click_居中开始辩论": {
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "开始辩论",
-        "pre_delay": 800,
-        "post_delay": 3000,
-        "roi": [
-            294,
-            1170,
-            130,
-            46
-        ]
-    },
     "Flag_战力不足": {
         "recognition": "ColorMatch",
         "roi": [
@@ -376,5 +352,121 @@
             63
         ],
         "count": 100
+    },
+    "Click_居中开始辩论": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 4000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ],
+        "next": [
+            "Flag_自动出卡已开启"
+        ],
+        "interrupt": [
+            "Click_开启自动出卡"
+        ]
+    },
+    "Flag_自动出卡已开启": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_自动出卡中"
+        ]
+    },
+    "Click_开启自动出卡": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/自动出卡.png",
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            650,
+            1202,
+            28,
+            37
+        ]
+    },
+    "Flag_自动出卡中": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_自动出卡中",
+            "Flag_辩论失败",
+            "Click_点击继续",
+            "Click_结束"
+        ]
+    },
+    "Click_点击继续": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "点击继续",
+        "pre_delay": 800,
+        "post_wait_freezes": 1000,
+        "roi": [
+            292,
+            1060,
+            132,
+            51
+        ]
+    },
+    "Flag_辩论失败": {
+        "focus": true,
+        "recognition": "OCR",
+        "expected": "辩论失败",
+        "pre_delay": 800,
+        "roi": [
+            344,
+            211,
+            355,
+            94
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_副本结算界面再来一次": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "再来一次",
+        "pre_delay": 1000,
+        "post_delay": 4000,
+        "roi": [
+            125,
+            1069,
+            201,
+            55
+        ],
+        "next": [
+            "Flag_自动出卡已开启"
+        ],
+        "interrupt": [
+            "Click_开启自动出卡"
+        ]
     }
 }

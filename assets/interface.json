@@ -127,6 +127,13 @@
             ]
         },
         {
+            "name": "外勤委托",
+            "entry": "外勤委托",
+            "option": [
+                "外勤区域"
+            ]
+        },
+        {
             "name": "退出游戏",
             "entry": "CloseTOT"
         }
@@ -163,6 +170,50 @@
                     "pipeline_override": {
                         "Click_选择好感男主": {
                             "template": "好感/好感陆景和.png"
+                        }
+                    }
+                }
+            ]
+        },
+        "外勤区域": {
+            "cases": [
+                {
+                    "name": "滨河区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "滨河区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "锦兰区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "锦兰区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "长滩区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "长滩区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "嘉南区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "嘉南区"
+                            ]
                         }
                     }
                 }

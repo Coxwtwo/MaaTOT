@@ -1,0 +1,183 @@
+{
+    "外勤委托": {
+        "next": [
+            "Click_未名日程"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_未名日程": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "未名日程"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            599,
+            1235,
+            95,
+            26
+        ],
+        "next": [
+            "Click_外勤"
+        ]
+    },
+    "Click_外勤": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "外勤"
+        ],
+        "pre_delay": 800,
+        "post_delay": 4500,
+        "roi": [
+            621,
+            1067,
+            58,
+            32
+        ],
+        "next": [
+            "Click_法律援助"
+        ]
+    },
+    "Click_法律援助": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "法律援助"
+        ],
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            547,
+            1160,
+            127,
+            42
+        ],
+        "next": [
+            "Click_进入外勤区域"
+        ]
+    },
+    "Click_进入外勤区域": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "嘉南区"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            40,
+            1000,
+            650,
+            150
+        ],
+        "next": [
+            "Flag_委托搜寻中",
+            "Flag_疲劳值满",
+            "Flag_体力不足弹窗",
+            "Flag_战力不足"
+        ],
+        "interrupt": [
+            "寻找委托"
+        ]
+    },
+    "寻找委托": {
+        "next": [
+            "Click_日常委托",
+            "Click_庭审委托",
+            "Click_结束"
+        ]
+    },
+    "Click_日常委托": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "疲劳值"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            0,
+            150,
+            720,
+            920
+        ],
+        "next": [
+            "Click_开始处理外勤委托"
+        ]
+    },
+    "Click_庭审委托": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "剩余血量"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            0,
+            180,
+            720,
+            850
+        ],
+        "next": [
+            "Click_开始处理外勤委托"
+        ]
+    },
+    "Flag_委托搜寻中": {
+        "recognition": "OCR",
+        "expected": [
+            "委托搜寻中"
+        ],
+        "pre_wait_freezes": 800,
+        "roi": [
+            241,
+            494,
+            107,
+            31
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Flag_疲劳值满": {
+        "recognition": "OCR",
+        "expected": [
+            "50/50"
+        ],
+        "pre_wait_freezes": 800,
+        "roi": [
+            190,
+            1160,
+            80,
+            33
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Click_开始处理外勤委托": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "开始处理"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            277,
+            872,
+            164,
+            52
+        ],
+        "next": [
+            "Flag_体力不足弹窗",
+            "Flag_战力不足",
+            "Click_结束",
+            "Click_居中开始辩论"
+        ]
+    }
+}
