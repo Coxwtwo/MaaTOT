@@ -81,7 +81,7 @@
 
 本项目基于MaaFramework开发，在开发前，请先了解 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 相关事项。
 
-开发相关事项请查看文档 [开发相关](./docs/开发相关.md) 。
+开发相关事项请查看文档 [开发相关](./docs/zh-cn/开发相关.md) 。
 
 ## 鸣谢
 
