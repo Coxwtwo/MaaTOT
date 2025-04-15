@@ -54,7 +54,7 @@
 6. 确认解压完整，请勿将压缩包解压到有中文的目录下，也不要解压到如 `C:\`、`C:\Program Files\` 等需要 UAC 权限的路径。
 
 开始使用:
-1. 首次使用，双击打开 `MaaTOT(或MaaPiCli.exe)`。
+1. 首次使用，双击打开 `MaaPiCli.exe`。
 
 2. 设置连接设备。通常输入 `1` 即可，程序会自动检测正在运行的模拟器，你也可以选择手动输入 `adb.exe` 的完整路径。
 
@@ -74,7 +74,7 @@
 
 ## 图形化界面
 
-本项目图形界面基于 MFAAvalonia 。目前仅Windows可用, 解压后运行 MaaTOT.exe。使用步骤与 MaaPiCli.exe 大致相同
+本项目图形界面基于 MFAAvalonia 。目前仅Windows可用, 解压后运行 MFAAvalonia.exe。使用步骤与 MaaPiCli.exe 大致相同
 
 ## 开发相关
 如果你希望参与开发才需要看这节，使用本项目开发的软件请看 [如何使用](#如何使用) 这节。
