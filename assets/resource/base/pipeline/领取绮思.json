@@ -12,7 +12,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/活动.PNG",
         "pre_wait_freezes": 800,
-        "post_delay": 1000,
+        "post_delay": 3000,
         "roi": [
             28,
             454,
@@ -127,12 +127,10 @@
         "expected": "任务",
         "post_delay": 1000,
         "next": [
-            "Flag_Inverse_绮思无领取键"
-        ],
-        "interrupt": [
+            "Click_绮思领取",
             "Click_绮思等级提升",
             "Click_关闭绮思奖励弹窗",
-            "Click_绮思领取"
+            "Flag_Inverse_绮思无领取键"
         ]
     },
     "Flag_Inverse_绮思无领取键": {
@@ -157,9 +155,9 @@
         "post_delay": 1000,
         "roi": [
             500,
-            410,
+            420,
             130,
-            80
+            200
         ],
         "next": [
             "Click_绮思等级提升",
