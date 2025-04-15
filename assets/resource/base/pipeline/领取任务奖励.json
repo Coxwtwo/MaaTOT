@@ -11,6 +11,7 @@
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/任务.PNG",
+        "post_delay": 1000,
         "roi": [
             28,
             359,
@@ -24,6 +25,7 @@
     "Click_每日": {
         "action": "Click",
         "recognition": "OCR",
+        "post_delay": 1000,
         "expected": [
             "每",
             "母",
