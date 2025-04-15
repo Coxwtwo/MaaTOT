@@ -35,10 +35,6 @@
   - [x] 好感度：目前只支持触摸获取好感度，只能指定单个男主获取好感至每日上限。
 
 
-## 图形化界面
-
-本项目目前无GUI，只能在命令行窗口运行。
-
 ## 如何使用
 
 **以windows用户为例：**
@@ -75,6 +71,11 @@
 
 本项目基于 MaaFramework 开发，使用中遇到的问题可以参考 [MAA常见问题](https://maa.plus/docs/zh-cn/manual/faq.html)
 
+
+## 图形化界面
+
+本项目图形界面基于 MFAAvalonia 。目前仅Windows可用, 解压后运行 MaaTOT.exe。使用步骤与 MaaPiCli.exe 大致相同
+
 ## 开发相关
 如果你希望参与开发才需要看这节，使用本项目开发的软件请看 [如何使用](#如何使用) 这节。
 
@@ -85,3 +86,4 @@
 ## 鸣谢
 
 感谢自动化测试框架 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 开发者的贡献。
+感谢GUI 项目 **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)** 开发者的贡献。

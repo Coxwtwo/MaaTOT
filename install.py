@@ -17,7 +17,6 @@ version = len(sys.argv) > 1 and sys.argv[1] or "v0.0.1"
 def install_deps():
     if not (working_dir / "deps" / "bin").exists():
         print("Please download the MaaFramework to \"deps\" first.")
-        print("请先下载 MaaFramework 到 \"deps\"。")
         sys.exit(1)
 
     shutil.copytree(
@@ -80,9 +79,6 @@ def install_agent():
 
 
 def create_shortcut():
-    """
-    创建 MaaPiCli.exe 的快捷方式（Windows 生成 .lnk，Linux 生成 .desktop）
-    """
     exe_name = "MaaPiCli.exe"
     if platform.system() == "Windows": 
         shortcut_name = "MaaTOT.lnk"  
@@ -91,10 +87,13 @@ def create_shortcut():
     else:
         return 0
     icon_file = "logo.ico"
-
+    shutil.copy2(
+        working_dir / icon_file,
+        install_path,
+    )
     exe_path = install_path / exe_name
     shortcut_path = install_path / shortcut_name
-    icon_path = working_dir / icon_file
+    icon_path = install_path / icon_file
 
     if not exe_path.exists():
         print(f"error: {exe_name} not found!")
