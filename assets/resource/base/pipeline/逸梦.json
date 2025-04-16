@@ -59,7 +59,7 @@
     "Flag_选择梦笺": {
         "focus": true,
         "focus_tip": "未选择梦笺",
-        "focus_tip_color": "FF7300",
+        "focus_tip_color": "#FF7300",
         "recognition": "OCR",
         "expected": [
             "选择",
@@ -220,7 +220,7 @@
     "Click_加入花露": {
         "focus": true,
         "focus_tip": "加入花露",
-        "focus_tip_color": "00BFFF",
+        "focus_tip_color": "#00BFFF",
         "action": "Click",
         "recognition": "OCR",
         "expected": "加入花露",
