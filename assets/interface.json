@@ -391,6 +391,22 @@
                             "expected": "16"
                         }
                     }
+                },
+                {
+                    "name": "与子偕行05-08",
+                    "pipeline_override": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.9
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-08"
+                        }
+                    }
                 }
             ]
         },
