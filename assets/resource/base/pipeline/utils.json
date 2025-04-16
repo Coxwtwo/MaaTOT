@@ -7,6 +7,7 @@
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
+            "Click_取消",
             "Click_X按钮",
             "Click_结束",
             "Click_退出手机",
@@ -59,16 +60,28 @@
             39
         ]
     },
+    "Click_取消": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            300
+        ]
+    },
     "Click_确定": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "确定",
         "pre_delay": 500,
         "roi": [
-            565,
+            550,
             720,
-            70,
-            100
+            100,
+            300
         ]
     },
     "Click_过期资源确定": {
