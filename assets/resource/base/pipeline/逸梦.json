@@ -21,10 +21,12 @@
         ],
         "next": [
             "Flag_下一次花露收取",
-            "Flag_花露最大值"
+            "Flag_花露最大值",
+            "Flag_选择梦笺"
         ]
     },
     "Flag_下一次花露收取": {
+        "focus": true,
         "recognition": "OCR",
         "expected": "下一次花露收取",
         "pre_delay": 800,
@@ -52,6 +54,26 @@
         ],
         "next": [
             "Swipe_收取花露第一行"
+        ]
+    },
+    "Flag_选择梦笺": {
+        "focus": true,
+        "focus_tip": "未选择梦笺",
+        "focus_tip_color": "FF7300",
+        "recognition": "OCR",
+        "expected": [
+            "选择",
+            "梦笺"
+        ],
+        "pre_delay": 1000,
+        "roi": [
+            300,
+            1070,
+            120,
+            120
+        ],
+        "next": [
+            "返回主界面"
         ]
     },
     "Swipe_收取花露第一行": {
@@ -176,6 +198,7 @@
     },
     "Swipe_收取花露第七行": {
         "action": "Swipe",
+        "post_delay": 5000,
         "begin": [
             90,
             780,
@@ -191,33 +214,76 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
-            "返回主界面"
+            "Click_收取捕梦左上"
         ]
     },
     "Click_加入花露": {
+        "focus": true,
+        "focus_tip": "加入花露",
+        "focus_tip_color": "00BFFF",
         "action": "Click",
         "recognition": "OCR",
         "expected": "加入花露",
         "pre_delay": 1000,
         "roi": [
-            315,
-            1097,
-            92,
-            71
+            300,
+            1070,
+            120,
+            120
         ],
         "next": [
-            "Click_梦笺"
+            "Click_前往梦笺"
         ]
     },
-    "Click_梦笺": {
+    "Click_前往梦笺": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "前往梦笺",
         "pre_delay": 1000,
+        "post_delay": 4000,
         "roi": [
             300,
             1140,
             200,
+            100
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_收取捕梦左上": {
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            120,
+            300,
+            80,
+            80
+        ],
+        "next": [
+            "Click_收取捕梦右上"
+        ]
+    },
+    "Click_收取捕梦右上": {
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            520,
+            300,
+            80,
+            80
+        ],
+        "next": [
+            "Click_收取捕梦右下"
+        ]
+    },
+    "Click_收取捕梦右下": {
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            490,
+            950,
+            80,
             80
         ],
         "next": [

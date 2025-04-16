@@ -1,6 +1,5 @@
 {
     "Default": {
-        "post_delay": 500,
         "timeout": 10000,
         "replace": [
             [

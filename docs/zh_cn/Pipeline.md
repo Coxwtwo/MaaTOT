@@ -59,3 +59,15 @@
 ### `Swipe_收取花露第X行` 
 
 (之前我不知道可以滑动收集，是先识别四位男主的逸梦，再分别匹配四位男主的花上四角星，不仅收集不全还可能因为背景长得像花上四角星而卡住，现在用七个横向滑动来收集花露，简单又好用。以后还要是要好好听小初代说话啦ヾ(×∧×)ノ)
+
+## 使用颜色
+
+**普通提示** <font color="#696969">昏灰 Dimgray #696969</font>
+
+**任务失败** <font color="#FF0000">红色 Red #FF0000</font>
+
+**任务完成** <font color="#2e8b57">海绿 Seagreen #2e8b57</font>
+
+**消极类提示** <font color="#FF7300">阳橙 Sun Orange #FF7300</font>
+
+**积极类提示** <font color="#00BFFF">深天蓝 DeepSkyBlue #00BFFF</font>
