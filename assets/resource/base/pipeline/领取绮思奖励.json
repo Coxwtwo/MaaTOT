@@ -20,14 +20,22 @@
             41
         ],
         "next": [
+            "寻找绮思"
+        ]
+    },
+    "寻找绮思": {
+        "next": [
+            "Flag_绮思",
+            "Flag_每日签到"
+        ],
+        "interrupt": [
             "Swipe_向左滑动寻找绮思"
         ]
     },
     "Swipe_向左滑动寻找绮思": {
         "action": "Swipe",
         "duration": 800,
-        "post_wait_freezes": 400,
-        "timeout": 10000,
+        "post_delay": 800,
         "begin": [
             640,
             1140,
@@ -39,13 +47,6 @@
             1140,
             30,
             60
-        ],
-        "next": [
-            "Flag_绮思",
-            "Flag_每日签到"
-        ],
-        "interrupt": [
-            "Swipe_向左滑动寻找绮思"
         ]
     },
     "Swipe_向右滑动寻找绮思": {
@@ -60,16 +61,10 @@
             60
         ],
         "end": [
-            640,
+            245,
             1140,
             30,
             60
-        ],
-        "next": [
-            "Flag_绮思"
-        ],
-        "interrupt": [
-            "Swipe_向右滑动寻找绮思"
         ]
     },
     "Flag_绮思": {
@@ -100,6 +95,9 @@
             110
         ],
         "next": [
+            "Flag_绮思"
+        ],
+        "interrupt": [
             "Swipe_向右滑动寻找绮思"
         ]
     },
@@ -126,28 +124,20 @@
         "recognition": "OCR",
         "expected": "任务",
         "post_delay": 1000,
-        "next": [
-            "Click_绮思领取",
-            "Click_绮思等级提升",
-            "Click_关闭绮思奖励弹窗",
-            "Flag_Inverse_绮思无领取键"
-        ]
-    },
-    "Flag_Inverse_绮思无领取键": {
-        "inverse": true,
-        "recognition": "OCR",
-        "expected": "领取",
         "roi": [
-            500,
-            410,
-            130,
-            80
+            400,
+            320,
+            260,
+            110
         ],
         "next": [
-            "返回主界面"
+            "Click_领取绮思经验",
+            "Click_绮思等级提升",
+            "Click_关闭绮思奖励弹窗",
+            "Flag_Inverse_绮思经验无领取键"
         ]
     },
-    "Click_绮思领取": {
+    "Click_领取绮思经验": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "领取",
@@ -158,6 +148,12 @@
             420,
             130,
             200
+        ],
+        "target": [
+            550,
+            1045,
+            45,
+            25
         ],
         "next": [
             "Click_绮思等级提升",
@@ -210,6 +206,54 @@
         "next": [
             "Click_关闭绮思奖励弹窗",
             "Click_绮思任务"
+        ]
+    },
+    "Flag_Inverse_绮思经验无领取键": {
+        "focus": true,
+        "focus_succeeded": "已领取绮思经验",
+        "focus_succeeded_color": "#2e8b57",
+        "inverse": true,
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            500,
+            410,
+            130,
+            80
+        ],
+        "next": [
+            "Click_绮思奖励"
+        ]
+    },
+    "Click_绮思奖励": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "奖励",
+        "post_delay": 1000,
+        "roi": [
+            70,
+            320,
+            260,
+            110
+        ],
+        "next": [
+            "Click_领取绮思奖励"
+        ]
+    },
+    "Click_领取绮思奖励": {
+        "focus": true,
+        "focus_succeeded": "已领取绮思奖励",
+        "focus_succeeded_color": "#2e8b57",
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            550,
+            1045,
+            45,
+            25
+        ],
+        "next": [
+            "返回主界面"
         ]
     }
 }
