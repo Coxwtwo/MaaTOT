@@ -23,7 +23,7 @@
   - [x] 资源申请
   - [x] 案件解析
   - [x] 每日每周酬谢
-- [ ] 辩论
+- [ ] 辩论（注意，目前只能在体力充足的前提下以自动的次数战斗，还没有想到好用的辩论次数设置办法）
   - [x] 复盘进修副本
   - [x] 复盘异常关卡刷技能材料
   - [x] 复盘异常关卡刷印象
@@ -31,7 +31,7 @@
   - [x] 外勤委托：需要提前配好卡组，战力不足时会直接退出。
 - [x] 其他
   - [x] 专属甜心制作：目前会自动制作背包中第一件未完成物品。
-  - [x] 逸梦系统收集花露
+  - [x] 逸梦系统收集花露（每张梦笺收集完成后，需要手动选择新的梦笺。）
   - [x] 好感度：目前只支持触摸获取好感度，只能指定单个男主获取好感至每日上限。
 
 
@@ -74,7 +74,7 @@
 
 ## 图形化界面
 
-本项目图形界面基于 MFAAvalonia 。目前仅Windows可用, 解压后运行 MFAAvalonia.exe。使用步骤与 MaaPiCli.exe 大致相同
+本项目图形界面基于 MFAAvalonia 。目前仅Windows可用, 解压后运行 MFAAvalonia.exe，使用步骤与 MaaPiCli.exe 大致相同。
 
 ## 开发相关
 如果你希望参与开发才需要看这节，使用本项目开发的软件请看 [如何使用](#如何使用) 这节。
@@ -86,4 +86,5 @@
 ## 鸣谢
 
 感谢自动化测试框架 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 开发者的贡献。
-感谢GUI 项目 **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)** 开发者的贡献。
+
+感谢 GUI 项目 **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)** 开发者的贡献。
