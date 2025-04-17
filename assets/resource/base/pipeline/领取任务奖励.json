@@ -70,7 +70,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "获得奖励",
-        "pre_delay": 1000,
+        "pre_delay": 4000,
         "post_delay": 1000,
         "target": [
             300,
@@ -157,7 +157,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "获得奖励",
-        "pre_delay": 1000,
+        "pre_delay": 4000,
         "post_delay": 1000,
         "target": [
             300,
