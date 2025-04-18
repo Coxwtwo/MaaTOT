@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 env:
-  MaaFw_tag: v4.0.0
+  MaaFw_tag: v4.1.0-alpha.2
   MFA_tag: v1.1.6
   app_name: MaaTOT
   icon_path: assets/logo.ico
