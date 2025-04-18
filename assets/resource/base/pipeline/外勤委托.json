@@ -14,6 +14,7 @@
             "未名日程"
         ],
         "pre_delay": 800,
+        "post_delay": 1500,
         "roi": [
             599,
             1235,
@@ -49,7 +50,7 @@
             "法律援助"
         ],
         "pre_delay": 800,
-        "post_delay": 1500,
+        "post_delay": 2000,
         "roi": [
             547,
             1160,
@@ -64,7 +65,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "嘉南区"
+            "By_User_Setttings"
         ],
         "pre_delay": 800,
         "post_delay": 800,
@@ -78,17 +79,12 @@
             "Flag_委托搜寻中",
             "Flag_疲劳值满",
             "Flag_体力不足弹窗",
-            "Flag_战力不足"
+            "Flag_战力不足",
+            "Flag_主界面任务"
         ],
         "interrupt": [
-            "寻找委托"
-        ]
-    },
-    "寻找委托": {
-        "next": [
             "Click_日常委托",
-            "Click_庭审委托",
-            "Click_结束"
+            "Click_庭审委托"
         ]
     },
     "Click_日常委托": {
@@ -138,6 +134,9 @@
             494,
             107,
             31
+        ],
+        "next": [
+            "Click_返回主界面键"
         ]
     },
     "Flag_疲劳值满": {
@@ -151,6 +150,9 @@
             1160,
             80,
             33
+        ],
+        "next": [
+            "Click_返回主界面键"
         ]
     },
     "Flag_疲劳值上限弹窗": {
@@ -171,11 +173,18 @@
         "recognition": "OCR",
         "expected": "取消",
         "pre_delay": 500,
+        "post_delay": 1500,
         "roi": [
             380,
             700,
             100,
             250
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ],
+        "interrupt": [
+            "Click_X按钮"
         ]
     },
     "Click_开始处理外勤委托": {
@@ -195,7 +204,6 @@
         "next": [
             "Flag_体力不足弹窗",
             "Flag_战力不足",
-            "Click_结束",
             "Click_居中开始辩论",
             "Flag_疲劳值上限弹窗"
         ]
