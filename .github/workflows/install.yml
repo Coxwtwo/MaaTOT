@@ -19,6 +19,12 @@ on:
       - "**.py"
   workflow_dispatch:
 
+env:
+  MaaFw_tag: v4.0.0
+  MFA_tag: v1.1.6
+  app_name: MaaTOT
+  icon_path: assets/logo.ico
+
 permissions:
   contents: write
   actions: write
@@ -58,7 +64,12 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        arch: [aarch64, x86_64]
+        include:
+          - arch: aarch64
+            MFA-arch: arm64
+            
+          - arch: x86_64
+            MFA-arch: x64
       fail-fast: false
 
     steps:
@@ -71,103 +82,127 @@ jobs:
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-win-${{ matrix.arch }}*"
-          tag: "v4.0.0"
+          tag: "${{ env.MaaFw_tag }}"
           out-file-path: "deps"
           extract: true
 
-      - name: Download MFAAvalonia  
-        uses: robinraju/release-downloader@v1  
+      - name: Checkout MFAAvalonia Source
+        uses: actions/checkout@v4
         with:
           repository: SweetSmellFox/MFAAvalonia
-          fileName: "MFAAvalonia-*-win-x64*"
-          tag: "v1.1.2"
-          out-file-path: "MFA"
-          extract: true
+          ref: ${{ env.MFA_tag }}
+          path: src
+
+      - name: Replace Application Icon
+        shell: bash
+        run: |
+          cp -f ${{ env.icon_path }} src/MFAAvalonia/Assets/logo.ico
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+            dotnet-version: 8.0.x
+            config-file: NuGet.config
+
+      - name: Restore Dependencies
+        working-directory: src/MFAAvalonia
+        run: dotnet restore --packages .nuget/packages
+      
+      - name: Build Solution
+        working-directory: src/MFAAvalonia
+        run: dotnet publish -c Release -r win-${{ matrix.MFA-arch }}
 
       - name: Install
         shell: bash
-        run: |
-          python ./install.py ${{ needs.meta.outputs.tag }}
-          cp MFA/MFAAvalonia.exe MFA/MFAUpdater.exe MFA/MFAUpdater.dll MFA/MFAUpdater.runtimeconfig.json MFA/av_libglesv2.dll MFA/libHarfBuzzSharp.dll MFA/libonigwrap.dll MFA/libSkiaSharp.dll MFA/uiohook.dll install/
+        run: python ./install.py ${{ needs.meta.outputs.tag }}
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: MaaTOT-win-${{ matrix.arch }}
-          path: "install"
-
-  ubuntu:
-    needs: meta
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        arch: [aarch64, x86_64]
-      fail-fast: false
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-
-      - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1
-        with:
-          repository: MaaXYZ/MaaFramework
-          fileName: "MAA-linux-${{ matrix.arch }}*"
-          tag: "v4.0.0"
-          out-file-path: "deps"
-          extract: true
-
-      - name: Install
+      - name: Copy MFAAvalonia and Rename
         shell: bash
         run: |
-          python ./install.py ${{ needs.meta.outputs.tag }}
+          BUILD_DIR="src/bin/AnyCPU/Release/win-${{ matrix.MFA-arch }}/publish"
+          cp $BUILD_DIR/MFAAvalonia.exe $BUILD_DIR/MFAUpdater.exe $BUILD_DIR/MFAUpdater.dll $BUILD_DIR/MFAUpdater.runtimeconfig.json $BUILD_DIR/av_libglesv2.dll $BUILD_DIR/libHarfBuzzSharp.dll $BUILD_DIR/libonigwrap.dll $BUILD_DIR/libSkiaSharp.dll $BUILD_DIR/uiohook.dll install/
+          jq --arg version_name "MaaTOT" --arg url ""https://github.com/Coxwtwo/MaaTOT"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' assets/interface.json > install/interface.json
+          mv install/MFAAvalonia.exe install/${{ env.app_name }}.exe
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload
+        uses: actions/upload-artifact@v4
         with:
-          name: MaaTOT-linux-${{ matrix.arch }}
+          name: ${{ env.app_name }}-win-${{ matrix.arch }}
           path: "install"
 
-  macos:
-    needs: meta
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        arch: [aarch64, x86_64]
-      fail-fast: false
+  # ubuntu:
+  #   needs: meta
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       arch: [aarch64, x86_64]
+  #     fail-fast: false
 
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         submodules: true
 
-      - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1
-        with:
-          repository: MaaXYZ/MaaFramework
-          fileName: "MAA-macos-${{ matrix.arch }}*"
-          tag: "v4.0.0"
-          out-file-path: "deps"
-          extract: true
+  #     - name: Download MaaFramework
+  #       uses: robinraju/release-downloader@v1
+  #       with:
+  #         repository: MaaXYZ/MaaFramework
+  #         fileName: "MAA-linux-${{ matrix.arch }}*"
+  #         tag: "${{ env.MaaFw_tag }}"
+  #         out-file-path: "deps"
+  #         extract: true
 
-      - name: Install
-        shell: bash
-        run: |
-          python ./install.py ${{ needs.meta.outputs.tag }}
+  #     - name: Install
+  #       shell: bash
+  #       run: |
+  #         python ./install.py ${{ needs.meta.outputs.tag }}
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: MaaTOT-macos-${{ matrix.arch }}
-          path: "install"
+  #     - uses: actions/upload-artifact@v4
+  #       with:
+  #         name: ${{ env.app_name }}-linux-${{ matrix.arch }}
+  #         path: "install"
+
+  # macos:
+  #   needs: meta
+  #   runs-on: macos-latest
+  #   strategy:
+  #     matrix:
+  #       arch: [aarch64, x86_64]
+  #     fail-fast: false
+
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         submodules: true
+
+  #     - name: Download MaaFramework
+  #       uses: robinraju/release-downloader@v1
+  #       with:
+  #         repository: MaaXYZ/MaaFramework
+  #         fileName: "MAA-macos-${{ matrix.arch }}*"
+  #         tag: "${{ env.MaaFw_tag }}"
+  #         out-file-path: "deps"
+  #         extract: true
+
+  #     - name: Install
+  #       shell: bash
+  #       run: |
+  #         python ./install.py ${{ needs.meta.outputs.tag }}
+
+  #     - uses: actions/upload-artifact@v4
+  #       with:
+  #         name: ${{ env.app_name }}-macos-${{ matrix.arch }}
+  #         path: "install"
 
   release:
     if: ${{ needs.meta.outputs.is_release == 'true' }}
-    needs: [meta, windows, ubuntu, macos]
+    # needs: [meta, windows, ubuntu, macos]
+    needs: [meta, windows]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
         with:
           path: assets
-
       - run: |
           cd assets
           for f in *; do
