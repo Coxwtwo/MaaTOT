@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD033 MD041 -->
+<!-- markdownlint-disable MD007 MD033 MD041 -->
 <div align="center">
   <img alt="LOGO" src="./logo.png" width="64" height="64" />
 
@@ -86,16 +86,21 @@
 ~~4. 输入需要执行的任务序号。
     - 以空格分隔，例如 `1 2 3 4 5` 和 `2 3 1 4 5`，序号的顺序代表着执行顺序
     - 序号可重复，例如 `5 1 2 3 4 5`~~
+
 ## 开发相关
 
-如果你希望参与开发才需要看这节，使用本项目开发的软件请看 [如何使用](#如何使用) 这节。
+如果你希望参与开发才需要看这节，使用本项目开发的软件请查看 [如何使用](#如何使用) 这一节。
 
 本项目基于MaaFramework开发，在开发前，请先了解 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 相关事项。
 
 开发相关事项请查看文档 [开发相关](./docs/zh_cn/开发相关.md) 。
 
-## 鸣谢
+## 致谢
 
 感谢自动化测试框架 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 开发者的贡献。
 
-感谢 GUI 项目 **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)** 开发者的贡献。
+感谢通用图形化界面项目 **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)** 开发者的贡献。
+
+感谢所有为 MaaTOT 做出贡献的开发者。
+
+[![Contributors](https://contrib.rocks/image?repo=Coxwtwo/MaaTOT&max=100)](https://github.com/Coxwtwo/MaaTOT/graphs/contributors)
