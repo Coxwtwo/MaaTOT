@@ -35,11 +35,11 @@
             46
         ],
         "next": [
-            "Flag_异常",
+            "Flag_In异常",
             "Click_异常"
         ]
     },
-    "Flag_异常": {
+    "Flag_In异常": {
         "recognition": "TemplateMatch",
         "template": "Debate/异常亮.png",
         "pre_delay": 1000,
@@ -83,10 +83,10 @@
         ],
         "target": true,
         "next": [
-            "Click_主线选择篇章"
+            "Click_选择主线篇章"
         ]
     },
-    "Click_主线选择篇章": {
+    "Click_选择主线篇章": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "By_User_Setttings",
@@ -95,13 +95,13 @@
             115,
             230,
             140,
-            130
+            230
         ],
         "next": [
-            "Click_主线选择篇章确认"
+            "Click_选择主线篇章确认"
         ]
     },
-    "Click_主线选择篇章确认": {
+    "Click_选择主线篇章确认": {
         "action": "Click",
         "post_delay": 1000,
         "target": [
@@ -288,7 +288,7 @@
         "recognition": "OCR",
         "expected": "By_User_Setttings",
         "pre_delay": 800,
-        "post_delay": 1000,
+        "post_delay": 1500,
         "target_offset": [
             -20,
             125,
@@ -316,15 +316,15 @@
             47
         ],
         "next": [
-            "Click_结束",
+            "Flag_复盘确认弹窗",
             "Flag_体力不足弹窗",
             "Flag_剩余次数不足"
-        ],
-        "interrupt": [
-            "Click_复盘确认"
         ]
     },
     "Flag_剩余次数不足": {
+        "focus": {
+            "succeeded": "[color:Orange]剩余次数不足[/color]"
+        },
         "recognition": "OCR",
         "expected": "剩余次数不足",
         "roi": [

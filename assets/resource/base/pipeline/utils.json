@@ -7,9 +7,9 @@
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
+            "Click_结束",
             "Click_取消",
             "Click_X按钮",
-            "Click_结束",
             "Click_退出手机",
             "Click_退出好感交流",
             "Click_确定"
@@ -79,7 +79,7 @@
         "pre_delay": 500,
         "roi": [
             550,
-            720,
+            700,
             100,
             300
         ]
@@ -90,10 +90,10 @@
         "expected": "确定",
         "pre_delay": 500,
         "roi": [
-            565,
-            720,
-            70,
-            40
+            550,
+            700,
+            100,
+            300
         ]
     },
     "Click_主界面思绪": {
@@ -311,6 +311,9 @@
         ]
     },
     "Click_取消喝饮料": {
+        "focus": {
+            "succeeded": "[color:Orange]体力不足，任务终止[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "取消",
@@ -320,27 +323,58 @@
             700,
             100,
             250
+        ],
+        "next": [
+            "返回主界面"
         ]
     },
-    "Click_复盘确认": {
-        "action": "Click",
+    "Flag_复盘确认弹窗": {
         "recognition": "OCR",
         "expected": "复盘确认",
         "post_delay": 5000,
         "roi": [
             300,
             360,
-            114,
-            43
+            115,
+            45
         ],
-        "target": [
-            570,
-            755,
-            80,
-            40
+        "next": [
+            "Click_复盘1次确定",
+            "Flag_复盘次数最小"
+        ],
+        "interrupt": [
+            "Click_复盘次数减号亮"
+        ]
+    },
+    "Click_复盘结束": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_wait_freezes": {
+            "time": 1000,
+            "target": [
+                43,
+                243,
+                600,
+                724
+            ]
+        },
+        "pre_delay": 6000,
+        "post_delay": 1000,
+        "roi": [
+            300,
+            500,
+            300,
+            700
+        ],
+        "next": [
+            "返回主界面"
         ]
     },
     "Flag_战力不足": {
+        "focus": {
+            "succeeded": "[color:Orange]战力不足，任务终止[/color]"
+        },
         "recognition": "ColorMatch",
         "roi": [
             570,
@@ -443,7 +477,9 @@
         ]
     },
     "Flag_辩论失败": {
-        "focus": true,
+        "focus": {
+            "succeeded": "[color:Orange]辩论失败，任务终止[/color]"
+        },
         "recognition": "OCR",
         "expected": "辩论失败",
         "pre_delay": 800,
@@ -457,7 +493,7 @@
             "返回主界面"
         ]
     },
-    "Click_副本结算界面再来一次": {
+    "Click_结算界面再来一次": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "再来一次",
@@ -474,6 +510,151 @@
         ],
         "interrupt": [
             "Click_开启自动出卡"
+        ]
+    },
+    "Click_复盘次数减号亮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/复盘减号亮.png",
+        "green_mask": true,
+        "roi": [
+            195,
+            560,
+            80,
+            80
+        ]
+    },
+    "Click_复盘次数加号亮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/复盘加号亮.png",
+        "roi": [
+            450,
+            560,
+            80,
+            80
+        ]
+    },
+    "Flag_复盘次数最小": {
+        "focus": {
+            "succeeded": "[color:Orange]无法复盘指定次数，任务终止[/color]"
+        },
+        "recognition": "OCR",
+        "expected": "1次复盘",
+        "post_delay": 5000,
+        "roi": [
+            140,
+            420,
+            430,
+            100
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_复盘1次确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "1次复盘",
+        "post_delay": 5000,
+        "roi": [
+            140,
+            420,
+            430,
+            100
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            40
+        ],
+        "next": [
+            "Click_复盘结束"
+        ]
+    },
+    "Click_复盘2次确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "2次复盘",
+        "post_delay": 5000,
+        "roi": [
+            140,
+            420,
+            430,
+            100
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            40
+        ],
+        "next": [
+            "Click_复盘结束"
+        ]
+    },
+    "Click_复盘3次确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "3次复盘",
+        "post_delay": 5000,
+        "roi": [
+            140,
+            420,
+            430,
+            100
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            40
+        ],
+        "next": [
+            "Click_复盘结束"
+        ]
+    },
+    "Click_复盘4次确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "4次复盘",
+        "post_delay": 5000,
+        "roi": [
+            140,
+            420,
+            430,
+            100
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            40
+        ],
+        "next": [
+            "Click_复盘结束"
+        ]
+    },
+    "Click_复盘5次确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "5次复盘",
+        "post_delay": 5000,
+        "roi": [
+            140,
+            420,
+            430,
+            100
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            40
+        ],
+        "next": [
+            "Click_复盘结束"
         ]
     }
 }

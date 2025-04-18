@@ -116,16 +116,14 @@
             860
         ],
         "next": [
-            "进修关卡"
-        ]
-    },
-    "进修关卡": {
-        "next": [
-            "Flag_该副本今日未开启",
-            "Click_进入进修关卡"
+            "Click_进入进修关卡",
+            "Flag_该副本今日未开启"
         ]
     },
     "Flag_该副本今日未开启": {
+        "focus": {
+            "succeeded": "[color:Orange]该副本今日未开启[/color]"
+        },
         "recognition": "OCR",
         "expected": "该副本今日未开启",
         "roi": [
@@ -186,12 +184,9 @@
             47
         ],
         "next": [
-            "Click_结束",
+            "Flag_复盘确认弹窗",
             "Flag_体力不足弹窗",
             "Flag_使用工作证页面"
-        ],
-        "interrupt": [
-            "Click_复盘确认"
         ]
     },
     "Flag_使用工作证页面": {
@@ -208,6 +203,9 @@
         ]
     },
     "Click_取消使用工作证": {
+        "focus": {
+            "succeeded": "[color:Orange]关卡可进行次数不足[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "取消",
@@ -220,6 +218,28 @@
         ],
         "next": [
             "返回主界面"
+        ]
+    },
+    "Click_工作证减号": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/工作证减号亮.png",
+        "roi": [
+            440,
+            530,
+            100,
+            80
+        ]
+    },
+    "Click_工作证加号": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/工作证加号亮.png",
+        "roi": [
+            555,
+            530,
+            100,
+            80
         ]
     }
 }
