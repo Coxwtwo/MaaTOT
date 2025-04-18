@@ -8,10 +8,12 @@
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
-            "Click_X按钮",
             "Click_结束",
+            "Click_取消",
+            "Click_X按钮",
             "Click_退出手机",
             "Click_退出好感交流",
+            "Click_确定",
             "StartTOT"
         ]
     },
@@ -45,6 +47,7 @@
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
             "Flag_TipsLoading",
+            "Click_官服接受协议",
             "Click_下载确定",
             "Flag_MihoyoSlogan"
         ]
@@ -99,7 +102,7 @@
             34
         ],
         "next": [
-            "Flag_In思绪"
+            "位于思绪界面"
         ],
         "interrupt": [
             "Click_主界面思绪",
@@ -182,7 +185,9 @@
         ]
     },
     "Flag_更新版本": {
-        "focus": true,
+        "focus": {
+            "succeeded": "[color:Orange]请更新至最新版本，任务终止[/color]"
+        },
         "action": "StopTask",
         "recognition": "OCR",
         "expected": [
@@ -194,6 +199,22 @@
             554,
             321,
             43
+        ]
+    },
+    "位于思绪界面": {
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "expected": [
+            "思绪整理"
+        ],
+        "roi": [
+            590,
+            30,
+            104,
+            36
+        ],
+        "next": [
+            "Click_返回主界面键"
         ]
     }
 }
