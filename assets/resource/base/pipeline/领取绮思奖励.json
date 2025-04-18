@@ -209,9 +209,9 @@
         ]
     },
     "Flag_Inverse_绮思经验无领取键": {
-        "focus": true,
-        "focus_succeeded": "已领取绮思经验",
-        "focus_succeeded_color": "#2e8b57",
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取绮思经验[/color]"
+        },
         "inverse": true,
         "recognition": "OCR",
         "expected": "领取",
@@ -241,9 +241,9 @@
         ]
     },
     "Click_领取绮思奖励": {
-        "focus": true,
-        "focus_succeeded": "已领取绮思奖励",
-        "focus_succeeded_color": "#2e8b57",
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取绮思奖励[/color]"
+        },
         "action": "Click",
         "post_delay": 1000,
         "target": [

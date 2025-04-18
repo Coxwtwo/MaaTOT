@@ -89,9 +89,9 @@
         ]
     },
     "Click_一键领取每日活跃度": {
-        "focus": true,
-        "focus_succeeded": "已领取每日任务奖励",
-        "focus_succeeded_color": "#2e8b57",
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取每日任务奖励[/color]"
+        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/一键领取亮.PNG",
@@ -176,9 +176,9 @@
         ]
     },
     "Click_一键领取每周活跃度": {
-        "focus": true,
-        "focus_succeeded": "已领取每周任务奖励",
-        "focus_succeeded_color": "#2e8b57",
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取每周任务奖励[/color]"
+        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/一键领取亮.PNG",
