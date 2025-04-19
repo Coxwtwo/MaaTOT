@@ -395,6 +395,9 @@
         "count": 100
     },
     "Click_居中开始辩论": {
+        "focus": {
+            "succeeded": "[color:Dimgray]开始辩论[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "开始辩论",
@@ -427,6 +430,11 @@
             44
         ],
         "next": [
+            "Flag_辩论失败",
+            "Click_点击继续",
+            "Click_结束"
+        ],
+        "interrupt": [
             "Flag_自动出卡中"
         ]
     },
@@ -448,19 +456,12 @@
         "expected": [
             "自动出卡中"
         ],
-        "pre_wait_freezes": 1000,
-        "post_delay": 1000,
+        "post_delay": 3000,
         "roi": [
             258,
             1009,
             166,
             44
-        ],
-        "next": [
-            "Flag_自动出卡中",
-            "Flag_辩论失败",
-            "Click_点击继续",
-            "Click_结束"
         ]
     },
     "Click_点击继续": {
@@ -556,6 +557,9 @@
         ]
     },
     "Click_复盘1次确定": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已复盘1次[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "1次复盘",
@@ -577,6 +581,9 @@
         ]
     },
     "Click_复盘2次确定": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已复盘2次[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "2次复盘",
@@ -598,6 +605,9 @@
         ]
     },
     "Click_复盘3次确定": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已复盘3次[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "3次复盘",
@@ -619,6 +629,9 @@
         ]
     },
     "Click_复盘4次确定": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已复盘4次[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "4次复盘",
@@ -640,6 +653,9 @@
         ]
     },
     "Click_复盘5次确定": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已复盘5次[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "5次复盘",
