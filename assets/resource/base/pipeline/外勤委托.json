@@ -88,6 +88,9 @@
         ]
     },
     "Click_日常委托": {
+        "focus": {
+            "succeeded": "[color:Dimgray]选中日常委托[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -106,6 +109,9 @@
         ]
     },
     "Click_庭审委托": {
+        "focus": {
+            "succeeded": "[color:Dimgray]选中庭审委托[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -124,6 +130,9 @@
         ]
     },
     "Flag_委托搜寻中": {
+        "focus": {
+            "succeeded": "[color:Dimgray]委托搜寻中[/color]"
+        },
         "recognition": "OCR",
         "expected": [
             "委托搜寻中"
@@ -140,6 +149,9 @@
         ]
     },
     "Flag_疲劳值满": {
+        "focus": {
+            "succeeded": "[color:Dimgray]疲劳值达到上限[/color]"
+        },
         "recognition": "OCR",
         "expected": [
             "50/50"
@@ -156,6 +168,9 @@
         ]
     },
     "Flag_疲劳值上限弹窗": {
+        "focus": {
+            "succeeded": "[color:Dimgray]疲劳值达到上限[/color]"
+        },
         "recognition": "OCR",
         "expected": "疲劳值上限",
         "roi": [

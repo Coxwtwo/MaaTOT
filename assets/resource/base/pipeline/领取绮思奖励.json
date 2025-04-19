@@ -134,7 +134,7 @@
             "Click_领取绮思经验",
             "Click_绮思等级提升",
             "Click_关闭绮思奖励弹窗",
-            "Flag_Inverse_绮思经验无领取键"
+            "Flag_Inverse_绮思经验领取键"
         ]
     },
     "Click_领取绮思经验": {
@@ -208,7 +208,7 @@
             "Click_绮思任务"
         ]
     },
-    "Flag_Inverse_绮思经验无领取键": {
+    "Flag_Inverse_绮思经验领取键": {
         "focus": {
             "succeeded": "[color:Limegreen]已领取绮思经验[/color]"
         },
