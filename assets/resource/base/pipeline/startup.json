@@ -22,6 +22,9 @@
         "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity"
     },
     "MihoyoSlogan": {
+        "focus": {
+            "succeeded": "[color:Dimgray]启动游戏[/color]"
+        },
         "recognition": "OCR",
         "expected": [
             "TECHOTAKUSSAVETHEWORLD",

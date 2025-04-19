@@ -9,6 +9,9 @@
         ]
     },
     "Click_好友": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取友谊徽章[/color]"
+        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/好友.png",

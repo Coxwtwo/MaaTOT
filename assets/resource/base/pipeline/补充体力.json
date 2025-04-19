@@ -53,6 +53,9 @@
         ]
     },
     "Click_喝30体力饮料": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已饮用30体力饮料[/color]"
+        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/30体力饮料.png",
@@ -69,6 +72,9 @@
         ]
     },
     "Click_喝60体力饮料": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已饮用60体力饮料[/color]"
+        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/60体力饮料.png",

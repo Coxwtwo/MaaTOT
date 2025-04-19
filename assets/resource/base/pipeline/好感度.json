@@ -77,6 +77,9 @@
         ]
     },
     "Flag_今日好感度获取完毕": {
+        "focus": {
+            "succeeded": "[color:Limegreen]今日好感度获取完毕[/color]"
+        },
         "recognition": "OCR",
         "expected": "今日好感度获取完毕",
         "roi": [
@@ -90,6 +93,9 @@
         ]
     },
     "Click_好感度等级提升": {
+        "focus": {
+            "succeeded": "[color:Deepskyblue]好感度等级提升[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "好感度等级提升",

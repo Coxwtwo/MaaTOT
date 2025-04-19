@@ -9,6 +9,9 @@
         ]
     },
     "Click_邮件": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取邮件[/color]"
+        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/邮件.PNG",
