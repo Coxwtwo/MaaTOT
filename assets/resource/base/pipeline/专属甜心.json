@@ -193,9 +193,6 @@
         ]
     },
     "Click_具体制作步骤": {
-        "focus": {
-            "succeeded": "[color:Dimgray]制作中[/color]"
-        },
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,

@@ -114,6 +114,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "资料室",
+        "post_wait_freezes": 1000,
         "post_delay": 1000,
         "roi": [
             582,
@@ -148,9 +149,9 @@
         "template": "Button/案例解析领取.PNG",
         "post_delay": 1000,
         "roi": [
-            544,
+            540,
             490,
-            52,
+            60,
             30
         ],
         "next": [
@@ -241,7 +242,7 @@
     },
     "Flag_酬谢奖励已领取": {
         "focus": {
-            "succeeded": "[color:DeepsLimegreenkyblue]已领取酬谢奖励[/color]"
+            "succeeded": "[color:Limegreen]已领取酬谢奖励[/color]"
         },
         "recognition": "OCR",
         "expected": "奖励已领取",

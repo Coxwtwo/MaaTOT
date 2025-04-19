@@ -50,6 +50,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/任务奖励领取.PNG",
         "post_delay": 1000,
+        "post_wait_freezes": 1500,
         "roi": [
             550,
             460,
@@ -96,7 +97,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/一键领取亮.PNG",
         "pre_delay": 500,
-        "post_delay": 1000,
+        "post_delay": 1500,
         "roi": [
             570,
             1172,
