@@ -43,8 +43,8 @@
             "entry": "领取友谊徽章"
         },
         {
-            "name": "领取资源申请",
-            "entry": "领取资源申请",
+            "name": "资源申请",
+            "entry": "资源申请",
             "pipeline_override": {
                 "Click_基地": {
                     "next": [
@@ -54,8 +54,8 @@
             }
         },
         {
-            "name": "领取案件解析",
-            "entry": "领取案件解析",
+            "name": "案例解析",
+            "entry": "案例解析",
             "pipeline_override": {
                 "Click_基地": {
                     "next": [

@@ -48,7 +48,7 @@
             38
         ]
     },
-    "领取资源申请": {
+    "资源申请": {
         "next": [
             "打开基地和沙龙"
         ],
@@ -68,7 +68,11 @@
             49
         ],
         "next": [
-            "Flag_In资源申请"
+            "Flag_Inverse_资源申请领取"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_一键领取亮"
         ]
     },
     "Flag_In资源申请": {
@@ -79,16 +83,12 @@
             135,
             100,
             50
-        ],
-        "next": [
-            "Flag_Inverse_资源申请领取"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_一键领取亮"
         ]
     },
     "Flag_Inverse_资源申请领取": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已完成资源申请领取[/color]"
+        },
         "inverse": true,
         "recognition": "TemplateMatch",
         "template": "Button/资源申请领取.PNG",
@@ -102,7 +102,7 @@
             "返回主界面"
         ]
     },
-    "领取案件解析": {
+    "案例解析": {
         "next": [
             "打开基地和沙龙"
         ],
@@ -122,7 +122,11 @@
             47
         ],
         "next": [
-            "Flag_In资料室"
+            "Flag_Inverse_案例解析领取"
+        ],
+        "interrupt": [
+            "Click_一键领取亮",
+            "Click_X按钮"
         ]
     },
     "Flag_In资料室": {
@@ -133,19 +137,15 @@
             156,
             100,
             50
-        ],
-        "next": [
-            "Flag_Inverse_资料解析领取"
-        ],
-        "interrupt": [
-            "Click_一键领取亮",
-            "Click_X按钮"
         ]
     },
-    "Flag_Inverse_资料解析领取": {
+    "Flag_Inverse_案例解析领取": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已领取案件解析[/color]"
+        },
         "inverse": true,
         "recognition": "TemplateMatch",
-        "template": "Button/资料解析领取.PNG",
+        "template": "Button/案例解析领取.PNG",
         "post_delay": 1000,
         "roi": [
             544,
@@ -154,21 +154,16 @@
             30
         ],
         "next": [
-            "资料解析"
-        ]
-    },
-    "资料解析": {
-        "next": [
-            "Flag_资料未解析",
-            "Flag_资料解析中"
+            "Flag_案例未解析",
+            "Flag_案例解析中"
         ],
         "interrupt": [
             "Click_X按钮"
         ]
     },
-    "Flag_资料未解析": {
+    "Flag_案例未解析": {
         "recognition": "TemplateMatch",
-        "template": "Button/资料未解析.PNG",
+        "template": "Button/案例未解析.PNG",
         "post_delay": 1000,
         "roi": [
             620,
@@ -180,9 +175,9 @@
             "Click_一键解析"
         ]
     },
-    "Flag_资料解析中": {
+    "Flag_案例解析中": {
         "recognition": "TemplateMatch",
-        "template": "Button/资料解析中.PNG",
+        "template": "Button/案例解析中.PNG",
         "post_delay": 1000,
         "roi": [
             620,
@@ -195,6 +190,9 @@
         ]
     },
     "Click_一键解析": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已完成案件解析[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -233,7 +231,7 @@
             70
         ],
         "next": [
-            "Flag_奖励已领取"
+            "Flag_酬谢奖励已领取"
         ],
         "interrupt": [
             "Click_关闭奖励弹窗",
@@ -241,7 +239,10 @@
             "Click_领取奖励"
         ]
     },
-    "Flag_奖励已领取": {
+    "Flag_酬谢奖励已领取": {
+        "focus": {
+            "succeeded": "[color:DeepsLimegreenkyblue]已领取酬谢奖励[/color]"
+        },
         "recognition": "OCR",
         "expected": "奖励已领取",
         "roi": [
