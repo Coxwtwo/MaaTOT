@@ -1,6 +1,6 @@
 {
-    "version": "v4.0.0-alpha",
-    "message": "欢迎食用生煎包OvO！生煎包是免费的！ \n初次使用请在设置好资源类型和任务列表后 \n重启软件。",
+    "version": "v2.1.2",
+    "message": "欢迎食用生煎包OvO！",
     "controller": [
         {
             "name": "默认方式 ADB",
@@ -26,7 +26,7 @@
         {
             "name": "启动游戏",
             "entry": "StartUp",
-            "doc": "[size:15]启动游戏和检查游戏是否位于主界面。[/size]"
+            "doc": "[size:15]启动游戏和检查游戏是否位于主界面。[/size]\n[size:18]初次使用请在设置好资源类型和任务列表后重启软件。[/size]"
         },
         {
             "name": "领取邮件",
