@@ -16,6 +16,7 @@
 
  - [startup.json](#startup) 启动游戏客户端。
  - [shutdown.json](#shutdown) 关闭游戏客户端。
+ - [utils.json](#utils) 包含一些常用的功能, 如返回主界面、复盘确认、点击自动出卡等。
  - [领取邮件.json](#领取邮件) 领取邮件奖励。
  - [领取友谊徽章.json](#领取友谊徽章) 领取友谊徽章。
  - [领取基地奖励.json](#领取基地奖励) 领取资源申请、领取案件解析、领取酬谢。
@@ -26,7 +27,6 @@
  - [异常副本.json](#异常副本) 复盘异常副本。为了方便使用，在`interface.json`中设置角色材料、印象材料和思绪残影三种任务入口。
  - [外勤委托.json](#外勤委托) 外勤委托。
  - [补充体力.json](#补充体力) 补充体力。
- - [utils.json](#utils) 包含一些常用的功能, 如返回主界面、关闭奖励弹窗、点击自动剧情键等。
  - [my_task.json](#my_task) 是一个任务流水线 demo ，在实际开发中不使用，仅是方便开发者理解 Pipeline 的执行次序。
 
 文档[使用颜色](Colors.html)是可视化界面的日志文字颜色。
@@ -92,6 +92,66 @@ flowchart LR
 ### `CloseTOT`
 
 功能是关闭 App ，通常不做更改。
+
+## <span id="utils">utils.json</span>
+
+包含一些常用的功能, 如返回主界面、复盘确认、点击自动出卡等。
+
+编写新任务时可以复制 `utils.json` 中的各种节点，在复制版本中添加后续节点。通常给复制版本添加名称后缀来区别新节点和原节点。
+
+例如：原节点 `Click_事件簿` ，复制到 `进修副本.json` 中并更名为 `Click_事件簿_进修` ，添加next节点`Click_进修`；复制到 `异常副本.json` 中并更名为 `Click_事件簿_异常` ，添加next节点`Click_主线`。
+
+### `返回主界面`
+
+```mermaid
+flowchart LR
+    n0["返回主界面"] -->|next| n1["Flag_主界面任务"]
+    n0 -.->|interrupt| n2["Click_关闭奖励弹窗"]
+    n2 -.-> n0
+    n0 -.->|interrupt| n3@{ shape: processes, label: "各种退出取消键"}
+    n3 -.-> n0
+    n0 -.->|interrupt| n4["Click_确定"]
+    n4 -.-> n0
+```
+
+使用 `主界面任务` 作为任务终止节点。因为主界面大部分区域都可能变动，所以识别任务按钮来判断是否回到主界面，识别其他固定按钮也是可以的。
+
+只有在过期资源回收时才会用到确定键，为了防止误点击确定键， `Click_确定`放在最后，取消键识别失败后才会识别确定键。
+
+### `Flag_复盘确认弹窗`
+
+```mermaid
+flowchart LR
+    n18["Flag_复盘确认弹窗"] -->|next| n21["Click_复盘X次确定<br>(在interface中设定次数)"]
+    n18["Flag_复盘确认弹窗"] -->|next| n22["Flag_复盘次数最小"]
+    n18 -.->|interrupt| n23["Click_复盘次数减号亮"]
+    n23 -.-> n18
+    n21["Click_复盘X次确定<br>(在interface中设定次数)"] -->|next| n24["Click_复盘结束"]
+    n24 -->|next| n012["返回主界面"]
+    n22 --->|next| n012["返回主界面"]
+```
+
+通用的复盘确认任务链，在进修副本和异常副本中都有使用。
+
+### `Click_居中开始辩论`
+
+```mermaid
+flowchart LR
+    n18["Click_居中开始辩论"] -->|next| n20["Flag_自动出卡已开启"]
+    n18 -.->|interrupt| n21["Click_开启自动出卡"]
+    n21 -.-> n18
+    n20 -->|next| n22["Flag_辩论失败"]
+    n20 -->|next| n23["Click_点击继续"]
+    n20 -->|next| n24["Click_结束"]
+    n23 -->|next| n24
+    n20-.->|interrupt| n25["Flag_自动出卡中"]
+    n25 -.-> n20
+    n22 -->|next| n26["返回主界面"]
+
+    n25 ~~~ n24
+```
+
+外勤委托使用的辩论任务链，辩论成功后（即点击结束键后）停留在外勤界面。在外勤委托中会回到识别节点，再次识别是否有日常委托或庭审委托。
 
 ## <span id="领取邮件">领取邮件.json</span>
 
@@ -162,7 +222,7 @@ flowchart LR
     n17 -->|next| n18
 ```
 
-`Flag_Inverse_资料解析领取`节点中开启了 inverse 字段（反转识别结果），在识别到**领取**按钮时不进入此节点，在没有识别到**领取**按钮时才进入节点。
+`Flag_Inverse_资料解析领取`节点中开启了 `inverse` 字段（反转识别结果），在识别到**领取**按钮时不进入此节点，在没有识别到**领取**按钮时才进入节点。`inverse` 字段使用很少，受游戏过程动画的影响，程序可能截到各种预料不到的中间画面，导致任务进入含有 `inverse` 字段的节点。例如：点击进入资料室后可能截取到无UI的资料室背景图片，此任务中给 `Click_资料室` 节点添加了很长的延时来解决这个问题。
 
 ### `领取酬谢`
 
@@ -215,15 +275,18 @@ flowchart LR
 
 ```mermaid
 flowchart LR
+    n6["Swipe_收取花露第一行"] -->|next| n8["Click_前往梦笺"]
     n6["Swipe_收取花露第一行"] -->|next| n7["Click_加入花露"]
-    n6 -->|next| n8@{ shape: processes, label: "Swipe_收取花露第X行"}
-    n8 -->|next| n7["Click_加入花露"]
-    n8 -->|next| n9["Swipe_收取花露第七行"]
+    n6 -->|next| n9@{ shape: processes, label: "Swipe_收取花露第X行"}
+    n7 -->|next| n8["Click_前往梦笺"]
+    n8 -->|next| n00["返回主界面"]
     n9 -->|next| n7["Click_加入花露"]
-    n9 -->|next| n10["Click_收取捕梦左上"]
-    n7 -->|next| n11["Click_前往梦笺"]
-    n11 -->|next| n00["返回主界面"]
-    n10["Click_收取捕梦左上"] -->|next| n12["Click_收取捕梦右上"]
+    n9 -->|next| n8["Click_前往梦笺"]
+    n9 -->|next| n10["Swipe_收取花露第七行"]
+    n10 -->|next| n7["Click_加入花露"]
+    n10 -->|next| n8["Click_前往梦笺"]
+    n10 -->|next| n11["Click_收取捕梦左上"]
+    n11["Click_收取捕梦左上"] -->|next| n12["Click_收取捕梦右上"]
     n12["Click_收取捕梦右上"] -->|next| n13["Click_收取捕梦右下"]
     n13["Click_收取捕梦右下"] -->|next| n00
 ```
@@ -233,6 +296,8 @@ flowchart LR
 每次滑动后判断是否可以加入花露。因为点击加入花露后可能出现梦笺收集完毕，需要选择新的梦笺的情况，所以暂时在加入花露后直接退出逸梦系统避免任务出错。
 
 (之前我不知道可以滑动收集，是先识别四位男主的逸梦，再分别匹配四位男主的花上四角星，不仅收集不全还可能因为背景长得像花上四角星而卡住，现在用七个横向滑动来收集花露，简单又好用。以后还要是要好好听小初代说话啦ヾ(×∧×)ノ)
+
+在滑动过程中游戏可能自动加入花露，无法收集捕梦。捕梦任务链待优化中（开摆！）
 
 ## <span id="专属甜心">专属甜心.json</span>
 
@@ -309,8 +374,13 @@ flowchart LR
     
     n9 -->|next| n12["Click_复盘进修关卡"]
     n12 -->|next| n13["Flag_复盘确认弹窗"]
-    n12 -->|next| n14["Flag_体力不足弹窗"]
+    n12 -->|next| n14["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
     n12 -->|next| n15["Flag_使用工作证页面"]
+    n12 -.->|interrupt| z["Flag_体力补充弹窗"]
+    z -.-> n12
+    z -->|next| z1["Click_能量饮料窗口"]
+    z1 -->|next| z2["Click_喝30体力饮料or<br>Click_喝60体力饮料<br>(在interface中设定)"]
+    z2 -->|next| z3["Click_确定"]
 
     n13["Flag_复盘确认弹窗"] -->|next| n16["Click_复盘X次确定<br>(在interface中设定次数)"]
     n13["Flag_复盘确认弹窗"] -->|next| n17["Flag_复盘次数最小"]
@@ -320,7 +390,7 @@ flowchart LR
     n17 --->|next| n07["返回主界面"]
     n19 -->|next| n07["返回主界面"]
 
-    n14["Flag_体力不足弹窗"] -->|next| n20["Click_取消喝饮料"]
+    n14["Flag_体力不足弹窗<br>(在interface中设定是否开启)"] -->|next| n20["Click_取消喝饮料"]
     n20 --->|next| n07["返回主界面"]
     n15["Flag_使用工作证页面"] -->|next| n21["Click_取消使用工作证"]
     n21 --->|next| n07["返回主界面"]
@@ -373,8 +443,13 @@ flowchart LR
 flowchart LR
     n14["Click_进入异常关卡"] -->|next| n17["Click_复盘异常关卡"]
     n17 -->|next| n18["Flag_复盘确认弹窗"]
-    n17 -->|next| n19["Flag_体力不足弹窗"]
+    n17 -->|next| n19["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
     n17 -->|next| n20["Flag_剩余次数不足"]
+    n17 -.->|interrupt| z["Flag_体力补充弹窗"]
+    z -.-> n17
+    z -->|next| z1["Click_能量饮料窗口"]
+    z1 -->|next| z2["Click_喝30体力饮料or<br>Click_喝60体力饮料<br>(在interface中设定)"]
+    z2 -->|next| z3["Click_确定"]
 
     n18["Flag_复盘确认弹窗"] -->|next| n21["Click_复盘X次确定<br>(在interface中设定次数)"]
     n18["Flag_复盘确认弹窗"] -->|next| n22["Flag_复盘次数最小"]
@@ -383,7 +458,7 @@ flowchart LR
     n21["Click_复盘X次确定<br>(在interface中设定次数)"] -->|next| n24["Click_复盘结束"]
     n24 -->|next| n012["返回主界面"]
 
-    n19["Flag_体力不足弹窗"] -->|next| n25["Click_取消喝饮料"]
+    n19["Flag_体力不足弹窗<br>(在interface中设定是否开启)"] -->|next| n25["Click_取消喝饮料"]
     n25 --->|next| n012["返回主界面"]
     n20["Flag_剩余次数不足"] -->|next| n26["Click_取消使用<br>晶片重置次数"]
     n26 --->|next| n012["返回主界面"]
@@ -405,8 +480,6 @@ flowchart LR
 flowchart LR
     n5["Click_进入外勤区域"] -->|next| n6["Flag_委托搜寻中"]
     n5 -->|next| n7["Flag_疲劳值满"]
-    n5 -->|next| n8["Flag_体力不足弹窗"]
-    n5 -->|next| n9["Flag_战力不足"]
     n5 -->|next| n10["Flag_主界面任务"]
     n5 -.->|interrupt| n11["Click_日常委托"]
     n11 -.-> n5
@@ -419,15 +492,21 @@ flowchart LR
 
     n11 -->|next| n16["Click_开始处理外勤委托"]
     n12 -->|next| n16
-    n16 -->|next| n8
-    n16 -->|next| n9
+    n16 -->|next| n8["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
+    n16 -->|next| n9["Flag_战力不足"]
     n16 -->|next| n17["Flag_疲劳值上限弹窗"]
     n16 -->|next| n18["Click_居中开始辩论"]
+    n16 -.->|interrupt| z["Flag_体力补充弹窗"]
+    z -.-> n16
 
     n17 -->|next| n19["Click_取消使用晶片提升疲劳值上限"]
     n19 -->|next| n20["Click_返回主界面键"]
     n19 -->|interrupt| n21["Click_X按钮"]
     n21 -.-> n19
+
+    z -->|next| z1["Click_能量饮料窗口"]
+    z1 -->|next| z2["Click_喝30体力饮料or<br>Click_喝60体力饮料<br>(在interface中设定)"]
+    z2 -->|next| z3["Click_确定"]
 ```
 
 ```mermaid
@@ -446,7 +525,7 @@ flowchart LR
     n25 ~~~ n24
 ```
 
-外勤委托。
+由于 `Click_日常委托` 在`interrupt`列表中，所以遇到战力不足或者体力不足时，虽然游戏回到了主界面但任务逻辑会回到 `Click_进入外勤区域` 节点再次进行识别。因此我们在 `Click_进入外勤区域` 的next中添加了 `Flag_主界面任务` 作为任务出口。 `Click_居中开始辩论` 节点和后续节点位于 `utils.json` 中，如果辩论成功则会停留在外勤界面，如果辩论失败则会回到主界面。
 
 ## <span id="补充体力">补充体力.json</span>
 
@@ -461,15 +540,7 @@ flowchart LR
     n5 -->|next| n6["Click_确定"]
 ```
 
-补充体力。
-
-## <span id="utils">utils.json</span>
-
-```mermaid
-flowchart LR
-```
-
-包含一些常用的功能, 如返回主界面、关闭奖励弹窗、点击自动剧情键等。
+补充体力暂时无法设置使用数量。
 
 ## <span id="使用颜色">使用颜色</span>
 
