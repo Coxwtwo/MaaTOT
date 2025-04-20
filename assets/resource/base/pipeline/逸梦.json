@@ -77,6 +77,7 @@
     },
     "Swipe_收取花露第一行": {
         "action": "Swipe",
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             480,
@@ -92,11 +93,13 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Swipe_收取花露第二行"
         ]
     },
     "Swipe_收取花露第二行": {
         "action": "Swipe",
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             530,
@@ -112,11 +115,13 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Swipe_收取花露第三行"
         ]
     },
     "Swipe_收取花露第三行": {
         "action": "Swipe",
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             580,
@@ -132,11 +137,13 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Swipe_收取花露第四行"
         ]
     },
     "Swipe_收取花露第四行": {
         "action": "Swipe",
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             630,
@@ -152,11 +159,13 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Swipe_收取花露第五行"
         ]
     },
     "Swipe_收取花露第五行": {
         "action": "Swipe",
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             680,
@@ -172,11 +181,13 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Swipe_收取花露第六行"
         ]
     },
     "Swipe_收取花露第六行": {
         "action": "Swipe",
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             730,
@@ -192,12 +203,13 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Swipe_收取花露第七行"
         ]
     },
     "Swipe_收取花露第七行": {
         "action": "Swipe",
-        "post_delay": 5000,
+        "post_wait_freezes": 1000,
         "begin": [
             90,
             780,
@@ -213,13 +225,11 @@
         "duration": 1000,
         "next": [
             "Click_加入花露",
+            "Click_前往梦笺",
             "Click_收取捕梦左上"
         ]
     },
     "Click_加入花露": {
-        "focus": {
-            "succeeded": "[color:Deepskyblue]加入花露[/color]"
-        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "加入花露",
@@ -235,6 +245,9 @@
         ]
     },
     "Click_前往梦笺": {
+        "focus": {
+            "succeeded": "[color:Deepskyblue]加入花露[/color]"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "前往梦笺",
