@@ -311,6 +311,7 @@
         ]
     },
     "Click_取消喝饮料": {
+        "enabled": true,
         "focus": {
             "succeeded": "[color:Orange]体力不足，任务终止[/color]"
         },
@@ -392,7 +393,10 @@
             82,
             63
         ],
-        "count": 100
+        "count": 100,
+        "next": [
+            "返回主界面"
+        ]
     },
     "Click_居中开始辩论": {
         "focus": {

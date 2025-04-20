@@ -78,8 +78,6 @@
         "next": [
             "Flag_委托搜寻中",
             "Flag_疲劳值满",
-            "Flag_体力不足弹窗",
-            "Flag_战力不足",
             "Flag_主界面任务"
         ],
         "interrupt": [
@@ -221,6 +219,9 @@
             "Flag_战力不足",
             "Click_居中开始辩论",
             "Flag_疲劳值上限弹窗"
+        ],
+        "interrupt": [
+            "Flag_体力补充弹窗"
         ]
     }
 }
