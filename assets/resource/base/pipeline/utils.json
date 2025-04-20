@@ -563,7 +563,7 @@
     },
     "Click_复盘1次确定": {
         "focus": {
-            "succeeded": "[color:Limegreen]已复盘1次[/color]"
+            "succeeded": "[color:Limegreen]已完成复盘1次[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -587,7 +587,7 @@
     },
     "Click_复盘2次确定": {
         "focus": {
-            "succeeded": "[color:Limegreen]已复盘2次[/color]"
+            "succeeded": "[color:Limegreen]已完成复盘2次[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -611,7 +611,7 @@
     },
     "Click_复盘3次确定": {
         "focus": {
-            "succeeded": "[color:Limegreen]已复盘3次[/color]"
+            "succeeded": "[color:Limegreen]已完成复盘3次[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -635,7 +635,7 @@
     },
     "Click_复盘4次确定": {
         "focus": {
-            "succeeded": "[color:Limegreen]已复盘4次[/color]"
+            "succeeded": "[color:Limegreen]已完成复盘4次[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -659,7 +659,7 @@
     },
     "Click_复盘5次确定": {
         "focus": {
-            "succeeded": "[color:Limegreen]已复盘5次[/color]"
+            "succeeded": "[color:Limegreen]已完成复盘5次[/color]"
         },
         "action": "Click",
         "recognition": "OCR",

@@ -10,7 +10,7 @@
     },
     "Click_好友": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取友谊徽章[/color]"
+            "succeeded": "[color:Limegreen]已完成友谊徽章领取[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",

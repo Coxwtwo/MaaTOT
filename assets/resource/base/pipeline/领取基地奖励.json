@@ -142,7 +142,7 @@
     },
     "Flag_Inverse_案例解析领取": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取案件解析[/color]"
+            "succeeded": "[color:Limegreen]已完成案例解析领取[/color]"
         },
         "inverse": true,
         "recognition": "TemplateMatch",
@@ -192,7 +192,7 @@
     },
     "Click_一键解析": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成案件解析[/color]"
+            "succeeded": "[color:Limegreen]已完成案例解析[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -242,7 +242,7 @@
     },
     "Flag_酬谢奖励已领取": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取酬谢奖励[/color]"
+            "succeeded": "[color:Limegreen]已完成酬谢奖励领取[/color]"
         },
         "recognition": "OCR",
         "expected": "奖励已领取",

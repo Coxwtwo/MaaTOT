@@ -10,7 +10,7 @@
     },
     "Click_邮件": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取邮件[/color]"
+            "succeeded": "[color:Limegreen]已完成邮件领取[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",

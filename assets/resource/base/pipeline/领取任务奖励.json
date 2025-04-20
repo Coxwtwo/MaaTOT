@@ -91,7 +91,7 @@
     },
     "Click_一键领取每日活跃度": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取每日任务奖励[/color]"
+            "succeeded": "[color:Limegreen]已完成每日任务奖励领取[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",
@@ -178,7 +178,7 @@
     },
     "Click_一键领取每周活跃度": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取每周任务奖励[/color]"
+            "succeeded": "[color:Limegreen]已完成每周任务奖励领取[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",

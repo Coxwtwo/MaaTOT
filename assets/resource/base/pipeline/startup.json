@@ -23,7 +23,7 @@
     },
     "MihoyoSlogan": {
         "focus": {
-            "succeeded": "[color:Dimgray]启动游戏[/color]"
+            "succeeded": "[color:Dimgray]游戏启动[/color]"
         },
         "recognition": "OCR",
         "expected": [

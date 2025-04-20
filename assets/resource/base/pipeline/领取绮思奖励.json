@@ -210,7 +210,7 @@
     },
     "Flag_Inverse_绮思经验领取键": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取绮思经验[/color]"
+            "succeeded": "[color:Limegreen]已完成绮思经验领取[/color]"
         },
         "inverse": true,
         "recognition": "OCR",
@@ -242,7 +242,7 @@
     },
     "Click_领取绮思奖励": {
         "focus": {
-            "succeeded": "[color:Limegreen]已领取绮思奖励[/color]"
+            "succeeded": "[color:Limegreen]已完成绮思奖励领取[/color]"
         },
         "action": "Click",
         "post_delay": 1000,

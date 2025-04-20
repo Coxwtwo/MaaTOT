@@ -326,7 +326,7 @@
     },
     "Flag_剩余次数不足": {
         "focus": {
-            "succeeded": "[color:Orange]剩余次数不足[/color]"
+            "succeeded": "[color:Orange]关卡剩余次数不足[/color]"
         },
         "recognition": "OCR",
         "expected": "剩余次数不足",
