@@ -1,0 +1,186 @@
+{
+    "领取拼图活动代币": {
+        "next": [
+            "Click_活动_限时拼图活动"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_活动_限时拼图活动": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/活动.PNG",
+        "pre_wait_freezes": 800,
+        "post_delay": 3000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ],
+        "next": [
+            "寻找限时拼图活动"
+        ]
+    },
+    "寻找限时拼图活动": {
+        "next": [
+            "Flag_限时拼图活动",
+            "Flag_每日签到"
+        ],
+        "interrupt": [
+            "Swipe_向左滑动寻找限时拼图活动"
+        ]
+    },
+    "Swipe_向左滑动寻找限时拼图活动": {
+        "action": "Swipe",
+        "duration": 800,
+        "post_delay": 800,
+        "begin": [
+            640,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            45,
+            1140,
+            30,
+            60
+        ]
+    },
+    "Swipe_向右滑动寻找限时拼图活动": {
+        "action": "Swipe",
+        "duration": 800,
+        "post_wait_freezes": 400,
+        "timeout": 10000,
+        "begin": [
+            45,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            245,
+            1140,
+            30,
+            60
+        ]
+    },
+    "Flag_限时拼图活动": {
+        "recognition": "OCR",
+        "expected": [
+            "岁岁",
+            "依然"
+        ],
+        "post_delay": 3000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Click_限时拼图活动"
+        ]
+    },
+    "Flag_每日签到_限时拼图活动": {
+        "recognition": "OCR",
+        "expected": [
+            "每日",
+            "签到"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Flag_限时拼图活动"
+        ],
+        "interrupt": [
+            "Swipe_向右滑动寻找限时拼图活动"
+        ]
+    },
+    "Click_限时拼图活动": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "岁岁",
+            "依然"
+        ],
+        "post_delay": 1500,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Click_获取代币_限时拼图活动"
+        ]
+    },
+    "Click_获取代币_限时拼图活动": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "获取代币",
+        "post_delay": 2000,
+        "roi": [
+            250,
+            920,
+            220,
+            160
+        ],
+        "next": [
+            "Flag_Inverse_限时拼图活动经验领取键"
+        ],
+        "interrupt": [
+            "Click_领取限时拼图活动代币",
+            "Click_关闭奖励弹窗"
+        ]
+    },
+    "Click_领取限时拼图活动代币": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "领取",
+        "pre_delay": 800,
+        "post_delay": 2000,
+        "roi": [
+            440,
+            190,
+            280,
+            990
+        ],
+        "target": [
+            460,
+            1120,
+            250,
+            100
+        ],
+        "next": [
+            "Click_关闭奖励弹窗"
+        ]
+    },
+    "Flag_Inverse_限时拼图活动经验领取键": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已完成限时拼图活动代币领取[/color]"
+        },
+        "inverse": true,
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            440,
+            190,
+            280,
+            990
+        ],
+        "next": [
+            "Flag_主界面任务"
+        ],
+        "interrupt": [
+            "Click_返回上一级键"
+        ]
+    }
+}

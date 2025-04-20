@@ -242,7 +242,7 @@
                     "pipeline_override": {
                         "Click_能量饮料窗口": {
                             "next": [
-                                "Click_喝30体力饮料"
+                                "Click_30体力饮料"
                             ]
                         }
                     }
@@ -252,7 +252,7 @@
                     "pipeline_override": {
                         "Click_能量饮料窗口": {
                             "next": [
-                                "Click_喝60体力饮料"
+                                "Click_60体力饮料"
                             ]
                         }
                     }

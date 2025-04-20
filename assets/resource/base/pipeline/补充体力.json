@@ -10,7 +10,11 @@
     "Click_主界面体力": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/主界面体力.png",
+        "threshold": 0.6,
+        "template": [
+            "Button/主界面体力.png",
+            "Button/主界面体力倒计时.png"
+        ],
         "pre_delay": 800,
         "post_delay": 800,
         "roi": [
@@ -49,10 +53,10 @@
             60
         ],
         "next": [
-            "Click_喝30体力饮料"
+            "Click_30体力饮料"
         ]
     },
-    "Click_喝30体力饮料": {
+    "Click_30体力饮料": {
         "focus": {
             "succeeded": "[color:Limegreen]已饮用30体力饮料[/color]"
         },
@@ -71,7 +75,7 @@
             "Click_确定"
         ]
     },
-    "Click_喝60体力饮料": {
+    "Click_60体力饮料": {
         "focus": {
             "succeeded": "[color:Limegreen]已饮用60体力饮料[/color]"
         },
