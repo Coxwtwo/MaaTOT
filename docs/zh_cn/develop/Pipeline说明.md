@@ -61,22 +61,22 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    n6 -.->|interrupt| n12["Flag_TipsLoading"]
-    n12 -.-> n6
-    n6 -.->|interrupt| n13["Click_点击进入"]
-    n13 -.-> n6
     n6["点击进入"] -->|next| n10["领取登录奖励"] 
-    n6 -->|next| n11["关闭广告弹窗"]
-
-    n10["领取登录奖励"] -->|next| n11
     n10 -.->|interrupt| n14@{ shape: processes, label: "各种退出取消键"}
-
+    n14 -.-> n10
+    n10["领取登录奖励"] -->|next| n11
+    n6 -->|next| n11["关闭广告弹窗"]
     n11["关闭广告弹窗"] -->|next| n15["位于思绪界面"]
     n11 -.->|interrupt| n16["Click_主界面思绪"]
     n16 -.-> n11
     n11 -.->|interrupt| n17["Click_过期资源确定"]
     n17 -.-> n11
     n15 -->|next| n18["Click_返回主界面键"]
+    n6 -.->|interrupt| n12["Flag_TipsLoading"]
+    n12 -.-> n6
+    n6 -.->|interrupt| n13["Click_点击进入"]
+    n13 -.-> n6
+
 ```
 
 ### `关闭广告弹窗`
@@ -357,12 +357,16 @@ flowchart LR
     n3 -->|next| n5["Flag_进修副本<br>列表最下端"]
     n3 -.->|interrupt| n6["Swipe_向上滑动<br>寻找进修副本"]
     n6 -.-> n3
+    n6 ~~~ n8
 
     n5 -->|next| n4["Click_进入进修副本<br>(在interface中<br>设定对应副本)"]
     n5 -->|next| n7["Flag_进修副本<br>列表最上端"]
+    
     n5 -.->|interrupt| n8["Swipe_向下滑动<br>寻找进修副本"]
     n8 -.-> n5
+
     n7 -->|next| n07["返回主界面"]
+
 ```
 
 ```mermaid
@@ -377,7 +381,7 @@ flowchart LR
     n12 -->|next| n14["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
     n12 -->|next| n15["Flag_使用工作证页面"]
     n12 -.->|interrupt| z["Flag_体力补充弹窗"]
-    z -.-> n12
+    z3 -.->|return| n12
     z -->|next| z1["Click_能量饮料窗口"]
     z1 -->|next| z2["Click_喝30体力饮料or<br>Click_喝60体力饮料<br>(在interface中设定)"]
     z2 -->|next| z3["Click_确定"]
@@ -446,7 +450,7 @@ flowchart LR
     n17 -->|next| n19["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
     n17 -->|next| n20["Flag_剩余次数不足"]
     n17 -.->|interrupt| z["Flag_体力补充弹窗"]
-    z -.-> n17
+    z3 -.->|return| n17
     z -->|next| z1["Click_能量饮料窗口"]
     z1 -->|next| z2["Click_喝30体力饮料or<br>Click_喝60体力饮料<br>(在interface中设定)"]
     z2 -->|next| z3["Click_确定"]
@@ -478,54 +482,52 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    n5["Click_进入外勤区域"] -->|next| n6["Flag_委托搜寻中"]
-    n5 -->|next| n7["Flag_疲劳值满"]
-    n5 -->|next| n10["Flag_主界面任务"]
-    n5 -.->|interrupt| n11["Click_日常委托"]
-    n11 -.-> n5
-    n5 -.->|interrupt| n12["Click_庭审委托"]
-    n12 -.-> n5
-    n6 -->|next| n13["Click_返回主界面键"]
-    n7 -->|next| n13
-    n8 -->|next| n14["Click_取消喝饮料"]
-    n14 -->|next| n15["返回主界面"]
-
+    n5["Click_进入外勤区域"] --->|next| n6["Flag_委托搜寻中"]
+    n5 --->|next| n7["Flag_疲劳值满"]
+    n5 --->|next| n10["Flag_主界面任务"]
+    n5 -..->|interrupt| n11["Click_日常委托"]
+    n5 -..->|interrupt| n12["Click_庭审委托"]
+    n13 -.->|return| n5
+    n6 -------->|next| n13["返回主界面"]
+    n7 -------->|next| n13
     n11 -->|next| n16["Click_开始处理外勤委托"]
     n12 -->|next| n16
+
     n16 -->|next| n8["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
+    n8 -->|next| n14["Click_取消喝饮料"]
+    n14 ---->|next| n13["返回主界面"]
+
     n16 -->|next| n9["Flag_战力不足"]
+    n9 ----->|next| n13["返回主界面"]
     n16 -->|next| n17["Flag_疲劳值上限弹窗"]
     n16 -->|next| n18["Click_居中开始辩论"]
     n16 -.->|interrupt| z["Flag_体力补充弹窗"]
-    z -.-> n16
 
     n17 -->|next| n19["Click_取消使用晶片提升疲劳值上限"]
-    n19 -->|next| n20["Click_返回主界面键"]
+    n19 ---->|next| n13["返回主界面"]
     n19 -->|interrupt| n21["Click_X按钮"]
     n21 -.-> n19
+
+    n18["Click_居中开始辩论"] -->|next| n22["Flag_自动出卡已开启"]
+    n18 -.->|interrupt| n23["Click_开启自动出卡"]
+    n23 -.-> n18
+    n22 -->|next| n24["Flag_辩论失败"]
+    n22 -->|next| n25["Click_点击继续"]
+    n22 -->|next| n26["Click_结束"]
+    n25 --->|next| n26
+    n22-.->|interrupt| n27["Flag_自动出卡中"]
+    n27 -.-> n22
+    n24 ---->|next| n13["返回主界面"]
 
     z -->|next| z1["Click_能量饮料窗口"]
     z1 -->|next| z2["Click_喝30体力饮料or<br>Click_喝60体力饮料<br>(在interface中设定)"]
     z2 -->|next| z3["Click_确定"]
+
+    n26 -.->|return| n5
+    z3 -.->|return| n16
 ```
 
-```mermaid
-flowchart LR
-    n18["Click_居中开始辩论"] -->|next| n20["Flag_自动出卡已开启"]
-    n18 -.->|interrupt| n21["Click_开启自动出卡"]
-    n21 -.-> n18
-    n20 -->|next| n22["Flag_辩论失败"]
-    n20 -->|next| n23["Click_点击继续"]
-    n20 -->|next| n24["Click_结束"]
-    n23 -->|next| n24
-    n20-.->|interrupt| n25["Flag_自动出卡中"]
-    n25 -.-> n20
-    n22 -->|next| n26["返回主界面"]
-
-    n25 ~~~ n24
-```
-
-由于 `Click_日常委托` 在`interrupt`列表中，所以遇到战力不足或者体力不足时，虽然游戏回到了主界面但任务逻辑会回到 `Click_进入外勤区域` 节点再次进行识别。因此我们在 `Click_进入外勤区域` 的next中添加了 `Flag_主界面任务` 作为任务出口。 `Click_居中开始辩论` 节点和后续节点位于 `utils.json` 中，如果辩论成功则会停留在外勤界面，如果辩论失败则会回到主界面。
+由于 `Click_日常委托` 和 `Click_庭审委托` 在`interrupt`列表中，所以遇到战力不足或者体力不足时，虽然游戏回到了主界面但任务逻辑会回到 `Click_进入外勤区域` 节点再次进行识别。因此我们在 `Click_进入外勤区域` 的next中添加了 `Flag_主界面任务` 作为任务出口。 `Click_居中开始辩论` 节点和后续节点位于 `utils.json` 中，如果辩论成功则会停留在外勤界面，如果辩论失败则会回到主界面。
 
 ## <span id="补充体力">补充体力.json</span>
 
