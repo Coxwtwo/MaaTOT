@@ -23,7 +23,6 @@ env:
   MaaFw_tag: v4.1.0-alpha.2
   MFA_tag: v1.1.9
   app_name: MaaTOT
-  icon_path: assets/logo.ico
 
 permissions:
   contents: write
@@ -64,12 +63,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        include:
-          - arch: aarch64
-            MFA-arch: arm64
-            
-          - arch: x86_64
-            MFA-arch: x64
+        arch: [aarch64, x86_64]
       fail-fast: false
 
     steps:
@@ -86,43 +80,24 @@ jobs:
           out-file-path: "deps"
           extract: true
 
-      - name: Checkout MFAAvalonia Source
-        uses: actions/checkout@v4
+      - name: Download  MFAAvalonia
+        uses: robinraju/release-downloader@v1  
         with:
           repository: SweetSmellFox/MFAAvalonia
-          ref: ${{ env.MFA_tag }}
-          path: src
-
-      - name: Replace Application Icon
-        shell: bash
-        run: |
-          cp -f ${{ env.icon_path }} src/MFAAvalonia/Assets/logo.ico
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-            dotnet-version: 8.0.x
-            config-file: NuGet.config
-
-      - name: Restore Dependencies
-        working-directory: src/MFAAvalonia
-        run: dotnet restore --packages .nuget/packages
-      
-      - name: Build Solution
-        working-directory: src/MFAAvalonia
-        run: dotnet publish -c Release -r win-${{ matrix.MFA-arch }}
+          fileName: "MFAAvalonia-*-win-x64*"
+          tag: "${{ env.MFA_tag }}"
+          out-file-path: "MFA"
+          extract: true
 
       - name: Install
         shell: bash
         run: python ./install.py ${{ needs.meta.outputs.tag }}
 
-      - name: Copy MFAAvalonia and Rename
+      - name: Copy MFAAvalonia
         shell: bash
         run: |
-          BUILD_DIR="src/bin/AnyCPU/Release/win-${{ matrix.MFA-arch }}/publish"
-          cp $BUILD_DIR/MFAAvalonia.exe $BUILD_DIR/MFAUpdater.exe $BUILD_DIR/MFAUpdater.dll $BUILD_DIR/MFAUpdater.runtimeconfig.json $BUILD_DIR/av_libglesv2.dll $BUILD_DIR/libHarfBuzzSharp.dll $BUILD_DIR/libonigwrap.dll $BUILD_DIR/libSkiaSharp.dll $BUILD_DIR/uiohook.dll install/
-          jq --arg version_name "MaaTOT" --arg url ""https://github.com/Coxwtwo/MaaTOT"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' assets/interface.json > install/interface.json
-          mv install/MFAAvalonia.exe install/${{ env.app_name }}.exe
+          cp MFA/MFAAvalonia.exe MFA/MFAUpdater.exe MFA/MFAUpdater.dll MFA/MFAUpdater.runtimeconfig.json MFA/av_libglesv2.dll MFA/libHarfBuzzSharp.dll MFA/libonigwrap.dll MFA/libSkiaSharp.dll MFA/uiohook.dll install/
+          jq --arg version_name "${{ env.app_name }}" --arg url ""https://github.com/Coxwtwo/MaaTOT"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' assets/interface.json > install/interface.json
 
       - name: Upload
         uses: actions/upload-artifact@v4
