@@ -462,6 +462,7 @@ flowchart LR
     n18 -.->|interrupt| n23["Click_复盘次数减号亮"]
     n23 -.-> n18
     n21["Click_复盘X次确定<br>(在interface中设定次数)"] -->|next| n24["Click_复盘结束"]
+    n22 --->|next| n012["返回主界面"]
     n24 -->|next| n012["返回主界面"]
 
     n19["Flag_体力不足弹窗<br>(在interface中设定是否开启)"] -->|next| n25["Click_取消喝饮料"]
