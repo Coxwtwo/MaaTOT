@@ -44,11 +44,13 @@
 flowchart LR
     n0["StartUp"] -->|next| n1["Flag_主界面任务<br>(位于主界面)"]
     n0 -->|next| n2["MihoyoSlogan<br>(应用启动页)"]
+    n2["MihoyoSlogan<br>(应用启动页)"] -->|next| n5["StartApp"]
+    n0 -->|next| n5
     n0 -.->|interrupt| n3@{ shape: processes, label: "各种退出取消键"}
     n3 -.-> n0
     n0 -.->|interrupt| n4["StartTOT<br>(启动APP)"]
     n4 -.-> n0
-    n2["MihoyoSlogan<br>(应用启动页)"] -->|next| n5["StartApp"]
+
     n5 -->|next| n6["点击进入"]
     n5 -->|next| n7["Flag_更新版本"]
     n5 -.->|interrupt| n8@{ shape: processes, label: "各种Loading页面"}
