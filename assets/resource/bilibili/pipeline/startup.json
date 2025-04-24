@@ -3,9 +3,24 @@
         "action": "StartApp",
         "package": "com.miHoYo.wd.bilibili/com.miHoYo.wd.MainActivity"
     },
-    "StartApp": {
+    "MihoyoSlogan": {
+        "focus": {
+            "succeeded": "[color:Dimgray]游戏启动[/color]"
+        },
+        "recognition": "OCR",
+        "expected": [
+            "TECHOTAKUSSAVETHEWORLD",
+            "TECH OTAKUS SAVE THE WORLD"
+        ],
+        "post_delay": 800,
+        "roi": [
+            166,
+            436,
+            384,
+            33
+        ],
         "next": [
-            "点击进入",
+            "Flag_点击进入",
             "Flag_更新版本"
         ],
         "interrupt": [
@@ -14,6 +29,7 @@
             "Flag_TipsLoading",
             "Click_下载确定",
             "Click_点击B服登录",
+            "Click_账号登录",
             "Click_B服同意协议",
             "Flag_MihoyoSlogan"
         ]
@@ -37,9 +53,9 @@
         "post_delay": 1000,
         "roi": [
             336,
-            655,
+            650,
             49,
-            38
+            100
         ]
     }
 }

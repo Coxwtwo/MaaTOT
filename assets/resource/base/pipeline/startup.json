@@ -38,12 +38,7 @@
             33
         ],
         "next": [
-            "StartApp"
-        ]
-    },
-    "StartApp": {
-        "next": [
-            "点击进入",
+            "Flag_点击进入",
             "Flag_更新版本"
         ],
         "interrupt": [
@@ -55,7 +50,7 @@
             "Flag_MihoyoSlogan"
         ]
     },
-    "点击进入": {
+    "Flag_点击进入": {
         "recognition": "TemplateMatch",
         "template": "StartUp/TapToStart.png",
         "pre_delay": 800,
@@ -66,15 +61,15 @@
             36
         ],
         "next": [
-            "领取登录奖励",
-            "关闭广告弹窗"
+            "Flag_领取登录奖励",
+            "Flag_关闭广告弹窗"
         ],
         "interrupt": [
             "Flag_TipsLoading",
             "Click_点击进入"
         ]
     },
-    "领取登录奖励": {
+    "Flag_领取登录奖励": {
         "recognition": "OCR",
         "expected": "获得奖励",
         "roi": [
@@ -85,7 +80,7 @@
         ],
         "post_delay": 1000,
         "next": [
-            "关闭广告弹窗"
+            "Flag_关闭广告弹窗"
         ],
         "interrupt": [
             "Click_关闭奖励弹窗",
@@ -93,7 +88,7 @@
             "Click_过期资源确定"
         ]
     },
-    "关闭广告弹窗": {
+    "Flag_关闭广告弹窗": {
         "recognition": "OCR",
         "expected": [
             "思绪"
@@ -105,7 +100,7 @@
             34
         ],
         "next": [
-            "位于思绪界面"
+            "Flag_位于思绪界面"
         ],
         "interrupt": [
             "Click_主界面思绪",
@@ -148,6 +143,18 @@
             767,
             261,
             71
+        ]
+    },
+    "Click_账号登录": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "账号登录",
+        "post_delay": 1000,
+        "roi": [
+            240,
+            1000,
+            250,
+            160
         ]
     },
     "Flag_MihoyoSlogan": {
@@ -204,7 +211,7 @@
             43
         ]
     },
-    "位于思绪界面": {
+    "Flag_位于思绪界面": {
         "post_delay": 1000,
         "recognition": "OCR",
         "expected": [
