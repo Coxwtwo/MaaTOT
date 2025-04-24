@@ -44,31 +44,29 @@
 flowchart LR
     n0["StartUp"] -->|next| n1["Flag_主界面任务<br>(位于主界面)"]
     n0 -->|next| n2["MihoyoSlogan<br>(应用启动页)"]
-    n2["MihoyoSlogan<br>(应用启动页)"] -->|next| n5["StartApp"]
-    n0 -->|next| n5
     n0 -.->|interrupt| n3@{ shape: processes, label: "各种退出取消键"}
     n3 -.-> n0
     n0 -.->|interrupt| n4["StartTOT<br>(启动APP)"]
     n4 -.-> n0
 
-    n5 -->|next| n6["点击进入"]
-    n5 -->|next| n7["Flag_更新版本"]
-    n5 -.->|interrupt| n8@{ shape: processes, label: "各种Loading页面"}
-    n8 -.-> n5
-    n5 -.->|interrupt| n9["Click_下载确定"]
-    n9 -.-> n5
-    n5 -.->|interrupt| n05["Click_官服接受协议"]
-    n05 -.-> n5
+    n2 -->|next| n6["Flag_点击进入"]
+    n2 -->|next| n7["Flag_更新版本"]
+    n2 -.->|interrupt| n8@{ shape: processes, label: "各种Loading页面"}
+    n8 -.-> n2
+    n2 -.->|interrupt| n9["Click_下载确定"]
+    n9 -.-> n2
+    n2 -.->|interrupt| n10["Click_官服接受协议"]
+    n10 -.-> n2
 ```
 
 ```mermaid
 flowchart LR
-    n6["点击进入"] -->|next| n10["领取登录奖励"] 
+    n6["Flag_点击进入"] -->|next| n10["Flag_领取登录奖励"] 
     n10 -.->|interrupt| n14@{ shape: processes, label: "各种退出取消键"}
     n14 -.-> n10
-    n10["领取登录奖励"] -->|next| n11
-    n6 -->|next| n11["关闭广告弹窗"]
-    n11["关闭广告弹窗"] -->|next| n15["位于思绪界面"]
+    n10["Flag_领取登录奖励"] -->|next| n11
+    n6 -->|next| n11["Flag_关闭广告弹窗"]
+    n11["Flag_关闭广告弹窗"] -->|next| n15["Flag_位于思绪界面"]
     n11 -.->|interrupt| n16["Click_主界面思绪"]
     n16 -.-> n11
     n11 -.->|interrupt| n17["Click_过期资源确定"]
