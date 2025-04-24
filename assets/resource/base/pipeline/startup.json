@@ -2,8 +2,7 @@
     "StartUp": {
         "next": [
             "Flag_主界面任务",
-            "MihoyoSlogan",
-            "StartApp"
+            "MihoyoSlogan"
         ],
         "interrupt": [
             "Click_关闭奖励弹窗",
