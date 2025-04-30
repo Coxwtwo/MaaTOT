@@ -1,5 +1,4 @@
 {
-    "version": "v2.1.2",
     "message": "欢迎食用生煎包OvO！",
     "controller": [
         {
@@ -104,6 +103,10 @@
                 "Flag_Inverse_资源申请领取": {
                     "next": [
                         "Click_资源申请To资料室"
+                    ],
+                    "interrupt": [
+                        "Click_关闭奖励弹窗",
+                        "Click_一键领取亮"
                     ]
                 },
                 "Click_一键解析": {
