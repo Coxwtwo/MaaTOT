@@ -7,6 +7,11 @@
             "Flag_更新版本"
         ],
         "interrupt": [
+            "Flag_TipsLoading",
+            "Click_下载确定",
+            "Click_点击官服登录账号",
+            "Click_账号登录",
+            "Click_官服接受协议",
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
@@ -47,8 +52,10 @@
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
             "Flag_TipsLoading",
-            "Click_官服接受协议",
             "Click_下载确定",
+            "Click_点击官服登录账号",
+            "Click_账号登录",
+            "Click_官服接受协议",
             "Flag_MihoyoSlogan"
         ]
     },
@@ -57,10 +64,10 @@
         "template": "StartUp/TapToStart.png",
         "pre_delay": 800,
         "roi": [
-            277,
-            975,
-            164,
-            36
+            0,
+            0,
+            0,
+            0
         ],
         "next": [
             "Flag_领取登录奖励",
@@ -141,10 +148,10 @@
         "expected": "接受",
         "post_delay": 1500,
         "roi": [
-            381,
-            767,
-            261,
-            71
+            0,
+            0,
+            0,
+            0
         ]
     },
     "Click_账号登录": {
@@ -157,6 +164,18 @@
             1000,
             250,
             160
+        ]
+    },
+    "Click_点击官服登录账号": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "进入游戏",
+        "post_delay": 1000,
+        "roi": [
+            210,
+            630,
+            300,
+            400
         ]
     },
     "Flag_MihoyoSlogan": {

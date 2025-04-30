@@ -1,4 +1,29 @@
 {
+    "StartUp": {
+        "next": [
+            "Flag_主界面任务",
+            "MihoyoSlogan",
+            "Flag_点击进入",
+            "Flag_更新版本"
+        ],
+        "interrupt": [
+            "Flag_TipsLoading",
+            "Click_下载确定",
+            "Click_点击B服登录账号",
+            "Click_账号登录",
+            "Click_B服同意协议",
+            "Click_关闭奖励弹窗",
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Click_结束",
+            "Click_取消",
+            "Click_X按钮",
+            "Click_退出手机",
+            "Click_退出好感交流",
+            "Click_确定",
+            "StartTOT"
+        ]
+    },
     "StartTOT": {
         "action": "StartApp",
         "package": "com.miHoYo.wd.bilibili/com.miHoYo.wd.MainActivity"
@@ -28,7 +53,7 @@
             "Flag_StartLoadingVersion",
             "Flag_TipsLoading",
             "Click_下载确定",
-            "Click_点击B服登录",
+            "Click_点击B服登录账号",
             "Click_账号登录",
             "Click_B服同意协议",
             "Flag_MihoyoSlogan"
@@ -46,7 +71,7 @@
             95
         ]
     },
-    "Click_点击B服登录": {
+    "Click_点击B服登录账号": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "登录",
