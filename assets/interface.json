@@ -89,7 +89,41 @@
                         "Click_酬谢"
                     ]
                 }
-            }
+            },
+            "doc": "[size:15]一键领取酬谢奖励。[/size]"
+        },
+        {
+            "name": "基地一条龙",
+            "entry": "基地一条龙",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资源申请"
+                    ]
+                },
+                "Flag_Inverse_资源申请领取": {
+                    "next": [
+                        "Click_资源申请To资料室"
+                    ]
+                },
+                "Click_一键解析": {
+                    "next": [
+                        "Click_酬谢"
+                    ],
+                    "interrupt": [
+                        "Click_返回上一级键"
+                    ]
+                },
+                "Flag_案例解析中": {
+                    "next": [
+                        "Click_酬谢"
+                    ],
+                    "interrupt": [
+                        "Click_返回上一级键"
+                    ]
+                }
+            },
+            "doc": "[size:15]基地奖励领取一条龙，包括：[/size]\n[size:15]一键领取资源申请奖励。[/size]\n[size:15]一键领取案例解析奖励并进行解析。[/size]\n[size:15]一键领取酬谢奖励。[/size]"
         },
         {
             "name": "好感度",
