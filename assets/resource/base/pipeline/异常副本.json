@@ -290,9 +290,9 @@
         "pre_delay": 800,
         "post_delay": 1500,
         "target_offset": [
-            -20,
-            125,
-            0,
+            -50,
+            80,
+            -40,
             0
         ],
         "roi": [
