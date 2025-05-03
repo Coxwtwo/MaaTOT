@@ -1,0 +1,156 @@
+{
+    "购买免费礼包": {
+        "next": [
+            "Click_商城"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_商城": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "商城",
+        "post_delay": 1000,
+        "roi": [
+            20,
+            300,
+            60,
+            40
+        ],
+        "next": [
+            "Click_礼包"
+        ]
+    },
+    "Click_礼包": {
+        "action": "Click",
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "礼包"
+        ],
+        "roi": [
+            170,
+            120,
+            90,
+            60
+        ],
+        "next": [
+            "Click_限时"
+        ]
+    },
+    "Click_限时": {
+        "action": "Click",
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "限时"
+        ],
+        "roi": [
+            30,
+            220,
+            520,
+            60
+        ],
+        "next": [
+            "Click_免费",
+            "Flag_Inverse_免费礼包"
+        ]
+    },
+    "Click_免费": {
+        "action": "Click",
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "免费",
+            "FREE"
+        ],
+        "roi": [
+            130,
+            400,
+            570,
+            250
+        ],
+        "next": [
+            "Flag_免费礼包购买弹窗"
+        ]
+    },
+    "Flag_免费礼包购买弹窗": {
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "免费"
+        ],
+        "roi": [
+            560,
+            380,
+            100,
+            60
+        ],
+        "next": [
+            "Click_点击购买"
+        ]
+    },
+    "Click_点击购买": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已完成免费礼包购买[/color]"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "点击购买"
+        ],
+        "roi": [
+            280,
+            780,
+            160,
+            60
+        ],
+        "next": [
+            "Click_关闭免费礼包奖励弹窗"
+        ],
+        "interrupt": [
+            "Click_点击开启"
+        ]
+    },
+    "Click_关闭免费礼包奖励弹窗": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "获得奖励",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "target": [
+            300,
+            1000,
+            30,
+            30
+        ],
+        "roi": [
+            305,
+            230,
+            110,
+            200
+        ],
+        "next": [
+            "Click_限时"
+        ]
+    },
+    "Flag_Inverse_免费礼包": {
+        "inverse": true,
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "免费"
+        ],
+        "roi": [
+            130,
+            400,
+            570,
+            250
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    }
+}
