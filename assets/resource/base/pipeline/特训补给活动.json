@@ -1,0 +1,206 @@
+{
+    "提供特训补给": {
+        "next": [
+            "Click_活动_限时特训活动"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_活动_限时特训活动": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/活动.PNG",
+        "pre_wait_freezes": 800,
+        "post_delay": 3000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ],
+        "next": [
+            "寻找特训活动"
+        ]
+    },
+    "寻找特训活动": {
+        "next": [
+            "Flag_特训活动",
+            "Flag_每日签到_特训补给"
+        ],
+        "interrupt": [
+            "Swipe_向左滑动寻找绮思"
+        ]
+    },
+    "Swipe_向左滑动寻找特训活动": {
+        "action": "Swipe",
+        "duration": 800,
+        "post_delay": 800,
+        "begin": [
+            640,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            45,
+            1140,
+            30,
+            60
+        ]
+    },
+    "Swipe_向右滑动寻找特训活动": {
+        "action": "Swipe",
+        "duration": 800,
+        "post_wait_freezes": 400,
+        "timeout": 10000,
+        "begin": [
+            45,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            245,
+            1140,
+            30,
+            60
+        ]
+    },
+    "Flag_特训活动": {
+        "recognition": "OCR",
+        "expected": [
+            "纵情",
+            "驰雪"
+        ],
+        "post_delay": 3000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Click_特训活动"
+        ]
+    },
+    "Flag_每日签到_特训补给": {
+        "recognition": "OCR",
+        "expected": [
+            "每日",
+            "签到"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Flag_特训活动"
+        ],
+        "interrupt": [
+            "Swipe_向右滑动寻找特训活动"
+        ]
+    },
+    "Click_特训活动": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "纵情",
+            "驰雪"
+        ],
+        "post_delay": 1500,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Click_提供补给",
+            "Flag_已提供过补给"
+        ],
+        "interrupt": [
+            "Click_X按钮"
+        ]
+    },
+    "Flag_已提供过补给": {
+        "focus": {
+            "succeeded": "[color:Dimgray]今日已提供过补给[/color]"
+        },
+        "recognition": "OCR",
+        "expected": "已提供过",
+        "post_delay": 1000,
+        "roi": [
+            250,
+            975,
+            220,
+            40
+        ],
+        "next": [
+            "Flag_主界面任务"
+        ],
+        "interrupt": [
+            "Click_返回上一级键"
+        ]
+    },
+    "Click_提供补给": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "提供补给",
+        "post_delay": 1000,
+        "roi": [
+            255,
+            950,
+            210,
+            65
+        ],
+        "next": [
+            "Click_选择特训补给材料_未名币"
+        ]
+    },
+    "Click_选择特训补给材料_未名币": {
+        "focus": {
+            "succeeded": "[color:Dimgray]选择未名币[/color]"
+        },
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "TimeLimitedEvent/未名币.PNG",
+        "green_mask": true,
+        "post_delay": 1000,
+        "roi": [
+            110,
+            720,
+            500,
+            100
+        ],
+        "next": [
+            "Click_确认提供特训补给"
+        ]
+    },
+    "Click_确认提供特训补给": {
+        "focus": {
+            "succeeded": "[color:Limegreen]已完成特训补给提供[/color]"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "确认提供",
+        "green_mask": true,
+        "post_delay": 5000,
+        "roi": [
+            255,
+            950,
+            210,
+            65
+        ],
+        "next": [
+            "Flag_主界面任务"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_返回上一级键"
+        ]
+    }
+}
