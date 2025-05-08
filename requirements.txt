@@ -1,4 +1,4 @@
 maafw==4.1.0
-loguru
-pillow
-pytz
+loguru>=0.7.3
+pillow>=11.2.1
+pytz>=2025.2
