@@ -77,8 +77,6 @@ def install_agent():
     #添加agent的配置
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = json.load(f)
-    #如果没有agent,则创建一个
-    interface["agent"] = interface.get("agent", {})
     if sys.platform.startswith("win"):
         interface["agent"]["child_exec"] = r"{PROJECT_DIR}/python/python.exe"
     interface["agent"]["child_args"] = [r"{PROJECT_DIR}/agent/main.py", "-u"]
