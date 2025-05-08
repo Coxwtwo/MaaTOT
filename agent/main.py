@@ -129,7 +129,6 @@ def agent():
     from maa.toolkit import Toolkit
 
     import custom
-    from utils import logger
 
     Toolkit.init_option("./")
 

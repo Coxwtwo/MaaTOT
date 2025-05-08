@@ -50,7 +50,7 @@ class Count(CustomAction):
                     argv.get("self"): {
                         "custom_action_param": {
                             "self": argv.get("self"),
-                            "count": 1,
+                            "count": 0,
                             "target_count": argv.get("target_count"),
                             "next_node": next_nodes
                         },
