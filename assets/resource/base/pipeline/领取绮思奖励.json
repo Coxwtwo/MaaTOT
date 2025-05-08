@@ -67,8 +67,17 @@
             60
         ],
         "next": [
-            "滑动计数"
+            "Count_Swipe_向右滑动寻找绮思"
         ]
+    },
+    "Count_Swipe_向右滑动寻找绮思": {
+        "action": "Custom",
+        "custom_action": "Count",
+        "custom_action_param": {
+            "self": "Count_Swipe_向右滑动寻找绮思",
+            "count": 1,
+            "target_count": 10
+        }
     },
     "Flag_绮思": {
         "recognition": "OCR",

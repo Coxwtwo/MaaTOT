@@ -1,9 +1,0 @@
-{
-    "TaskA": {},
-    "MyTask": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco1",
-        "action": "Custom",
-        "custom_action": "my_action1"
-    }
-}

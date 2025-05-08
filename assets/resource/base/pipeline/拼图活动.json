@@ -65,7 +65,19 @@
             1140,
             30,
             60
+        ],
+        "next": [
+            "Count_Swipe_向右滑动寻找限时拼图活动"
         ]
+    },
+    "Count_Swipe_向右滑动寻找限时拼图活动": {
+        "action": "Custom",
+        "custom_action": "Count",
+        "custom_action_param": {
+            "self": "Count_Swipe_向右滑动寻找限时拼图活动",
+            "count": 1,
+            "target_count": 10
+        }
     },
     "Flag_限时拼图活动": {
         "recognition": "OCR",

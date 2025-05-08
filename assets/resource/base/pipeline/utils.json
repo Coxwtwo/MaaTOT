@@ -681,19 +681,6 @@
             "Click_复盘结束"
         ]
     },
-    "滑动计数": {
-        "action": "Custom",
-        "custom_action": "Count",
-        "custom_action_param": {
-            "self": "滑动计数",
-            "count": 0,
-            "target_count": 10,
-            "next_node": [
-                "Click_复盘结束",
-                "停止任务"
-            ]
-        }
-    },
     "停止任务": {
         "action": "StopTask"
     }
