@@ -89,6 +89,11 @@ jobs:
           out-file-path: "MFA"
           extract: true
 
+      - name: Setup Embed Python
+        shell: powershell
+        run: |
+          ./tools/ci/setup_embed_python.ps1
+
       - name: Install
         shell: bash
         run: python ./install.py ${{ needs.meta.outputs.tag }}

@@ -680,5 +680,8 @@
         "next": [
             "Click_复盘结束"
         ]
+    },
+    "停止任务": {
+        "action": "StopTask"
     }
 }
