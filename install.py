@@ -3,8 +3,6 @@ from pathlib import Path
 import shutil
 import sys
 import json
-import platform
-import subprocess
 
 from configure import configure_ocr_model
 
@@ -76,12 +74,20 @@ def install_agent():
         install_path / "agent",
         dirs_exist_ok=True,
     )
+    #添加agent的配置
+    with open(install_path / "interface.json", "r", encoding="utf-8") as f:
+        interface = json.load(f)
+    #如果没有agent,则创建一个
+    interface["agent"] = interface.get("agent", {})
+    if sys.platform.startswith("win"):
+        interface["agent"]["child_exec"] = r"{PROJECT_DIR}/python/python.exe"
+    interface["agent"]["child_args"] = [r"{PROJECT_DIR}/agent/main.py", "-u"]
 
 
 if __name__ == "__main__":
     install_deps()
     install_resource()
     install_chores()
-    # install_agent()
+    install_agent()
 
     print(f"Install to {install_path} successfully.")
