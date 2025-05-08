@@ -26,7 +26,7 @@
     "寻找绮思": {
         "next": [
             "Flag_绮思",
-            "Flag_每日签到"
+            "Flag_每日签到_绮思"
         ],
         "interrupt": [
             "Swipe_向左滑动寻找绮思"
@@ -81,7 +81,7 @@
             "Click_绮思"
         ]
     },
-    "Flag_每日签到": {
+    "Flag_每日签到_绮思": {
         "recognition": "OCR",
         "expected": [
             "每日",
