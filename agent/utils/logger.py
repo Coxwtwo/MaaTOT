@@ -23,7 +23,7 @@ def setup_logger(log_dir="debug/custom"):
         retention="2 weeks",
         compression="zip",
         level="DEBUG",
-        format="{time:YYYY-MM-DD HH:mm:ss.SSS} | {level: <8} | {name}:{function}:{line} | {message}",
+        format="[{time:YYYY-MM-DD HH:mm:ss.SSS}][{level: <8}][{name}:{function}:{line}] {message}",
         encoding="utf-8",
         enqueue=True,
     )
