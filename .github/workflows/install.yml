@@ -20,8 +20,8 @@ on:
   workflow_dispatch:
 
 env:
-  MaaFw_tag: v4.1.0
-  MFA_tag: v1.2.2
+  MaaFw_tag: v4.1.2
+  MFA_tag: v1.2.5
   app_name: MaaTOT
 
 permissions:

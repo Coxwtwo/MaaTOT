@@ -67,16 +67,15 @@
             60
         ],
         "next": [
-            "Count_Swipe_向右滑动寻找绮思"
+            "HitsLimiter_Swipe_向右滑动寻找绮思"
         ]
     },
-    "Count_Swipe_向右滑动寻找绮思": {
+    "HitsLimiter_Swipe_向右滑动寻找绮思": {
         "action": "Custom",
-        "custom_action": "Count",
+        "custom_action": "HitsLimiter",
         "custom_action_param": {
-            "self": "Count_Swipe_向右滑动寻找绮思",
-            "count": 1,
-            "target_count": 10
+            "current_count": 1,
+            "max_count": 10
         }
     },
     "Flag_绮思": {

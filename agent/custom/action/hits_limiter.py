@@ -6,53 +6,51 @@ from maa.context import Context
 
 from utils import logger
 
-@AgentServer.custom_action("Count")
-class Count(CustomAction):
+@AgentServer.custom_action("HitsLimiter")
+class HitsLimiter(CustomAction):
     """
-    控制 node 的执行次数 。
+    限制 node 的最大运行次数 。
 
     参数格式:
     {
-            "self": "节点名称",
-            "count": 当前执行计数,
-            "target_count": 最大执行次数,
-            "next_node": ["后续节点名称"]
+            "current_count": 当前已执行次数,
+            "max_count": 最大可执行次数,
+            "next_nodes": ["后续节点名称"]
     }
     """
     def run(
         self, context: Context, argv: CustomAction.RunArg
     ) -> CustomAction.RunResult:
-        argv: dict = json.loads(argv.custom_action_param)
+        param_dict: dict = json.loads(argv.custom_action_param)
         logger.debug(f"Count argv: {argv}")
-        if not argv:
+        if not param_dict:
             return CustomAction.RunResult(success=True)
         # 默认达到最大次数后终止任务
         default_next_nodes =[
             "返回主菜单",
             "停止任务"
         ]
-        if argv.get("count") < argv.get("target_count"):
-            argv["count"] += 1
+        if param_dict.get("current_count") < param_dict.get("max_count"):
+            param_dict["current_count"] += 1
             context.override_pipeline(
                 {
-                    argv.get("self"): {
-                        "custom_action_param": argv,
+                    argv.node_name: {
+                        "custom_action_param": param_dict,
                     },
                 }
             )
         # 达到最大次数后重置计数器状态，触发后续节点
         else:
-            logger.info(f"{argv.get("self")} 节点执行次数达到最大值 {argv.get("target_count")} 次")
-            next_nodes = argv.get("next_node", default_next_nodes)
+            logger.info(f"{argv.node_name} 节点执行次数达到最大值 {param_dict.get("max_count")} 次")
+            next_nodes = param_dict.get("next_nodes", default_next_nodes)
             logger.debug(f"next_nodes: {next_nodes}")
             context.override_pipeline(
                 {
-                    argv.get("self"): {
+                    argv.node_name: {
                         "custom_action_param": {
-                            "self": argv.get("self"),
-                            "count": 1,
-                            "target_count": argv.get("target_count"),
-                            "next_node": next_nodes
+                            "current_count": 1,
+                            "max_count": param_dict.get("max_count"),
+                            "next_nodes": next_nodes
                         },
                     },
                 }

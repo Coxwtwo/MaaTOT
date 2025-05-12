@@ -73,7 +73,18 @@
             400,
             30,
             30
+        ],
+        "next": [
+            "HitsLimiter_Swipe_向上滑动寻找进修副本"
         ]
+    },
+    "HitsLimiter_Swipe_向上滑动寻找进修副本": {
+        "action": "Custom",
+        "custom_action": "HitsLimiter",
+        "custom_action_param": {
+            "current_count": 1,
+            "max_count": 10
+        }
     },
     "Flag_进修副本列表最上端": {
         "recognition": "OCR",
@@ -102,7 +113,18 @@
             650,
             30,
             30
+        ],
+        "next": [
+            "HitsLimiter_Swipe_向下滑动寻找进修副本"
         ]
+    },
+    "HitsLimiter_Swipe_向下滑动寻找进修副本": {
+        "action": "Custom",
+        "custom_action": "HitsLimiter",
+        "custom_action_param": {
+            "current_count": 1,
+            "max_count": 10
+        }
     },
     "Click_进入进修副本": {
         "action": "Click",

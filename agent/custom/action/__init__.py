@@ -1,5 +1,5 @@
-from .count import *
+from .hits_limiter import *
 
 __all__ = [
-    "Count"
+    "HitsLimiter"
     ]

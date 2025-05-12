@@ -76,16 +76,15 @@
             100
         ],
         "next": [
-            "Count_Click_触摸获得好感"
+            "HitsLimiter_Click_触摸获得好感"
         ]
     },
-    "Count_Click_触摸获得好感": {
+    "HitsLimiter_Click_触摸获得好感": {
         "action": "Custom",
-        "custom_action": "Count",
+        "custom_action": "HitsLimiter",
         "custom_action_param": {
-            "self": "Count_Click_触摸获得好感",
-            "count": 1,
-            "target_count": 40
+            "current_count": 1,
+            "max_count": 40
         }
     },
     "Flag_今日好感度获取完毕": {
