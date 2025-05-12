@@ -182,22 +182,28 @@
         "green_mask": true,
         "post_delay": 1000,
         "roi": [
-            110,
-            720,
-            500,
+            100,
+            715,
+            520,
             100
         ],
+        "target_offset": [
+            0,
+            100,
+            0,
+            -30
+        ],
         "next": [
-            "Click_确认提供特训补给"
+            "Click_确认提交特训补给"
         ]
     },
-    "Click_确认提供特训补给": {
+    "Click_确认提交特训补给": {
         "focus": {
             "succeeded": "[color:Limegreen]已完成特训补给提供[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
-        "expected": "确认提供",
+        "expected": "确认提交",
         "green_mask": true,
         "post_delay": 5000,
         "roi": [
