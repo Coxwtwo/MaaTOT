@@ -122,7 +122,7 @@
         "recognition": "OCR",
         "expected": [
             "Episode.8",
-            "Episode\\.(14)\\s+\\(Part\\s+(2)"
+            "Episode.15"
         ],
         "pre_delay": 1000,
         "roi": [
@@ -142,6 +142,7 @@
     "Swipe_向上滑动寻找异常副本": {
         "action": "Swipe",
         "post_delay": 1000,
+        "duration": 400,
         "begin": [
             75,
             650,
@@ -150,7 +151,7 @@
         ],
         "end": [
             75,
-            400,
+            450,
             30,
             30
         ],
@@ -169,6 +170,7 @@
     "Swipe_向下滑动寻找异常副本": {
         "action": "Swipe",
         "post_delay": 1000,
+        "duration": 400,
         "begin": [
             75,
             400,
@@ -177,7 +179,7 @@
         ],
         "end": [
             75,
-            650,
+            600,
             30,
             30
         ],
@@ -276,6 +278,7 @@
     "Swipe_向上滑动寻找异常关卡": {
         "action": "Swipe",
         "post_delay": 1000,
+        "duration": 400,
         "begin": [
             75,
             650,
@@ -284,7 +287,7 @@
         ],
         "end": [
             75,
-            400,
+            450,
             30,
             30
         ],
@@ -303,6 +306,7 @@
     "Swipe_向下滑动寻找异常关卡": {
         "action": "Swipe",
         "post_delay": 1000,
+        "duration": 400,
         "begin": [
             75,
             400,
@@ -311,7 +315,7 @@
         ],
         "end": [
             75,
-            650,
+            600,
             30,
             30
         ],
