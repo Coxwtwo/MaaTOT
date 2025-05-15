@@ -596,6 +596,9 @@
         ],
         "next": [
             "Click_复盘结束"
+        ],
+         "interrupt": [
+            "Click_等级提升"
         ]
     },
     "Click_复盘2次确定": {
