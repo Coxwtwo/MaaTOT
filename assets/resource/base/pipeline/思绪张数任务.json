@@ -1,0 +1,439 @@
+{
+    "思绪张数任务": {
+        "next": [
+            "Click_事件簿_活动_往期_黄金"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_事件簿_活动_往期_黄金": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/Story.png",
+        "pre_delay": 500,
+        "roi": [
+            596,
+            990,
+            66,
+            26
+        ],
+        "next": [
+            "Click_活动_往期_黄金"
+        ]
+    },
+    "Click_活动_往期_黄金": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "活动",
+        "pre_delay": 1000,
+        "post_delay": 3000,
+        "roi": [
+            530,
+            1190,
+            95,
+            50
+        ],
+        "next": [
+            "Flag_In往期_黄金",
+            "Click_往期_黄金"
+        ]
+    },
+    "Flag_In往期_黄金": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/往期亮.png",
+        "pre_delay": 1000,
+        "roi": [
+            600,
+            170,
+            70,
+            39
+        ],
+        "next": [
+            "Flag_In全部活动_黄金"
+        ]
+    },
+    "Click_往期_黄金": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/往期暗.png",
+        "pre_delay": 1000,
+        "roi": [
+            600,
+            170,
+            70,
+            39
+        ],
+        "next": [
+            "Flag_In全部活动_黄金"
+        ]
+    },
+    "Flag_In全部活动_黄金": {
+        "recognition": "OCR",
+        "expected": "全部活动",
+        "post_delay": 2000,
+        "roi": [
+            56,
+            151,
+            174,
+            51
+        ],
+        "next": [
+            "Click_消失的黄金",
+            "Flag_往期活动列表最下端_黄金"
+        ],
+        "interrupt": [
+            "Swipe_向上滑动寻找往期活动"
+        ]
+    },
+    "Flag_往期活动列表最下端_黄金": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/消失的黄金.png",
+        "pre_delay": 1000,
+        "roi": [
+            110,
+            800,
+            300,
+            160
+        ],
+        "next": [
+            "Click_消失的黄金",
+            "Flag_往期活动列表最上端"
+        ],
+        "interrupt": [
+            "Swipe_向下滑动寻找往期活动"
+        ]
+    },
+    "Swipe_向上滑动寻找往期活动": {
+        "action": "Swipe",
+        "duration": 400,
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            450,
+            30,
+            30
+        ],
+        "next": [
+            "HitsLimiter_Swipe_向上滑动寻找往期活动"
+        ]
+    },
+    "HitsLimiter_Swipe_向上滑动寻找往期活动": {
+        "action": "Custom",
+        "custom_action": "HitsLimiter",
+        "custom_action_param": {
+            "current_count": 1,
+            "max_count": 10
+        }
+    },
+    "Flag_往期活动列表最上端": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/红尘共长生.png",
+        "pre_delay": 1000,
+        "roi": [
+            110,
+            270,
+            300,
+            160
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Swipe_向下滑动寻找往期活动": {
+        "action": "Swipe",
+        "duration": 400,
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            450,
+            30,
+            30
+        ],
+        "next": [
+            "HitsLimiter_Swipe_向下滑动寻找往期活动"
+        ]
+    },
+    "HitsLimiter_Swipe_向下滑动寻找往期活动": {
+        "action": "Custom",
+        "custom_action": "HitsLimiter",
+        "custom_action_param": {
+            "current_count": 1,
+            "max_count": 10
+        }
+    },
+    "Click_消失的黄金": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/消失的黄金.png",
+        "post_delay": 1500,
+        "roi": [
+            110,
+            270,
+            300,
+            890
+        ],
+        "next": [
+            "Click_诺斯塔岛调查"
+        ]
+    },
+    "Click_诺斯塔岛调查": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/诺斯塔岛调查.png",
+        "post_delay": 4000,
+        "roi": [
+            450,
+            1060,
+            120,
+            80
+        ],
+        "next": [
+            "Click_消失的黄金副本"
+        ]
+    },
+    "Click_消失的黄金副本": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/消失的黄金副本.png",
+        "post_delay": 1500,
+        "roi": [
+            50,
+            1100,
+            100,
+            80
+        ],
+        "next": [
+            "Flag_In工作协理_黄金"
+        ]
+    },
+    "Flag_In工作协理_黄金": {
+        "recognition": "OCR",
+        "expected": "工作协理",
+        "post_delay": 1500,
+        "roi": [
+            55,
+            127,
+            160,
+            55
+        ],
+        "next": [
+            "Click_协理04_黄金"
+        ]
+    },
+    "Click_协理04_黄金": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "协理04",
+        "post_delay": 2000,
+        "roi": [
+            396,
+            334,
+            108,
+            744
+        ],
+        "next": [
+            "HitsLimiter_Click_协理04_黄金"
+        ]
+    },
+    "HitsLimiter_Click_协理04_黄金": {
+        "action": "Custom",
+        "custom_action": "HitsLimiter",
+        "custom_action_param": {
+            "current_count": 0,
+            "max_count": 10
+        },
+        "next": [
+            "Click_前往_黄金"
+        ]
+    },
+    "Click_前往_黄金": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "前往",
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            370,
+            860,
+            80,
+            50
+        ],
+        "next": [
+            "Click_展开编组_黄金"
+        ]
+    },
+    "Click_展开编组_黄金": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/展开编组.png",
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            418,
+            30,
+            35,
+            35
+        ],
+        "next": [
+            "Click_选择编组_黄金"
+        ]
+    },
+    "Click_选择编组_黄金": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "张数任务",
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            420,
+            70,
+            200,
+            300
+        ],
+        "next": [
+            "Click_收起编组_黄金"
+        ]
+    },
+    "Click_收起编组_黄金": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/展开编组.png",
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            418,
+            30,
+            35,
+            35
+        ],
+        "next": [
+            "Click_居中开始辩论_黄金"
+        ]
+    },
+    "Click_居中开始辩论_黄金": {
+        "focus": {
+            "succeeded": "[color:Dimgray]开始辩论[/color]"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 4000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ],
+        "next": [
+            "Flag_自动出卡已开启_黄金"
+        ],
+        "interrupt": [
+            "Click_开启自动出卡_黄金"
+        ]
+    },
+    "Flag_自动出卡已开启_黄金": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Click_点击继续_黄金",
+            "Flag_辩论失败_黄金"
+        ],
+        "interrupt": [
+            "Flag_自动出卡中_黄金"
+        ]
+    },
+    "Click_开启自动出卡_黄金": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/自动出卡.png",
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            650,
+            1202,
+            28,
+            37
+        ]
+    },
+    "Flag_自动出卡中_黄金": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "post_delay": 3000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ]
+    },
+    "Flag_辩论失败_黄金": {
+        "recognition": "OCR",
+        "expected": "辩论失败",
+        "pre_delay": 800,
+        "roi": [
+            344,
+            211,
+            355,
+            94
+        ],
+        "next": [
+            "Click_结束_黄金"
+        ]
+    },
+    "Click_点击继续_黄金": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "点击继续",
+        "pre_delay": 800,
+        "post_wait_freezes": 1000,
+        "roi": [
+            292,
+            1060,
+            132,
+            51
+        ],
+        "next": [
+            "Click_结束"
+        ]
+    },
+    "Click_结束_黄金": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_delay": 6000,
+        "post_delay": 4000,
+        "roi": [
+            300,
+            500,
+            300,
+            700
+        ],
+        "next": [
+            "Click_协理04_黄金"
+        ]
+    }
+}
