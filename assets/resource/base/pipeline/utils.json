@@ -597,7 +597,7 @@
         "next": [
             "Click_复盘结束"
         ],
-         "interrupt": [
+        "interrupt": [
             "Click_等级提升"
         ]
     },
@@ -623,6 +623,9 @@
         ],
         "next": [
             "Click_复盘结束"
+        ],
+        "interrupt": [
+            "Click_等级提升"
         ]
     },
     "Click_复盘3次确定": {
@@ -647,6 +650,9 @@
         ],
         "next": [
             "Click_复盘结束"
+        ],
+        "interrupt": [
+            "Click_等级提升"
         ]
     },
     "Click_复盘4次确定": {
@@ -671,6 +677,9 @@
         ],
         "next": [
             "Click_复盘结束"
+        ],
+        "interrupt": [
+            "Click_等级提升"
         ]
     },
     "Click_复盘5次确定": {
@@ -695,6 +704,9 @@
         ],
         "next": [
             "Click_复盘结束"
+        ],
+        "interrupt": [
+            "Click_等级提升"
         ]
     },
     "停止任务": {
