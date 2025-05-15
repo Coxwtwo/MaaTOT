@@ -22,7 +22,6 @@ class HitsLimiter(CustomAction):
         self, context: Context, argv: CustomAction.RunArg
     ) -> CustomAction.RunResult:
         param_dict: dict = json.loads(argv.custom_action_param)
-        logger.debug(f"Count argv: {argv}")
         if not param_dict:
             return CustomAction.RunResult(success=True)
         # 默认达到最大次数后终止任务
