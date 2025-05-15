@@ -57,6 +57,7 @@
     },
     "Flag_选择梦笺": {
         "focus": {
+            "toast": "需要选择梦笺，任务终止",
             "succeeded": "[color:Orange]需要选择梦笺，任务终止[/color]"
         },
         "recognition": "OCR",
