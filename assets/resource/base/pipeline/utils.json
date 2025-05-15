@@ -12,7 +12,8 @@
             "Click_X按钮",
             "Click_退出手机",
             "Click_退出好感交流",
-            "Click_确定"
+            "Click_确定",
+            "Click_等级提升"
         ]
     },
     "Click_关闭奖励弹窗": {
@@ -82,6 +83,18 @@
             700,
             100,
             300
+        ]
+    },
+    "Click_等级提升": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "提升",
+        "pre_delay": 500,
+        "roi": [
+            271,
+            376,
+            171,
+            84
         ]
     },
     "Click_过期资源确定": {
