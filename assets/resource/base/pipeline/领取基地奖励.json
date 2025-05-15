@@ -253,26 +253,7 @@
             44
         ],
         "next": [
-            "Flag_多次酬谢判断",
             "返回主界面"
-        ]
-    },
-    "Flag_多次酬谢判断": {
-        "recognition": "OCR",
-        "expected": "点击开启",
-        "roi": [
-            300,
-            800,
-            120,
-            80
-        ],
-         "next": [
-            "Flag_酬谢奖励已领取"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_点击开启",
-            "Click_领取奖励"
         ]
     },
     "Click_领取奖励": {
