@@ -102,7 +102,7 @@ jobs:
         shell: bash
         run: |
           cp MFA/MFAAvalonia.exe MFA/MFAUpdater.exe MFA/MFAUpdater.dll MFA/MFAUpdater.runtimeconfig.json MFA/av_libglesv2.dll MFA/libHarfBuzzSharp.dll MFA/libonigwrap.dll MFA/libSkiaSharp.dll MFA/uiohook.dll install/
-          jq --arg version_name "${{ env.app_name }}" --arg url ""https://github.com/Coxwtwo/MaaTOT"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' assets/interface.json > install/interface.json
+          jq --arg version_name "${{ env.app_name }}" --arg url ""https://github.com/Coxwtwo/MaaTOT"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' install/interface.json > install/interface.json
 
       - name: Upload
         uses: actions/upload-artifact@v4
