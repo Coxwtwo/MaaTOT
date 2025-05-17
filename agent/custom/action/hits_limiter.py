@@ -40,7 +40,7 @@ class HitsLimiter(CustomAction):
             )
         # 达到最大次数后重置计数器状态，触发后续节点
         else:
-            logger.info(f"{argv.node_name} 节点执行次数达到最大值 {param_dict.get("max_count")} 次")
+            logger.info(f'{argv.node_name} 节点执行次数达到最大值 {param_dict.get("max_count")} 次')
             next_nodes = param_dict.get("next_nodes", default_next_nodes)
             logger.debug(f"next_nodes: {next_nodes}")
             context.override_pipeline(
