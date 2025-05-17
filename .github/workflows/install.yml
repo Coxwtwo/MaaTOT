@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 env:
-  MaaFw_tag: v4.1.2
+  MaaFw_tag: v4.2.1
   MFA_tag: v1.2.5
   app_name: MaaTOT
 
