@@ -455,5 +455,3 @@ assets/config
 GitReference.txt
 assets/resource/model
 .nicegui
-assets/agent
-assets/python
