@@ -10,14 +10,17 @@
     "Click_主界面手机": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "好感/手机.png",
+        "template": [
+            "好感/手机.png",
+            "好感/手机_你我之间.png"
+        ],
         "pre_delay": 800,
         "post_delay": 800,
         "roi": [
-            46,
-            1007,
             45,
-            46
+            1005,
+            50,
+            50
         ],
         "next": [
             "Click_选择好感男主"
