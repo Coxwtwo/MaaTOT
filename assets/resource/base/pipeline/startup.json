@@ -111,6 +111,7 @@
         "next": [
             "Flag_位于思绪界面"
         ],
+        "post_delay": 1000,
         "interrupt": [
             "Click_主界面思绪",
             "Click_过期资源确定"
