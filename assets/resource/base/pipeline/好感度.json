@@ -12,7 +12,10 @@
         "recognition": "TemplateMatch",
         "template": [
             "好感/手机.png",
-            "好感/手机_你我之间.png"
+            "好感/手机_你我之间夏彦.png",
+            "好感/手机_你我之间左然.png",
+            "好感/手机_你我之间莫弈.png",
+            "好感/手机_你我之间陆景和.png"
         ],
         "pre_delay": 800,
         "post_delay": 800,
