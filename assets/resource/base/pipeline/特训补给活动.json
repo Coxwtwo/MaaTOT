@@ -82,7 +82,7 @@
         "recognition": "OCR",
         "expected": [
             "纵情",
-            "驰雪"
+            "挥击"
         ],
         "post_delay": 3000,
         "roi": [
@@ -120,7 +120,7 @@
         "recognition": "OCR",
         "expected": [
             "纵情",
-            "驰雪"
+            "挥击"
         ],
         "post_delay": 1500,
         "roi": [
