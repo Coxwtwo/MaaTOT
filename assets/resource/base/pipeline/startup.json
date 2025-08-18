@@ -113,7 +113,7 @@
         ],
         "post_delay": 1000,
         "interrupt": [
-            "Click_主界面思绪",
+            "Click_主界面思绪_关闭广告弹窗",
             "Click_过期资源确定"
         ]
     },
@@ -231,6 +231,22 @@
             554,
             321,
             43
+        ]
+    },
+    "Click_主界面思绪_关闭广告弹窗": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "threshold": 0.03,
+        "roi": [
+            181,
+            1232,
+            70,
+            34
         ]
     },
     "Flag_位于思绪界面": {
