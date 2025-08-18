@@ -236,7 +236,7 @@
         ],
         "interrupt": [
             "Click_关闭奖励弹窗",
-            "Click_点击开启",
+            "Flag_点击开启",
             "Click_领取奖励"
         ]
     },
@@ -269,8 +269,7 @@
             44
         ]
     },
-    "Click_点击开启": {
-        "action": "Click",
+    "Flag_点击开启": {
         "recognition": "OCR",
         "expected": "点击开启",
         "pre_delay": 800,
@@ -281,11 +280,22 @@
             120,
             80
         ],
-        "target_offset": [
-            0,
-            -80,
-            0,
-            0
+        "next": [
+            "Click_祈愿盒"
+        ]
+    },
+    "Click_祈愿盒": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/祈愿盒.png",
+        "pre_delay": 1200,
+        "post_delay": 800,
+        "threshold": 0.6,
+        "roi": [
+            200,
+            400,
+            320,
+            500
         ]
     },
     "基地一条龙": {
