@@ -114,6 +114,8 @@
         "post_delay": 1000,
         "interrupt": [
             "Click_主界面思绪_关闭广告弹窗",
+            "Click_关闭奖励弹窗",
+            "Click_返回上一级键",
             "Click_过期资源确定"
         ]
     },
