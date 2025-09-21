@@ -81,8 +81,8 @@
     "Flag_限时拼图活动": {
         "recognition": "OCR",
         "expected": [
-            "岁岁",
-            "依然"
+            "予爱未名",
+            "[予子干][爱受][未末术]名"
         ],
         "post_delay": 3000,
         "roi": [
@@ -119,10 +119,10 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "岁岁",
-            "依然"
+            "予爱未名",
+            "[予子干][爱受][未末术]名"
         ],
-        "post_delay": 1500,
+        "post_delay": 2500,
         "roi": [
             18,
             1120,
