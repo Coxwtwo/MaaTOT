@@ -71,7 +71,8 @@
         ],
         "next": [
             "Flag_领取登录奖励",
-            "Flag_关闭广告弹窗"
+            "Flag_关闭广告弹窗",
+            "Flag_每日签到"
         ],
         "interrupt": [
             "Flag_TipsLoading",
@@ -86,6 +87,25 @@
             228,
             120,
             220
+        ],
+        "post_delay": 1000,
+        "next": [
+            "Flag_关闭广告弹窗"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_返回上一级键",
+            "Click_过期资源确定"
+        ]
+    },
+    "Flag_每日签到": {
+        "recognition": "OCR",
+        "expected": "每日签到",
+        "roi": [
+            492,
+            42,
+            134,
+            44
         ],
         "post_delay": 1000,
         "next": [
