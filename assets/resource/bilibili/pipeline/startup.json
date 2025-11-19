@@ -11,7 +11,7 @@
             "Click_下载确定",
             "Click_点击B服登录账号",
             "Click_账号登录",
-            "Click_B服同意协议",
+            "Flag_B服同意协议",
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
@@ -55,12 +55,15 @@
             "Click_下载确定",
             "Click_点击B服登录账号",
             "Click_账号登录",
-            "Click_B服同意协议",
+            "Flag_B服同意协议",
             "Flag_MihoyoSlogan"
         ]
     },
-    "Click_B服同意协议": {
-        "action": "Click",
+    "Flag_B服同意协议": {
+        "focus": {
+            "toast": "请阅读用户协议并手动同意用户协议",
+            "succeeded": "[color:Orange]请阅读用户协议并手动同意用户协议，任务终止[/color]"
+        },
         "recognition": "OCR",
         "expected": "同意",
         "post_delay": 800,

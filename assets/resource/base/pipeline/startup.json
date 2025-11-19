@@ -11,7 +11,7 @@
             "Click_下载确定",
             "Click_点击官服登录账号",
             "Click_账号登录",
-            "Click_官服接受协议",
+            "Flag_官服接受协议",
             "Click_关闭奖励弹窗",
             "Click_返回主界面键",
             "Click_返回上一级键",
@@ -55,7 +55,7 @@
             "Click_下载确定",
             "Click_点击官服登录账号",
             "Click_账号登录",
-            "Click_官服接受协议",
+            "Flag_官服接受协议",
             "Flag_MihoyoSlogan"
         ]
     },
@@ -165,8 +165,11 @@
             36
         ]
     },
-    "Click_官服接受协议": {
-        "action": "Click",
+    "Flag_官服接受协议": {
+        "focus": {
+            "toast": "请阅读用户协议并手动接受用户协议",
+            "succeeded": "[color:Orange]请阅读用户协议并手动接受用户协议，任务终止[/color]"
+        },
         "recognition": "OCR",
         "expected": "接受",
         "post_delay": 1500,
