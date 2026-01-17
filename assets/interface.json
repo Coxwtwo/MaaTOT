@@ -53,10 +53,8 @@
             "pipeline_override": {
                 "Click_一键领取亮": {
                     "next": [
-                        "Click_返回主界面键"
-                    ],
-                    "interrupt": [
-                        "Click_关闭奖励弹窗"
+                        "Click_返回主界面键",
+                        "[JumpBack]Click_关闭奖励弹窗"
                     ]
                 }
             }
@@ -67,10 +65,8 @@
             "pipeline_override": {
                 "Click_一键领取亮": {
                     "next": [
-                        "Click_返回主界面键"
-                    ],
-                    "interrupt": [
-                        "Click_关闭奖励弹窗"
+                        "Click_返回主界面键",
+                        "[JumpBack]Click_关闭奖励弹窗"
                     ]
                 }
             }
@@ -122,27 +118,21 @@
                 },
                 "Flag_Inverse_资源申请领取": {
                     "next": [
-                        "Click_资源申请To资料室"
-                    ],
-                    "interrupt": [
-                        "Click_关闭奖励弹窗",
-                        "Click_一键领取亮"
+                        "Click_资源申请To资料室",
+                        "[JumpBack]Click_关闭奖励弹窗",
+                        "[JumpBack]Click_一键领取亮"
                     ]
                 },
                 "Click_一键解析": {
                     "next": [
-                        "Click_酬谢"
-                    ],
-                    "interrupt": [
-                        "Click_返回上一级键"
+                        "Click_酬谢",
+                        "[JumpBack]Click_返回上一级键"
                     ]
                 },
                 "Flag_案例解析中": {
                     "next": [
-                        "Click_酬谢"
-                    ],
-                    "interrupt": [
-                        "Click_返回上一级键"
+                        "Click_酬谢",
+                        "[JumpBack]Click_返回上一级键"
                     ]
                 }
             },
