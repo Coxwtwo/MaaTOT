@@ -257,7 +257,7 @@
             "description": "[size:15]予爱未名限时活动代币领取。只是领取每日任务代币，需要手动拼图。[/size]"
         },
         {
-            "name": "思绪张数任务（待测试）",
+            "name": "思绪张数任务（未完成）",
             "entry": "思绪张数任务",
             "option": [
                 "思绪张数任务辩论次数"
@@ -872,7 +872,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-04"
@@ -888,7 +888,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-08"
@@ -904,7 +904,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-12"
@@ -920,7 +920,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-16"
@@ -936,7 +936,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-20"
@@ -952,7 +952,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-24"
@@ -968,7 +968,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P3.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-28"
@@ -984,7 +984,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P3.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-32"
@@ -1000,7 +1000,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E5P3.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "05-36"
@@ -1016,7 +1016,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-04"
@@ -1032,7 +1032,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-08"
@@ -1048,7 +1048,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-12"
@@ -1064,7 +1064,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-16"
@@ -1080,7 +1080,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-20"
@@ -1096,7 +1096,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-24"
@@ -1112,7 +1112,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-04"
@@ -1128,7 +1128,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-08"
@@ -1144,7 +1144,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-12"
@@ -1160,7 +1160,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-16"
@@ -1176,7 +1176,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-20"
@@ -1192,7 +1192,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-24"
@@ -1334,7 +1334,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E11P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "11-04"
@@ -1350,7 +1350,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E11P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "11-08"
@@ -1366,7 +1366,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E11P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "11-12"
@@ -1382,7 +1382,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E11P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "11-16"
@@ -1398,7 +1398,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E11P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "11-20"
@@ -1414,7 +1414,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E11P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "11-24"
@@ -1514,7 +1514,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E14P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "14-04"
@@ -1530,7 +1530,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E14P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "14-08"
@@ -1546,7 +1546,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E14P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "14-12"
@@ -1562,7 +1562,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E14P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "14-16"
@@ -1578,7 +1578,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E14P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "14-20"
@@ -1594,7 +1594,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E14P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "14-24"
@@ -1684,6 +1684,150 @@
                             "expected": "16-12"
                         }
                     }
+                },
+                {
+                    "name": "锋芒褪尽17-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-04"
+                        }
+                    }
+                },
+                {
+                    "name": "彼时少年17-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-08"
+                        }
+                    }
+                },
+                {
+                    "name": "初光倾泻17-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-12"
+                        }
+                    }
+                },
+                {
+                    "name": "彷徨17-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-16"
+                        }
+                    }
+                },
+                {
+                    "name": "彷徨17-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-20"
+                        }
+                    }
+                },
+                {
+                    "name": "彷徨17-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-24"
+                        }
+                    }
+                },
+                {
+                    "name": "心头撞鹿18-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-04"
+                        }
+                    }
+                },
+                {
+                    "name": "长夜微明18-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-08"
+                        }
+                    }
+                },
+                {
+                    "name": "与子偕行18-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-12"
+                        }
+                    }
                 }
             ]
         },
@@ -1715,7 +1859,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-11"
@@ -1731,7 +1875,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-09"
@@ -1764,7 +1908,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-10"
@@ -1780,7 +1924,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-10"
@@ -1813,7 +1957,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-22"
@@ -1829,7 +1973,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P2.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-23"
@@ -1862,7 +2006,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-09"
@@ -1878,7 +2022,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E7P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-11"
@@ -1898,7 +2042,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-07"
@@ -1914,7 +2058,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-06"
@@ -1930,7 +2074,7 @@
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
                             "template": "Debate/E6P1.png",
-                            "threshold": 0.9
+                            "threshold": 0.93
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-05"
