@@ -1,10 +1,8 @@
 {
     "外勤委托": {
         "next": [
-            "Click_未名日程"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_未名日程",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_未名日程": {
@@ -78,11 +76,9 @@
         "next": [
             "Flag_委托搜寻中",
             "Flag_疲劳值满",
-            "Flag_主界面任务"
-        ],
-        "interrupt": [
-            "Click_日常委托",
-            "Click_庭审委托"
+            "Flag_主界面任务",
+            "[JumpBack]Click_日常委托",
+            "[JumpBack]Click_庭审委托"
         ]
     },
     "Click_日常委托": {
@@ -194,10 +190,8 @@
             250
         ],
         "next": [
-            "Click_返回主界面键"
-        ],
-        "interrupt": [
-            "Click_X按钮"
+            "Click_返回主界面键",
+            "[JumpBack]Click_X按钮"
         ]
     },
     "Click_开始处理外勤委托": {
@@ -218,10 +212,8 @@
             "Flag_体力不足弹窗",
             "Flag_战力不足",
             "Click_居中开始辩论",
-            "Flag_疲劳值上限弹窗"
-        ],
-        "interrupt": [
-            "Flag_体力补充弹窗"
+            "Flag_疲劳值上限弹窗",
+            "[JumpBack]Flag_体力补充弹窗"
         ]
     }
 }

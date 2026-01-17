@@ -1,10 +1,8 @@
 {
     "领取拼图活动代币": {
         "next": [
-            "Click_活动_限时拼图活动"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_活动_限时拼图活动",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_活动_限时拼图活动": {
@@ -26,10 +24,8 @@
     "寻找限时拼图活动": {
         "next": [
             "Flag_限时拼图活动",
-            "Flag_每日签到_限时拼图活动"
-        ],
-        "interrupt": [
-            "Swipe_向左滑动寻找限时拼图活动"
+            "Flag_每日签到_限时拼图活动",
+            "[JumpBack]Swipe_向左滑动寻找限时拼图活动"
         ]
     },
     "Swipe_向左滑动寻找限时拼图活动": {
@@ -109,10 +105,8 @@
             110
         ],
         "next": [
-            "Flag_限时拼图活动"
-        ],
-        "interrupt": [
-            "Swipe_向右滑动寻找限时拼图活动"
+            "Flag_限时拼图活动",
+            "[JumpBack]Swipe_向右滑动寻找限时拼图活动"
         ]
     },
     "Click_限时拼图活动": {
@@ -145,11 +139,9 @@
             160
         ],
         "next": [
-            "Flag_Inverse_限时拼图活动经验领取键"
-        ],
-        "interrupt": [
-            "Click_领取限时拼图活动代币",
-            "Click_关闭奖励弹窗"
+            "Flag_Inverse_限时拼图活动经验领取键",
+            "[JumpBack]Click_领取限时拼图活动代币",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     },
     "Click_领取限时拼图活动代币": {
@@ -188,10 +180,8 @@
             990
         ],
         "next": [
-            "Flag_主界面任务"
-        ],
-        "interrupt": [
-            "Click_返回上一级键"
+            "Flag_主界面任务",
+            "[JumpBack]Click_返回上一级键"
         ]
     }
 }

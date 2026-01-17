@@ -4,24 +4,22 @@
             "Flag_主界面任务",
             "MihoyoSlogan",
             "Flag_点击进入",
-            "Flag_更新版本"
-        ],
-        "interrupt": [
-            "Flag_TipsLoading",
-            "Click_下载确定",
-            "Click_点击官服登录账号",
-            "Click_账号登录",
-            "Flag_官服接受协议",
-            "Click_关闭奖励弹窗",
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Click_结束",
-            "Click_取消",
-            "Click_X按钮",
-            "Click_退出手机",
-            "Click_退出好感交流",
-            "Click_确定",
-            "StartTOT"
+            "Flag_更新版本",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_下载确定",
+            "[JumpBack]Click_点击官服登录账号",
+            "[JumpBack]Click_账号登录",
+            "[JumpBack]Flag_官服接受协议",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回主界面键",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_结束",
+            "[JumpBack]Click_取消",
+            "[JumpBack]Click_X按钮",
+            "[JumpBack]Click_退出手机",
+            "[JumpBack]Click_退出好感交流",
+            "[JumpBack]Click_确定",
+            "[JumpBack]StartTOT"
         ]
     },
     "StartTOT": {
@@ -46,17 +44,15 @@
         ],
         "next": [
             "Flag_点击进入",
-            "Flag_更新版本"
-        ],
-        "interrupt": [
-            "Flag_ThemisLoading",
-            "Flag_StartLoadingVersion",
-            "Flag_TipsLoading",
-            "Click_下载确定",
-            "Click_点击官服登录账号",
-            "Click_账号登录",
-            "Flag_官服接受协议",
-            "Flag_MihoyoSlogan"
+            "Flag_更新版本",
+            "[JumpBack]Flag_ThemisLoading",
+            "[JumpBack]Flag_StartLoadingVersion",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_下载确定",
+            "[JumpBack]Click_点击官服登录账号",
+            "[JumpBack]Click_账号登录",
+            "[JumpBack]Flag_官服接受协议",
+            "[JumpBack]Flag_MihoyoSlogan"
         ]
     },
     "Flag_点击进入": {
@@ -72,11 +68,9 @@
         "next": [
             "Flag_领取登录奖励",
             "Flag_关闭广告弹窗",
-            "Flag_每日签到"
-        ],
-        "interrupt": [
-            "Flag_TipsLoading",
-            "Click_点击进入"
+            "Flag_每日签到",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_点击进入"
         ]
     },
     "Flag_领取登录奖励": {
@@ -90,12 +84,10 @@
         ],
         "post_delay": 1000,
         "next": [
-            "Flag_关闭广告弹窗"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_返回上一级键",
-            "Click_过期资源确定"
+            "Flag_关闭广告弹窗",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_过期资源确定"
         ]
     },
     "Flag_每日签到": {
@@ -109,12 +101,10 @@
         ],
         "post_delay": 1000,
         "next": [
-            "Flag_关闭广告弹窗"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_返回上一级键",
-            "Click_过期资源确定"
+            "Flag_关闭广告弹窗",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_过期资源确定"
         ]
     },
     "Flag_关闭广告弹窗": {
@@ -129,15 +119,13 @@
             34
         ],
         "next": [
-            "Flag_位于思绪界面"
+            "Flag_位于思绪界面",
+            "[JumpBack]Click_主界面思绪_关闭广告弹窗",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_过期资源确定"
         ],
-        "post_delay": 1000,
-        "interrupt": [
-            "Click_主界面思绪_关闭广告弹窗",
-            "Click_关闭奖励弹窗",
-            "Click_返回上一级键",
-            "Click_过期资源确定"
-        ]
+        "post_delay": 1000
     },
     "Click_下载确定": {
         "action": "Click",

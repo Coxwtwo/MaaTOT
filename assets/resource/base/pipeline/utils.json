@@ -1,19 +1,17 @@
 {
     "返回主界面": {
         "next": [
-            "Flag_主界面任务"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Click_结束",
-            "Click_取消",
-            "Click_X按钮",
-            "Click_退出手机",
-            "Click_退出好感交流",
-            "Click_确定",
-            "Click_等级提升"
+            "Flag_主界面任务",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回主界面键",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_结束",
+            "[JumpBack]Click_取消",
+            "[JumpBack]Click_X按钮",
+            "[JumpBack]Click_退出手机",
+            "[JumpBack]Click_退出好感交流",
+            "[JumpBack]Click_确定",
+            "[JumpBack]Click_等级提升"
         ]
     },
     "Click_关闭奖励弹窗": {
@@ -355,10 +353,8 @@
         ],
         "next": [
             "Click_复盘1次确定",
-            "Flag_复盘次数最小"
-        ],
-        "interrupt": [
-            "Click_复盘次数减号亮"
+            "Flag_复盘次数最小",
+            "[JumpBack]Click_复盘次数减号亮"
         ]
     },
     "Click_复盘结束": {
@@ -428,10 +424,8 @@
             46
         ],
         "next": [
-            "Flag_自动出卡已开启"
-        ],
-        "interrupt": [
-            "Click_开启自动出卡"
+            "Flag_自动出卡已开启",
+            "[JumpBack]Click_开启自动出卡"
         ]
     },
     "Flag_自动出卡已开启": {
@@ -450,10 +444,8 @@
         "next": [
             "Flag_辩论失败",
             "Click_点击继续",
-            "Click_结束"
-        ],
-        "interrupt": [
-            "Flag_自动出卡中"
+            "Click_结束",
+            "[JumpBack]Flag_自动出卡中"
         ]
     },
     "Click_开启自动出卡": {
@@ -528,10 +520,8 @@
             55
         ],
         "next": [
-            "Flag_自动出卡已开启"
-        ],
-        "interrupt": [
-            "Click_开启自动出卡"
+            "Flag_自动出卡已开启",
+            "[JumpBack]Click_开启自动出卡"
         ]
     },
     "Click_复盘次数减号亮": {
@@ -595,10 +585,8 @@
             40
         ],
         "next": [
-            "Click_复盘结束"
-        ],
-        "interrupt": [
-            "Click_等级提升"
+            "Click_复盘结束",
+            "[JumpBack]Click_等级提升"
         ]
     },
     "Click_复盘2次确定": {
@@ -622,10 +610,8 @@
             40
         ],
         "next": [
-            "Click_复盘结束"
-        ],
-        "interrupt": [
-            "Click_等级提升"
+            "Click_复盘结束",
+            "[JumpBack]Click_等级提升"
         ]
     },
     "Click_复盘3次确定": {
@@ -649,10 +635,8 @@
             40
         ],
         "next": [
-            "Click_复盘结束"
-        ],
-        "interrupt": [
-            "Click_等级提升"
+            "Click_复盘结束",
+            "[JumpBack]Click_等级提升"
         ]
     },
     "Click_复盘4次确定": {
@@ -676,10 +660,8 @@
             40
         ],
         "next": [
-            "Click_复盘结束"
-        ],
-        "interrupt": [
-            "Click_等级提升"
+            "Click_复盘结束",
+            "[JumpBack]Click_等级提升"
         ]
     },
     "Click_复盘5次确定": {
@@ -703,10 +685,8 @@
             40
         ],
         "next": [
-            "Click_复盘结束"
-        ],
-        "interrupt": [
-            "Click_等级提升"
+            "Click_复盘结束",
+            "[JumpBack]Click_等级提升"
         ]
     },
     "停止任务": {

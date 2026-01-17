@@ -1,11 +1,9 @@
 {
     "领取邮件": {
         "next": [
-            "Click_邮件"
-        ],
-        "interrupt": [
-            "Click_主界面左侧菜单",
-            "返回主界面"
+            "Click_邮件",
+            "[JumpBack]Click_主界面左侧菜单",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_邮件": {

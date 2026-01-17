@@ -1,10 +1,8 @@
 {
     "领取任务奖励": {
         "next": [
-            "Click_任务"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_任务",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_任务": {
@@ -39,10 +37,8 @@
         ],
         "next": [
             "Click_领取每日奖励",
-            "Click_一键领取每日活跃度"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗"
+            "Click_一键领取每日活跃度",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     },
     "Click_领取每日奖励": {
@@ -105,10 +101,8 @@
             40
         ],
         "next": [
-            "Click_每周"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗"
+            "Click_每周",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     },
     "Click_每周": {
@@ -127,10 +121,8 @@
         ],
         "next": [
             "Click_领取每周奖励",
-            "Click_一键领取每周活跃度"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗"
+            "Click_一键领取每周活跃度",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     },
     "Click_领取每周奖励": {
@@ -192,10 +184,8 @@
             40
         ],
         "next": [
-            "Click_返回上一级键"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗"
+            "Click_返回上一级键",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     }
 }

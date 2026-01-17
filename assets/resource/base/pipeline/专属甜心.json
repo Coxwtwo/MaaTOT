@@ -2,10 +2,8 @@
     "专属甜心": {
         "next": [
             "Click_甜心缩",
-            "Click_甜心伸"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_甜心伸",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_甜心缩": {
@@ -185,11 +183,9 @@
         "next": [
             "Flag_蜜意甜心值不足",
             "Flag_Zero蜜意甜心值",
-            "Click_甜心自动剧情"
-        ],
-        "interrupt": [
-            "Click_具体制作步骤",
-            "Flag_自动制作中"
+            "Click_甜心自动剧情",
+            "[JumpBack]Click_具体制作步骤",
+            "[JumpBack]Flag_自动制作中"
         ]
     },
     "Click_具体制作步骤": {
@@ -248,10 +244,8 @@
             40
         ],
         "next": [
-            "Click_关闭甜心奖励弹窗"
-        ],
-        "interrupt": [
-            "Flag_自动剧情开启中"
+            "Click_关闭甜心奖励弹窗",
+            "[JumpBack]Flag_自动剧情开启中"
         ]
     },
     "Click_关闭甜心奖励弹窗": {

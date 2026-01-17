@@ -4,24 +4,22 @@
             "Flag_主界面任务",
             "MihoyoSlogan",
             "Flag_点击进入",
-            "Flag_更新版本"
-        ],
-        "interrupt": [
-            "Flag_TipsLoading",
-            "Click_下载确定",
-            "Click_点击B服登录账号",
-            "Click_账号登录",
-            "Flag_B服同意协议",
-            "Click_关闭奖励弹窗",
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Click_结束",
-            "Click_取消",
-            "Click_X按钮",
-            "Click_退出手机",
-            "Click_退出好感交流",
-            "Click_确定",
-            "StartTOT"
+            "Flag_更新版本",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_下载确定",
+            "[JumpBack]Click_点击B服登录账号",
+            "[JumpBack]Click_账号登录",
+            "[JumpBack]Flag_B服同意协议",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回主界面键",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_结束",
+            "[JumpBack]Click_取消",
+            "[JumpBack]Click_X按钮",
+            "[JumpBack]Click_退出手机",
+            "[JumpBack]Click_退出好感交流",
+            "[JumpBack]Click_确定",
+            "[JumpBack]StartTOT"
         ]
     },
     "StartTOT": {
@@ -46,17 +44,15 @@
         ],
         "next": [
             "Flag_点击进入",
-            "Flag_更新版本"
-        ],
-        "interrupt": [
-            "Flag_ThemisLoading",
-            "Flag_StartLoadingVersion",
-            "Flag_TipsLoading",
-            "Click_下载确定",
-            "Click_点击B服登录账号",
-            "Click_账号登录",
-            "Flag_B服同意协议",
-            "Flag_MihoyoSlogan"
+            "Flag_更新版本",
+            "[JumpBack]Flag_ThemisLoading",
+            "[JumpBack]Flag_StartLoadingVersion",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_下载确定",
+            "[JumpBack]Click_点击B服登录账号",
+            "[JumpBack]Click_账号登录",
+            "[JumpBack]Flag_B服同意协议",
+            "[JumpBack]Flag_MihoyoSlogan"
         ]
     },
     "Flag_B服同意协议": {

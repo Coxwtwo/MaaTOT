@@ -1,10 +1,8 @@
 {
     "特训活动提供补给": {
         "next": [
-            "Click_活动_限时特训活动"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_活动_限时特训活动",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_活动_限时特训活动": {
@@ -26,10 +24,8 @@
     "寻找特训活动": {
         "next": [
             "Flag_特训活动",
-            "Flag_每日签到_特训补给"
-        ],
-        "interrupt": [
-            "Swipe_向左滑动寻找特训活动"
+            "Flag_每日签到_特训补给",
+            "[JumpBack]Swipe_向左滑动寻找特训活动"
         ]
     },
     "Swipe_向左滑动寻找特训活动": {
@@ -109,10 +105,8 @@
             110
         ],
         "next": [
-            "Flag_特训活动"
-        ],
-        "interrupt": [
-            "Swipe_向右滑动寻找特训活动"
+            "Flag_特训活动",
+            "[JumpBack]Swipe_向右滑动寻找特训活动"
         ]
     },
     "Click_特训活动": {
@@ -131,10 +125,8 @@
         ],
         "next": [
             "Click_提供补给",
-            "Flag_已提供过补给"
-        ],
-        "interrupt": [
-            "Click_X按钮"
+            "Flag_已提供过补给",
+            "[JumpBack]Click_X按钮"
         ]
     },
     "Flag_已提供过补给": {
@@ -151,10 +143,8 @@
             40
         ],
         "next": [
-            "Flag_主界面任务"
-        ],
-        "interrupt": [
-            "Click_返回上一级键"
+            "Flag_主界面任务",
+            "[JumpBack]Click_返回上一级键"
         ]
     },
     "Click_提供补给": {
@@ -213,11 +203,9 @@
             65
         ],
         "next": [
-            "Flag_主界面任务"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_返回上一级键"
+            "Flag_主界面任务",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回上一级键"
         ]
     }
 }

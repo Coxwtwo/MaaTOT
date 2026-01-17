@@ -1,10 +1,8 @@
 {
     "领取绮思奖励": {
         "next": [
-            "Click_活动_绮思"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_活动_绮思",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_活动_绮思": {
@@ -26,10 +24,8 @@
     "寻找绮思": {
         "next": [
             "Flag_绮思",
-            "Flag_每日签到_绮思"
-        ],
-        "interrupt": [
-            "Swipe_向左滑动寻找绮思"
+            "Flag_每日签到_绮思",
+            "[JumpBack]Swipe_向左滑动寻找绮思"
         ]
     },
     "Swipe_向左滑动寻找绮思": {
@@ -106,10 +102,8 @@
             110
         ],
         "next": [
-            "Flag_绮思"
-        ],
-        "interrupt": [
-            "Swipe_向右滑动寻找绮思"
+            "Flag_绮思",
+            "[JumpBack]Swipe_向右滑动寻找绮思"
         ]
     },
     "Click_绮思": {
@@ -124,10 +118,8 @@
             110
         ],
         "next": [
-            "Click_绮思任务"
-        ],
-        "interrupt": [
-            "Click_X按钮"
+            "Click_绮思任务",
+            "[JumpBack]Click_X按钮"
         ]
     },
     "Click_绮思任务": {
@@ -264,11 +256,9 @@
             25
         ],
         "next": [
-            "Flag_主界面任务"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_返回上一级键"
+            "Flag_主界面任务",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回上一级键"
         ]
     }
 }

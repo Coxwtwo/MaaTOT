@@ -1,10 +1,8 @@
 {
     "好感度": {
         "next": [
-            "Click_主界面手机"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_主界面手机",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_主界面手机": {
@@ -65,11 +63,9 @@
     },
     "触摸获得好感": {
         "next": [
-            "Flag_今日好感度获取完毕"
-        ],
-        "interrupt": [
-            "Click_好感度等级提升",
-            "Click_触摸获得好感"
+            "Flag_今日好感度获取完毕",
+            "[JumpBack]Click_好感度等级提升",
+            "[JumpBack]Click_触摸获得好感"
         ]
     },
     "Click_触摸获得好感": {

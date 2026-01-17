@@ -12,10 +12,8 @@
             30
         ],
         "next": [
-            "Click_基地"
-        ],
-        "interrupt": [
-            "Click_基地和沙龙"
+            "Click_基地",
+            "[JumpBack]Click_基地和沙龙"
         ]
     },
     "Click_基地和沙龙": {
@@ -50,10 +48,8 @@
     },
     "资源申请": {
         "next": [
-            "打开基地和沙龙"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "打开基地和沙龙",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_资源申请": {
@@ -68,11 +64,9 @@
             49
         ],
         "next": [
-            "Flag_Inverse_资源申请领取"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Click_一键领取亮"
+            "Flag_Inverse_资源申请领取",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_一键领取亮"
         ]
     },
     "Flag_In资源申请": {
@@ -104,10 +98,8 @@
     },
     "案例解析": {
         "next": [
-            "打开基地和沙龙"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "打开基地和沙龙",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_资料室": {
@@ -123,11 +115,9 @@
             47
         ],
         "next": [
-            "Flag_Inverse_案例解析领取"
-        ],
-        "interrupt": [
-            "Click_一键领取亮",
-            "Click_X按钮"
+            "Flag_Inverse_案例解析领取",
+            "[JumpBack]Click_一键领取亮",
+            "[JumpBack]Click_X按钮"
         ]
     },
     "Flag_In资料室": {
@@ -156,10 +146,8 @@
         ],
         "next": [
             "Flag_案例未解析",
-            "Flag_案例解析中"
-        ],
-        "interrupt": [
-            "Click_X按钮"
+            "Flag_案例解析中",
+            "[JumpBack]Click_X按钮"
         ]
     },
     "Flag_案例未解析": {
@@ -214,10 +202,8 @@
     },
     "领取酬谢": {
         "next": [
-            "打开基地和沙龙"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "打开基地和沙龙",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_酬谢": {
@@ -232,12 +218,10 @@
             70
         ],
         "next": [
-            "Flag_酬谢奖励已领取"
-        ],
-        "interrupt": [
-            "Click_关闭奖励弹窗",
-            "Flag_点击开启",
-            "Click_领取奖励"
+            "Flag_酬谢奖励已领取",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Flag_点击开启",
+            "[JumpBack]Click_领取奖励"
         ]
     },
     "Flag_酬谢奖励已领取": {
@@ -300,10 +284,8 @@
     },
     "基地一条龙": {
         "next": [
-            "打开基地和沙龙"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "打开基地和沙龙",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_资源申请To资料室": {
@@ -319,11 +301,9 @@
             160
         ],
         "next": [
-            "Flag_Inverse_案例解析领取"
-        ],
-        "interrupt": [
-            "Click_一键领取亮",
-            "Click_X按钮"
+            "Flag_Inverse_案例解析领取",
+            "[JumpBack]Click_一键领取亮",
+            "[JumpBack]Click_X按钮"
         ]
     }
 }

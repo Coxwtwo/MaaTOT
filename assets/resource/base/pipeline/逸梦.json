@@ -1,10 +1,8 @@
 {
     "逸梦": {
         "next": [
-            "Click_逸梦"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_逸梦",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_逸梦": {

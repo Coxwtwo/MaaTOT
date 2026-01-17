@@ -1,11 +1,9 @@
 {
     "领取友谊徽章": {
         "next": [
-            "Click_好友"
-        ],
-        "interrupt": [
-            "Click_主界面左侧菜单",
-            "返回主界面"
+            "Click_好友",
+            "[JumpBack]Click_主界面左侧菜单",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_好友": {

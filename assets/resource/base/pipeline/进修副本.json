@@ -1,10 +1,8 @@
 {
     "进修副本": {
         "next": [
-            "Click_事件簿_进修"
-        ],
-        "interrupt": [
-            "返回主界面"
+            "Click_事件簿_进修",
+            "[JumpBack]返回主界面"
         ]
     },
     "Click_事件簿_进修": {
@@ -36,10 +34,8 @@
         ],
         "next": [
             "Click_进入进修副本",
-            "Flag_进修副本列表最下端"
-        ],
-        "interrupt": [
-            "Swipe_向上滑动寻找进修副本"
+            "Flag_进修副本列表最下端",
+            "[JumpBack]Swipe_向上滑动寻找进修副本"
         ]
     },
     "Flag_进修副本列表最下端": {
@@ -54,10 +50,8 @@
         ],
         "next": [
             "Click_进入进修副本",
-            "Flag_进修副本列表最上端"
-        ],
-        "interrupt": [
-            "Swipe_向下滑动寻找进修副本"
+            "Flag_进修副本列表最上端",
+            "[JumpBack]Swipe_向下滑动寻找进修副本"
         ]
     },
     "Swipe_向上滑动寻找进修副本": {
@@ -210,10 +204,8 @@
         "next": [
             "Flag_复盘确认弹窗",
             "Flag_体力不足弹窗",
-            "Flag_使用工作证页面"
-        ],
-        "interrupt": [
-            "Flag_体力补充弹窗"
+            "Flag_使用工作证页面",
+            "[JumpBack]Flag_体力补充弹窗"
         ]
     },
     "Flag_使用工作证页面": {
