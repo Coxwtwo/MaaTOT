@@ -20,8 +20,8 @@ on:
   workflow_dispatch:
 
 env:
-  MaaFw_version: v4.4.1
-  MFA_version: v1.6.5
+  MaaFw_version: v5.4.2
+  MFAA_version: v2.6.5
   app_name: MaaTOT
 
 permissions:
@@ -63,13 +63,27 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        arch: [aarch64, x86_64]
+        include:
+          - arch: x86_64
+            runner: windows-latest
+          - arch: aarch64
+            runner: windows-11-arm
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
+
+      - name: Set platform variables
+        id: platform
+        shell: bash
+        run: |
+          if [ "${{ matrix.arch }}" = "x86_64" ]; then
+            echo "tag=x64" >> $GITHUB_OUTPUT
+          else
+            echo "tag=arm64" >> $GITHUB_OUTPUT
+          fi
 
       - name: Download MaaFramework
         uses: robinraju/release-downloader@v1
@@ -84,16 +98,16 @@ jobs:
         uses: robinraju/release-downloader@v1  
         with:
           repository: SweetSmellFox/MFAAvalonia
-          fileName: "MFAAvalonia-*-win-x64*"
-          tag: "${{ env.MFA_version }}"
+          fileName: "MFAAvalonia-*-win-${{ steps.platform.outputs.tag }}*"
+          tag: "${{ env.MFAA_version }}"
           out-file-path: "MFA"
           extract: true
 
-      - name: Setup Embed Python
-        shell: powershell
+      - name: Setup Embed Python on Windows
+        shell: bash
         run: |
-          ./tools/ci/setup_embed_python.ps1
-
+          python tools/ci/setup_embed_python.py
+          
       - name: Install
         shell: bash
         run: python ./install.py ${{ needs.meta.outputs.tag }}
@@ -101,84 +115,43 @@ jobs:
       - name: Copy MFAAvalonia
         shell: bash
         run: |
-          cp MFA/MFAAvalonia.exe MFA/MFAUpdater.exe MFA/MFAUpdater.runtimeconfig.json MFA/av_libglesv2.dll MFA/libHarfBuzzSharp.dll MFA/libonigwrap.dll MFA/libSkiaSharp.dll MFA/uiohook.dll install/
-          jq --arg version_name "${{ env.app_name }}" --arg url ""https://github.com/Coxwtwo/MaaTOT"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' install/interface.json > install/interface.json.tmp
+          mkdir -p install
+          cp -rpvn MFA/. install/
+          jq --arg app_name "${{ env.app_name }}" --arg version ${{ needs.meta.outputs.tag }} --arg custom_title "${{ env.app_name }} ${{ needs.meta.outputs.tag }} | 生煎包小助手" --arg url ""https://github.com/Coxwtwo/MaaTOT"" '. + {"name": $app_name, "version": $version, "url": $url, "custom_title": $custom_title}' install/interface.json > install/interface.json.tmp
           mv -f install/interface.json.tmp install/interface.json
 
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.app_name }}-win-${{ matrix.arch }}
+          name: ${{ env.app_name }}-win-${{ matrix.arch }}-${{ needs.meta.outputs.tag }}
           path: "install"
 
-  # ubuntu:
-  #   needs: meta
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix:
-  #       arch: [aarch64, x86_64]
-  #     fail-fast: false
+  changelog:
+    name: Generate changelog
+    needs: meta
+    runs-on: ubuntu-latest
+    outputs:
+      release_body: ${{ steps.git-cliff.outputs.content }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #       with:
-  #         submodules: true
-
-  #     - name: Download MaaFramework
-  #       uses: robinraju/release-downloader@v1
-  #       with:
-  #         repository: MaaXYZ/MaaFramework
-  #         fileName: "MAA-linux-${{ matrix.arch }}*"
-  #         tag: "${{ env.MaaFw_version }}"
-  #         out-file-path: "deps"
-  #         extract: true
-
-  #     - name: Install
-  #       shell: bash
-  #       run: |
-  #         python ./install.py ${{ needs.meta.outputs.tag }}
-
-  #     - uses: actions/upload-artifact@v4
-  #       with:
-  #         name: ${{ env.app_name }}-linux-${{ matrix.arch }}
-  #         path: "install"
-
-  # macos:
-  #   needs: meta
-  #   runs-on: macos-latest
-  #   strategy:
-  #     matrix:
-  #       arch: [aarch64, x86_64]
-  #     fail-fast: false
-
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #       with:
-  #         submodules: true
-
-  #     - name: Download MaaFramework
-  #       uses: robinraju/release-downloader@v1
-  #       with:
-  #         repository: MaaXYZ/MaaFramework
-  #         fileName: "MAA-macos-${{ matrix.arch }}*"
-  #         tag: "${{ env.MaaFw_version }}"
-  #         out-file-path: "deps"
-  #         extract: true
-
-  #     - name: Install
-  #       shell: bash
-  #       run: |
-  #         python ./install.py ${{ needs.meta.outputs.tag }}
-
-  #     - uses: actions/upload-artifact@v4
-  #       with:
-  #         name: ${{ env.app_name }}-macos-${{ matrix.arch }}
-  #         path: "install"
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v4
+        id: git-cliff
+        with:
+          config: .github/cliff.toml
+          args: >-
+            -vv --latest --strip header
+        env:
+          OUTPUT: CHANGES.md
+          GITHUB_REPO: ${{ github.repository }}
 
   release:
     if: ${{ needs.meta.outputs.is_release == 'true' }}
-    # needs: [meta, windows, ubuntu, macos]
-    needs: [meta, windows]
+    needs: [meta, windows, changelog]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
