@@ -9,14 +9,17 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 # 获取当前main.py所在路径并设置上级目录为工作目录
 current_file_path = os.path.abspath(__file__)
-current_dir = os.path.dirname(current_file_path)
-parent_dir = os.path.dirname(current_dir)
-os.chdir(parent_dir)
-print(f"设置工作目录为: {parent_dir}")
+current_script_dir = os.path.dirname(current_file_path)  # 包含此脚本的目录
+project_root_dir = os.path.dirname(current_script_dir)  # 指定的项目根目录
 
-# 将当前目录添加到路径
-if current_dir not in sys.path:
-    sys.path.insert(0, current_dir)
+# 更改CWD到项目根目录
+if os.getcwd() != project_root_dir:
+    os.chdir(project_root_dir)
+print(f"set cwd: {os.getcwd()}")
+
+# 将脚本自身的目录添加到sys.path，以便导入utils、maa等模块
+if current_script_dir not in sys.path:
+    sys.path.insert(0, current_script_dir)
 
 try:
     from utils import logger
@@ -74,7 +77,7 @@ def write_pip_config(key_values: dict) -> bool:
         return False
 
 def install_requirements(req_file="requirements.txt", mirror=None) -> bool:
-    req_path = Path(req_file)
+    req_path = Path(project_root_dir) / req_file
     if not req_path.exists():
         logger.error(f"requirements.txt 不存在")
         return False
@@ -113,34 +116,42 @@ def check_and_install_dependencies():
     if enable_pip_install :
         if install_requirements(mirror=mirror):
             logger.info("依赖检查完成")
-            # 修改安装开关
-            write_pip_config({
-                "enable_pip_install": False
-            })
         else:
             logger.warning("依赖安装失败，程序可能无法正常运行")
     else:
-        logger.info("跳过依赖安装")
+        logger.info("禁用 pip 安装依赖，跳过依赖安装")
 
 
 
 def agent():
-    from maa.agent.agent_server import AgentServer
-    from maa.toolkit import Toolkit
+    try:
+        from maa.agent.agent_server import AgentServer
+        from maa.toolkit import Toolkit
 
-    import custom
-    from utils import logger
+        import custom
+        from utils import logger
 
-    Toolkit.init_option("./")
+        Toolkit.init_option("./")
 
-    socket_id = sys.argv[-1]
+        if len(sys.argv) < 2:
+            logger.error("缺少必要的 socket_id 参数")
+            return
 
-    AgentServer.start_up(socket_id)
-    logger.info("AgentServer 启动")
-    AgentServer.join()
-    AgentServer.shut_down()
-    logger.info("AgentServer 关闭")
+        socket_id = sys.argv[-1]
 
+        logger.debug(f"socket_id: {socket_id}")
+        AgentServer.start_up(socket_id)
+        logger.info("AgentServer 启动")
+        AgentServer.join()
+        AgentServer.shut_down()
+        logger.info("AgentServer 关闭")
+    except ImportError as e:
+        logger.error(f"导入模块失败: {e}")
+        logger.error("考虑重新配置环境")
+        sys.exit(1)
+    except Exception as e:
+        logger.exception("agent运行过程中发生异常")
+        raise
 
 def main():
     check_and_install_dependencies()
