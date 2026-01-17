@@ -56,7 +56,7 @@
     },
     "Click_30体力饮料": {
         "focus": {
-            "succeeded": "[color:Limegreen]已饮用30体力饮料[/color]"
+            "Node.Action.Succeeded": "[color:Limegreen]已饮用30体力饮料[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",
@@ -75,7 +75,7 @@
     },
     "Click_60体力饮料": {
         "focus": {
-            "succeeded": "[color:Limegreen]已饮用60体力饮料[/color]"
+            "Node.Action.Succeeded": "[color:Limegreen]已饮用60体力饮料[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",

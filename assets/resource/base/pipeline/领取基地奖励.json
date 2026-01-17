@@ -81,7 +81,7 @@
     },
     "Flag_Inverse_资源申请领取": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成资源申请领取[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成资源申请领取[/color]"
         },
         "inverse": true,
         "recognition": "TemplateMatch",
@@ -132,7 +132,7 @@
     },
     "Flag_Inverse_案例解析领取": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成案例解析领取[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成案例解析领取[/color]"
         },
         "inverse": true,
         "recognition": "TemplateMatch",
@@ -180,7 +180,7 @@
     },
     "Click_一键解析": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成案例解析[/color]"
+            "Node.Action.Succeeded": "[color:Limegreen]已完成案例解析[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -226,7 +226,7 @@
     },
     "Flag_酬谢奖励已领取": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成酬谢奖励领取[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成酬谢奖励领取[/color]"
         },
         "recognition": "OCR",
         "expected": "奖励已领取",

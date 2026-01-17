@@ -168,7 +168,7 @@
     },
     "Flag_Inverse_限时拼图活动经验领取键": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成限时拼图活动代币领取[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成限时拼图活动代币领取[/color]"
         },
         "inverse": true,
         "recognition": "OCR",

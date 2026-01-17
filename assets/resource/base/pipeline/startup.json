@@ -28,7 +28,7 @@
     },
     "MihoyoSlogan": {
         "focus": {
-            "succeeded": "[color:Dimgray]游戏启动[/color]"
+            "Node.Recognition.Succeeded": "[color:Dimgray]游戏启动[/color]"
         },
         "recognition": "OCR",
         "expected": [
@@ -156,7 +156,7 @@
     "Flag_官服接受协议": {
         "focus": {
             "toast": "请阅读用户协议并手动接受用户协议",
-            "succeeded": "[color:Orange]请阅读用户协议并手动接受用户协议，任务终止[/color]"
+            "Node.Recognition.Succeeded": "[color:Orange]请阅读用户协议并手动接受用户协议，任务终止[/color]"
         },
         "recognition": "OCR",
         "expected": "接受",
@@ -231,7 +231,7 @@
     },
     "Flag_更新版本": {
         "focus": {
-            "succeeded": "[color:Orange]请更新至最新版本，任务终止[/color]"
+            "Node.Recognition.Succeeded": "[color:Orange]请更新至最新版本，任务终止[/color]"
         },
         "action": "StopTask",
         "recognition": "OCR",

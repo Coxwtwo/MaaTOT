@@ -317,7 +317,7 @@
     },
     "Click_居中开始辩论_黄金": {
         "focus": {
-            "succeeded": "[color:Dimgray]开始辩论[/color]"
+            "Node.Action.Succeeded": "[color:Dimgray]开始辩论[/color]"
         },
         "action": "Click",
         "recognition": "OCR",

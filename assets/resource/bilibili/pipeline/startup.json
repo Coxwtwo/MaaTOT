@@ -28,7 +28,7 @@
     },
     "MihoyoSlogan": {
         "focus": {
-            "succeeded": "[color:Dimgray]游戏启动[/color]"
+            "Node.Recognition.Succeeded": "[color:Dimgray]游戏启动[/color]"
         },
         "recognition": "OCR",
         "expected": [
@@ -58,7 +58,7 @@
     "Flag_B服同意协议": {
         "focus": {
             "toast": "请阅读用户协议并手动同意用户协议",
-            "succeeded": "[color:Orange]请阅读用户协议并手动同意用户协议，任务终止[/color]"
+            "Node.Recognition.Succeeded": "[color:Orange]请阅读用户协议并手动同意用户协议，任务终止[/color]"
         },
         "recognition": "OCR",
         "expected": "同意",

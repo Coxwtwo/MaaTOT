@@ -55,8 +55,8 @@
     },
     "Flag_选择梦笺": {
         "focus": {
-            "toast": "需要选择梦笺，任务终止",
-            "succeeded": "[color:Orange]需要选择梦笺，任务终止[/color]"
+            "Node.Recognition.Succeeded": "[color:Orange]需要选择梦笺，任务终止[/color]",
+            "toast": "需要选择梦笺，任务终止"
         },
         "recognition": "OCR",
         "expected": [
@@ -315,7 +315,7 @@
     },
     "Click_前往梦笺": {
         "focus": {
-            "succeeded": "[color:Deepskyblue]加入花露[/color]"
+            "Node.Action.Succeeded": "[color:Deepskyblue]加入花露[/color]"
         },
         "action": "Click",
         "recognition": "OCR",

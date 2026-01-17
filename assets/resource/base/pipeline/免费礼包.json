@@ -91,7 +91,7 @@
     },
     "Click_点击购买": {
         "focus": {
-            "succeeded": "[color:Limegreen]已完成免费礼包购买[/color]"
+            "Node.Action.Succeeded": "[color:Limegreen]已完成免费礼包购买[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
