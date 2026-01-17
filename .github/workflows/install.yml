@@ -136,7 +136,7 @@ jobs:
           curl -L https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe -o rcedit.exe
 
           # 修改 exe 图标
-          ./rcedit.exe "install/MFAAvalonia.exe" --set-icon "logo.ico"
+          ./rcedit.exe "install/MFAAvalonia.exe" --set-icon "install/logo.ico"
 
           echo "MFAAvalonia icon modified successfully"
 
@@ -153,7 +153,7 @@ jobs:
       - name: Replace Icon
         shell: bash
         run: |
-          cp logo.ico install/Assets/logo.ico
+          cp install/logo.ico install/Assets/logo.ico
 
       - name: Upload
         uses: actions/upload-artifact@v4
