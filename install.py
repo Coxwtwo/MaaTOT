@@ -79,8 +79,8 @@ def install_agent():
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = json.load(f)
     if sys.platform.startswith("win"):
-        interface["agent"]["child_exec"] = r"{PROJECT_DIR}/python/python.exe"
-    interface["agent"]["child_args"] = [r"{PROJECT_DIR}/agent/main.py", "-u"]
+        interface["agent"]["child_exec"] = r"./python/python.exe"
+    interface["agent"]["child_args"] = ["-u", r"./agent/main.py"]
 
     with open(install_path / "interface.json", "w", encoding="utf-8") as f:
         json.dump(interface, f, ensure_ascii=False, indent=4)
