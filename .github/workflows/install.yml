@@ -111,18 +111,6 @@ jobs:
           rm -f "${ARCHIVE_FILE_PATH}"
           echo "Archive cleanup command executed for MFAAvalonia on Windows."
 
-      - name: Modify MFAAvalonia exe icon
-        if: matrix.arch == 'x86_64'
-        shell: bash
-        run: |
-          # 下载 rcedit
-          curl -L https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe -o rcedit.exe
-
-          # 修改 exe 图标
-          ./rcedit.exe "MFA/MFAAvalonia.exe" --set-icon "logo.ico"
-
-          echo "MFAAvalonia icon modified successfully"
-
       - name: Setup Embed Python on Windows
         shell: bash
         run: |
@@ -140,7 +128,19 @@ jobs:
           jq --arg app_name "${{ env.app_name }}" --arg version ${{ needs.meta.outputs.tag }} --arg custom_title "${{ env.app_name }} ${{ needs.meta.outputs.tag }} | 生煎包小助手" --arg url ""https://github.com/Coxwtwo/MaaTOT"" '. + {"name": $app_name, "version": $version, "url": $url, "custom_title": $custom_title}' install/interface.json > install/interface.json.tmp
           mv -f install/interface.json.tmp install/interface.json
 
-      - name: Rename MFAAvalonia
+      - name: Modify MFAAvalonia exe icon
+        if: matrix.arch == 'x86_64'
+        shell: bash
+        run: |
+          # 下载 rcedit
+          curl -L https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe -o rcedit.exe
+
+          # 修改 exe 图标
+          ./rcedit.exe "install/MFAAvalonia.exe" --set-icon "logo.ico"
+
+          echo "MFAAvalonia icon modified successfully"
+
+      - name: Rename MFAAvalonia exe
         shell: bash
         run: |
           if [ -f "install/MFAAvalonia.exe" ]; then
