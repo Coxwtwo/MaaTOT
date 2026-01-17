@@ -131,6 +131,7 @@
         "pre_delay": 1000,
         "recognition": "TemplateMatch",
         "template": "专属甜心/图纸空进度条.png",
+        "threshold": 0.9,
         "roi": [
             120,
             954,
@@ -138,7 +139,8 @@
             16
         ],
         "next": [
-            "Click_开始制作"
+            "Click_开始制作",
+            "Flag_具体制作步骤"
         ]
     },
     "Click_开始制作": {
