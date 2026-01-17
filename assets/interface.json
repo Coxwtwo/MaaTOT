@@ -9,7 +9,8 @@
         {
             "name": "ADB",
             "label": "模拟器",
-            "type": "Adb"
+            "type": "Adb",
+            "display_short_side": 720
         }
     ],
     "resource": [
