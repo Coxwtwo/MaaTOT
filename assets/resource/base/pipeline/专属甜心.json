@@ -250,7 +250,7 @@
     },
     "Click_关闭甜心奖励弹窗": {
         "focus": {
-            "Node.Action.Succeeded": "[color:Deepskyblue]图纸制作完成[/color]"
+            "Node.Recognition.Succeeded": "[color:Deepskyblue]图纸制作完成[/color]"
         },
         "action": "Click",
         "recognition": "OCR",

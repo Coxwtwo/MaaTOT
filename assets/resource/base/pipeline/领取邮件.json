@@ -8,7 +8,7 @@
     },
     "Click_邮件": {
         "focus": {
-            "Node.Action.Succeeded": "[color:Limegreen]已完成邮件领取[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成邮件领取[/color]"
         },
         "action": "Click",
         "recognition": "TemplateMatch",

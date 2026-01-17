@@ -83,7 +83,7 @@
     },
     "Click_日常委托": {
         "focus": {
-            "Node.Action.Succeeded": "[color:Dimgray]选中日常委托[/color]"
+            "Node.Recognition.Succeeded": "[color:Dimgray]选中日常委托[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -104,7 +104,7 @@
     },
     "Click_庭审委托": {
         "focus": {
-            "Node.Action.Succeeded": "[color:Dimgray]选中庭审委托[/color]"
+            "Node.Recognition.Succeeded": "[color:Dimgray]选中庭审委托[/color]"
         },
         "action": "Click",
         "recognition": "OCR",

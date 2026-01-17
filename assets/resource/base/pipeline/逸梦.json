@@ -315,7 +315,7 @@
     },
     "Click_前往梦笺": {
         "focus": {
-            "Node.Action.Succeeded": "[color:Deepskyblue]加入花露[/color]"
+            "Node.Recognition.Succeeded": "[color:Deepskyblue]加入花露[/color]"
         },
         "action": "Click",
         "recognition": "OCR",

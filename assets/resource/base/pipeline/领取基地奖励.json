@@ -180,7 +180,7 @@
     },
     "Click_一键解析": {
         "focus": {
-            "Node.Action.Succeeded": "[color:Limegreen]已完成案例解析[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成案例解析[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
