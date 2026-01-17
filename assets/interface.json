@@ -1,5 +1,10 @@
 {
-    "message": "欢迎食用生煎包OvO！",
+    "interface_version": 2,
+    "name": "MaaTOT",
+    "label": "生煎包小助手",
+    "icon": "logo.ico",
+    "github": "https://github.com/Coxwtwo/MaaTOT",
+    "welcome": "欢迎食用生煎包OvO！",
     "controller": [
         {
             "name": "默认方式 ADB",
