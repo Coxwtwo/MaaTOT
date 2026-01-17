@@ -95,6 +95,7 @@ jobs:
           extract: true
 
       - name: Download  MFAAvalonia
+        id: download_mfa
         uses: robinraju/release-downloader@v1  
         with:
           repository: SweetSmellFox/MFAAvalonia
@@ -102,6 +103,13 @@ jobs:
           tag: "${{ env.MFAA_version }}"
           out-file-path: "MFA"
           extract: true
+
+      - name: Clean up MFAAvalonia archive on Windows
+        shell: bash
+        run: |
+          ARCHIVE_FILE_PATH="${{ fromJson(steps.download_mfa.outputs.downloaded_files)[0] }}"
+          rm -f "${ARCHIVE_FILE_PATH}"
+          echo "Archive cleanup command executed for MFAAvalonia on Windows."
 
       - name: Setup Embed Python on Windows
         shell: bash
