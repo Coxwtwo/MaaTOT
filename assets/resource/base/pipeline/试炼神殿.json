@@ -43,6 +43,12 @@
         "template": "DLC/往期亮.png",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            600,
+            170,
+            70,
+            39
+        ],
         "next": [
             "Click_试炼神殿"
         ]
@@ -53,8 +59,13 @@
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            110,
+            270,
+            300,
+            890
+        ],
         "next": [
-            "Flag_试炼神殿_400",
             "Click_试炼神殿_继续",
             "Click_试炼神殿_困难",
             "Flag_In_x3倍数"
@@ -67,26 +78,52 @@
         "recognition": "TemplateMatch",
         "template": "DLC/试炼神殿_400.png",
         "threshold": 0.8,
+        "roi": [
+            440,
+            550,
+            200,
+            80
+        ],
         "next": [
             "Click_试炼神殿_返回主界面"
         ]
     },
     "Click_试炼神殿_继续": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿_继续.png",
+        "recognition": "OCR",
+        "expected": "继续",
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            480,
+            1140,
+            220,
+            90
+        ],
+        "timeout": 60000,
         "next": [
-            "Click_试炼神殿_自动战斗"
+            "[JumpBack]Flag_试炼神殿_自动战斗亮",
+            "[JumpBack]Click_试炼神殿_自动战斗暗",
+            "[JumpBack]Flag_自动出卡已开启_试炼神殿",
+            "Click_试炼神殿完成",
+            "[JumpBack]Flag_试炼神殿_获得奖励"
         ]
     },
     "Click_试炼神殿_困难": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿_困难.png",
+        "recognition": "OCR",
+        "expected": [
+            "困难",
+            "困雅"
+        ],
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            488,
+            725,
+            130,
+            80
+        ],
         "next": [
             "Flag_In_x3倍数",
             "Click_选择倍数箭头"
@@ -98,65 +135,164 @@
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            340,
+            1150,
+            56,
+            78
+        ],
         "next": [
             "Click_选择x3"
         ]
     },
     "Click_选择x3": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿_选择x3.png",
+        "recognition": "OCR",
+        "expected": [
+            "x3",
+            "3"
+        ],
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            273,
+            1068,
+            114,
+            67
+        ],
         "next": [
             "Click_出发"
         ]
     },
     "Flag_In_x3倍数": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿_x3.png",
+        "recognition": "OCR",
+        "expected": [
+            "x3",
+            "3"
+        ],
+        "roi": [
+            284,
+            1157,
+            69,
+            61
+        ],
         "next": [
             "Click_出发"
         ]
     },
     "Click_出发": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿_出发.png",
+        "recognition": "OCR",
+        "expected": [
+            "出发"
+        ],
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
-        "timeout": 600000,
+        "roi": [
+            552,
+            1149,
+            138,
+            79
+        ],
+        "timeout": 60000,
         "next": [
-            "Flag_试炼神殿体力不足弹窗",
-            "Click_试炼神殿_自动战斗",
-            "Click_试炼神殿完成"
+            "[JumpBack]Flag_试炼神殿_自动战斗亮",
+            "[JumpBack]Click_试炼神殿_自动战斗暗",
+            "[JumpBack]Flag_自动出卡已开启_试炼神殿",
+            "Click_试炼神殿完成",
+            "[JumpBack]Flag_试炼神殿_获得奖励",
+            "Flag_试炼神殿体力不足弹窗"
         ]
     },
     "Flag_试炼神殿体力不足弹窗": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿体力补充.png",
+        "recognition": "OCR",
+        "expected": [
+            "体力补充",
+            "体力"
+        ],
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            319,
+            356,
+            153,
+            45
+        ],
         "next": [
             "Click_试炼神殿_取消"
         ]
     },
     "Click_试炼神殿_取消": {
-        "recognition": "TemplateMatch",
-        "template": "DLC/试炼神殿_取消.png",
+        "recognition": "OCR",
+        "expected": [
+            "取消"
+        ],
         "action": "Click",
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            335,
+            1047,
+            165,
+            80
+        ],
         "next": [
             "Click_试炼神殿_返回主界面"
         ]
     },
-    "Click_试炼神殿_自动战斗": {
+    "Flag_试炼神殿_自动战斗亮": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_自动战斗亮.png",
+        "action": "Click",
+        "roi": [
+            485,
+            1110,
+            200,
+            80
+        ],
+        "threshold": 0.9,
+        "pre_delay": 1000,
+        "post_delay": 5000
+    },
+    "Click_试炼神殿_自动战斗暗": {
         "recognition": "TemplateMatch",
         "template": "DLC/试炼神殿_自动战斗暗.png",
         "action": "Click",
+        "roi": [
+            485,
+            1110,
+            200,
+            80
+        ],
+        "threshold": 0.9,
         "pre_delay": 1000,
-        "post_delay": 1000
+        "post_delay": 4000
+    },
+    "Flag_试炼神殿_获得奖励": {
+        "recognition": "OCR",
+        "expected": [
+            "获得奖励",
+            "获得",
+            "奖励"
+        ],
+        "roi": [
+            47,
+            389,
+            198,
+            45
+        ],
+        "next": [
+            "Click_试炼神殿_点击空白区域关闭"
+        ]
+    },
+    "Click_试炼神殿_点击空白区域关闭": {
+        "action": "Click",
+        "roi": [
+            138,
+            714,
+            412,
+            134
+        ]
     },
     "Click_试炼神殿完成": {
         "recognition": "TemplateMatch",
@@ -167,6 +303,12 @@
         },
         "pre_delay": 1000,
         "post_delay": 1000,
+        "roi": [
+            90,
+            200,
+            540,
+            90
+        ],
         "next": [
             "Click_试炼神殿_返回主界面"
         ]
@@ -176,6 +318,26 @@
         "template": "DLC/试炼神殿_返回主界面.png",
         "action": "Click",
         "pre_delay": 1000,
-        "post_delay": 1000
+        "post_delay": 1000,
+        "roi": [
+            20,
+            40,
+            110,
+            70
+        ]
+    },
+    "Flag_自动出卡已开启_试炼神殿": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 4000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ]
     }
 }
