@@ -1,0 +1,181 @@
+{
+    "试炼神殿": {
+        "next": [
+            "Click_事件簿_活动_当期_试炼神殿",
+            "[JumpBack]返回主界面"
+        ]
+    },
+    "Click_事件簿_活动_当期_试炼神殿": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/Story.png",
+        "pre_delay": 500,
+        "roi": [
+            596,
+            990,
+            66,
+            26
+        ],
+        "next": [
+            "Click_活动_当期_试炼神殿"
+        ]
+    },
+    "Click_活动_当期_试炼神殿": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "活动",
+        "pre_delay": 1000,
+        "post_delay": 3000,
+        "roi": [
+            530,
+            1190,
+            95,
+            50
+        ],
+        "next": [
+            "Click_当期暗_试炼神殿",
+            "Click_试炼神殿"
+        ]
+    },
+    "Click_当期暗_试炼神殿": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "DLC/往期亮.png",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_试炼神殿"
+        ]
+    },
+    "Click_试炼神殿": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Flag_试炼神殿_400",
+            "Click_试炼神殿_继续",
+            "Click_试炼神殿_困难",
+            "Flag_In_x3倍数"
+        ]
+    },
+    "Flag_试炼神殿_400": {
+        "focus": {
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成试炼神殿[/color]"
+        },
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_400.png",
+        "threshold": 0.8,
+        "next": [
+            "Click_试炼神殿_返回主界面"
+        ]
+    },
+    "Click_试炼神殿_继续": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_继续.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_试炼神殿_自动战斗"
+        ]
+    },
+    "Click_试炼神殿_困难": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_困难.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Flag_In_x3倍数",
+            "Click_选择倍数箭头"
+        ]
+    },
+    "Click_选择倍数箭头": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_选择倍数箭头.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_选择x3"
+        ]
+    },
+    "Click_选择x3": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_选择x3.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_出发"
+        ]
+    },
+    "Flag_In_x3倍数": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_x3.png",
+        "next": [
+            "Click_出发"
+        ]
+    },
+    "Click_出发": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_出发.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "timeout": 600000,
+        "next": [
+            "Flag_试炼神殿体力不足弹窗",
+            "Click_试炼神殿_自动战斗",
+            "Click_试炼神殿完成"
+        ]
+    },
+    "Flag_试炼神殿体力不足弹窗": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿体力补充.png",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_试炼神殿_取消"
+        ]
+    },
+    "Click_试炼神殿_取消": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_取消.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_试炼神殿_返回主界面"
+        ]
+    },
+    "Click_试炼神殿_自动战斗": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_自动战斗暗.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000
+    },
+    "Click_试炼神殿完成": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_STAGECOMPLETE.png",
+        "action": "Click",
+        "focus": {
+            "Node.Action.Succeeded": "[color:Limegreen]已完成试炼神殿[/color]"
+        },
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "next": [
+            "Click_试炼神殿_返回主界面"
+        ]
+    },
+    "Click_试炼神殿_返回主界面": {
+        "recognition": "TemplateMatch",
+        "template": "DLC/试炼神殿_返回主界面.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000
+    }
+}
