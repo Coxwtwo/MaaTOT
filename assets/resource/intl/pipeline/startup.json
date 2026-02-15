@@ -1,0 +1,117 @@
+{
+    "StartUp": {
+        "next": [
+            "Flag_主界面任务",
+            "MihoyoSlogan",
+            "Flag_点击进入",
+            "Flag_更新版本",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_下载确定",
+            "[JumpBack]Click_账号登录",
+            "[JumpBack]Click_关闭奖励弹窗",
+            "[JumpBack]Click_返回主界面键",
+            "[JumpBack]Click_返回上一级键",
+            "[JumpBack]Click_结束",
+            "[JumpBack]Click_取消",
+            "[JumpBack]Click_X按钮",
+            "[JumpBack]Click_退出手机",
+            "[JumpBack]Click_退出好感交流",
+            "[JumpBack]Click_确定",
+            "[JumpBack]StartTOT"
+        ]
+    },
+    "StartTOT": {
+        "action": "StartApp",
+        "package": "com.miHoYo.tot.glb/com.miHoYo.wd.MainActivity"
+    },
+    "MihoyoSlogan": {
+        "focus": {
+            "Node.Recognition.Succeeded": "[color:Dimgray]游戏启动[/color]"
+        },
+        "recognition": "OCR",
+        "replace": [],
+        "expected": [
+            "HOYOVERSE",
+            "H0Y0VERSE",
+            "HOYO",
+            "H0Y0"
+        ],
+        "post_delay": 800,
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "Flag_点击进入",
+            "Flag_更新版本",
+            "[JumpBack]Flag_ThemisLoading",
+            "[JumpBack]Flag_StartLoadingVersion",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_下载确定",
+            "[JumpBack]Click_账号登录",
+            "[JumpBack]Flag_MihoyoSlogan"
+        ]
+    },
+    "Flag_点击进入": {
+        "recognition": "OCR",
+        "replace": [],
+        "expected": [
+            "TAP TO START",
+            "TAP TO",
+            "TO START",
+            "TAPTO"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "Flag_领取登录奖励",
+            "Flag_关闭广告弹窗",
+            "Flag_每日签到",
+            "[JumpBack]Flag_TipsLoading",
+            "[JumpBack]Click_点击进入"
+        ]
+    },
+    "Flag_MihoyoSlogan": {
+        "recognition": "OCR",
+        "replace": [],
+        "expected": [
+            "HOYOVERSE",
+            "H0Y0VERSE",
+            "HOYO",
+            "H0Y0"
+        ],
+        "post_delay": 800,
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "Click_点击进入": {
+        "action": "Click",
+        "recognition": "OCR",
+        "replace": [],
+        "expected": [
+            "TAP TO START",
+            "TAP TO",
+            "TO START",
+            "TAPTO"
+        ],
+        "pre_delay": 800,
+        "post_delay": 5000,
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ]
+    }
+}

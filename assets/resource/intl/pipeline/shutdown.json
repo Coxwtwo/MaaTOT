@@ -1,0 +1,6 @@
+{
+    "CloseTOT": {
+        "action": "StopApp",
+        "package": "com.miHoYo.tot.glb"
+    }
+}

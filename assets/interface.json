@@ -32,6 +32,16 @@
             "controller": [
                 "ADB"
             ]
+        },
+        {
+            "name": "国际服（简体中文）",
+            "path": [
+                "./resource/base",
+                "./resource/intl"
+            ],
+            "controller": [
+                "ADB"
+            ]
         }
     ],
     "agent": {
