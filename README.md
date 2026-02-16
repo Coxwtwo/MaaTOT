@@ -65,3 +65,7 @@
 感谢所有为 MaaTOT 做出贡献的开发者。
 
 [![Contributors](https://contrib.rocks/image?repo=Coxwtwo/MaaTOT&max=100)](https://github.com/Coxwtwo/MaaTOT/graphs/contributors)
+
+## 项目参与
+
+MaaTOT 交流群 QQ 群：894700853
