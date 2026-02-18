@@ -9,7 +9,8 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "未名日程"
+            "未名日程",
+            "未名口程"
         ],
         "pre_delay": 800,
         "post_delay": 1500,
@@ -75,10 +76,10 @@
         ],
         "next": [
             "Flag_委托搜寻中",
+            "[JumpBack]Click_庭审委托",
             "Flag_疲劳值满",
             "Flag_主界面任务",
-            "[JumpBack]Click_日常委托",
-            "[JumpBack]Click_庭审委托"
+            "[JumpBack]Click_日常委托"
         ]
     },
     "Click_日常委托": {
