@@ -150,11 +150,6 @@ jobs:
             echo "MFAAvalonia.exe not found in install directory"
           fi
 
-      - name: Replace Icon
-        shell: bash
-        run: |
-          cp install/logo.ico install/Assets/logo.ico
-
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
