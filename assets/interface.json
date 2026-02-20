@@ -4,7 +4,7 @@
     "label": "生煎包小助手",
     "icon": "logo.ico",
     "github": "https://github.com/Coxwtwo/MaaTOT",
-    "welcome": "欢迎食用生煎包OvO！",
+    "welcome": "欢迎食用生煎包OvO！\n\n不要在任何平台的未定事件簿官方账号下面提到MaaTOT！",
     "controller": [
         {
             "name": "ADB",

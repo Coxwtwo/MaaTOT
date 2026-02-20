@@ -7,6 +7,8 @@
 基于全新架构的生煎包小助手。图像技术 + 模拟控制，解放双手！
 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
 
+### 注意：不要在任何平台的未定事件簿官方账号下面提到MaaTOT！
+
 </div>
 
 ## 功能列表
