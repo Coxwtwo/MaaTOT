@@ -37,40 +37,7 @@
     git submodule update --init --recursive
     ```
 
-4. 下载OCR资源文件
-
-    下载 OCR（文字识别）资源文件 [ppocr_v5.zip](https://download.maafw.xyz/MaaCommonAssets/OCR/ppocr_v5/ppocr_v5-zh_cn.zip) 解压到 `assets/resource/base/model/ocr/` 目录下，确保路径如下：
-
-    ```plaintext
-    assets/resource/base/model/ocr/
-    ├── det.onnx
-    ├── keys.txt
-    └── rec.onnx
-    ```
-
-    或在cmd中，切换至MaaTOT主文件夹路径，运行
-
-    ```cmd
-    python configure.py
-    ```
-
-5. 【可选】安装[MaaDebugger](https://github.com/MaaXYZ/MaaDebugger)
-    - 独立的Maa脚本调试工具，网页端操作
-
-    ```cmd
-    python -m pip install MaaDebugger
-    ```
-
-    - 如遇安装失败，可建立虚拟环境（python=3.12）重试
-
-6. 【可选】【推荐】安装[Maa Pipeline Support](https://marketplace.visualstudio.com/items?itemName=nekosu.maa-support)
-    - VS Code插件，在VS Code插件面板中安装
-    - 需要安装C++依赖库，不然会报错MaaFramework not loaded。运行MaaTOT的[release包](https://github.com/Coxwtwo/MaaTOT/releases)里的`DependencySetup_依赖库安装_win.bat`安装即可。
-
-7. 【可选】下载 MaaFramework 的 [Release包](https://github.com/MaaXYZ/MaaFramework/releases)，解压到 `deps` 文件夹中。
-    - 用于本地测试MaaPiCli版本
-
-8. 【可选】设置嵌入式python
+4. 安装 Python
     - 用于本地测试MaaPiCli版本
 
     在cmd中，切换至MaaTOT主文件夹路径，运行
@@ -90,3 +57,13 @@
     ```cmd
     python install.py
     ```
+
+
+5. 【可选】安装调试/开发工具
+    | 工具 | 简介 |
+    |------|------|
+    | [Maa Pipeline Support(推荐)](https://marketplace.visualstudio.com/items?itemName=nekosu.maa-support) | VSCode 插件，提供调试、截图、获取 ROI、取色等功能 |
+    | [MaaLogAnalyzer(推荐)](https://github.com/MaaXYZ/MaaLogAnalyzer) | 可视化分析基于 MaaFramework 开发应用的日志 |
+    | [MFAToolsPlus](https://github.com/SweetSmellFox/MFAToolsPlus) | 跨平台开发工具箱，提供便捷的数据获取和模拟测试方法 |
+    | [MaaDebugger](https://github.com/MaaXYZ/MaaDebugger) | 独立调试工具 |
+    | [ImageCropper(不推荐)](https://github.com/MaaXYZ/MaaFramework/tree/main/tools/ImageCropper) | 独立截图及获取 ROI 工具 |
