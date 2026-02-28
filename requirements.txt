@@ -1,4 +1,4 @@
-maafw==5.7.0
+maafw==5.7.2
 loguru>=0.7.3
 pillow>=11.2.1
 pytz>=2025.2

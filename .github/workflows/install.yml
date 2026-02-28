@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 env:
-  MaaFw_version: v5.7.0
+  MaaFw_version: v5.7.2
   MFAA_version: v2.7.2
   app_name: MaaTOT
 
