@@ -47,7 +47,8 @@
     "agent": {
         "child_exec": "python",
         "child_args": [
-            "{PROJECT_DIR}/../agent/main.py"
+            "-u",
+            "./../agent/main.py"
         ]
     },
     "task": [
@@ -234,9 +235,9 @@
             "description": "[size:20]该功能涉及到礼包购买，可能出现错误造成损失，开启该任务视为你已了解并愿意承担相关风险。[/size]\n\n[size:15]购买限时活动的免费祈愿盒[/size]"
         },
         {
-            "name": "特训活动提供补给",
-            "entry": "特训活动提供补给",
-            "description": "[size:20]活动已过期！不要开启这个任务！[/size]\n\n[size:15]纵情挥击限时活动提供补给。[/size]\n\n[size:15]目前仅支持选择未名币[/size]"
+            "name": "提交材料活动",
+            "entry": "提交材料活动",
+            "description": "[size:15]邂逅波光限时活动提交材料。[/size]\n\n[size:15]目前仅支持选择未名币[/size]"
         },
         {
             "name": "退出游戏",
@@ -254,7 +255,7 @@
         {
             "name": "领取拼图活动代币",
             "entry": "领取拼图活动代币",
-            "description": "[size:15]予爱未名限时活动代币领取。只是领取每日任务代币，需要手动拼图。[/size]"
+            "description": "[size:15]故城拼图限时活动代币领取。只是领取每日任务代币，需要手动拼图。[/size]"
         },
         {
             "name": "思绪张数任务（未完成）",
