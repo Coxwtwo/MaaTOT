@@ -1,11 +1,11 @@
 {
-    "特训活动提供补给": {
+    "提交材料活动": {
         "next": [
-            "Click_活动_限时特训活动",
+            "Click_活动_限时提交材料活动",
             "[JumpBack]返回主界面"
         ]
     },
-    "Click_活动_限时特训活动": {
+    "Click_活动_限时提交材料活动": {
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/活动.PNG",
@@ -18,17 +18,17 @@
             41
         ],
         "next": [
-            "寻找特训活动"
+            "寻找提交材料活动"
         ]
     },
-    "寻找特训活动": {
+    "寻找提交材料活动": {
         "next": [
-            "Flag_特训活动",
-            "Flag_每日签到_特训补给",
-            "[JumpBack]Swipe_向左滑动寻找特训活动"
+            "Flag_提交材料活动",
+            "Flag_每日签到_提交材料活动",
+            "[JumpBack]Swipe_向左滑动寻找提交材料活动"
         ]
     },
-    "Swipe_向左滑动寻找特训活动": {
+    "Swipe_向左滑动寻找提交材料活动": {
         "action": "Swipe",
         "duration": 800,
         "post_delay": 800,
@@ -45,7 +45,7 @@
             60
         ]
     },
-    "Swipe_向右滑动寻找特训活动": {
+    "Swipe_向右滑动寻找提交材料活动": {
         "action": "Swipe",
         "duration": 800,
         "post_wait_freezes": 400,
@@ -63,10 +63,10 @@
             60
         ],
         "next": [
-            "HitsLimiter_Swipe_向右滑动寻找特训活动"
+            "HitsLimiter_Swipe_向右滑动寻找提交材料活动"
         ]
     },
-    "HitsLimiter_Swipe_向右滑动寻找特训活动": {
+    "HitsLimiter_Swipe_向右滑动寻找提交材料活动": {
         "action": "Custom",
         "custom_action": "HitsLimiter",
         "custom_action_param": {
@@ -74,11 +74,11 @@
             "max_count": 10
         }
     },
-    "Flag_特训活动": {
+    "Flag_提交材料活动": {
         "recognition": "OCR",
         "expected": [
-            "纵情",
-            "挥击"
+            "邂逅",
+            "波光"
         ],
         "post_delay": 3000,
         "roi": [
@@ -88,10 +88,10 @@
             110
         ],
         "next": [
-            "Click_特训活动"
+            "Click_提交材料活动"
         ]
     },
-    "Flag_每日签到_特训补给": {
+    "Flag_每日签到_提交材料活动": {
         "recognition": "OCR",
         "expected": [
             "每日",
@@ -105,16 +105,16 @@
             110
         ],
         "next": [
-            "Flag_特训活动",
-            "[JumpBack]Swipe_向右滑动寻找特训活动"
+            "Flag_提交材料活动",
+            "[JumpBack]Swipe_向右滑动寻找提交材料活动"
         ]
     },
-    "Click_特训活动": {
+    "Click_提交材料活动": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "纵情",
-            "挥击"
+            "邂逅",
+            "波光"
         ],
         "post_delay": 1500,
         "roi": [
@@ -124,33 +124,36 @@
             110
         ],
         "next": [
-            "Click_提供补给",
-            "Flag_已提供过补给",
+            "Click_提交材料",
+            "Flag_已提交过材料",
             "[JumpBack]Click_X按钮"
         ]
     },
-    "Flag_已提供过补给": {
+    "Flag_已提交过材料": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]今日已提供过补给[/color]"
+            "Node.Recognition.Succeeded": "[color:Dimgray]今日已提交过材料[/color]"
         },
         "recognition": "OCR",
-        "expected": "已提供过",
+        "expected": "今日已",
         "post_delay": 1000,
         "roi": [
-            250,
-            975,
-            220,
-            40
+            240,
+            965,
+            100,
+            50
         ],
         "next": [
             "Flag_主界面任务",
             "[JumpBack]Click_返回上一级键"
         ]
     },
-    "Click_提供补给": {
+    "Click_提交材料": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "提供补给",
+        "expected": [
+            "选择",
+            "心动方案"
+        ],
         "post_delay": 1000,
         "roi": [
             255,
@@ -159,10 +162,10 @@
             65
         ],
         "next": [
-            "Click_选择特训补给材料_未名币"
+            "Click_选择提交材料_未名币"
         ]
     },
-    "Click_选择特训补给材料_未名币": {
+    "Click_选择提交材料_未名币": {
         "focus": {
             "Node.Recognition.Succeeded": "[color:Dimgray]选择未名币[/color]"
         },
@@ -184,17 +187,16 @@
             -30
         ],
         "next": [
-            "Click_确认提交特训补给"
+            "Click_确认提交材料"
         ]
     },
-    "Click_确认提交特训补给": {
+    "Click_确认提交材料": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Limegreen]已完成特训补给提供[/color]"
+            "Node.Recognition.Succeeded": "[color:Limegreen]已完成材料提交[/color]"
         },
         "action": "Click",
         "recognition": "OCR",
         "expected": "确认提交",
-        "green_mask": true,
         "post_delay": 5000,
         "roi": [
             255,
