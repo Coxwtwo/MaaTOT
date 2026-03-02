@@ -244,7 +244,6 @@
     "Flag_试炼神殿_自动战斗亮": {
         "recognition": "TemplateMatch",
         "template": "DLC/试炼神殿_自动战斗亮.png",
-        "action": "Click",
         "roi": [
             485,
             1110,
