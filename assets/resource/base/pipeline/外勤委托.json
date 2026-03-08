@@ -75,11 +75,76 @@
             150
         ],
         "next": [
+            "Flag_已进入外勤区域"
+        ]
+    },
+    "Flag_已进入外勤区域": {
+        "recognition": "OCR",
+        "expected": "切换",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            459,
+            963,
+            244,
+            197
+        ],
+        "next": [
+            "[JumpBack]Flag_Inverse_委托类型",
             "Flag_委托搜寻中",
             "[JumpBack]Click_庭审委托",
             "Flag_疲劳值满",
             "Flag_主界面任务",
             "[JumpBack]Click_日常委托"
+        ]
+    },
+    "Flag_Inverse_委托类型": {
+        "recognition": "OCR",
+        "expected": [
+            "By_User_Setttings"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "inverse": true,
+        "roi": [
+            459,
+            963,
+            244,
+            197
+        ],
+        "next": [
+            "Click_点击切换"
+        ]
+    },
+    "Click_点击切换": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "切换",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            459,
+            963,
+            244,
+            197
+        ],
+        "next": [
+            "Click_切换委托类型"
+        ]
+    },
+    "Click_切换委托类型": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "By_User_Setttings"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            55,
+            671,
+            619,
+            238
         ]
     },
     "Click_日常委托": {

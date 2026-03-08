@@ -172,6 +172,7 @@
             "entry": "外勤委托",
             "option": [
                 "外勤区域",
+                "委托类型",
                 "使用能量饮料",
                 "能量饮料类型"
             ],
@@ -486,6 +487,40 @@
                         "Click_进入外勤区域": {
                             "expected": [
                                 "嘉南区"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "委托类型": {
+            "cases": [
+                {
+                    "name": "高级委托",
+                    "pipeline_override": {
+                        "Flag_Inverse_委托类型": {
+                            "expected": [
+                                "高级"
+                            ]
+                        },
+                        "Click_切换委托类型": {
+                            "expected": [
+                                "高级"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "初级委托",
+                    "pipeline_override": {
+                        "Flag_Inverse_委托类型": {
+                            "expected": [
+                                "初级"
+                            ]
+                        },
+                        "Click_切换委托类型": {
+                            "expected": [
+                                "初级"
                             ]
                         }
                     }
