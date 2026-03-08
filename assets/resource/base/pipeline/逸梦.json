@@ -2,6 +2,7 @@
     "逸梦": {
         "next": [
             "Click_逸梦",
+            "Flag_In逸梦",
             "[JumpBack]返回主界面"
         ]
     },
@@ -18,36 +19,23 @@
             33
         ],
         "next": [
-            "Flag_下一次花露收取",
-            "Flag_花露最大值",
+            "Flag_In逸梦",
             "Flag_选择梦笺"
         ]
     },
-    "Flag_下一次花露收取": {
+    "Flag_In逸梦": {
         "recognition": "OCR",
-        "expected": "下一次花露收取",
-        "pre_delay": 800,
-        "post_delay": 4500,
-        "roi": [
-            307,
-            465,
-            150,
-            27
+        "expected": [
+            "珍藏",
+            "建筑"
         ],
-        "next": [
-            "Swipe_收取花露第一行"
-        ]
-    },
-    "Flag_花露最大值": {
-        "recognition": "OCR",
-        "expected": "花露已达到最大数量",
         "pre_delay": 800,
         "post_delay": 4500,
         "roi": [
-            237,
-            418,
-            230,
-            39
+            55,
+            1045,
+            65,
+            190
         ],
         "next": [
             "Swipe_收取花露第一行"
