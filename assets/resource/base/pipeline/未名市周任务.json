@@ -27,6 +27,7 @@
     "Click_未名市": {
         "action": "Click",
         "recognition": "OCR",
+        "post_delay": 2000,
         "expected": [
             "未名市"
         ],
@@ -37,6 +38,20 @@
             190
         ],
         "next": [
+            "Flag_In未名市",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_In未名市": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市任务.png",
+        "roi": [
+            30,
+            260,
+            30,
+            40
+        ],
+        "next": [
             "Click_未名市任务"
         ]
     },
@@ -45,14 +60,14 @@
         "recognition": "TemplateMatch",
         "template": "未名市/未名市任务.png",
         "pre_wait_freezes": 200,
+        "post_delay": 2000,
         "roi": [
-            0,
-            193,
-            142,
-            172
+            30,
+            260,
+            30,
+            40
         ],
         "next": [
-            "Click_未名市任务",
             "Flag_进行中"
         ]
     },
@@ -75,7 +90,7 @@
             "返回主界面"
         ]
     },
-    "Flag_照顾花草2":{
+    "Flag_照顾花草2": {
         "recognition": "OCR",
         "expected": [
             "照顾花草\\(二",
@@ -93,7 +108,7 @@
             "[JumpBack]Flag_重置位置_中央商业街"
         ]
     },
-    "Flag_中央商业街_照顾花草2":{
+    "Flag_中央商业街_照顾花草2": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -108,7 +123,7 @@
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_照顾花草2_1":{
+    "LongPressKey_照顾花草2_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -125,18 +140,16 @@
             "LongPressKey_照顾花草2_2"
         ]
     },
-
-    "LongPressKey_照顾花草2_2":{
+    "LongPressKey_照顾花草2_2": {
         "action": "LongPressKey",
         "key": 32,
         "duration": 15000,
-        "timeout": 2000,
         "next": [
-            "[JumpBack]Click_对话框标识",
-            "[JumpBack]Click_获得奖励"
+            "Click_关闭未名市奖励弹窗",
+            "[JumpBack]Click_对话框标识"
         ]
     },
-    "Flag_照顾花草1":{
+    "Flag_照顾花草1": {
         "recognition": "OCR",
         "expected": [
             "照顾花草\\(一",
@@ -154,7 +167,7 @@
             "[JumpBack]Flag_重置位置_中央商业街"
         ]
     },
-    "Flag_中央商业街_照顾花草1":{
+    "Flag_中央商业街_照顾花草1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -169,7 +182,7 @@
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_照顾花草1_1":{
+    "LongPressKey_照顾花草1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -186,7 +199,7 @@
             "LongPressKey_照顾花草1_2"
         ]
     },
-    "LongPressKey_照顾花草1_2":{
+    "LongPressKey_照顾花草1_2": {
         "action": "LongPressKey",
         "key": 32,
         "duration": 17000,
@@ -195,7 +208,7 @@
             "LongPressKey_照顾花草1_3"
         ]
     },
-    "LongPressKey_照顾花草1_3":{
+    "LongPressKey_照顾花草1_3": {
         "action": "LongPressKey",
         "key": 29,
         "duration": 1550,
@@ -203,7 +216,7 @@
             "LongPressKey_照顾花草1_4"
         ]
     },
-    "LongPressKey_照顾花草1_4":{
+    "LongPressKey_照顾花草1_4": {
         "action": "LongPressKey",
         "key": 51,
         "duration": 1200,
@@ -212,7 +225,7 @@
             "[JumpBack]Click_对话框标识"
         ]
     },
-    "Flag_维护中央广场2":{
+    "Flag_维护中央广场2": {
         "recognition": "OCR",
         "expected": [
             "维护中央广场（二",
@@ -227,35 +240,50 @@
         "next": [
             "[JumpBack]Flag_维护中央广场2_1",
             "[JumpBack]Flag_维护中央广场2_2"
-        ] 
+        ]
     },
-    "Flag_维护中央广场2_2":{
+    "Flag_维护中央广场2_2": {
         "recognition": "OCR",
         "expected": [
             "2/3",
             "2"
         ],
         "roi": "Flag_维护中央广场2",
-        "roi_offset": [391,21,-103,50],
+        "roi_offset": [
+            391,
+            21,
+            -103,
+            50
+        ],
         "next": [
             "Flag_中央广场_维护中央广场2_2",
             "[JumpBack]Flag_退出未名市任务",
             "[JumpBack]Flag_重置位置_中央广场"
         ]
     },
-    "Flag_中央广场_维护中央广场2_2":{
+    "Flag_中央广场_维护中央广场2_2": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
-        "roi": [69,598,317,369],
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
         "next": [
             "[JumpBack]LongPressKey_中央广场_维护中央广场2_2_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_2_1":{
+    "LongPressKey_中央广场_维护中央广场2_2_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
-        "roi": [69,598,317,369],
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
         "action": "LongPressKey",
         "key": 47,
         "duration": 500,
@@ -263,16 +291,15 @@
             "LongPressKey_中央广场_维护中央广场2_2_2"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_2_2":{
+    "LongPressKey_中央广场_维护中央广场2_2_2": {
         "action": "LongPressKey",
         "key": 32,
         "duration": 1375,
-        "timeout": 2000,
         "next": [
             "LongPressKey_中央广场_维护中央广场2_2_3"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_2_3":{
+    "LongPressKey_中央广场_维护中央广场2_2_3": {
         "action": "LongPressKey",
         "key": 47,
         "duration": 3000,
@@ -281,33 +308,48 @@
             "[JumpBack]Click_对话框标识"
         ]
     },
-    "Flag_维护中央广场2_1":{
+    "Flag_维护中央广场2_1": {
         "recognition": "OCR",
         "expected": [
             "0/3",
             "1/3"
         ],
         "roi": "Flag_维护中央广场2",
-        "roi_offset": [391,21,-103,50],
+        "roi_offset": [
+            391,
+            21,
+            -103,
+            50
+        ],
         "next": [
             "Flag_中央广场_维护中央广场2_1",
             "[JumpBack]Flag_退出未名市任务",
             "[JumpBack]Flag_重置位置_中央广场"
         ]
     },
-    "Flag_中央广场_维护中央广场2_1":{
+    "Flag_中央广场_维护中央广场2_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
-        "roi": [69,598,317,369],
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
         "next": [
             "[JumpBack]LongPressKey_中央广场_维护中央广场2_1_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_1_1":{
+    "LongPressKey_中央广场_维护中央广场2_1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
-        "roi": [69,598,317,369],
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
         "action": "LongPressKey",
         "key": 47,
         "duration": 500,
@@ -315,16 +357,15 @@
             "LongPressKey_中央广场_维护中央广场2_1_2"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_1_2":{
+    "LongPressKey_中央广场_维护中央广场2_1_2": {
         "action": "LongPressKey",
         "key": 32,
         "duration": 600,
-        "timeout": 2000,
         "next": [
             "LongPressKey_中央广场_维护中央广场2_1_3"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_1_3":{
+    "LongPressKey_中央广场_维护中央广场2_1_3": {
         "action": "LongPressKey",
         "key": 47,
         "duration": 3000,
@@ -333,7 +374,7 @@
             "[JumpBack]Click_对话框标识"
         ]
     },
-    "Flag_维护中央广场1":{
+    "Flag_维护中央广场1": {
         "recognition": "OCR",
         "expected": [
             "维护中央广场（一",
@@ -353,19 +394,29 @@
             "[JumpBack]Flag_重置位置_中央广场"
         ]
     },
-    "Flag_中央广场_维护中央广场1":{
+    "Flag_中央广场_维护中央广场1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
-        "roi": [69,598,317,369],
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
         "next": [
             "[JumpBack]LongPressKey_中央广场_维护中央广场1_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场1_1":{
+    "LongPressKey_中央广场_维护中央广场1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
-        "roi": [69,598,317,369],
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
         "action": "LongPressKey",
         "key": 47,
         "duration": 500,
@@ -373,17 +424,16 @@
             "LongPressKey_中央广场_维护中央广场1_2"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场1_2":{
+    "LongPressKey_中央广场_维护中央广场1_2": {
         "action": "LongPressKey",
         "key": 32,
         "duration": 500,
-        "timeout": 2000,
         "next": [
-            "[JumpBack]Click_对话框标识",
-            "[JumpBack]Click_获得奖励"
+            "Click_关闭未名市奖励弹窗",
+            "[JumpBack]Click_对话框标识"
         ]
     },
-    "Flag_暴力装修":{
+    "Flag_暴力装修": {
         "recognition": "OCR",
         "expected": "暴力装修",
         "roi": [
@@ -399,18 +449,28 @@
             "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
-    "Flag_忒弥斯律所_暴力装修":{
+    "Flag_忒弥斯律所_暴力装修": {
         "recognition": "And",
         "all_of": [
             {
                 "recognition": "OCR",
                 "expected": "律所前台",
-                "roi":[460,188,244,138]
+                "roi": [
+                    460,
+                    188,
+                    244,
+                    138
+                ]
             },
             {
                 "recognition": "TemplateMatch",
                 "template": "未名市/忒弥斯律所前台定位图.png",
-                "roi":[0,728,262,362],
+                "roi": [
+                    0,
+                    728,
+                    262,
+                    362
+                ],
                 "threshold": 0.9
             }
         ],
@@ -419,18 +479,28 @@
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_暴力装修_1":{
+    "LongPressKey_暴力装修_1": {
         "recognition": "And",
         "all_of": [
             {
                 "recognition": "OCR",
                 "expected": "律所前台",
-                "roi":[460,188,244,138]
+                "roi": [
+                    460,
+                    188,
+                    244,
+                    138
+                ]
             },
             {
                 "recognition": "TemplateMatch",
                 "template": "未名市/忒弥斯律所前台定位图.png",
-                "roi":[0,728,262,362],
+                "roi": [
+                    0,
+                    728,
+                    262,
+                    362
+                ],
                 "threshold": 0.9
             }
         ],
@@ -441,7 +511,7 @@
             "LongPressKey_暴力装修_2"
         ]
     },
-    "LongPressKey_暴力装修_2":{
+    "LongPressKey_暴力装修_2": {
         "action": "LongPressKey",
         "key": 51,
         "duration": 1500,
@@ -449,22 +519,32 @@
             "Click_前往二楼办公区"
         ]
     },
-    "Click_前往二楼办公区":{
+    "Click_前往二楼办公区": {
         "recognition": "OCR",
         "action": "Click",
         "expected": "二楼办公区",
-        "roi": [101,449,517,328],
+        "roi": [
+            101,
+            449,
+            517,
+            328
+        ],
         "post_wait_freezes": 1000,
         "next": [
             "Click_前往二楼办公区",
             "LongPressKey_暴力装修_3"
         ]
     },
-    "LongPressKey_暴力装修_3":{
+    "LongPressKey_暴力装修_3": {
         "recognition": "TemplateMatch",
         "template": "未名市/忒弥斯律所二楼定位图.png",
         "pre_wait_freezes": 1000,
-        "roi": [304,65,216,313],
+        "roi": [
+            304,
+            65,
+            216,
+            313
+        ],
         "action": "LongPressKey",
         "key": 32,
         "duration": 800,
@@ -472,7 +552,7 @@
             "LongPressKey_暴力装修_4"
         ]
     },
-    "LongPressKey_暴力装修_4":{
+    "LongPressKey_暴力装修_4": {
         "action": "LongPressKey",
         "key": 51,
         "duration": 1200,
@@ -480,15 +560,15 @@
             "LongPressKey_暴力装修_5"
         ]
     },
-    "LongPressKey_暴力装修_5":{
+    "LongPressKey_暴力装修_5": {
         "action": "LongPressKey",
         "key": 29,
         "duration": 2000,
         "timeout": 2000,
         "next": [
-            "[JumpBack]Click_前往辩论",
-            "[JumpBack]Click_对话框标识",
-            "[JumpBack]Click_获得奖励"
+            "Click_关闭未名市奖励弹窗",
+            "Click_前往辩论",
+            "[JumpBack]Click_对话框标识"
         ]
     },
     "Flag_虚假交易": {
@@ -507,7 +587,7 @@
             "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
-    "Flag_退出未名市任务":{
+    "Flag_退出未名市任务": {
         "recognition": "OCR",
         "expected": "进行中",
         "roi": [
@@ -524,6 +604,7 @@
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/Back.png",
+        "post_delay": 2000,
         "roi": [
             0,
             0,
@@ -605,9 +686,9 @@
         "end_hold": 8000,
         "timeout": 3000,
         "next": [
-            "[JumpBack]Click_前往辩论",
-            "[JumpBack]Click_对话框标识",
-            "[JumpBack]Click_获得奖励"
+            "Click_关闭未名市奖励弹窗",
+            "Click_前往辩论",
+            "[JumpBack]Click_对话框标识"
         ]
     },
     "Click_前往辩论": {
@@ -621,7 +702,7 @@
             102
         ],
         "next": [
-            "Click_居中开始辩论"
+            "Click_居中开始辩论_未名市"
         ]
     },
     "Click_对话框标识": {
@@ -629,30 +710,69 @@
         "recognition": "TemplateMatch",
         "template": "未名市/对话框标识.png",
         "threshold": 0.8,
-        "timeout": 2000,
         "roi": [
             299,
             804,
             121,
             127
-        ],
-        "next": [
-            "Click_对话框标识"
         ]
     },
-    "Click_获得奖励": {
+    "Click_居中开始辩论_未名市": {
+        "focus": {
+            "Node.Recognition.Succeeded": "[color:Dimgray]开始辩论[/color]"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 4000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ],
+        "next": [
+            "Flag_自动出卡已开启_未名市",
+            "[JumpBack]Click_开启自动出卡"
+        ]
+    },
+    "Flag_自动出卡已开启_未名市": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_辩论失败",
+            "Click_关闭未名市奖励弹窗",
+            "[JumpBack]Flag_自动出卡中"
+        ]
+    },
+    "Click_关闭未名市奖励弹窗": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "获得奖励",
-        "roi": [
-            241,
-            328,
-            234,
-            138
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "target": [
+            300,
+            1000,
+            30,
+            30
         ],
-        "timeout": 1000,
-        "next": [
-            "Click_获得奖励"
+        "roi": [
+            47,
+            389,
+            198,
+            45
         ]
-    }
+    },
 }
