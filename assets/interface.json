@@ -666,7 +666,7 @@
             "label": "夏彦思绪残影",
             "cases": [
                 {
-                    "name": "彼时少年01-08",
+                    "name": "彼时少年：01-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -683,7 +683,7 @@
                     }
                 },
                 {
-                    "name": "彼时少年01-16",
+                    "name": "彼时少年：01-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -700,7 +700,7 @@
                     }
                 },
                 {
-                    "name": "彼时少年03-11",
+                    "name": "彼时少年：03-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -717,7 +717,7 @@
                     }
                 },
                 {
-                    "name": "彼时少年05-04",
+                    "name": "彼时少年：05-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -733,7 +733,7 @@
                     }
                 },
                 {
-                    "name": "彼时少年17-08",
+                    "name": "彼时少年：17-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -749,7 +749,7 @@
                     }
                 },
                 {
-                    "name": "与子偕行05-08",
+                    "name": "与子偕行：05-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -765,7 +765,7 @@
                     }
                 },
                 {
-                    "name": "与子偕行05-12",
+                    "name": "与子偕行：05-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -781,7 +781,7 @@
                     }
                 },
                 {
-                    "name": "与子偕行05-24",
+                    "name": "与子偕行：05-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -797,7 +797,7 @@
                     }
                 },
                 {
-                    "name": "与子偕行07-04",
+                    "name": "与子偕行：07-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -813,7 +813,7 @@
                     }
                 },
                 {
-                    "name": "与子偕行18-12",
+                    "name": "与子偕行：18-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -829,7 +829,7 @@
                     }
                 },
                 {
-                    "name": "刻心09-04",
+                    "name": "刻心：09-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -843,7 +843,7 @@
                     }
                 },
                 {
-                    "name": "刻心09-08",
+                    "name": "刻心：09-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -857,7 +857,7 @@
                     }
                 },
                 {
-                    "name": "刻心09-12",
+                    "name": "刻心：09-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -871,7 +871,7 @@
                     }
                 },
                 {
-                    "name": "刻心14-08",
+                    "name": "刻心：14-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -887,7 +887,7 @@
                     }
                 },
                 {
-                    "name": "灼光13-04",
+                    "name": "灼光：13-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -901,7 +901,7 @@
                     }
                 },
                 {
-                    "name": "灼光13-08",
+                    "name": "灼光：13-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -915,7 +915,7 @@
                     }
                 },
                 {
-                    "name": "灼光13-12",
+                    "name": "灼光：13-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -929,7 +929,7 @@
                     }
                 },
                 {
-                    "name": "灼光15-12",
+                    "name": "灼光：15-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -943,7 +943,7 @@
                     }
                 },
                 {
-                    "name": "心玥18-16",
+                    "name": "心玥：18-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -959,7 +959,7 @@
                     }
                 },
                 {
-                    "name": "心玥18-20",
+                    "name": "心玥：18-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -975,7 +975,7 @@
                     }
                 },
                 {
-                    "name": "心玥18-24",
+                    "name": "心玥：18-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -997,7 +997,7 @@
             "label": "左然思绪残影",
             "cases": [
                 {
-                    "name": "锋芒褪尽01-04",
+                    "name": "锋芒褪尽：01-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1014,7 +1014,7 @@
                     }
                 },
                 {
-                    "name": "锋芒褪尽01-12",
+                    "name": "锋芒褪尽：01-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1031,7 +1031,7 @@
                     }
                 },
                 {
-                    "name": "锋芒褪尽03-08",
+                    "name": "锋芒褪尽：03-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1048,7 +1048,7 @@
                     }
                 },
                 {
-                    "name": "锋芒褪尽06-04",
+                    "name": "锋芒褪尽：06-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1064,7 +1064,7 @@
                     }
                 },
                 {
-                    "name": "锋芒褪尽17-04",
+                    "name": "锋芒褪尽：17-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1080,7 +1080,7 @@
                     }
                 },
                 {
-                    "name": "长夜微明03-04",
+                    "name": "长夜微明：03-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1097,7 +1097,7 @@
                     }
                 },
                 {
-                    "name": "长夜微明03-14",
+                    "name": "长夜微明：03-14",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1114,7 +1114,7 @@
                     }
                 },
                 {
-                    "name": "长夜微明05-20",
+                    "name": "长夜微明：05-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1130,7 +1130,7 @@
                     }
                 },
                 {
-                    "name": "长夜微明07-08",
+                    "name": "长夜微明：07-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1146,7 +1146,7 @@
                     }
                 },
                 {
-                    "name": "长夜微明18-08",
+                    "name": "长夜微明：18-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1162,7 +1162,7 @@
                     }
                 },
                 {
-                    "name": "抉择06-16",
+                    "name": "抉择：06-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1178,7 +1178,7 @@
                     }
                 },
                 {
-                    "name": "抉择06-20",
+                    "name": "抉择：06-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1194,7 +1194,7 @@
                     }
                 },
                 {
-                    "name": "抉择06-24",
+                    "name": "抉择：06-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1210,7 +1210,7 @@
                     }
                 },
                 {
-                    "name": "抉择11-08",
+                    "name": "抉择：11-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1226,7 +1226,7 @@
                     }
                 },
                 {
-                    "name": "此间10-12",
+                    "name": "此间：10-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1240,7 +1240,7 @@
                     }
                 },
                 {
-                    "name": "此间10-04",
+                    "name": "此间：10-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1254,7 +1254,7 @@
                     }
                 },
                 {
-                    "name": "此间10-08",
+                    "name": "此间：10-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1268,7 +1268,7 @@
                     }
                 },
                 {
-                    "name": "此间14-12",
+                    "name": "此间：14-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1284,7 +1284,7 @@
                     }
                 },
                 {
-                    "name": "铭忘14-16",
+                    "name": "铭忘：14-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1300,7 +1300,7 @@
                     }
                 },
                 {
-                    "name": "铭忘14-20",
+                    "name": "铭忘：14-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1316,7 +1316,7 @@
                     }
                 },
                 {
-                    "name": "铭忘14-24",
+                    "name": "铭忘：14-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1338,7 +1338,7 @@
             "label": "莫弈思绪残影",
             "cases": [
                 {
-                    "name": "初光倾泻02-04",
+                    "name": "初光倾泻：02-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1355,7 +1355,7 @@
                     }
                 },
                 {
-                    "name": "初光倾泻02-12",
+                    "name": "初光倾泻：02-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1372,7 +1372,7 @@
                     }
                 },
                 {
-                    "name": "初光倾泻04-11",
+                    "name": "初光倾泻：04-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1389,7 +1389,7 @@
                     }
                 },
                 {
-                    "name": "初光倾泻06-08",
+                    "name": "初光倾泻：06-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1405,7 +1405,7 @@
                     }
                 },
                 {
-                    "name": "初光倾泻17-12",
+                    "name": "初光倾泻：17-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1421,7 +1421,7 @@
                     }
                 },
                 {
-                    "name": "入局05-28",
+                    "name": "入局：05-28",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1437,7 +1437,7 @@
                     }
                 },
                 {
-                    "name": "入局05-32",
+                    "name": "入局：05-32",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1453,7 +1453,7 @@
                     }
                 },
                 {
-                    "name": "入局05-36",
+                    "name": "入局：05-36",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1469,7 +1469,7 @@
                     }
                 },
                 {
-                    "name": "入局11-04",
+                    "name": "入局：11-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1485,7 +1485,7 @@
                     }
                 },
                 {
-                    "name": "繁嚣一梦08-04",
+                    "name": "繁嚣一梦：08-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1499,7 +1499,7 @@
                     }
                 },
                 {
-                    "name": "繁嚣一梦08-08",
+                    "name": "繁嚣一梦：08-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1513,7 +1513,7 @@
                     }
                 },
                 {
-                    "name": "繁嚣一梦08-12",
+                    "name": "繁嚣一梦：08-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1527,7 +1527,7 @@
                     }
                 },
                 {
-                    "name": "繁嚣一梦14-04",
+                    "name": "繁嚣一梦：14-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1543,7 +1543,7 @@
                     }
                 },
                 {
-                    "name": "思欲11-16",
+                    "name": "思欲：11-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1559,7 +1559,7 @@
                     }
                 },
                 {
-                    "name": "思欲11-20",
+                    "name": "思欲：11-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1575,7 +1575,7 @@
                     }
                 },
                 {
-                    "name": "思欲11-24",
+                    "name": "思欲：11-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1591,7 +1591,7 @@
                     }
                 },
                 {
-                    "name": "思欲15-04",
+                    "name": "思欲：15-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1605,7 +1605,7 @@
                     }
                 },
                 {
-                    "name": "彷徨17-16",
+                    "name": "彷徨：17-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1621,7 +1621,7 @@
                     }
                 },
                 {
-                    "name": "彷徨17-20",
+                    "name": "彷徨：17-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1637,7 +1637,7 @@
                     }
                 },
                 {
-                    "name": "彷徨17-24",
+                    "name": "彷徨：17-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1659,7 +1659,7 @@
             "label": "陆景和思绪残影",
             "cases": [
                 {
-                    "name": "心头撞鹿02-08",
+                    "name": "心头撞鹿：02-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1676,7 +1676,7 @@
                     }
                 },
                 {
-                    "name": "心头撞鹿02-16",
+                    "name": "心头撞鹿：02-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1693,7 +1693,7 @@
                     }
                 },
                 {
-                    "name": "心头撞鹿04-08",
+                    "name": "心头撞鹿：04-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1710,7 +1710,7 @@
                     }
                 },
                 {
-                    "name": "心头撞鹿06-12",
+                    "name": "心头撞鹿：06-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1726,7 +1726,7 @@
                     }
                 },
                 {
-                    "name": "心头撞鹿18-04",
+                    "name": "心头撞鹿：18-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1742,7 +1742,7 @@
                     }
                 },
                 {
-                    "name": "坠入心扉04-04",
+                    "name": "坠入心扉：04-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1759,7 +1759,7 @@
                     }
                 },
                 {
-                    "name": "坠入心扉04-14",
+                    "name": "坠入心扉：04-14",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1776,7 +1776,7 @@
                     }
                 },
                 {
-                    "name": "坠入心扉05-16",
+                    "name": "坠入心扉：05-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1792,7 +1792,7 @@
                     }
                 },
                 {
-                    "name": "坠入心扉07-12",
+                    "name": "坠入心扉：07-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1808,7 +1808,7 @@
                     }
                 },
                 {
-                    "name": "静默之下07-16",
+                    "name": "静默之下：07-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1824,7 +1824,7 @@
                     }
                 },
                 {
-                    "name": "静默之下07-20",
+                    "name": "静默之下：07-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1840,7 +1840,7 @@
                     }
                 },
                 {
-                    "name": "静默之下07-24",
+                    "name": "静默之下：07-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -1856,7 +1856,7 @@
                     }
                 },
                 {
-                    "name": "静默之下11-12",
+                    "name": "静默之下：11-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1872,7 +1872,7 @@
                     }
                 },
                 {
-                    "name": "情染12-04",
+                    "name": "情染：12-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1886,7 +1886,7 @@
                     }
                 },
                 {
-                    "name": "情染12-08",
+                    "name": "情染：12-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1900,7 +1900,7 @@
                     }
                 },
                 {
-                    "name": "情染12-12",
+                    "name": "情染：12-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1914,7 +1914,7 @@
                     }
                 },
                 {
-                    "name": "情染15-08",
+                    "name": "情染：15-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "剑兰谷篇"
@@ -1928,7 +1928,7 @@
                     }
                 },
                 {
-                    "name": "斡旋16-04",
+                    "name": "斡旋：16-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1942,7 +1942,7 @@
                     }
                 },
                 {
-                    "name": "斡旋16-08",
+                    "name": "斡旋：16-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -1956,7 +1956,7 @@
                     }
                 },
                 {
-                    "name": "斡旋16-12",
+                    "name": "斡旋：16-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "亚宁篇"
@@ -2006,7 +2006,7 @@
             "label": "夏彦角色材料",
             "cases": [
                 {
-                    "name": "夏彦初级03-10",
+                    "name": "夏彦初级：03-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2023,7 +2023,7 @@
                     }
                 },
                 {
-                    "name": "夏彦中级06-11",
+                    "name": "夏彦中级：06-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2039,7 +2039,7 @@
                     }
                 },
                 {
-                    "name": "夏彦高级07-09",
+                    "name": "夏彦高级：07-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2061,7 +2061,7 @@
             "label": "左然角色材料",
             "cases": [
                 {
-                    "name": "左然初级03-12",
+                    "name": "左然初级：03-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2078,7 +2078,7 @@
                     }
                 },
                 {
-                    "name": "左然中级06-10",
+                    "name": "左然中级：06-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2094,7 +2094,7 @@
                     }
                 },
                 {
-                    "name": "左然高级07-10",
+                    "name": "左然高级：07-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2116,7 +2116,7 @@
             "label": "莫弈角色材料",
             "cases": [
                 {
-                    "name": "莫弈初级03-13",
+                    "name": "莫弈初级：03-13",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2133,7 +2133,7 @@
                     }
                 },
                 {
-                    "name": "莫弈中级06-22",
+                    "name": "莫弈中级：06-22",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2149,7 +2149,7 @@
                     }
                 },
                 {
-                    "name": "莫弈高级07-23",
+                    "name": "莫弈高级：07-23",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2171,7 +2171,7 @@
             "label": "陆景和角色材料",
             "cases": [
                 {
-                    "name": "陆景和初级03-09",
+                    "name": "陆景和初级：03-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2188,7 +2188,7 @@
                     }
                 },
                 {
-                    "name": "陆景和中级06-09",
+                    "name": "陆景和中级：06-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2204,7 +2204,7 @@
                     }
                 },
                 {
-                    "name": "陆景和高级07-11",
+                    "name": "陆景和高级：07-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2250,7 +2250,7 @@
             "label": "逻辑印象",
             "cases": [
                 {
-                    "name": "逻辑印象Ⅲ06-05",
+                    "name": "逻辑印象Ⅲ：06-05",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2266,7 +2266,7 @@
                     }
                 },
                 {
-                    "name": "逻辑印象Ⅱ＆Ⅰ03-05",
+                    "name": "逻辑印象Ⅱ＆Ⅰ：03-05",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2289,7 +2289,7 @@
             "label": "共情印象",
             "cases": [
                 {
-                    "name": "共情印象Ⅲ06-06",
+                    "name": "共情印象Ⅲ：06-06",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2305,7 +2305,7 @@
                     }
                 },
                 {
-                    "name": "共情印象Ⅱ＆Ⅰ03-06",
+                    "name": "共情印象Ⅱ＆Ⅰ：03-06",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2328,7 +2328,7 @@
             "label": "直觉印象",
             "cases": [
                 {
-                    "name": "直觉印象Ⅲ06-07",
+                    "name": "直觉印象Ⅲ：06-07",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
@@ -2344,7 +2344,7 @@
                     }
                 },
                 {
-                    "name": "直觉印象Ⅱ＆Ⅰ03-07",
+                    "name": "直觉印象Ⅱ＆Ⅰ：03-07",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
                             "expected": "海奥森篇"
