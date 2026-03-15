@@ -305,9 +305,9 @@
         }
     },
     "import": [
-        "resource/tasks/preset/T_好感度.json",
-        "resource/tasks/preset/T_进修副本.json",
-        "resource/tasks/preset/T_异常副本.json",
-        "resource/tasks/preset/T_外勤委托.json"
+        "resource/tasks/T_好感度.json",
+        "resource/tasks/T_进修副本.json",
+        "resource/tasks/T_异常副本.json",
+        "resource/tasks/T_外勤委托.json"
     ]
 }
