@@ -5,6 +5,17 @@
             "[JumpBack]返回主界面"
         ]
     },
+    "异常副本_自定义": {
+        "action": "Custom",
+        "custom_action": "JustBattle",
+        "custom_action_param": {
+            "stage_number": "By_User_Setttings"
+        },
+        "next": [
+            "Click_事件簿_异常",
+            "[JumpBack]返回主界面"
+        ]
+    },
     "Click_事件簿_异常": {
         "action": "Click",
         "recognition": "TemplateMatch",

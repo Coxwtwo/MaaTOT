@@ -191,6 +191,17 @@
             "description": "[size:15]注意副本可复盘次数，异常关卡复盘次数上限为3次。为了防止使用晶片重置关卡，当可复盘次数小于你设置的次数时，任务会终止。[/size]\n\n[size:15]你可以修改 interface.json 来添加想要残影，如果你愿意参与开发就更好了！[/size]"
         },
         {
+            "name": "异常副本自定义",
+            "entry": "异常副本_自定义",
+            "option": [
+                "异常关卡编号",
+                "复盘次数",
+                "使用能量饮料",
+                "能量饮料类型"
+            ],
+            "description": "[size:15]注意副本可复盘次数，异常关卡复盘次数上限为3次。为了防止使用晶片重置关卡，当可复盘次数小于你设置的次数时，任务会终止。[/size]\n\n[size:15]你可以修改 interface.json 来添加想要残影，如果你愿意参与开发就更好了！[/size]"
+        },
+        {
             "name": "刷角色材料",
             "entry": "异常副本",
             "option": [
@@ -2212,6 +2223,28 @@
                     }
                 }
             ]
+        },
+        "异常关卡编号": {
+            "type": "input",
+            "label": "关卡编号",
+            "description": "请输入要执行的关卡编号，例如：18-04",
+            "inputs": [
+                {
+                    "name": "stage_number",
+                    "label": "关卡编号",
+                    "default": "18-04",
+                    "pipeline_type": "string",
+                    "verify": "^\\d{2}-\\d{2}$",
+                    "pattern_msg": "请输入正确的关卡编号格式（如：18-04）"
+                }
+            ],
+            "pipeline_override": {
+                "异常副本_自定义": {
+                    "custom_action_param": {
+                        "stage_number": "{stage_number}"
+                    }
+                }
+            }
         }
     }
 }
