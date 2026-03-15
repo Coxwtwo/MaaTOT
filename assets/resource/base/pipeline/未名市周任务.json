@@ -87,6 +87,7 @@
             "[JumpBack]Flag_照顾花草1",
             "[JumpBack]Flag_照顾花草2",
             "[JumpBack]Flag_暴力装修",
+            "[JumpBack]Flag_高价纪念品",
             "返回主界面"
         ]
     },
@@ -684,6 +685,102 @@
             850
         ],
         "end_hold": 8000,
+        "timeout": 3000,
+        "next": [
+            "Click_关闭未名市奖励弹窗",
+            "Click_前往辩论",
+            "[JumpBack]Click_对话框标识"
+        ]
+    },
+    "Flag_高价纪念品": {
+        "recognition": "OCR",
+        "expected": "高价纪念品",
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央商业街_高价纪念品",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央商业街"
+        ]
+    },
+    "Flag_中央商业街_高价纪念品": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "next": [
+            "[JumpBack]Swipe_高价纪念品_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_高价纪念品_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850
+        ],
+        "end": [
+            550,
+            850
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_高价纪念品_2"
+        ]
+    },
+    "Swipe_高价纪念品_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850
+        ],
+        "end": [
+            350,
+            650
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_高价纪念品_3"
+        ]
+    },
+    "Swipe_高价纪念品_3": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850
+        ],
+        "end": [
+            550,
+            850
+        ],
+        "end_hold": 7250,
+        "next": [
+            "Swipe_高价纪念品_4"
+        ]
+    },
+    "Swipe_高价纪念品_4": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            650
+        ],
+        "end": [
+            350,
+            850
+        ],
+        "end_hold": 400,
         "timeout": 3000,
         "next": [
             "Click_关闭未名市奖励弹窗",
