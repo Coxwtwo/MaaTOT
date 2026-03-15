@@ -139,7 +139,7 @@
             160
         ],
         "next": [
-            "Flag_Inverse_限时拼图活动经验领取键",
+            "Flag_Inverse_限时拼图活动代币领取键",
             "[JumpBack]Click_领取限时拼图活动代币",
             "[JumpBack]Click_关闭奖励弹窗"
         ]
@@ -166,7 +166,7 @@
             "Click_关闭奖励弹窗"
         ]
     },
-    "Flag_Inverse_限时拼图活动经验领取键": {
+    "Flag_Inverse_限时拼图活动代币领取键": {
         "focus": {
             "Node.Recognition.Succeeded": "[color:Limegreen]已完成限时拼图活动代币领取[/color]"
         },
