@@ -1,0 +1,51 @@
+{
+    "task": [
+        {
+            "name": "思绪张数任务（未完成）",
+            "entry": "思绪张数任务",
+            "option": [
+                "思绪张数任务辩论次数"
+            ],
+            "description": "[size:15]打消失的黄金协理04，战力不足时也会进行辩论[/size]\n\n[size:15]使用前请手动打一遍协理04[/size]"
+        }
+    ],
+    "option": {
+        "思绪张数任务辩论次数": {
+            "cases": [
+                {
+                    "name": "3次",
+                    "pipeline_override": {
+                        "HitsLimiter_Click_协理04_黄金": {
+                            "custom_action_param": {
+                                "current_count": 0,
+                                "max_count": 3
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "5次",
+                    "pipeline_override": {
+                        "HitsLimiter_Click_协理04_黄金": {
+                            "custom_action_param": {
+                                "current_count": 0,
+                                "max_count": 5
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "10次",
+                    "pipeline_override": {
+                        "HitsLimiter_Click_协理04_黄金": {
+                            "custom_action_param": {
+                                "current_count": 0,
+                                "max_count": 10
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

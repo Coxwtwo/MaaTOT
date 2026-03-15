@@ -1,0 +1,95 @@
+{
+    "task": [
+        {
+            "name": "外勤委托",
+            "entry": "外勤委托",
+            "option": [
+                "外勤区域",
+                "外勤委托类型",
+                "使用能量饮料",
+                "能量饮料类型"
+            ],
+            "description": "[size:15]在指定区域内完成日常和庭审委托。[/size]"
+        }
+    ],
+    "option": {
+        "外勤区域": {
+            "cases": [
+                {
+                    "name": "滨河区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "滨河区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "锦兰区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "锦兰区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "长滩区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "长滩区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "嘉南区",
+                    "pipeline_override": {
+                        "Click_进入外勤区域": {
+                            "expected": [
+                                "嘉南区"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "外勤委托类型": {
+            "cases": [
+                {
+                    "name": "高级委托",
+                    "pipeline_override": {
+                        "Flag_Inverse_委托类型": {
+                            "expected": [
+                                "高级"
+                            ]
+                        },
+                        "Click_切换委托类型": {
+                            "expected": [
+                                "高级"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "初级委托",
+                    "pipeline_override": {
+                        "Flag_Inverse_委托类型": {
+                            "expected": [
+                                "初级"
+                            ]
+                        },
+                        "Click_切换委托类型": {
+                            "expected": [
+                                "初级"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

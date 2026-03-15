@@ -1,0 +1,50 @@
+{
+    "task": [
+        {
+            "name": "好感度",
+            "entry": "好感度",
+            "option": [
+                "好感度男主"
+            ],
+            "description": "[size:15]通过触摸的方式获取好感度至每日上限。只能指定单个男主获取好感至每日上限。[/size]"
+        }
+    ],
+    "option": {
+        "好感度男主": {
+            "cases": [
+                {
+                    "name": "夏彦",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感夏彦.png"
+                        }
+                    }
+                },
+                {
+                    "name": "左然",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感左然.png"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感莫弈.png"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感陆景和.png"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
