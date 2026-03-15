@@ -1,0 +1,302 @@
+{
+    "Flag_重置位置_中央广场":{
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_中央广场初始位置",
+            "[JumpBack]LongPressKey_中央商业街_中央广场",
+            "[JumpBack]Flag_Inverse_未名市移动_中央商业街",
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
+        ]
+    },
+    "Flag_中央广场初始位置":{
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央广场定位图.png",
+        "threshold": 0.9,
+        "roi": [69,598,317,369]
+    },
+    "LongPressKey_中央商业街_中央广场":{
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "roi": [127,878,581,245],
+        "action": "LongPressKey",
+        "key": 47,
+        "duration": 800,
+        "post_wait_freezes": { //等待画面中间提示字消失
+            "time": 2000,
+            "target": [54,466,616,172]
+        },
+        "timeout": 1000,
+        "next": [
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_重置位置_中央商业街":{
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_中央商业街初始位置",
+            "[JumpBack]Flag_Inverse_未名市移动_中央商业街",
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
+        ]
+    },
+    "Flag_中央商业街初始位置":{
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ]
+    },
+    "Flag_Inverse_未名市移动_中央商业街":{ //如果当前处在中央商业街，不会执行移动到中央商业街
+        "recognition": "OCR",
+        "expected": "中央商业街",
+        "inverse": true,
+        "roi": [
+            490,
+            197,
+            198,
+            129
+        ],
+        "next": [
+            "Click_未名市移动_中央商业街"
+        ]
+    },
+    "Click_未名市移动_中央商业街": { //节点执行时需要处在中央商业街以外地图
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Click_未名市移动_中央商业街",
+            "Click_点击中央商业街",
+            "[JumpBack]Flag_Inverse_定位_滑动至未名市地图左下角",
+            "[JumpBack]Swipe_滑动至滨河南区"
+        ]
+    },
+    "Swipe_滑动至滨河南区": {
+        "action": "Swipe",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市地图左下角定位.png",
+        "begin": [
+            650,
+            900
+        ],
+        "end": [
+            50,
+            900
+        ],
+        "duration": 500,
+        "end_hold": 300,
+        "roi": [
+            70,
+            376,
+            347,
+            278
+        ],
+        "next": [
+            "Click_点击滨河南区"
+        ]
+    },
+    "Click_点击滨河南区": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/滨河南区.png",
+        "roi": [
+            0,
+            44,
+            720,
+            347
+        ],
+        "timeout": 2000,
+        "next": [
+            "Flag_滨河南区选项",
+            "Click_点击滨河南区"
+        ]
+    },
+    "Flag_滨河南区选项":{
+        "recognition":  "OCR",
+        "expected": [
+            "中央商业街",
+            "忒弥斯律所",
+            "和印大厅"
+        ]
+    },
+    "Click_点击中央商业街": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "中央商业街",
+        "roi": [
+            71,
+            359,
+            292,
+            179
+        ],
+        "timeout": 2000,
+        "next": [
+            "Click_点击中央商业街",
+            "[JumpBack]Click_确定",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_Inverse_未名市移动_锦兰区":{ //如果当前处在锦兰区，不会执行移动到锦兰区
+        "recognition": "OCR",
+        "expected": [
+            "陆公馆客厅",
+            "陆景和卧室"
+        ],
+        "inverse": true,
+        "roi": [
+            490,
+            197,
+            198,
+            129
+        ],
+        "next": [
+            "Click_未名市移动_锦兰区"
+        ]
+    },
+    "Click_未名市移动_锦兰区": { //节点执行时需要处在锦兰区（陆公馆客厅、陆景和卧室）以外地图
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Click_未名市移动_锦兰区",
+            "Click_点击锦兰区",
+            "[JumpBack]Flag_Inverse_定位_滑动至未名市地图左下角"
+        ]
+    },
+    "Click_点击锦兰区": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/锦兰区.png",
+        "roi": [
+            5,
+            317,
+            677,
+            300
+        ],
+        "timeout": 3000,
+        "next": [
+            "Click_点击锦兰区",
+            "[JumpBack]Click_确定",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_Inverse_未名市移动_忒弥斯律所":{ //如果当前处在忒弥斯律所，不会执行移动到忒弥斯律所
+        "recognition": "OCR",
+        "expected": [
+            "律所",
+            "左然办公室"
+        ],
+        "inverse": true,
+        "roi": [
+            490,
+            197,
+            198,
+            129
+        ],
+        "next": [
+            "Click_未名市移动_忒弥斯律所"
+        ]
+    },
+    "Click_未名市移动_忒弥斯律所": { //节点执行时需要处在忒弥斯律所以外地图
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Click_未名市移动_忒弥斯律所",
+            "Click_点击忒弥斯律所",
+            "[JumpBack]Flag_Inverse_定位_滑动至未名市地图左下角",
+            "[JumpBack]Swipe_滑动至滨河南区"
+        ]
+    },
+    "Click_点击忒弥斯律所": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "忒弥斯律所",
+        "roi": [73,444,326,217],
+        "timeout": 2000,
+        "next": [
+            "Click_点击忒弥斯律所",
+            "[JumpBack]Click_确定"
+        ]
+    },
+    "OCR测试": {
+        "recognition": "OCR",
+        "expected": "中央"
+    },
+    "Flag_Inverse_定位_滑动至未名市地图左下角": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市地图左下角定位.png",
+        "inverse": true,
+        "roi": [
+            70,
+            376,
+            347,
+            278
+        ],
+        "next": [
+            "Swipe_滑动至未名市地图左下角"
+        ]
+    },
+    "Flag_定位_滑动至未名市地图左下角": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市地图左下角定位.png",
+        "roi": [
+            70,
+            376,
+            347,
+            278
+        ]
+    },
+    "Swipe_滑动至未名市地图左下角": {
+        "action": "Swipe",
+        "begin": [
+            150,
+            950
+        ],
+        "end": [
+            550,
+            550
+        ],
+        "duration": 500,
+        "end_hold": 200,
+        "next": [
+            "Flag_定位_滑动至未名市地图左下角",
+            "Swipe_滑动至未名市地图左下角"
+        ]
+    }
+}

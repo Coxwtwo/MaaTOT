@@ -31,5 +31,14 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda"
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "files.associations": {
+        "**/assets/**/*.json": "jsonc"
+    },
+    "[json][jsonc]": {
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.indentSize": "tabSize"
+    }
 }
