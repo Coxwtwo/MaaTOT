@@ -127,9 +127,9 @@ def agent():
     try:
         from maa.agent.agent_server import AgentServer
         from maa.toolkit import Toolkit
-
-        import custom
         from utils import logger
+        import custom
+
 
         Toolkit.init_option("./")
 
