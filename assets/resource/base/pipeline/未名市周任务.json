@@ -120,11 +120,11 @@
             220
         ],
         "next": [
-            "[JumpBack]LongPressKey_照顾花草2_1",
+            "[JumpBack]Swipe_照顾花草2_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_照顾花草2_1": {
+    "Swipe_照顾花草2_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -134,17 +134,39 @@
             523,
             220
         ],
-        "action": "LongPressKey",
-        "key": 51,
-        "duration": 200,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 200,
         "next": [
-            "LongPressKey_照顾花草2_2"
+            "Swipe_照顾花草2_2"
         ]
     },
-    "LongPressKey_照顾花草2_2": {
-        "action": "LongPressKey",
-        "key": 32,
-        "duration": 15000,
+    "Swipe_照顾花草2_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 15000,
         "next": [
             "Click_关闭未名市奖励弹窗",
             "[JumpBack]Click_对话框标识"
@@ -179,11 +201,11 @@
             220
         ],
         "next": [
-            "[JumpBack]LongPressKey_照顾花草1_1",
+            "[JumpBack]Swipe_照顾花草1_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_照顾花草1_1": {
+    "Swipe_照顾花草1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -193,34 +215,78 @@
             523,
             220
         ],
-        "action": "LongPressKey",
-        "key": 47,
-        "duration": 175,
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 175,
         "next": [
-            "LongPressKey_照顾花草1_2"
+            "Swipe_照顾花草1_2"
         ]
     },
-    "LongPressKey_照顾花草1_2": {
-        "action": "LongPressKey",
-        "key": 32,
-        "duration": 17000,
+    "Swipe_照顾花草1_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 17000,
         "next": [
             "[JumpBack]Click_对话框标识",
-            "LongPressKey_照顾花草1_3"
+            "Swipe_照顾花草1_3"
         ]
     },
-    "LongPressKey_照顾花草1_3": {
-        "action": "LongPressKey",
-        "key": 29,
-        "duration": 1550,
+    "Swipe_照顾花草1_3": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1150,
         "next": [
-            "LongPressKey_照顾花草1_4"
+            "Swipe_照顾花草1_4"
         ]
     },
-    "LongPressKey_照顾花草1_4": {
-        "action": "LongPressKey",
-        "key": 51,
-        "duration": 1200,
+    "Swipe_照顾花草1_4": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 1200,
         "timeout": 2000,
         "next": [
             "[JumpBack]Click_对话框标识"
@@ -272,11 +338,11 @@
             369
         ],
         "next": [
-            "[JumpBack]LongPressKey_中央广场_维护中央广场2_2_1",
+            "[JumpBack]Swipe_中央广场_维护中央广场2_2_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_2_1": {
+    "Swipe_中央广场_维护中央广场2_2_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
         "roi": [
@@ -285,25 +351,58 @@
             317,
             369
         ],
-        "action": "LongPressKey",
-        "key": 47,
-        "duration": 500,
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
         "next": [
-            "LongPressKey_中央广场_维护中央广场2_2_2"
+            "Swipe_中央广场_维护中央广场2_2_2"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_2_2": {
-        "action": "LongPressKey",
-        "key": 32,
-        "duration": 1375,
+    "Swipe_中央广场_维护中央广场2_2_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1375,
         "next": [
-            "LongPressKey_中央广场_维护中央广场2_2_3"
+            "Swipe_中央广场_维护中央广场2_2_3"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_2_3": {
-        "action": "LongPressKey",
-        "key": 47,
-        "duration": 3000,
+    "Swipe_中央广场_维护中央广场2_2_3": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 3000,
         "timeout": 2000,
         "next": [
             "[JumpBack]Click_对话框标识"
@@ -338,11 +437,11 @@
             369
         ],
         "next": [
-            "[JumpBack]LongPressKey_中央广场_维护中央广场2_1_1",
+            "[JumpBack]Swipe_中央广场_维护中央广场2_1_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_1_1": {
+    "Swipe_中央广场_维护中央广场2_1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
         "roi": [
@@ -351,25 +450,58 @@
             317,
             369
         ],
-        "action": "LongPressKey",
-        "key": 47,
-        "duration": 500,
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
         "next": [
-            "LongPressKey_中央广场_维护中央广场2_1_2"
+            "Swipe_中央广场_维护中央广场2_1_2"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_1_2": {
-        "action": "LongPressKey",
-        "key": 32,
-        "duration": 600,
+    "Swipe_中央广场_维护中央广场2_1_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 600,
         "next": [
-            "LongPressKey_中央广场_维护中央广场2_1_3"
+            "Swipe_中央广场_维护中央广场2_1_3"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场2_1_3": {
-        "action": "LongPressKey",
-        "key": 47,
-        "duration": 3000,
+    "Swipe_中央广场_维护中央广场2_1_3": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 3000,
         "timeout": 2000,
         "next": [
             "[JumpBack]Click_对话框标识"
@@ -405,11 +537,11 @@
             369
         ],
         "next": [
-            "[JumpBack]LongPressKey_中央广场_维护中央广场1_1",
+            "[JumpBack]Swipe_中央广场_维护中央广场1_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场1_1": {
+    "Swipe_中央广场_维护中央广场1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央广场定位图.png",
         "roi": [
@@ -418,17 +550,39 @@
             317,
             369
         ],
-        "action": "LongPressKey",
-        "key": 47,
-        "duration": 500,
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
         "next": [
-            "LongPressKey_中央广场_维护中央广场1_2"
+            "Swipe_中央广场_维护中央广场1_2"
         ]
     },
-    "LongPressKey_中央广场_维护中央广场1_2": {
-        "action": "LongPressKey",
-        "key": 32,
-        "duration": 500,
+    "Swipe_中央广场_维护中央广场1_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
         "next": [
             "Click_关闭未名市奖励弹窗",
             "[JumpBack]Click_对话框标识"
@@ -476,11 +630,11 @@
             }
         ],
         "next": [
-            "[JumpBack]LongPressKey_暴力装修_1",
+            "[JumpBack]Swipe_暴力装修_1",
             "Click_未名市任务"
         ]
     },
-    "LongPressKey_暴力装修_1": {
+    "Swipe_暴力装修_1": {
         "recognition": "And",
         "all_of": [
             {
@@ -505,17 +659,39 @@
                 "threshold": 0.9
             }
         ],
-        "action": "LongPressKey",
-        "key": 29,
-        "duration": 1000,
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1000,
         "next": [
-            "LongPressKey_暴力装修_2"
+            "Swipe_暴力装修_2"
         ]
     },
-    "LongPressKey_暴力装修_2": {
-        "action": "LongPressKey",
-        "key": 51,
-        "duration": 1500,
+    "Swipe_暴力装修_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 1500,
         "next": [
             "Click_前往二楼办公区"
         ]
@@ -533,10 +709,10 @@
         "post_wait_freezes": 1000,
         "next": [
             "Click_前往二楼办公区",
-            "LongPressKey_暴力装修_3"
+            "Swipe_暴力装修_3"
         ]
     },
-    "LongPressKey_暴力装修_3": {
+    "Swipe_暴力装修_3": {
         "recognition": "TemplateMatch",
         "template": "未名市/忒弥斯律所二楼定位图.png",
         "pre_wait_freezes": 1000,
@@ -546,25 +722,58 @@
             216,
             313
         ],
-        "action": "LongPressKey",
-        "key": 32,
-        "duration": 800,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 800,
         "next": [
-            "LongPressKey_暴力装修_4"
+            "Swipe_暴力装修_4"
         ]
     },
-    "LongPressKey_暴力装修_4": {
-        "action": "LongPressKey",
-        "key": 51,
-        "duration": 1200,
+    "Swipe_暴力装修_4": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 1200,
         "next": [
-            "LongPressKey_暴力装修_5"
+            "Swipe_暴力装修_5"
         ]
     },
-    "LongPressKey_暴力装修_5": {
-        "action": "LongPressKey",
-        "key": 29,
-        "duration": 2000,
+    "Swipe_暴力装修_5": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 2000,
         "timeout": 2000,
         "next": [
             "Click_关闭未名市奖励弹窗",
@@ -733,11 +942,15 @@
         "action": "Swipe",
         "begin": [
             350,
-            850
+            850,
+            20,
+            20
         ],
         "end": [
             550,
-            850
+            850,
+            20,
+            20
         ],
         "end_hold": 1000,
         "next": [
@@ -748,11 +961,15 @@
         "action": "Swipe",
         "begin": [
             350,
-            850
+            850,
+            20,
+            20
         ],
         "end": [
             350,
-            650
+            650,
+            20,
+            20
         ],
         "end_hold": 1000,
         "next": [
@@ -763,11 +980,15 @@
         "action": "Swipe",
         "begin": [
             350,
-            850
+            850,
+            20,
+            20
         ],
         "end": [
             550,
-            850
+            850,
+            20,
+            20
         ],
         "end_hold": 7250,
         "next": [
@@ -778,11 +999,15 @@
         "action": "Swipe",
         "begin": [
             350,
-            650
+            650,
+            20,
+            20
         ],
         "end": [
             350,
-            850
+            850,
+            20,
+            20
         ],
         "end_hold": 400,
         "timeout": 3000,

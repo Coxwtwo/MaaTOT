@@ -10,7 +10,7 @@
         ],
         "next": [
             "Flag_中央广场初始位置",
-            "[JumpBack]LongPressKey_中央商业街_中央广场",
+            "[JumpBack]Swipe_中央商业街_中央广场",
             "[JumpBack]Flag_Inverse_未名市移动_中央商业街",
             "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
             "[JumpBack]Flag_TipsLoading"
@@ -27,7 +27,7 @@
             369
         ]
     },
-    "LongPressKey_中央商业街_中央广场": {
+    "Swipe_中央商业街_中央广场": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "roi": [
@@ -36,10 +36,21 @@
             581,
             245
         ],
-        "action": "LongPressKey",
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 800,
         "post_delay": 2000,
-        "key": 47,
-        "duration": 800,
         "post_wait_freezes": { //等待画面中间提示字消失
             "time": 2000,
             "target": [
