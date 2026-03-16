@@ -218,10 +218,10 @@
             70
         ],
         "next": [
-            "Flag_酬谢奖励已领取",
             "[JumpBack]Click_关闭奖励弹窗",
             "[JumpBack]Flag_点击开启",
-            "[JumpBack]Click_领取奖励"
+            "[JumpBack]Click_领取奖励",
+            "Flag_酬谢奖励已领取"
         ]
     },
     "Flag_酬谢奖励已领取": {
@@ -245,7 +245,7 @@
         "recognition": "OCR",
         "expected": "领取奖励",
         "pre_delay": 1000,
-        "post_delay": 1000,
+        "post_delay": 4000,
         "roi": [
             292,
             1077,
