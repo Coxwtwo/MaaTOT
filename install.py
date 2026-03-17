@@ -4,6 +4,15 @@ import shutil
 import sys
 import json
 
+try:
+    import jsonc
+except ModuleNotFoundError as e:
+    raise ImportError(
+        "Missing dependency 'json-with-comments' (imported as 'jsonc').\n"
+        f"Install it with:\n  {sys.executable} -m pip install json-with-comments\n"
+        "Or add it to your project's requirements."
+    ) from e
+
 from configure import configure_ocr_model
 
 
@@ -15,6 +24,7 @@ version = len(sys.argv) > 1 and sys.argv[1] or "v0.0.1"
 def install_deps():
     if not (working_dir / "deps" / "bin").exists():
         print("Please download the MaaFramework to \"deps\" first.")
+        print('请先下载 MaaFramework 到 "deps"。')
         sys.exit(1)
 
     shutil.copytree(
@@ -48,26 +58,19 @@ def install_resource():
         working_dir / "assets" / "interface.json",
         install_path,
     )
-    shutil.copy2(
-        working_dir / "assets" / "logo.ico",
-        install_path,
-    )
-    shutil.copy2(
-        working_dir / "CONTACT.md",
-        install_path,
-    )
 
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = json.load(f)
 
     interface["version"] = version
+    interface["title"] = f"MaaTOT {version} | 生煎包小助手"
 
     with open(install_path / "interface.json", "w", encoding="utf-8") as f:
         json.dump(interface, f, ensure_ascii=False, indent=4)
 
 
 def install_chores():
-    for file in ["README.md", "LICENSE", "requirements.txt"]:
+    for file in ["CONTACT.md", "README.md", "LICENSE", "requirements.txt"]:
         shutil.copy2(
             working_dir / file,
             install_path,
