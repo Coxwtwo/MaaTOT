@@ -14,6 +14,7 @@
     ],
     "option": {
         "进修关卡": {
+            "type": "select",
             "cases": [
                 {
                     "name": "会展顾问（未名币）",

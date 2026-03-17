@@ -11,6 +11,7 @@
     ],
     "option": {
         "思绪张数任务辩论次数": {
+            "type": "select",
             "cases": [
                 {
                     "name": "3次",

@@ -11,6 +11,7 @@
     ],
     "option": {
         "好感度男主": {
+            "type": "select",
             "cases": [
                 {
                     "name": "夏彦",

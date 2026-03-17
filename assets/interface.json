@@ -55,6 +55,7 @@
     "task": [],
     "option": {
         "复盘次数": {
+            "type": "select",
             "cases": [
                 {
                     "name": "1次",
@@ -114,13 +115,12 @@
             ]
         },
         "使用能量饮料": {
+            "type": "switch",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "Flag_体力不足弹窗": {
-                            "enabled": false
-                        }
+                        "Flag_体力不足弹窗": {}
                     }
                 },
                 {
@@ -134,6 +134,7 @@
             ]
         },
         "能量饮料类型": {
+            "type": "select",
             "cases": [
                 {
                     "name": "30体力饮料",

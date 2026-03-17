@@ -14,6 +14,7 @@
     ],
     "option": {
         "外勤区域": {
+            "type": "select",
             "cases": [
                 {
                     "name": "滨河区",
@@ -58,6 +59,7 @@
             ]
         },
         "外勤委托类型": {
+            "type": "select",
             "cases": [
                 {
                     "name": "高级委托",
