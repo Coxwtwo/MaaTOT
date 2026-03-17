@@ -6,6 +6,11 @@ import json
 import os
 import re
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(script_dir)
+
+from configure import configure_ocr_model
+
 try:
     import jsonc
 except ModuleNotFoundError as e:
@@ -14,8 +19,6 @@ except ModuleNotFoundError as e:
         f"Install it with:\n  {sys.executable} -m pip install json-with-comments\n"
         "Or add it to your project's requirements."
     ) from e
-
-from configure import configure_ocr_model
 
 
 working_dir = Path(__file__).parent.parent.parent
