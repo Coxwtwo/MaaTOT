@@ -22,6 +22,7 @@ on:
 env:
   MaaFw_version: v5.9.1
   MFAA_version: v2.10.9
+  MXU_version: "v1.19.6"
   app_name: MaaTOT
 
 permissions:
@@ -111,22 +112,22 @@ jobs:
           rm -f "${ARCHIVE_FILE_PATH}"
           echo "Archive cleanup command executed for MFAAvalonia on Windows."
 
-      - name: Setup Embed Python on Windows
-        shell: bash
-        run: |
-          python tools/ci/setup_embed_python.py
-          
-      - name: Install
-        shell: bash
-        run: python ./install.py ${{ needs.meta.outputs.tag }}
+      - name: Download MXU
+        id: download_mxu
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: MistEO/MXU
+          fileName: "MXU-win-${{ matrix.arch }}*"
+          tag: ${{ env.MXU_version }}
+          out-file-path: "MXU"
+          extract: true
 
-      - name: Copy MFAAvalonia
+      - name: Clean up MXU archive on Windows
         shell: bash
         run: |
-          mkdir -p install
-          cp -rpvn MFA/. install/
-          jq --arg app_name "${{ env.app_name }}" --arg version ${{ needs.meta.outputs.tag }} --arg custom_title "${{ env.app_name }} ${{ needs.meta.outputs.tag }} | 生煎包小助手" --arg url ""https://github.com/Coxwtwo/MaaTOT"" '. + {"name": $app_name, "version": $version, "url": $url, "custom_title": $custom_title}' install/interface.json > install/interface.json.tmp
-          mv -f install/interface.json.tmp install/interface.json
+          ARCHIVE_FILE_PATH="${{ fromJson(steps.download_mxu.outputs.downloaded_files)[0] }}"
+          rm -f "${ARCHIVE_FILE_PATH}"
+          echo "Archive cleanup command executed for MXU on Windows."
 
       - name: Modify MFAAvalonia exe icon
         if: matrix.arch == 'x86_64'
@@ -136,25 +137,91 @@ jobs:
           curl -L https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe -o rcedit.exe
 
           # 修改 exe 图标
-          ./rcedit.exe "install/MFAAvalonia.exe" --set-icon "install/logo.ico"
+          ./rcedit.exe "MFA/MFAAvalonia.exe" --set-icon "assets/logo.ico"
 
           echo "MFAAvalonia icon modified successfully"
 
-      - name: Rename MFAAvalonia exe
-        shell: bash
-        run: |
-          if [ -f "install/MFAAvalonia.exe" ]; then
-            mv "install/MFAAvalonia.exe" "install/MaaTOT.exe"
-            echo "Renamed MFAAvalonia.exe to MaaTOT.exe"
-          else
-            echo "MFAAvalonia.exe not found in install directory"
+          # 修改 MXU 图标
+          if [ -f "MXU/mxu.exe" ]; then
+            ./rcedit.exe "MXU/mxu.exe" --set-icon "assets/logo.ico"
+            echo "MXU icon modified successfully"
           fi
 
-      - name: Upload
-        uses: actions/upload-artifact@v4
+      - name: Setup Embed Python on Windows
+        shell: bash
+        run: |
+          python tools/ci/setup_embed_python.py
+
+      - name: Install
+        shell: bash
+        run: |
+          PLATFORM_TAG="win-${{ steps.platform.outputs.tag }}"
+          ./install/python/python.exe ./tools/ci/install_mfaa.py ${{ needs.meta.outputs.tag }} $PLATFORM_TAG
+
+      - name: Create CLI version
+        shell: bash
+        run: |
+          ./install/python/python.exe ./tools/ci/install_cli.py ${{ needs.meta.outputs.tag }}
+          cp -rpvn install/python/. install-cli/python/
+          if [ -f "install-cli/MaaPiCli.exe" ]; then
+            mv -f install-cli/MaaPiCli.exe install-cli/MaaTOT.exe
+          elif [ -f "install-cli/MaaPiCli" ]; then
+            mv -f install-cli/MaaPiCli install-cli/MaaTOT
+          fi
+
+      - name: Create MXU version
+        shell: bash
+        run: |
+          ./install/python/python.exe ./tools/ci/install_mxu.py ${{ needs.meta.outputs.tag }}
+          cp -rpvn install/python/. install-mxu/python/
+
+          fi
+
+      - name: Copy MFA files to main version
+        shell: bash
+        run: |
+          if [ -d "MFA" ]; then
+            echo "Copying MFA files to install directory..."
+            mkdir -p install
+            cp -rpvn MFA/. install/
+            if [ -f "install/MFAAvalonia.exe" ]; then
+              mv -f install/MFAAvalonia.exe install/MaaTOT.exe
+            elif [ -f "install/MFAAvalonia" ]; then
+              mv -f install/MFAAvalonia install/MaaTOT
+            fi
+          else
+            echo "MFA directory not found, skipping copy."
+          fi
+
+      - name: Copy MXU files to MXU version
+        shell: bash
+        run: |
+          if [ -d "MXU" ]; then
+            echo "Copying MXU files to install-mxu directory..."
+            mkdir -p install-mxu
+            if [ -f "MXU/mxu.exe" ]; then
+              cp MXU/mxu.exe install-mxu/MaaTOT.exe
+            elif [ -f "MXU/mxu" ]; then
+              cp MXU/mxu install-mxu/MaaTOT
+            fi
+          else
+            echo "MXU directory not found, skipping copy."
+          fi
+
+      - uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.app_name }}-win-${{ matrix.arch }}-${{ needs.meta.outputs.tag }}
+          name: ${{ env.app_name }}-win-${{ matrix.arch }}-${{ needs.meta.outputs.tag }}-MFAA
           path: "install"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.app_name }}-win-${{ matrix.arch }}-${{ needs.meta.outputs.tag }}-PiCLI
+          path: "install-cli"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.app_name }}-win-${{ matrix.arch }}-${{ needs.meta.outputs.tag }}-MXU
+          path: "install-mxu"
 
   changelog:
     name: Generate changelog
