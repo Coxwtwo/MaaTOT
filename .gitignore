@@ -440,12 +440,14 @@ enc_temp_folder/*
 .nuke/temp/*
 
 # Build
-deps
+deps/*
 build
 install
 
 # 跳过 schema 目录，避免与 sync_schema_files 冲突
-!deps/tools
+!deps/tools/
+deps/tools/*
+!deps/tools/*.schema.json
 
 # Tools
 tools/ImageCropper/**/*.png
