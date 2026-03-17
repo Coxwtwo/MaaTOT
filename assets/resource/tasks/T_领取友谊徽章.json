@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "领取友谊徽章",
+            "entry": "领取友谊徽章",
+            "pipeline_override": {
+                "Click_一键领取亮": {
+                    "next": [
+                        "Click_返回主界面键",
+                        "[JumpBack]Click_关闭奖励弹窗"
+                    ]
+                }
+            }
+        }
+    ]
+}

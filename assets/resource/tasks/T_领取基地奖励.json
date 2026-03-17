@@ -1,0 +1,71 @@
+{
+    "task": [
+        {
+            "name": "基地一条龙",
+            "entry": "基地一条龙",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资源申请"
+                    ]
+                },
+                "Flag_Inverse_资源申请领取": {
+                    "next": [
+                        "Click_资源申请To资料室",
+                        "[JumpBack]Click_关闭奖励弹窗",
+                        "[JumpBack]Click_一键领取亮"
+                    ]
+                },
+                "Click_一键解析": {
+                    "next": [
+                        "Click_酬谢",
+                        "[JumpBack]Click_返回上一级键"
+                    ]
+                },
+                "Flag_案例解析中": {
+                    "next": [
+                        "Click_酬谢",
+                        "[JumpBack]Click_返回上一级键"
+                    ]
+                }
+            },
+            "description": "[size:15]基地奖励领取一条龙，启用本任务后请取消以下任务，避免重复运行，包括：[/size]\n\n[size:15]一键领取资源申请奖励。[/size]\n[size:15]一键领取案例解析奖励并进行解析。[/size]\n[size:15]一键领取酬谢奖励。(领取酬谢偶发卡死，暂未修复，请谨慎开启)[/size]"
+        },
+        {
+            "name": "资源申请",
+            "entry": "资源申请",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资源申请"
+                    ]
+                }
+            },
+            "description": "[size:15]一键领取资源申请奖励。[/size]"
+        },
+        {
+            "name": "案例解析",
+            "entry": "案例解析",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资料室"
+                    ]
+                }
+            },
+            "description": "[size:15]一键领取案例解析奖励并进行解析。[/size]"
+        },
+        {
+            "name": "领取酬谢",
+            "entry": "领取酬谢",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_酬谢"
+                    ]
+                }
+            },
+            "description": "[size:15]一键领取酬谢奖励。(此任务偶发卡死，暂未修复，请谨慎开启)[/size]"
+        }
+    ]
+}

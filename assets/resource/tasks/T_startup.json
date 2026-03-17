@@ -1,0 +1,10 @@
+{
+    "task": [
+        {
+            "name": "启动游戏",
+            "entry": "StartUp",
+            "default_check": true,
+            "description": "[size:15]启动游戏和检查游戏是否位于主界面。[/size]\n\n[size:18]初次使用请在设置好资源类型和任务列表后重启软件。[/size]"
+        }
+    ]
+}

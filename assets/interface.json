@@ -52,153 +52,7 @@
             "./../agent/main.py"
         ]
     },
-    "task": [
-        {
-            "name": "启动游戏",
-            "entry": "StartUp",
-            "default_check": true,
-            "description": "[size:15]启动游戏和检查游戏是否位于主界面。[/size]\n\n[size:18]初次使用请在设置好资源类型和任务列表后重启软件。[/size]"
-        },
-        {
-            "name": "领取邮件",
-            "entry": "领取邮件",
-            "pipeline_override": {
-                "Click_一键领取亮": {
-                    "next": [
-                        "Click_返回主界面键",
-                        "[JumpBack]Click_关闭奖励弹窗"
-                    ]
-                }
-            }
-        },
-        {
-            "name": "领取友谊徽章",
-            "entry": "领取友谊徽章",
-            "pipeline_override": {
-                "Click_一键领取亮": {
-                    "next": [
-                        "Click_返回主界面键",
-                        "[JumpBack]Click_关闭奖励弹窗"
-                    ]
-                }
-            }
-        },
-        {
-            "name": "资源申请",
-            "entry": "资源申请",
-            "pipeline_override": {
-                "Click_基地": {
-                    "next": [
-                        "Click_资源申请"
-                    ]
-                }
-            },
-            "description": "[size:15]一键领取资源申请奖励。[/size]"
-        },
-        {
-            "name": "案例解析",
-            "entry": "案例解析",
-            "pipeline_override": {
-                "Click_基地": {
-                    "next": [
-                        "Click_资料室"
-                    ]
-                }
-            },
-            "description": "[size:15]一键领取案例解析奖励并进行解析。[/size]"
-        },
-        {
-            "name": "领取酬谢",
-            "entry": "领取酬谢",
-            "pipeline_override": {
-                "Click_基地": {
-                    "next": [
-                        "Click_酬谢"
-                    ]
-                }
-            },
-            "description": "[size:15]一键领取酬谢奖励。(此任务偶发卡死，暂未修复，请谨慎开启)[/size]"
-        },
-        {
-            "name": "基地一条龙",
-            "entry": "基地一条龙",
-            "pipeline_override": {
-                "Click_基地": {
-                    "next": [
-                        "Click_资源申请"
-                    ]
-                },
-                "Flag_Inverse_资源申请领取": {
-                    "next": [
-                        "Click_资源申请To资料室",
-                        "[JumpBack]Click_关闭奖励弹窗",
-                        "[JumpBack]Click_一键领取亮"
-                    ]
-                },
-                "Click_一键解析": {
-                    "next": [
-                        "Click_酬谢",
-                        "[JumpBack]Click_返回上一级键"
-                    ]
-                },
-                "Flag_案例解析中": {
-                    "next": [
-                        "Click_酬谢",
-                        "[JumpBack]Click_返回上一级键"
-                    ]
-                }
-            },
-            "description": "[size:15]基地奖励领取一条龙，启用本任务后请取消以下任务，避免重复运行，包括：[/size]\n\n[size:15]一键领取资源申请奖励。[/size]\n[size:15]一键领取案例解析奖励并进行解析。[/size]\n[size:15]一键领取酬谢奖励。(领取酬谢偶发卡死，暂未修复，请谨慎开启)[/size]"
-        },
-        {
-            "name": "逸梦",
-            "entry": "逸梦",
-            "description": "[size:15]自动收集花露和捕梦。每次花露收集到 100% 后任务会终止，可以运行两次来保证花露全部收集。[/size]\n\n[size:15]每张梦笺收集完毕后需要手动选择新的梦笺。[/size]"
-        },
-        {
-            "name": "专属甜心",
-            "entry": "专属甜心",
-            "description": "[size:15]自动制作背包中第一件未完成物品。[/size]"
-        },
-        {
-            "name": "领取任务奖励",
-            "entry": "领取任务奖励"
-        },
-        {
-            "name": "领取绮思奖励",
-            "entry": "领取绮思奖励"
-        },
-        {
-            "name": "购买免费礼包",
-            "entry": "购买免费礼包",
-            "description": "[size:20]该功能涉及到礼包购买，可能出现错误造成损失，开启该任务视为你已了解并愿意承担相关风险。[/size]\n\n[size:15]购买限时活动的免费祈愿盒[/size]"
-        },
-        {
-            "name": "提交材料活动",
-            "entry": "提交材料活动",
-            "description": "[size:15]邂逅波光限时活动提交材料。[/size]\n\n[size:15]目前仅支持选择未名币[/size]"
-        },
-        {
-            "name": "退出游戏",
-            "entry": "CloseTOT",
-            "description": "[size:15]此任务只会退出游戏。如果你想要关闭本软件或者模拟器，请点击左下角齿轮进入设置页，更改结束后操作。[/size]"
-        },
-        {
-            "name": "领取拼图活动代币",
-            "entry": "领取拼图活动代币",
-            "description": "[size:15]故城拼图限时活动代币领取。只是领取每日任务代币，需要手动拼图。[/size]"
-        },
-        {
-            "name": "领取翻格活动代币",
-            "entry": "领取翻格活动代币",
-            "description": "[size:15]指尖语与甜心谣限时活动代币领取。只是领取每日任务代币，需要手动翻格。[/size]"
-        },
-        {
-            "name": "试炼神殿",
-            "entry": "试炼神殿",
-            "description": "[size:15]打试炼神殿，需要有90体力且解锁最高难度。[/size]"
-        }
-    ],
+    "task": [],
     "option": {
         "复盘次数": {
             "cases": [
@@ -305,9 +159,23 @@
         }
     },
     "import": [
+        "resource/tasks/T_startup.json",
+        "resource/tasks/T_领取邮件.json",
+        "resource/tasks/T_领取友谊徽章.json",
+        "resource/tasks/T_领取基地奖励.json",
+        "resource/tasks/T_逸梦.json",
+        "resource/tasks/T_专属甜心.json",
         "resource/tasks/T_好感度.json",
         "resource/tasks/T_进修副本.json",
         "resource/tasks/T_异常副本.json",
-        "resource/tasks/T_外勤委托.json"
+        "resource/tasks/T_外勤委托.json",
+        "resource/tasks/T_领取任务奖励.json",
+        "resource/tasks/T_领取绮思奖励.json",
+        "resource/tasks/T_试炼神殿.json",
+        "resource/tasks/T_shutdown.json",
+        "resource/tasks/T_购买免费礼包.json",
+        "resource/tasks/T_提交材料活动.json",
+        "resource/tasks/T_拼图活动.json",
+        "resource/tasks/T_翻格活动.json"
     ]
 }
