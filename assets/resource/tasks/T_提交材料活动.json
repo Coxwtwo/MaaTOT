@@ -3,7 +3,7 @@
         {
             "name": "提交材料活动",
             "entry": "提交材料活动",
-            "description": "[size:15]邂逅波光限时活动提交材料。[/size]\n\n[size:15]目前仅支持选择未名币[/size]"
+            "description": "<span style=\"font-size:15px\">邂逅波光限时活动提交材料。</span><br><span style=\"font-size:15px\">目前仅支持选择未名币</span>"
         }
     ]
 }

@@ -3,7 +3,7 @@
         {
             "name": "退出游戏",
             "entry": "CloseTOT",
-            "description": "[size:15]此任务只会退出游戏。如果你想要关闭本软件或者模拟器，请点击左下角齿轮进入设置页，更改结束后操作。[/size]"
+            "description": "<span style=\"font-size:15px\">此任务只会退出游戏。如果你想要关闭本软件或者模拟器，请进入设置页，更改结束后操作。</span>"
         }
     ]
 }

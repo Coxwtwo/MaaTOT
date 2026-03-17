@@ -9,7 +9,7 @@
                 "使用能量饮料",
                 "能量饮料类型"
             ],
-            "description": "[size:15]在指定区域内完成日常和庭审委托。[/size]"
+            "description": "<span style=\"font-size:15px\">在指定区域内完成日常和庭审委托。</span>"
         }
     ],
     "option": {

@@ -3,7 +3,7 @@
         {
             "name": "购买免费礼包",
             "entry": "购买免费礼包",
-            "description": "[size:20]该功能涉及到礼包购买，可能出现错误造成损失，开启该任务视为你已了解并愿意承担相关风险。[/size]\n\n[size:15]购买限时活动的免费祈愿盒[/size]"
+            "description": "<span style=\"font-size:20px\">该功能涉及到礼包购买，可能出现错误造成损失，开启该任务视为你已了解并愿意承担相关风险。</span><br><span style=\"font-size:15px\">购买限时活动的免费祈愿盒</span>"
         }
     ]
 }

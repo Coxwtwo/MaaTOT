@@ -3,7 +3,7 @@
         {
             "name": "逸梦",
             "entry": "逸梦",
-            "description": "[size:15]自动收集花露和捕梦。每次花露收集到 100% 后任务会终止，可以运行两次来保证花露全部收集。[/size]\n\n[size:15]每张梦笺收集完毕后需要手动选择新的梦笺。[/size]"
+            "description": "<span style=\"font-size:15px\">自动收集花露和捕梦。每次花露收集到 100% 后任务会终止，可以运行两次来保证花露全部收集。</span><br><span style=\"font-size:15px\">每张梦笺收集完毕后需要手动选择新的梦笺。</span>"
         }
     ]
 }

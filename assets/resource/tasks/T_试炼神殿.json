@@ -3,7 +3,7 @@
         {
             "name": "试炼神殿",
             "entry": "试炼神殿",
-            "description": "[size:15]打试炼神殿，需要有90体力且解锁最高难度。[/size]"
+            "description": "<span style=\"font-size:15px\">打试炼神殿，需要有90体力且解锁最高难度。</span>"
         }
     ]
 }

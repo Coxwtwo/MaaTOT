@@ -3,7 +3,7 @@
         {
             "name": "专属甜心",
             "entry": "专属甜心",
-            "description": "[size:15]自动制作背包中第一件未完成物品。[/size]"
+            "description": "<span style=\"font-size:15px\">自动制作背包中第一件未完成物品。</span>"
         }
     ]
 }
