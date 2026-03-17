@@ -159,6 +159,7 @@
         }
     },
     "import": [
+        "resource/tasks/preset/Daily.json",
         "resource/tasks/T_startup.json",
         "resource/tasks/T_领取邮件.json",
         "resource/tasks/T_领取友谊徽章.json",
