@@ -11,15 +11,6 @@ sys.path.append(script_dir)
 
 from configure import configure_ocr_model
 
-try:
-    import jsonc
-except ModuleNotFoundError as e:
-    raise ImportError(
-        "Missing dependency 'json-with-comments' (imported as 'jsonc').\n"
-        f"Install it with:\n  {sys.executable} -m pip install json-with-comments\n"
-        "Or add it to your project's requirements."
-    ) from e
-
 
 working_dir = Path(__file__).parent.parent.parent
 install_path = working_dir / Path("install-cli")
