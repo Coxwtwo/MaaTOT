@@ -8,7 +8,7 @@
     "Click_活动_绮思": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/活动.PNG",
+        "template": "Button/活动.png",
         "pre_wait_freezes": 800,
         "post_delay": 3000,
         "roi": [

@@ -85,7 +85,7 @@
         },
         "inverse": true,
         "recognition": "TemplateMatch",
-        "template": "Button/资源申请领取.PNG",
+        "template": "Button/资源申请领取.png",
         "roi": [
             160,
             500,
@@ -136,7 +136,7 @@
         },
         "inverse": true,
         "recognition": "TemplateMatch",
-        "template": "Button/案例解析领取.PNG",
+        "template": "Button/案例解析领取.png",
         "post_delay": 1000,
         "roi": [
             540,
@@ -152,7 +152,7 @@
     },
     "Flag_案例未解析": {
         "recognition": "TemplateMatch",
-        "template": "Button/案例未解析.PNG",
+        "template": "Button/案例未解析.png",
         "post_delay": 1000,
         "roi": [
             620,
@@ -166,7 +166,7 @@
     },
     "Flag_案例解析中": {
         "recognition": "TemplateMatch",
-        "template": "Button/案例解析中.PNG",
+        "template": "Button/案例解析中.png",
         "post_delay": 1000,
         "roi": [
             620,

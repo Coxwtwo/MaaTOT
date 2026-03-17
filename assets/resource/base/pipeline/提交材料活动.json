@@ -8,7 +8,7 @@
     "Click_活动_限时提交材料活动": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/活动.PNG",
+        "template": "Button/活动.png",
         "pre_wait_freezes": 800,
         "post_delay": 3000,
         "roi": [
@@ -171,7 +171,7 @@
         },
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "TimeLimitedEvent/未名币.PNG",
+        "template": "TimeLimitedEvent/未名币.png",
         "green_mask": true,
         "post_delay": 1000,
         "roi": [

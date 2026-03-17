@@ -38,7 +38,7 @@
         "pre_delay": 1000,
         "post_delay": 1500,
         "recognition": "TemplateMatch",
-        "template": "Button/Home.PNG",
+        "template": "Button/Home.png",
         "roi": [
             168,
             30,
@@ -51,7 +51,7 @@
         "pre_delay": 1000,
         "post_delay": 2000,
         "recognition": "TemplateMatch",
-        "template": "Button/Back.PNG",
+        "template": "Button/Back.png",
         "roi": [
             51,
             31,
@@ -125,7 +125,7 @@
     "Click_主界面左侧菜单": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/主界面菜单.PNG",
+        "template": "Button/主界面菜单.png",
         "green_mask": true,
         "roi": [
             22,
@@ -198,7 +198,7 @@
     "Click_一键领取亮": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/一键领取亮.PNG",
+        "template": "Button/一键领取亮.png",
         "pre_delay": 1000,
         "post_delay": 1500,
         "roi": [
@@ -262,7 +262,7 @@
     },
     "Flag_主界面任务": {
         "recognition": "TemplateMatch",
-        "template": "Button/任务.PNG",
+        "template": "Button/任务.png",
         "pre_delay": 1500,
         "post_delay": 1000,
         "roi": [
@@ -299,7 +299,7 @@
     },
     "Flag_一键领取暗": {
         "recognition": "TemplateMatch",
-        "template": "Button/一键领取暗.PNG",
+        "template": "Button/一键领取暗.png",
         "pre_delay": 800,
         "roi": [
             550,

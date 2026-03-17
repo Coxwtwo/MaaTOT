@@ -12,7 +12,7 @@
         },
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/邮件.PNG",
+        "template": "Button/邮件.png",
         "green_mask": true,
         "post_delay": 800,
         "roi": [
