@@ -444,6 +444,9 @@ deps
 build
 install
 
+# 跳过 schema 目录，避免与 sync_schema_files 冲突
+!deps/tools
+
 # Tools
 tools/ImageCropper/**/*.png
 
@@ -455,3 +458,4 @@ assets/config
 GitReference.txt
 assets/resource/model
 .nicegui
+
