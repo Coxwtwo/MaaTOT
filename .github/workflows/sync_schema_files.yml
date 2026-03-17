@@ -17,11 +17,11 @@ jobs:
     steps:
       - id: check
         run: |
-          if [[ "${{ github.repository }}" == "MaaXYZ/MaaPracticeBoilerplate" ]]; then
-            echo "Repository is MaaXYZ/MaaPracticeBoilerplate, proceeding with sync"
+          if [[ "${{ github.repository }}" == "Coxwtwo/MaaTOT" ]]; then
+            echo "Repository is Coxwtwo/MaaTOT, proceeding with sync"
             echo "should_run=true" >> $GITHUB_OUTPUT
           else
-            echo "Repository is not MaaXYZ/MaaPracticeBoilerplate, skipping sync"
+            echo "Repository is not Coxwtwo/MaaTOT, skipping sync"
             echo "should_run=false" >> $GITHUB_OUTPUT
           fi
 
