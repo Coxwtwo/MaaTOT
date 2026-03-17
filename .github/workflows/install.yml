@@ -129,7 +129,7 @@ jobs:
           rm -f "${ARCHIVE_FILE_PATH}"
           echo "Archive cleanup command executed for MXU on Windows."
 
-      - name: Modify MFAAvalonia exe icon
+      - name: Modify exe icon
         if: matrix.arch == 'x86_64'
         shell: bash
         run: |
@@ -174,8 +174,6 @@ jobs:
         run: |
           ./install/python/python.exe ./tools/ci/install_mxu.py ${{ needs.meta.outputs.tag }}
           cp -rpvn install/python/. install-mxu/python/
-
-          fi
 
       - name: Copy MFA files to main version
         shell: bash
