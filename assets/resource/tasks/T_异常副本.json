@@ -42,1338 +42,28 @@
             "label": "思绪残影",
             "cases": [
                 {
-                    "name": "夏彦思绪残影",
+                    "name": "夏彦",
                     "option": [
-                        "夏彦思绪残影关卡"
+                        "夏彦思绪残影选择"
                     ]
                 },
                 {
-                    "name": "左然思绪残影",
+                    "name": "左然",
                     "option": [
-                        "左然思绪残影关卡"
+                        "左然思绪残影选择"
                     ]
                 },
                 {
-                    "name": "莫弈思绪残影",
+                    "name": "莫弈",
                     "option": [
-                        "莫弈思绪残影关卡"
+                        "莫弈思绪残影选择"
                     ]
                 },
                 {
-                    "name": "陆景和思绪残影",
+                    "name": "陆景和",
                     "option": [
-                        "陆景和思绪残影关卡"
+                        "陆景和思绪残影选择"
                     ]
-                }
-            ]
-        },
-        "夏彦思绪残影关卡": {
-            "type": "select",
-            "label": "夏彦思绪残影",
-            "cases": [
-                {
-                    "name": "彼时少年：01-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.1"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "01-08"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "彼时少年：01-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.1"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "01-16"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "彼时少年：03-11",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-11"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "彼时少年：05-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-04"
-                        }
-                    }
-                },
-                {
-                    "name": "彼时少年：17-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E17P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "17-08"
-                        }
-                    }
-                },
-                {
-                    "name": "与子偕行：05-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-08"
-                        }
-                    }
-                },
-                {
-                    "name": "与子偕行：05-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-12"
-                        }
-                    }
-                },
-                {
-                    "name": "与子偕行：05-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-24"
-                        }
-                    }
-                },
-                {
-                    "name": "与子偕行：07-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-04"
-                        }
-                    }
-                },
-                {
-                    "name": "与子偕行：18-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E18P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "18-12"
-                        }
-                    }
-                },
-                {
-                    "name": "刻心：09-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.9"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "09-04"
-                        }
-                    }
-                },
-                {
-                    "name": "刻心：09-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.9"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "09-08"
-                        }
-                    }
-                },
-                {
-                    "name": "刻心：09-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.9"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "09-12"
-                        }
-                    }
-                },
-                {
-                    "name": "刻心：14-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E14P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "14-08"
-                        }
-                    }
-                },
-                {
-                    "name": "灼光：13-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.13"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "13-04"
-                        }
-                    }
-                },
-                {
-                    "name": "灼光：13-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.13"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "13-08"
-                        }
-                    }
-                },
-                {
-                    "name": "灼光：13-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.13"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "13-12"
-                        }
-                    }
-                },
-                {
-                    "name": "灼光：15-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.15"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "15-12"
-                        }
-                    }
-                },
-                {
-                    "name": "心玥：18-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E18P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "18-16"
-                        }
-                    }
-                },
-                {
-                    "name": "心玥：18-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E18P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "18-20"
-                        }
-                    }
-                },
-                {
-                    "name": "心玥：18-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E18P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "18-24"
-                        }
-                    }
-                }
-            ]
-        },
-        "左然思绪残影关卡": {
-            "type": "select",
-            "label": "左然思绪残影",
-            "cases": [
-                {
-                    "name": "锋芒褪尽：01-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.1"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "01-04"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "锋芒褪尽：01-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.1"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "01-12"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "锋芒褪尽：03-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-08"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "锋芒褪尽：06-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-04"
-                        }
-                    }
-                },
-                {
-                    "name": "锋芒褪尽：17-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E17P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "17-04"
-                        }
-                    }
-                },
-                {
-                    "name": "长夜微明：03-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-04"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "长夜微明：03-14",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-14"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "长夜微明：05-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-20"
-                        }
-                    }
-                },
-                {
-                    "name": "长夜微明：07-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-08"
-                        }
-                    }
-                },
-                {
-                    "name": "长夜微明：18-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E18P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "18-08"
-                        }
-                    }
-                },
-                {
-                    "name": "抉择：06-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-16"
-                        }
-                    }
-                },
-                {
-                    "name": "抉择：06-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-20"
-                        }
-                    }
-                },
-                {
-                    "name": "抉择：06-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-24"
-                        }
-                    }
-                },
-                {
-                    "name": "抉择：11-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E11P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "11-08"
-                        }
-                    }
-                },
-                {
-                    "name": "此间：10-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.10"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "10-12"
-                        }
-                    }
-                },
-                {
-                    "name": "此间：10-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.10"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "10-04"
-                        }
-                    }
-                },
-                {
-                    "name": "此间：10-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.10"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "10-08"
-                        }
-                    }
-                },
-                {
-                    "name": "此间：14-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E14P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "14-12"
-                        }
-                    }
-                },
-                {
-                    "name": "铭忘：14-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E14P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "14-16"
-                        }
-                    }
-                },
-                {
-                    "name": "铭忘：14-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E14P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "14-20"
-                        }
-                    }
-                },
-                {
-                    "name": "铭忘：14-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E14P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "14-24"
-                        }
-                    }
-                }
-            ]
-        },
-        "莫弈思绪残影关卡": {
-            "type": "select",
-            "label": "莫弈思绪残影",
-            "cases": [
-                {
-                    "name": "初光倾泻：02-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.2"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "02-04"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "初光倾泻：02-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.2"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "02-12"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "初光倾泻：04-11",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.4"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "04-11"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "初光倾泻：06-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-08"
-                        }
-                    }
-                },
-                {
-                    "name": "初光倾泻：17-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E17P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "17-12"
-                        }
-                    }
-                },
-                {
-                    "name": "入局：05-28",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P3.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-28"
-                        }
-                    }
-                },
-                {
-                    "name": "入局：05-32",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P3.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-32"
-                        }
-                    }
-                },
-                {
-                    "name": "入局：05-36",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P3.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-36"
-                        }
-                    }
-                },
-                {
-                    "name": "入局：11-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E11P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "11-04"
-                        }
-                    }
-                },
-                {
-                    "name": "繁嚣一梦：08-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.8"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "08-04"
-                        }
-                    }
-                },
-                {
-                    "name": "繁嚣一梦：08-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.8"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "08-08"
-                        }
-                    }
-                },
-                {
-                    "name": "繁嚣一梦：08-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.8"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "08-12"
-                        }
-                    }
-                },
-                {
-                    "name": "繁嚣一梦：14-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E14P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "14-04"
-                        }
-                    }
-                },
-                {
-                    "name": "思欲：11-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E11P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "11-16"
-                        }
-                    }
-                },
-                {
-                    "name": "思欲：11-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E11P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "11-20"
-                        }
-                    }
-                },
-                {
-                    "name": "思欲：11-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E11P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "11-24"
-                        }
-                    }
-                },
-                {
-                    "name": "思欲：15-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.15"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "15-04"
-                        }
-                    }
-                },
-                {
-                    "name": "彷徨：17-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E17P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "17-16"
-                        }
-                    }
-                },
-                {
-                    "name": "彷徨：17-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E17P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "17-20"
-                        }
-                    }
-                },
-                {
-                    "name": "彷徨：17-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E17P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "17-24"
-                        }
-                    }
-                }
-            ]
-        },
-        "陆景和思绪残影关卡": {
-            "type": "select",
-            "label": "陆景和思绪残影",
-            "cases": [
-                {
-                    "name": "心头撞鹿：02-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.2"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "02-08"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "心头撞鹿：02-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.2"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "02-16"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "16"
-                        }
-                    }
-                },
-                {
-                    "name": "心头撞鹿：04-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.4"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "04-08"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "心头撞鹿：06-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-12"
-                        }
-                    }
-                },
-                {
-                    "name": "心头撞鹿：18-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E18P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "18-04"
-                        }
-                    }
-                },
-                {
-                    "name": "坠入心扉：04-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.4"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "04-04"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "坠入心扉：04-14",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.4"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "04-14"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "坠入心扉：05-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E5P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "05-16"
-                        }
-                    }
-                },
-                {
-                    "name": "坠入心扉：07-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-12"
-                        }
-                    }
-                },
-                {
-                    "name": "静默之下：07-16",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-16"
-                        }
-                    }
-                },
-                {
-                    "name": "静默之下：07-20",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-20"
-                        }
-                    }
-                },
-                {
-                    "name": "静默之下：07-24",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-24"
-                        }
-                    }
-                },
-                {
-                    "name": "静默之下：11-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E11P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "11-12"
-                        }
-                    }
-                },
-                {
-                    "name": "情染：12-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.12"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "12-04"
-                        }
-                    }
-                },
-                {
-                    "name": "情染：12-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.12"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "12-08"
-                        }
-                    }
-                },
-                {
-                    "name": "情染：12-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.12"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "12-12"
-                        }
-                    }
-                },
-                {
-                    "name": "情染：15-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "剑兰谷篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.15"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "15-08"
-                        }
-                    }
-                },
-                {
-                    "name": "斡旋：16-04",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.16"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "16-04"
-                        }
-                    }
-                },
-                {
-                    "name": "斡旋：16-08",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.16"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "16-08"
-                        }
-                    }
-                },
-                {
-                    "name": "斡旋：16-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "亚宁篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.16"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "16-12"
-                        }
-                    }
                 }
             ]
         },
@@ -1382,248 +72,28 @@
             "label": "角色材料",
             "cases": [
                 {
-                    "name": "夏彦角色材料",
+                    "name": "夏彦",
                     "option": [
-                        "夏彦角色材料关卡"
+                        "夏彦角色材料选择"
                     ]
                 },
                 {
-                    "name": "左然角色材料",
+                    "name": "左然",
                     "option": [
-                        "左然角色材料关卡"
+                        "左然角色材料选择"
                     ]
                 },
                 {
-                    "name": "莫弈角色材料",
+                    "name": "莫弈",
                     "option": [
-                        "莫弈角色材料关卡"
+                        "莫弈角色材料选择"
                     ]
                 },
                 {
-                    "name": "陆景和角色材料",
+                    "name": "陆景和",
                     "option": [
-                        "陆景和角色材料关卡"
+                        "陆景和角色材料选择"
                     ]
-                }
-            ]
-        },
-        "夏彦角色材料关卡": {
-            "type": "select",
-            "label": "夏彦角色材料",
-            "cases": [
-                {
-                    "name": "夏彦初级：03-10",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-10"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "夏彦中级：06-11",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-11"
-                        }
-                    }
-                },
-                {
-                    "name": "夏彦高级：07-09",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-09"
-                        }
-                    }
-                }
-            ]
-        },
-        "左然角色材料关卡": {
-            "type": "select",
-            "label": "左然角色材料",
-            "cases": [
-                {
-                    "name": "左然初级：03-12",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-12"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "左然中级：06-10",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-10"
-                        }
-                    }
-                },
-                {
-                    "name": "左然高级：07-10",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-10"
-                        }
-                    }
-                }
-            ]
-        },
-        "莫弈角色材料关卡": {
-            "type": "select",
-            "label": "莫弈角色材料",
-            "cases": [
-                {
-                    "name": "莫弈初级：03-13",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-13"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "莫弈中级：06-22",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-22"
-                        }
-                    }
-                },
-                {
-                    "name": "莫弈高级：07-23",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P2.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-23"
-                        }
-                    }
-                }
-            ]
-        },
-        "陆景和角色材料关卡": {
-            "type": "select",
-            "label": "陆景和角色材料",
-            "cases": [
-                {
-                    "name": "陆景和初级：03-09",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-09"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                },
-                {
-                    "name": "陆景和中级：06-09",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-09"
-                        }
-                    }
-                },
-                {
-                    "name": "陆景和高级：07-11",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "07-11"
-                        }
-                    }
                 }
             ]
         },
@@ -1632,139 +102,22 @@
             "label": "印象材料",
             "cases": [
                 {
-                    "name": "逻辑印象",
+                    "name": "逻辑",
                     "option": [
-                        "逻辑印象关卡"
+                        "逻辑印象材料选择"
                     ]
                 },
                 {
-                    "name": "共情印象",
+                    "name": "共情",
                     "option": [
-                        "共情印象关卡"
+                        "共情印象材料选择"
                     ]
                 },
                 {
-                    "name": "直觉印象",
+                    "name": "直觉",
                     "option": [
-                        "直觉印象关卡"
+                        "直觉印象材料选择"
                     ]
-                }
-            ]
-        },
-        "逻辑印象关卡": {
-            "type": "select",
-            "label": "逻辑印象",
-            "cases": [
-                {
-                    "name": "逻辑印象Ⅲ：06-05",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-05"
-                        }
-                    }
-                },
-                {
-                    "name": "逻辑印象Ⅱ＆Ⅰ：03-05",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-05"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                }
-            ]
-        },
-        "共情印象关卡": {
-            "type": "select",
-            "label": "共情印象",
-            "cases": [
-                {
-                    "name": "共情印象Ⅲ：06-06",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-06"
-                        }
-                    }
-                },
-                {
-                    "name": "共情印象Ⅱ＆Ⅰ：03-06",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-06"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
-                }
-            ]
-        },
-        "直觉印象关卡": {
-            "type": "select",
-            "label": "直觉印象",
-            "cases": [
-                {
-                    "name": "直觉印象Ⅲ：06-07",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png",
-                            "threshold": 0.93
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "06-07"
-                        }
-                    }
-                },
-                {
-                    "name": "直觉印象Ⅱ＆Ⅰ：03-07",
-                    "pipeline_override": {
-                        "Click_选择主线篇章": {
-                            "expected": "海奥森篇"
-                        },
-                        "Click_进入异常副本": {
-                            "expected": "Episode.3"
-                        },
-                        "Click_进入异常关卡": {
-                            "expected": "03-07"
-                        },
-                        "Flag_异常关卡列表最下端": {
-                            "expected": "14"
-                        }
-                    }
                 }
             ]
         },
@@ -1802,6 +155,2196 @@
                                 "Click_复盘3次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦思绪残影选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "与子偕行",
+                    "option": [
+                        "夏彦与子偕行思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "刻心",
+                    "option": [
+                        "夏彦刻心思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "彼时少年",
+                    "option": [
+                        "夏彦彼时少年思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "心玥",
+                    "option": [
+                        "夏彦心玥思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "灼光",
+                    "option": [
+                        "夏彦灼光思绪残影关卡"
+                    ]
+                }
+            ]
+        },
+        "夏彦与子偕行思绪残影关卡": {
+            "type": "select",
+            "label": "与子偕行",
+            "cases": [
+                {
+                    "name": "05-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-08"
+                        }
+                    }
+                },
+                {
+                    "name": "05-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-12"
+                        }
+                    }
+                },
+                {
+                    "name": "05-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-24"
+                        }
+                    }
+                },
+                {
+                    "name": "07-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-04"
+                        }
+                    }
+                },
+                {
+                    "name": "18-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦刻心思绪残影关卡": {
+            "type": "select",
+            "label": "刻心",
+            "cases": [
+                {
+                    "name": "09-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-04"
+                        }
+                    }
+                },
+                {
+                    "name": "09-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-08"
+                        }
+                    }
+                },
+                {
+                    "name": "09-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-12"
+                        }
+                    }
+                },
+                {
+                    "name": "14-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-08"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦彼时少年思绪残影关卡": {
+            "type": "select",
+            "label": "彼时少年",
+            "cases": [
+                {
+                    "name": "01-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-08"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "01-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-16"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "03-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-11"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-04"
+                        }
+                    }
+                },
+                {
+                    "name": "17-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-08"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦心玥思绪残影关卡": {
+            "type": "select",
+            "label": "心玥",
+            "cases": [
+                {
+                    "name": "18-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-16"
+                        }
+                    }
+                },
+                {
+                    "name": "18-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-20"
+                        }
+                    }
+                },
+                {
+                    "name": "18-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-24"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦灼光思绪残影关卡": {
+            "type": "select",
+            "label": "灼光",
+            "cases": [
+                {
+                    "name": "13-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-04"
+                        }
+                    }
+                },
+                {
+                    "name": "13-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-08"
+                        }
+                    }
+                },
+                {
+                    "name": "13-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-12"
+                        }
+                    }
+                },
+                {
+                    "name": "15-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然思绪残影选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "抉择",
+                    "option": [
+                        "左然抉择思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "此间",
+                    "option": [
+                        "左然此间思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "铭忘",
+                    "option": [
+                        "左然铭忘思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "锋芒褪尽",
+                    "option": [
+                        "左然锋芒褪尽思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "长夜微明",
+                    "option": [
+                        "左然长夜微明思绪残影关卡"
+                    ]
+                }
+            ]
+        },
+        "左然抉择思绪残影关卡": {
+            "type": "select",
+            "label": "抉择",
+            "cases": [
+                {
+                    "name": "06-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-16"
+                        }
+                    }
+                },
+                {
+                    "name": "06-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-20"
+                        }
+                    }
+                },
+                {
+                    "name": "06-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-24"
+                        }
+                    }
+                },
+                {
+                    "name": "11-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-08"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然此间思绪残影关卡": {
+            "type": "select",
+            "label": "此间",
+            "cases": [
+                {
+                    "name": "10-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-04"
+                        }
+                    }
+                },
+                {
+                    "name": "10-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-08"
+                        }
+                    }
+                },
+                {
+                    "name": "10-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-12"
+                        }
+                    }
+                },
+                {
+                    "name": "14-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然铭忘思绪残影关卡": {
+            "type": "select",
+            "label": "铭忘",
+            "cases": [
+                {
+                    "name": "14-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-16"
+                        }
+                    }
+                },
+                {
+                    "name": "14-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-20"
+                        }
+                    }
+                },
+                {
+                    "name": "14-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-24"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然锋芒褪尽思绪残影关卡": {
+            "type": "select",
+            "label": "锋芒褪尽",
+            "cases": [
+                {
+                    "name": "01-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-04"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "01-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-12"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "03-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-08"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "06-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-04"
+                        }
+                    }
+                },
+                {
+                    "name": "17-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-04"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然长夜微明思绪残影关卡": {
+            "type": "select",
+            "label": "长夜微明",
+            "cases": [
+                {
+                    "name": "03-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-04"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "03-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-14"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-20"
+                        }
+                    }
+                },
+                {
+                    "name": "07-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-08"
+                        }
+                    }
+                },
+                {
+                    "name": "18-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-08"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈思绪残影选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "入局",
+                    "option": [
+                        "莫弈入局思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "初光倾泻",
+                    "option": [
+                        "莫弈初光倾泻思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "彷徨",
+                    "option": [
+                        "莫弈彷徨思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "思欲",
+                    "option": [
+                        "莫弈思欲思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "繁嚣一梦",
+                    "option": [
+                        "莫弈繁嚣一梦思绪残影关卡"
+                    ]
+                }
+            ]
+        },
+        "莫弈入局思绪残影关卡": {
+            "type": "select",
+            "label": "入局",
+            "cases": [
+                {
+                    "name": "05-28",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-28"
+                        }
+                    }
+                },
+                {
+                    "name": "05-32",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-32"
+                        }
+                    }
+                },
+                {
+                    "name": "05-36",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-36"
+                        }
+                    }
+                },
+                {
+                    "name": "11-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-04"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈初光倾泻思绪残影关卡": {
+            "type": "select",
+            "label": "初光倾泻",
+            "cases": [
+                {
+                    "name": "02-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.2"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "02-04"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "02-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.2"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "02-12"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "04-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-11"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "06-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-08"
+                        }
+                    }
+                },
+                {
+                    "name": "17-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈彷徨思绪残影关卡": {
+            "type": "select",
+            "label": "彷徨",
+            "cases": [
+                {
+                    "name": "17-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-16"
+                        }
+                    }
+                },
+                {
+                    "name": "17-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-20"
+                        }
+                    }
+                },
+                {
+                    "name": "17-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-24"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈思欲思绪残影关卡": {
+            "type": "select",
+            "label": "思欲",
+            "cases": [
+                {
+                    "name": "11-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-16"
+                        }
+                    }
+                },
+                {
+                    "name": "11-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-20"
+                        }
+                    }
+                },
+                {
+                    "name": "11-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-24"
+                        }
+                    }
+                },
+                {
+                    "name": "15-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-04"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈繁嚣一梦思绪残影关卡": {
+            "type": "select",
+            "label": "繁嚣一梦",
+            "cases": [
+                {
+                    "name": "08-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-04"
+                        }
+                    }
+                },
+                {
+                    "name": "08-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-08"
+                        }
+                    }
+                },
+                {
+                    "name": "08-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-12"
+                        }
+                    }
+                },
+                {
+                    "name": "14-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-04"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和思绪残影选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "坠入心扉",
+                    "option": [
+                        "陆景和坠入心扉思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "心头撞鹿",
+                    "option": [
+                        "陆景和心头撞鹿思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "情染",
+                    "option": [
+                        "陆景和情染思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "斡旋",
+                    "option": [
+                        "陆景和斡旋思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "静默之下",
+                    "option": [
+                        "陆景和静默之下思绪残影关卡"
+                    ]
+                }
+            ]
+        },
+        "陆景和坠入心扉思绪残影关卡": {
+            "type": "select",
+            "label": "坠入心扉",
+            "cases": [
+                {
+                    "name": "04-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-04"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "04-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-14"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-16"
+                        }
+                    }
+                },
+                {
+                    "name": "07-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和心头撞鹿思绪残影关卡": {
+            "type": "select",
+            "label": "心头撞鹿",
+            "cases": [
+                {
+                    "name": "02-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.2"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "02-08"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "02-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.2"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "02-16"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        }
+                    }
+                },
+                {
+                    "name": "04-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-08"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "06-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-12"
+                        }
+                    }
+                },
+                {
+                    "name": "18-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-04"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和情染思绪残影关卡": {
+            "type": "select",
+            "label": "情染",
+            "cases": [
+                {
+                    "name": "12-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-04"
+                        }
+                    }
+                },
+                {
+                    "name": "12-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-08"
+                        }
+                    }
+                },
+                {
+                    "name": "12-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-12"
+                        }
+                    }
+                },
+                {
+                    "name": "15-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-08"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和斡旋思绪残影关卡": {
+            "type": "select",
+            "label": "斡旋",
+            "cases": [
+                {
+                    "name": "16-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-04"
+                        }
+                    }
+                },
+                {
+                    "name": "16-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-08"
+                        }
+                    }
+                },
+                {
+                    "name": "16-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和静默之下思绪残影关卡": {
+            "type": "select",
+            "label": "静默之下",
+            "cases": [
+                {
+                    "name": "07-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-16"
+                        }
+                    }
+                },
+                {
+                    "name": "07-20",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-20"
+                        }
+                    }
+                },
+                {
+                    "name": "07-24",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-24"
+                        }
+                    }
+                },
+                {
+                    "name": "11-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-12"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦角色材料选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "夏彦初级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "夏彦中级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "夏彦高级角色材料关卡"
+                    ]
+                }
+            ]
+        },
+        "夏彦初级角色材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-10"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦中级角色材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "06-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-11"
+                        }
+                    }
+                }
+            ]
+        },
+        "夏彦高级角色材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "07-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-09"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然角色材料选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "左然初级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "左然中级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "左然高级角色材料关卡"
+                    ]
+                }
+            ]
+        },
+        "左然初级角色材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-12"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然中级角色材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "06-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-10"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然高级角色材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "07-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-10"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈角色材料选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "莫弈初级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "莫弈中级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "莫弈高级角色材料关卡"
+                    ]
+                }
+            ]
+        },
+        "莫弈初级角色材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-13"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈中级角色材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "06-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-22"
+                        }
+                    }
+                }
+            ]
+        },
+        "莫弈高级角色材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "07-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-23"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和角色材料选择": {
+            "type": "select",
+            "label": "角色",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "陆景和初级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "陆景和中级角色材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "陆景和高级角色材料关卡"
+                    ]
+                }
+            ]
+        },
+        "陆景和初级角色材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-09"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和中级角色材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "06-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-09"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和高级角色材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "07-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-11"
+                        }
+                    }
+                }
+            ]
+        },
+        "逻辑印象材料选择": {
+            "type": "select",
+            "label": "类型",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "逻辑初级印象材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "逻辑中级印象材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "逻辑高级印象材料关卡"
+                    ]
+                }
+            ]
+        },
+        "逻辑初级印象材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "逻辑中级印象材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "03-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "逻辑高级印象材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "06-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-05"
+                        }
+                    }
+                }
+            ]
+        },
+        "共情印象材料选择": {
+            "type": "select",
+            "label": "类型",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "共情初级印象材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "共情中级印象材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "共情高级印象材料关卡"
+                    ]
+                }
+            ]
+        },
+        "共情初级印象材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-06"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "共情中级印象材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "03-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-06"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "共情高级印象材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "06-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-06"
+                        }
+                    }
+                }
+            ]
+        },
+        "直觉印象材料选择": {
+            "type": "select",
+            "label": "类型",
+            "cases": [
+                {
+                    "name": "初级",
+                    "option": [
+                        "直觉初级印象材料关卡"
+                    ]
+                },
+                {
+                    "name": "中级",
+                    "option": [
+                        "直觉中级印象材料关卡"
+                    ]
+                },
+                {
+                    "name": "高级",
+                    "option": [
+                        "直觉高级印象材料关卡"
+                    ]
+                }
+            ]
+        },
+        "直觉初级印象材料关卡": {
+            "type": "select",
+            "label": "初级",
+            "cases": [
+                {
+                    "name": "03-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "直觉中级印象材料关卡": {
+            "type": "select",
+            "label": "中级",
+            "cases": [
+                {
+                    "name": "03-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                }
+            ]
+        },
+        "直觉高级印象材料关卡": {
+            "type": "select",
+            "label": "高级",
+            "cases": [
+                {
+                    "name": "06-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-07"
                         }
                     }
                 }
