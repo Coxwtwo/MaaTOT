@@ -26,7 +26,7 @@
     },
     "MihoyoSlogan": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]游戏启动[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">游戏启动</span>"
         },
         "recognition": "OCR",
         "replace": [],

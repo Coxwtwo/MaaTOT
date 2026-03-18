@@ -131,7 +131,7 @@
     },
     "Flag_已提交过材料": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]今日已提交过材料[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">今日已提交过材料</span>"
         },
         "recognition": "OCR",
         "expected": "今日已",
@@ -167,7 +167,7 @@
     },
     "Click_选择提交材料_未名币": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]选择未名币[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">选择未名币</span>"
         },
         "action": "Click",
         "recognition": "TemplateMatch",
@@ -192,7 +192,7 @@
     },
     "Click_确认提交材料": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Limegreen]已完成材料提交[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成材料提交</span>"
         },
         "action": "Click",
         "recognition": "OCR",

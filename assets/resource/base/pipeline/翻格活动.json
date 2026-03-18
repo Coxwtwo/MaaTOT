@@ -168,7 +168,7 @@
     },
     "Flag_Inverse_限时翻格活动代币领取键": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Limegreen]已完成限时翻格活动代币领取[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成限时翻格活动代币领取</span>"
         },
         "inverse": true,
         "recognition": "OCR",

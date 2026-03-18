@@ -140,7 +140,7 @@
     },
     "Flag_该副本今日未开启": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Orange]该副本今日未开启[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Orange\">该副本今日未开启</span>"
         },
         "recognition": "OCR",
         "expected": "该副本今日未开启",
@@ -223,7 +223,7 @@
     },
     "Click_取消使用工作证": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Orange]关卡可进行次数不足[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Orange\">关卡可进行次数不足</span>"
         },
         "action": "Click",
         "recognition": "OCR",

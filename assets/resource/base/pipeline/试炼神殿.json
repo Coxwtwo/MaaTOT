@@ -74,7 +74,7 @@
     },
     "Flag_试炼神殿_400": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Limegreen]已完成试炼神殿[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成试炼神殿</span>"
         },
         "recognition": "TemplateMatch",
         "template": "DLC/试炼神殿_400.png",
@@ -299,7 +299,7 @@
         "template": "DLC/试炼神殿_STAGECOMPLETE.png",
         "action": "Click",
         "focus": {
-            "Node.Action.Succeeded": "[color:Limegreen]已完成试炼神殿[/color]"
+            "Node.Action.Succeeded": "<span style=\"color:Limegreen\">已完成试炼神殿</span>"
         },
         "pre_delay": 1000,
         "post_delay": 1000,

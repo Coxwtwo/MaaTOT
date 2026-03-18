@@ -91,7 +91,7 @@
     },
     "Flag_今日好感度获取完毕": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Limegreen]今日好感度获取完毕[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">今日好感度获取完毕</span>"
         },
         "recognition": "OCR",
         "expected": "今日好感度获取完毕",
@@ -107,7 +107,7 @@
     },
     "Click_好感度等级提升": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Deepskyblue]好感度等级提升[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Deepskyblue\">好感度等级提升</span>"
         },
         "action": "Click",
         "recognition": "OCR",

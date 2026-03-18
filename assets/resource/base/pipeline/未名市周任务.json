@@ -1045,7 +1045,7 @@
     },
     "Click_居中开始辩论_未名市": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]开始辩论[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">开始辩论</span>"
         },
         "action": "Click",
         "recognition": "OCR",

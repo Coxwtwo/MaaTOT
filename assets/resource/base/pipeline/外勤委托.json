@@ -149,7 +149,7 @@
     },
     "Click_日常委托": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]选中日常委托[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">选中日常委托</span>"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -171,7 +171,7 @@
     },
     "Click_庭审委托": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]选中庭审委托[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">选中庭审委托</span>"
         },
         "action": "Click",
         "recognition": "OCR",
@@ -192,7 +192,7 @@
     },
     "Flag_委托搜寻中": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]委托搜寻中[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">委托搜寻中</span>"
         },
         "recognition": "OCR",
         "expected": [
@@ -211,7 +211,7 @@
     },
     "Flag_疲劳值满": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]疲劳值达到上限[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">疲劳值达到上限</span>"
         },
         "recognition": "OCR",
         "expected": [
@@ -230,7 +230,7 @@
     },
     "Flag_疲劳值上限弹窗": {
         "focus": {
-            "Node.Recognition.Succeeded": "[color:Dimgray]疲劳值达到上限[/color]"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">疲劳值达到上限</span>"
         },
         "recognition": "OCR",
         "expected": "疲劳值上限",
