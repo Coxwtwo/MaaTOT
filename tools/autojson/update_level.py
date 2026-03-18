@@ -15,7 +15,7 @@ CHAR_ORDER = ["夏彦", "左然", "莫弈", "陆景和"]  # 角色显示顺序
 MATERIAL_ORDER = ["逻辑", "共情", "直觉"]  # 印象材料显示顺序
 GRADE_ORDER = ["初级", "中级", "高级"]  # 材料等级显示顺序
 IMP_MAP = {"印象I": "初级", "印象II": "中级", "印象III": "高级"}  # 印象列名到等级映射
-TEXT_REPLACEMENTS = [("海奥森篇", "海.森篇")]  # 文本替换映射
+# TEXT_REPLACEMENTS = [("海奥森篇", "海.森篇")]  # 文本替换映射
 
 
 def load_json(file_path: Path) -> Dict[str, Any]:
@@ -269,23 +269,23 @@ def merge_options(
 
 
 # ==================== 修改函数：替换 expected 字段中的特定文本 ====================
-def replace_expected_text(obj):
-    """
-    递归遍历对象，将所有字典中键为 'expected' 的字符串值中的 TEXT_REPLACEMENTS 映射进行替换。
-    支持嵌套的字典和列表结构。
-    """
-    if isinstance(obj, dict):
-        # 如果是字典，遍历每个键值对
-        for key, value in list(obj.items()):
-            if key == "expected" and isinstance(value, str):
-                for old_text, new_text in TEXT_REPLACEMENTS:
-                    obj[key] = obj[key].replace(old_text, new_text)
-            else:
-                replace_expected_text(value)
-    elif isinstance(obj, list):
-        for item in obj:
-            replace_expected_text(item)
-    # 其他类型不处理
+# def replace_expected_text(obj):
+#     """
+#     递归遍历对象，将所有字典中键为 'expected' 的字符串值中的 TEXT_REPLACEMENTS 映射进行替换。
+#     支持嵌套的字典和列表结构。
+#     """
+#     if isinstance(obj, dict):
+#         # 如果是字典，遍历每个键值对
+#         for key, value in list(obj.items()):
+#             if key == "expected" and isinstance(value, str):
+#                 for old_text, new_text in TEXT_REPLACEMENTS:
+#                     obj[key] = obj[key].replace(old_text, new_text)
+#             else:
+#                 replace_expected_text(value)
+#     elif isinstance(obj, list):
+#         for item in obj:
+#             replace_expected_text(item)
+#     # 其他类型不处理
 
 
 def main():
@@ -322,7 +322,7 @@ def main():
     base_data["option"] = final_options
 
     # ==================== 修改：写入前替换 expected 中的特定文本 ====================
-    replace_expected_text(base_data)
+    # replace_expected_text(base_data)
 
     # 6. 写入目标文件
     write_json(base_data, target_json_path)
