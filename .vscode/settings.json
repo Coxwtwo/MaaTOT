@@ -3,7 +3,9 @@
         {
             "fileMatch": [
                 "/assets/resource/**/*.json",
-                "/install/resource/**/*.json"
+                "/install/resource/**/*.json",
+                "!/assets/resource/tasks/**/**.json",
+                "!/install/resource/tasks/**/**.json"
             ],
             "url": "/deps/tools/pipeline.schema.json"
         },
@@ -13,6 +15,13 @@
                 "/install/interface.json"
             ],
             "url": "/deps/tools/interface.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/assets/resource/tasks/**/*.json",
+                "/install/resource/tasks/**/*.json"
+            ],
+            "url": "/deps/tools/interface_import.schema.json"
         },
         {
             "fileMatch": [
@@ -30,8 +39,6 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda",
     "files.associations": {
         "**/assets/**/*.json": "jsonc"
     },

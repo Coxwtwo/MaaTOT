@@ -204,7 +204,7 @@
                     "name": "05-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -220,7 +220,7 @@
                     "name": "05-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -236,7 +236,7 @@
                     "name": "05-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -252,7 +252,7 @@
                     "name": "07-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -354,7 +354,7 @@
                     "name": "01-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.1"
@@ -371,7 +371,7 @@
                     "name": "01-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.1"
@@ -388,7 +388,7 @@
                     "name": "03-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -405,7 +405,7 @@
                     "name": "05-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -595,7 +595,7 @@
                     "name": "06-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -611,7 +611,7 @@
                     "name": "06-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -627,7 +627,7 @@
                     "name": "06-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -783,7 +783,7 @@
                     "name": "01-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.1"
@@ -800,7 +800,7 @@
                     "name": "01-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.1"
@@ -817,7 +817,7 @@
                     "name": "03-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -834,7 +834,7 @@
                     "name": "06-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -872,7 +872,7 @@
                     "name": "03-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -889,7 +889,7 @@
                     "name": "03-14",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -906,7 +906,7 @@
                     "name": "05-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -922,7 +922,7 @@
                     "name": "07-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -996,7 +996,7 @@
                     "name": "05-28",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1012,7 +1012,7 @@
                     "name": "05-32",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1028,7 +1028,7 @@
                     "name": "05-36",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1066,7 +1066,7 @@
                     "name": "02-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.2"
@@ -1083,7 +1083,7 @@
                     "name": "02-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.2"
@@ -1100,7 +1100,7 @@
                     "name": "04-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.4"
@@ -1117,7 +1117,7 @@
                     "name": "06-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1277,7 +1277,7 @@
                     "name": "08-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.8"
@@ -1291,7 +1291,7 @@
                     "name": "08-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.8"
@@ -1305,7 +1305,7 @@
                     "name": "08-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.8"
@@ -1377,7 +1377,7 @@
                     "name": "04-04",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.4"
@@ -1394,7 +1394,7 @@
                     "name": "04-14",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.4"
@@ -1411,7 +1411,7 @@
                     "name": "05-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1427,7 +1427,7 @@
                     "name": "07-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1449,7 +1449,7 @@
                     "name": "02-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.2"
@@ -1466,7 +1466,7 @@
                     "name": "02-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.2"
@@ -1483,7 +1483,7 @@
                     "name": "04-08",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.4"
@@ -1500,7 +1500,7 @@
                     "name": "06-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1648,7 +1648,7 @@
                     "name": "07-16",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1664,7 +1664,7 @@
                     "name": "07-20",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1680,7 +1680,7 @@
                     "name": "07-24",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1742,7 +1742,7 @@
                     "name": "03-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -1765,7 +1765,7 @@
                     "name": "06-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1787,7 +1787,7 @@
                     "name": "07-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1833,7 +1833,7 @@
                     "name": "03-12",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -1856,7 +1856,7 @@
                     "name": "06-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1878,7 +1878,7 @@
                     "name": "07-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1924,7 +1924,7 @@
                     "name": "03-13",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -1947,7 +1947,7 @@
                     "name": "06-22",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -1969,7 +1969,7 @@
                     "name": "07-23",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -2015,7 +2015,7 @@
                     "name": "03-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2038,7 +2038,7 @@
                     "name": "06-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -2060,7 +2060,7 @@
                     "name": "07-11",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -2106,7 +2106,7 @@
                     "name": "03-05",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2129,7 +2129,7 @@
                     "name": "03-05",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2152,7 +2152,7 @@
                     "name": "06-05",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -2198,7 +2198,7 @@
                     "name": "03-06",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2221,7 +2221,7 @@
                     "name": "03-06",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2244,7 +2244,7 @@
                     "name": "06-06",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
@@ -2290,7 +2290,7 @@
                     "name": "03-07",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2313,7 +2313,7 @@
                     "name": "03-07",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "expected": "Episode.3"
@@ -2336,7 +2336,7 @@
                     "name": "06-07",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
-                            "expected": "海.森篇"
+                            "expected": "海[奧奥]森篇"
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
