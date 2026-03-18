@@ -4,7 +4,7 @@
 
 ## 1. 目录结构
 
-- [`更新资源类型.py`](tools/autojson/更新资源类型.py): 核心 Python 脚本，用于读取 Excel 并更新 JSON。
+- [`update_level.py`](tools/autojson/更新资源类型.py): 核心 Python 脚本，用于读取 Excel 并更新 JSON。
 - [`levels.xlsx`](tools/autojson/levels.xlsx): 存储关卡数据的数据源。
 - [`T_异常副本.json`](tools/autojson/T_异常副本.json): 脚本生成的本地目标文件（供预览和检查）。
 
@@ -33,7 +33,7 @@
    在项目根目录下运行（或直接在 `tools/autojson` 目录下运行）：
 
    ```bash
-   python tools/autojson/更新资源类型.py
+   python tools/autojson/update_level.py
    ```
 
 4. **应用更改**:
@@ -63,7 +63,7 @@ Excel 必须包含以下表头字段（第一行）：
 - **篇章名称与 OCR**: `volume_name` 字段将被直接用于 OCR 识别（即 `expected` 字段）。因此，请确保填写的文字与OCR结果相符。
 - **正则表达式支持**: `volume_name` 支持使用正则表达式。
 - **自动路径**: 如果未填写 `episode_template`，脚本会自动根据 `episode_id` 和 `session` 生成 `Debate/E{ep_id}P{session}.png` 路径。
-- **Session 留空**: 如果 `session` 字段留空且未手动指定模板路径，脚本会将识别方式从“模板匹配”切换为“文本识别”，生成 `expected: "Episode.XX"` (XX 为补零后的章节 ID)。
+- **Session 留空**: 如果 `session` 字段留空且未手动指定模板路径，脚本会将识别方式从“模板匹配”切换为“文本识别”，生成 `expected: "Episode.X"` (X 为章节 ID)。
 - **ID 补零**: 脚本会自动将 `episode_id` 和 `level_int` 格式化为两位数（如 `01-08`）。
 - **分类优先级 (归类逻辑)**:
   - 如果关卡填写了 **`思绪残影`** 名称，该关卡将 **仅** 出现在 `思绪残影` 分类下。
