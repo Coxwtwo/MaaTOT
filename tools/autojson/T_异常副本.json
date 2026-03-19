@@ -1754,6 +1754,22 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "18-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-10"
+                        }
+                    }
                 }
             ]
         },
@@ -1761,6 +1777,71 @@
             "type": "select",
             "label": "中级",
             "cases": [
+                {
+                    "name": "04-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-09"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-21"
+                        }
+                    }
+                },
+                {
+                    "name": "05-31",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-31"
+                        }
+                    }
+                },
+                {
+                    "name": "05-35",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-35"
+                        }
+                    }
+                },
                 {
                     "name": "06-11",
                     "pipeline_override": {
@@ -1774,6 +1855,132 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-11"
+                        }
+                    }
+                },
+                {
+                    "name": "06-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-21"
+                        }
+                    }
+                },
+                {
+                    "name": "11-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-09"
+                        }
+                    }
+                },
+                {
+                    "name": "11-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-10"
+                        }
+                    }
+                },
+                {
+                    "name": "14-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-11"
+                        }
+                    }
+                },
+                {
+                    "name": "15-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-05"
+                        }
+                    }
+                },
+                {
+                    "name": "17-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-07"
+                        }
+                    }
+                },
+                {
+                    "name": "18-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-07"
+                        }
+                    }
+                },
+                {
+                    "name": "18-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-10"
                         }
                     }
                 }
@@ -1796,6 +2003,220 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-09"
+                        }
+                    }
+                },
+                {
+                    "name": "07-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-21"
+                        }
+                    }
+                },
+                {
+                    "name": "08-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-09"
+                        }
+                    }
+                },
+                {
+                    "name": "10-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-09"
+                        }
+                    }
+                },
+                {
+                    "name": "11-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-05"
+                        }
+                    }
+                },
+                {
+                    "name": "11-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-09"
+                        }
+                    }
+                },
+                {
+                    "name": "11-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-10"
+                        }
+                    }
+                },
+                {
+                    "name": "11-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-21"
+                        }
+                    }
+                },
+                {
+                    "name": "12-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-09"
+                        }
+                    }
+                },
+                {
+                    "name": "14-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-23"
+                        }
+                    }
+                },
+                {
+                    "name": "15-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-05"
+                        }
+                    }
+                },
+                {
+                    "name": "16-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-09"
+                        }
+                    }
+                },
+                {
+                    "name": "17-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-07"
+                        }
+                    }
+                },
+                {
+                    "name": "17-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-22"
+                        }
+                    }
+                },
+                {
+                    "name": "18-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-07"
                         }
                     }
                 }
@@ -1853,6 +2274,87 @@
             "label": "中级",
             "cases": [
                 {
+                    "name": "04-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-10"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-11"
+                        }
+                    }
+                },
+                {
+                    "name": "05-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-18"
+                        }
+                    }
+                },
+                {
+                    "name": "05-30",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-30"
+                        }
+                    }
+                },
+                {
+                    "name": "05-34",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-34"
+                        }
+                    }
+                },
+                {
                     "name": "06-10",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
@@ -1865,6 +2367,84 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-10"
+                        }
+                    }
+                },
+                {
+                    "name": "11-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-06"
+                        }
+                    }
+                },
+                {
+                    "name": "14-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-05"
+                        }
+                    }
+                },
+                {
+                    "name": "15-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-06"
+                        }
+                    }
+                },
+                {
+                    "name": "17-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-09"
+                        }
+                    }
+                },
+                {
+                    "name": "18-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-05"
                         }
                     }
                 }
@@ -1887,6 +2467,232 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-10"
+                        }
+                    }
+                },
+                {
+                    "name": "07-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-22"
+                        }
+                    }
+                },
+                {
+                    "name": "08-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-10"
+                        }
+                    }
+                },
+                {
+                    "name": "09-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-09"
+                        }
+                    }
+                },
+                {
+                    "name": "11-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-06"
+                        }
+                    }
+                },
+                {
+                    "name": "11-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-22"
+                        }
+                    }
+                },
+                {
+                    "name": "12-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-10"
+                        }
+                    }
+                },
+                {
+                    "name": "13-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-09"
+                        }
+                    }
+                },
+                {
+                    "name": "14-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-05"
+                        }
+                    }
+                },
+                {
+                    "name": "15-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-06"
+                        }
+                    }
+                },
+                {
+                    "name": "15-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-09"
+                        }
+                    }
+                },
+                {
+                    "name": "16-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-10"
+                        }
+                    }
+                },
+                {
+                    "name": "17-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-09"
+                        }
+                    }
+                },
+                {
+                    "name": "17-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-23"
+                        }
+                    }
+                },
+                {
+                    "name": "18-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-05"
+                        }
+                    }
+                },
+                {
+                    "name": "18-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-23"
                         }
                     }
                 }
@@ -1936,6 +2742,38 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "17-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-05"
+                        }
+                    }
+                },
+                {
+                    "name": "17-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-10"
+                        }
+                    }
                 }
             ]
         },
@@ -1943,6 +2781,87 @@
             "type": "select",
             "label": "中级",
             "cases": [
+                {
+                    "name": "04-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-13"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-10"
+                        }
+                    }
+                },
+                {
+                    "name": "05-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-17"
+                        }
+                    }
+                },
+                {
+                    "name": "05-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-19"
+                        }
+                    }
+                },
+                {
+                    "name": "05-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-22"
+                        }
+                    }
+                },
                 {
                     "name": "06-22",
                     "pipeline_override": {
@@ -1956,6 +2875,116 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-22"
+                        }
+                    }
+                },
+                {
+                    "name": "11-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-07"
+                        }
+                    }
+                },
+                {
+                    "name": "14-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-06"
+                        }
+                    }
+                },
+                {
+                    "name": "15-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-07"
+                        }
+                    }
+                },
+                {
+                    "name": "17-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-05"
+                        }
+                    }
+                },
+                {
+                    "name": "17-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-10"
+                        }
+                    }
+                },
+                {
+                    "name": "18-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-06"
+                        }
+                    }
+                },
+                {
+                    "name": "18-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-11"
                         }
                     }
                 }
@@ -1978,6 +3007,216 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-23"
+                        }
+                    }
+                },
+                {
+                    "name": "09-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-10"
+                        }
+                    }
+                },
+                {
+                    "name": "10-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-10"
+                        }
+                    }
+                },
+                {
+                    "name": "11-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-07"
+                        }
+                    }
+                },
+                {
+                    "name": "12-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-11"
+                        }
+                    }
+                },
+                {
+                    "name": "13-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-10"
+                        }
+                    }
+                },
+                {
+                    "name": "14-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-06"
+                        }
+                    }
+                },
+                {
+                    "name": "14-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-10"
+                        }
+                    }
+                },
+                {
+                    "name": "14-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-21"
+                        }
+                    }
+                },
+                {
+                    "name": "15-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-07"
+                        }
+                    }
+                },
+                {
+                    "name": "15-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-10"
+                        }
+                    }
+                },
+                {
+                    "name": "16-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-11"
+                        }
+                    }
+                },
+                {
+                    "name": "18-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-06"
+                        }
+                    }
+                },
+                {
+                    "name": "18-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-11"
+                        }
+                    }
+                },
+                {
+                    "name": "18-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-22"
                         }
                     }
                 }
@@ -2035,6 +3274,87 @@
             "label": "中级",
             "cases": [
                 {
+                    "name": "04-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-12"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-09"
+                        }
+                    }
+                },
+                {
+                    "name": "05-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-23"
+                        }
+                    }
+                },
+                {
+                    "name": "05-29",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-29"
+                        }
+                    }
+                },
+                {
+                    "name": "05-33",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-33"
+                        }
+                    }
+                },
+                {
                     "name": "06-09",
                     "pipeline_override": {
                         "Click_选择主线篇章": {
@@ -2047,6 +3367,132 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-09"
+                        }
+                    }
+                },
+                {
+                    "name": "06-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-23"
+                        }
+                    }
+                },
+                {
+                    "name": "11-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-11"
+                        }
+                    }
+                },
+                {
+                    "name": "14-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-07"
+                        }
+                    }
+                },
+                {
+                    "name": "14-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-09"
+                        }
+                    }
+                },
+                {
+                    "name": "15-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-11"
+                        }
+                    }
+                },
+                {
+                    "name": "17-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-06"
+                        }
+                    }
+                },
+                {
+                    "name": "17-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-11"
+                        }
+                    }
+                },
+                {
+                    "name": "18-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-09"
                         }
                     }
                 }
@@ -2069,6 +3515,236 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-11"
+                        }
+                    }
+                },
+                {
+                    "name": "08-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-11"
+                        }
+                    }
+                },
+                {
+                    "name": "09-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-11"
+                        }
+                    }
+                },
+                {
+                    "name": "10-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-11"
+                        }
+                    }
+                },
+                {
+                    "name": "11-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-11"
+                        }
+                    }
+                },
+                {
+                    "name": "11-23",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-23"
+                        }
+                    }
+                },
+                {
+                    "name": "13-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-11"
+                        }
+                    }
+                },
+                {
+                    "name": "14-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-07"
+                        }
+                    }
+                },
+                {
+                    "name": "14-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-09"
+                        }
+                    }
+                },
+                {
+                    "name": "14-22",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-22"
+                        }
+                    }
+                },
+                {
+                    "name": "15-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-11"
+                        }
+                    }
+                },
+                {
+                    "name": "17-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-06"
+                        }
+                    }
+                },
+                {
+                    "name": "17-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-11"
+                        }
+                    }
+                },
+                {
+                    "name": "17-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-21"
+                        }
+                    }
+                },
+                {
+                    "name": "18-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-09"
+                        }
+                    }
+                },
+                {
+                    "name": "18-21",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-21"
                         }
                     }
                 }
@@ -2118,6 +3794,71 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "04-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-05"
+                        }
+                    }
+                },
+                {
+                    "name": "05-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-13"
+                        }
+                    }
+                },
+                {
+                    "name": "05-25",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-25"
+                        }
+                    }
                 }
             ]
         },
@@ -2141,6 +3882,303 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "04-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-05"
+                        }
+                    }
+                },
+                {
+                    "name": "05-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-13"
+                        }
+                    }
+                },
+                {
+                    "name": "05-25",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-25"
+                        }
+                    }
+                },
+                {
+                    "name": "06-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-01"
+                        }
+                    }
+                },
+                {
+                    "name": "06-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-05"
+                        }
+                    }
+                },
+                {
+                    "name": "06-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-13"
+                        }
+                    }
+                },
+                {
+                    "name": "06-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-17"
+                        }
+                    }
+                },
+                {
+                    "name": "07-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-01"
+                        }
+                    }
+                },
+                {
+                    "name": "07-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-13"
+                        }
+                    }
+                },
+                {
+                    "name": "08-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-01"
+                        }
+                    }
+                },
+                {
+                    "name": "08-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-05"
+                        }
+                    }
+                },
+                {
+                    "name": "09-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-01"
+                        }
+                    }
+                },
+                {
+                    "name": "09-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-05"
+                        }
+                    }
+                },
+                {
+                    "name": "17-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-13"
+                        }
+                    }
+                },
+                {
+                    "name": "17-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-17"
+                        }
+                    }
+                },
+                {
+                    "name": "18-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-01"
+                        }
+                    }
+                },
+                {
+                    "name": "18-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-13"
+                        }
+                    }
+                },
+                {
+                    "name": "18-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-17"
+                        }
+                    }
                 }
             ]
         },
@@ -2161,6 +4199,460 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-05"
+                        }
+                    }
+                },
+                {
+                    "name": "06-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-17"
+                        }
+                    }
+                },
+                {
+                    "name": "07-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-01"
+                        }
+                    }
+                },
+                {
+                    "name": "07-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-05"
+                        }
+                    }
+                },
+                {
+                    "name": "07-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-13"
+                        }
+                    }
+                },
+                {
+                    "name": "07-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-17"
+                        }
+                    }
+                },
+                {
+                    "name": "08-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-01"
+                        }
+                    }
+                },
+                {
+                    "name": "08-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-05"
+                        }
+                    }
+                },
+                {
+                    "name": "09-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-01"
+                        }
+                    }
+                },
+                {
+                    "name": "09-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-05"
+                        }
+                    }
+                },
+                {
+                    "name": "10-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-01"
+                        }
+                    }
+                },
+                {
+                    "name": "10-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-05"
+                        }
+                    }
+                },
+                {
+                    "name": "11-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-01"
+                        }
+                    }
+                },
+                {
+                    "name": "11-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-13"
+                        }
+                    }
+                },
+                {
+                    "name": "11-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-17"
+                        }
+                    }
+                },
+                {
+                    "name": "12-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-01"
+                        }
+                    }
+                },
+                {
+                    "name": "12-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-05"
+                        }
+                    }
+                },
+                {
+                    "name": "13-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-01"
+                        }
+                    }
+                },
+                {
+                    "name": "13-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-05"
+                        }
+                    }
+                },
+                {
+                    "name": "14-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-01"
+                        }
+                    }
+                },
+                {
+                    "name": "14-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-13"
+                        }
+                    }
+                },
+                {
+                    "name": "14-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-17"
+                        }
+                    }
+                },
+                {
+                    "name": "15-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-01"
+                        }
+                    }
+                },
+                {
+                    "name": "16-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-01"
+                        }
+                    }
+                },
+                {
+                    "name": "16-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-05"
+                        }
+                    }
+                },
+                {
+                    "name": "17-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-01"
+                        }
+                    }
+                },
+                {
+                    "name": "17-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-13"
+                        }
+                    }
+                },
+                {
+                    "name": "17-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-17"
+                        }
+                    }
+                },
+                {
+                    "name": "18-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-01"
+                        }
+                    }
+                },
+                {
+                    "name": "18-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-13"
+                        }
+                    }
+                },
+                {
+                    "name": "18-17",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-17"
                         }
                     }
                 }
@@ -2210,6 +4702,71 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "04-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-06"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-06"
+                        }
+                    }
+                },
+                {
+                    "name": "05-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-26",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-26"
+                        }
+                    }
                 }
             ]
         },
@@ -2233,6 +4790,303 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "04-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-06"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-06"
+                        }
+                    }
+                },
+                {
+                    "name": "05-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-26",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-26"
+                        }
+                    }
+                },
+                {
+                    "name": "06-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-02"
+                        }
+                    }
+                },
+                {
+                    "name": "06-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-06"
+                        }
+                    }
+                },
+                {
+                    "name": "06-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-14"
+                        }
+                    }
+                },
+                {
+                    "name": "06-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-18"
+                        }
+                    }
+                },
+                {
+                    "name": "07-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-02"
+                        }
+                    }
+                },
+                {
+                    "name": "07-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-14"
+                        }
+                    }
+                },
+                {
+                    "name": "08-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-02"
+                        }
+                    }
+                },
+                {
+                    "name": "08-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-06"
+                        }
+                    }
+                },
+                {
+                    "name": "09-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-02"
+                        }
+                    }
+                },
+                {
+                    "name": "09-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-06"
+                        }
+                    }
+                },
+                {
+                    "name": "17-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-14"
+                        }
+                    }
+                },
+                {
+                    "name": "17-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-18"
+                        }
+                    }
+                },
+                {
+                    "name": "18-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-02"
+                        }
+                    }
+                },
+                {
+                    "name": "18-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-14"
+                        }
+                    }
+                },
+                {
+                    "name": "18-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-18"
+                        }
+                    }
                 }
             ]
         },
@@ -2253,6 +5107,460 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-06"
+                        }
+                    }
+                },
+                {
+                    "name": "06-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-18"
+                        }
+                    }
+                },
+                {
+                    "name": "07-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-02"
+                        }
+                    }
+                },
+                {
+                    "name": "07-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-06"
+                        }
+                    }
+                },
+                {
+                    "name": "07-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-14"
+                        }
+                    }
+                },
+                {
+                    "name": "07-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-18"
+                        }
+                    }
+                },
+                {
+                    "name": "08-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-02"
+                        }
+                    }
+                },
+                {
+                    "name": "08-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-06"
+                        }
+                    }
+                },
+                {
+                    "name": "09-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-02"
+                        }
+                    }
+                },
+                {
+                    "name": "09-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-06"
+                        }
+                    }
+                },
+                {
+                    "name": "10-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-02"
+                        }
+                    }
+                },
+                {
+                    "name": "10-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-06"
+                        }
+                    }
+                },
+                {
+                    "name": "11-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-02"
+                        }
+                    }
+                },
+                {
+                    "name": "11-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-14"
+                        }
+                    }
+                },
+                {
+                    "name": "11-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-18"
+                        }
+                    }
+                },
+                {
+                    "name": "12-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-02"
+                        }
+                    }
+                },
+                {
+                    "name": "12-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-06"
+                        }
+                    }
+                },
+                {
+                    "name": "13-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-02"
+                        }
+                    }
+                },
+                {
+                    "name": "13-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-06"
+                        }
+                    }
+                },
+                {
+                    "name": "14-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-02"
+                        }
+                    }
+                },
+                {
+                    "name": "14-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-14"
+                        }
+                    }
+                },
+                {
+                    "name": "14-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-18"
+                        }
+                    }
+                },
+                {
+                    "name": "15-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-02"
+                        }
+                    }
+                },
+                {
+                    "name": "16-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-02"
+                        }
+                    }
+                },
+                {
+                    "name": "16-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-06"
+                        }
+                    }
+                },
+                {
+                    "name": "17-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-02"
+                        }
+                    }
+                },
+                {
+                    "name": "17-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-14"
+                        }
+                    }
+                },
+                {
+                    "name": "17-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-18"
+                        }
+                    }
+                },
+                {
+                    "name": "18-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-02"
+                        }
+                    }
+                },
+                {
+                    "name": "18-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-14"
+                        }
+                    }
+                },
+                {
+                    "name": "18-18",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-18"
                         }
                     }
                 }
@@ -2302,6 +5610,71 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "04-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-07"
+                        }
+                    }
+                },
+                {
+                    "name": "05-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-15"
+                        }
+                    }
+                },
+                {
+                    "name": "05-27",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-27"
+                        }
+                    }
                 }
             ]
         },
@@ -2325,6 +5698,303 @@
                             "expected": "14"
                         }
                     }
+                },
+                {
+                    "name": "04-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.4"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "04-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "14"
+                        }
+                    }
+                },
+                {
+                    "name": "05-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-07"
+                        }
+                    }
+                },
+                {
+                    "name": "05-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-15"
+                        }
+                    }
+                },
+                {
+                    "name": "05-27",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E5P3.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "05-27"
+                        }
+                    }
+                },
+                {
+                    "name": "06-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-03"
+                        }
+                    }
+                },
+                {
+                    "name": "06-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-07"
+                        }
+                    }
+                },
+                {
+                    "name": "06-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-15"
+                        }
+                    }
+                },
+                {
+                    "name": "06-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-19"
+                        }
+                    }
+                },
+                {
+                    "name": "07-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-03"
+                        }
+                    }
+                },
+                {
+                    "name": "07-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-15"
+                        }
+                    }
+                },
+                {
+                    "name": "08-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-03"
+                        }
+                    }
+                },
+                {
+                    "name": "08-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-07"
+                        }
+                    }
+                },
+                {
+                    "name": "09-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-03"
+                        }
+                    }
+                },
+                {
+                    "name": "09-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-07"
+                        }
+                    }
+                },
+                {
+                    "name": "17-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-15"
+                        }
+                    }
+                },
+                {
+                    "name": "17-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-19"
+                        }
+                    }
+                },
+                {
+                    "name": "18-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-03"
+                        }
+                    }
+                },
+                {
+                    "name": "18-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-15"
+                        }
+                    }
+                },
+                {
+                    "name": "18-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-19"
+                        }
+                    }
                 }
             ]
         },
@@ -2345,6 +6015,460 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-07"
+                        }
+                    }
+                },
+                {
+                    "name": "06-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-19"
+                        }
+                    }
+                },
+                {
+                    "name": "07-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-03"
+                        }
+                    }
+                },
+                {
+                    "name": "07-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-07"
+                        }
+                    }
+                },
+                {
+                    "name": "07-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-15"
+                        }
+                    }
+                },
+                {
+                    "name": "07-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-19"
+                        }
+                    }
+                },
+                {
+                    "name": "08-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-03"
+                        }
+                    }
+                },
+                {
+                    "name": "08-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "海.森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.8"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "08-07"
+                        }
+                    }
+                },
+                {
+                    "name": "09-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-03"
+                        }
+                    }
+                },
+                {
+                    "name": "09-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.9"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "09-07"
+                        }
+                    }
+                },
+                {
+                    "name": "10-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-03"
+                        }
+                    }
+                },
+                {
+                    "name": "10-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.10"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "10-07"
+                        }
+                    }
+                },
+                {
+                    "name": "11-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-03"
+                        }
+                    }
+                },
+                {
+                    "name": "11-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-15"
+                        }
+                    }
+                },
+                {
+                    "name": "11-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E11P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "11-19"
+                        }
+                    }
+                },
+                {
+                    "name": "12-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-03"
+                        }
+                    }
+                },
+                {
+                    "name": "12-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.12"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "12-07"
+                        }
+                    }
+                },
+                {
+                    "name": "13-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-03"
+                        }
+                    }
+                },
+                {
+                    "name": "13-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.13"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "13-07"
+                        }
+                    }
+                },
+                {
+                    "name": "14-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-03"
+                        }
+                    }
+                },
+                {
+                    "name": "14-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-15"
+                        }
+                    }
+                },
+                {
+                    "name": "14-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E14P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "14-19"
+                        }
+                    }
+                },
+                {
+                    "name": "15-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "剑兰谷篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.15"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "15-03"
+                        }
+                    }
+                },
+                {
+                    "name": "16-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-03"
+                        }
+                    }
+                },
+                {
+                    "name": "16-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.16"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "16-07"
+                        }
+                    }
+                },
+                {
+                    "name": "17-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-03"
+                        }
+                    }
+                },
+                {
+                    "name": "17-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-15"
+                        }
+                    }
+                },
+                {
+                    "name": "17-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E17P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "17-19"
+                        }
+                    }
+                },
+                {
+                    "name": "18-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-03"
+                        }
+                    }
+                },
+                {
+                    "name": "18-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-15"
+                        }
+                    }
+                },
+                {
+                    "name": "18-19",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E18P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "18-19"
                         }
                     }
                 }

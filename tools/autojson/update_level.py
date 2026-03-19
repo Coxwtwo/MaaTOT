@@ -3,11 +3,10 @@
 从 Excel 表格读取异常副本关卡数据，更新 MAA 任务配置文件 T_异常副本.json
 """
 import json
+import csv
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Any
-
-import openpyxl
 
 # ==================== 常量配置 ====================
 RESOURCE_TYPES = ["思绪残影", "角色材料", "印象材料"]
@@ -59,26 +58,24 @@ def clean_old_options(base_data: Dict[str, Any]) -> tuple[Dict[str, Any], List[s
     return base_data, original_keys
 
 
-def parse_excel_to_tree(excel_path: Path) -> Dict[str, Any]:
+def parse_csv_to_tree(csv_path: Path) -> Dict[str, Any]:
     """
-    解析 Excel 文件，构建数据树。
+    解析 CSV 文件，构建数据树。
     """
-    if not excel_path.exists():
-        print(f"错误：找不到 {excel_path}")
+    if not csv_path.exists():
+        print(f"错误：找不到 {csv_path}")
         return {}
 
     try:
-        wb = openpyxl.load_workbook(excel_path, data_only=True)
-        sheet = wb.active
-        rows = list(sheet.rows)
+        with open(csv_path, "r", encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
     except Exception as e:
-        print(f"错误：读取 Excel 文件失败 {excel_path}，{e}")
+        print(f"错误：读取 CSV 文件失败 {csv_path}，{e}")
         return {}
 
-    if len(rows) < 2:
+    if not rows:
         return {}
-
-    headers = [cell.value for cell in rows[0]]
 
     # 使用 defaultdict 自动创建嵌套字典
     tree = {
@@ -87,14 +84,7 @@ def parse_excel_to_tree(excel_path: Path) -> Dict[str, Any]:
         "印象材料": defaultdict(lambda: defaultdict(list)),
     }
 
-    for row in rows[1:]:
-        # 提取行数据，将所有单元格值转为字符串（避免整数/None导致的 strip 错误）
-        data = {}
-        for i, header in enumerate(headers):
-            if header:
-                cell_val = row[i].value
-                data[header] = str(cell_val) if cell_val is not None else ""
-
+    for data in rows:
         ep_id = data.get("episode_id", "").strip()
         if not ep_id:
             continue  # 跳过无关卡ID的行
@@ -119,7 +109,6 @@ def parse_excel_to_tree(excel_path: Path) -> Dict[str, Any]:
         if char and not shard:
             for grade in GRADE_ORDER:
                 col_name = f"角色{grade}"
-                # 原始逻辑：判断该列是否为 "1"（字符串或数字）
                 if data.get(col_name, "") == "1":
                     tree["角色材料"][char][grade].append(entry)
 
@@ -294,7 +283,7 @@ def main():
     base_dir = Path(__file__).parent
     root_dir = base_dir.parent.parent  # 项目根目录（tools/autojson 的上两级）
 
-    excel_path = base_dir / "levels.xlsx"
+    excel_path = base_dir / "levels.csv"
     source_json_path = root_dir / "assets" / "resource" / "tasks" / "T_异常副本.json"
     target_json_path = base_dir / "T_异常副本.json"
 
@@ -306,8 +295,8 @@ def main():
     # 2. 清理旧选项
     base_data, original_keys = clean_old_options(base_data)
 
-    # 3. 解析 Excel 构建数据树
-    data_tree = parse_excel_to_tree(excel_path)
+    # 3. 解析 CSV 构建数据树
+    data_tree = parse_csv_to_tree(excel_path)
     if not data_tree or all(not v for v in data_tree.values()):
         print("数据树为空，无更新内容")
         return

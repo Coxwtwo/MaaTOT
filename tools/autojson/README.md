@@ -1,17 +1,17 @@
 # AutoJSON 工具说明文档
 
-该目录下的工具用于通过 `levels.xlsx` 自动生成和更新 `T_异常副本.json` 中的关卡选项。
+该目录下的工具用于通过 `levels.csv` 自动生成和更新 `T_异常副本.json` 中的关卡选项。
 
 ## 1. 目录结构
 
-- [`update_level.py`](tools/autojson/更新资源类型.py): 核心 Python 脚本，用于读取 Excel 并更新 JSON。
-- [`levels.xlsx`](tools/autojson/levels.xlsx): 存储关卡数据的数据源。
+- [`update_level.py`](tools/autojson/update_level.py): 核心 Python 脚本，用于读取 CSV 并更新 JSON。
+- [`levels.csv`](tools/autojson/levels.csv): 存储关卡数据的数据源。
 - [`T_异常副本.json`](tools/autojson/T_异常副本.json): 脚本生成的本地目标文件（供预览和检查）。
 
 ## 2. 工具用途
 
 在游戏中，异常副本的关卡会随版本更新而增加。手动维护 `T_异常副本.json` 中的数百个选项（包括分层菜单、资源分类等）非常繁琐且易出错。
-本工具通过 Excel 结构化管理关卡，自动生成复杂的树形 `option` 结构，支持：
+本工具通过 CSV 结构化管理关卡，自动生成复杂的树形 `option` 结构，支持：
 
 - 按 **思绪残影** (角色 > 残影名称) 分类。
 - 按 **角色材料** (角色 > 级别) 分类。
@@ -20,14 +20,10 @@
 ## 3. 使用方法
 
 1. **环境准备**:
-   确保已安装 `openpyxl` 库：
-
-   ```bash
-   pip install openpyxl
-   ```
+   只需安装 Python 环境。该脚本仅使用内置库，无需额外安装第三方依赖。
 
 2. **编辑数据**:
-   在 [`levels.xlsx`](tools/autojson/levels.xlsx) 中添加或修改关卡数据。
+   在 [`levels.csv`](tools/autojson/levels.csv) 中添加或修改关卡数据。建议使用支持 CSV 的编辑器（如 Excel 或 VS Code 相关插件）。
 
 3. **运行脚本**:
    在项目根目录下运行（或直接在 `tools/autojson` 目录下运行）：
@@ -39,9 +35,9 @@
 4. **应用更改**:
    运行后，脚本会读取 `assets/resource/tasks/T_异常副本.json` 作为模板，在 `tools/autojson/T_异常副本.json` 生成更新后的版本。检查无误后，手动覆盖原文件或根据需要移动。
 
-## 4. `levels.xlsx` 填写要求
+## 4. `levels.csv` 填写要求
 
-Excel 必须包含以下表头字段（第一行）：
+CSV 必须包含以下表头字段（第一行）：
 
 | 字段名 | 说明 | 示例 |
 | :--- | :--- | :--- |
