@@ -7,9 +7,6 @@
         ]
     },
     "Click_邮件": {
-        "focus": {
-            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成邮件领取</span>"
-        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/邮件.png",
@@ -22,7 +19,27 @@
             45
         ],
         "next": [
-            "Click_一键领取亮"
+            "Click_一键领取亮_邮件"
+        ]
+    },
+    "Click_一键领取亮_邮件": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成邮件领取</span>"
+        },
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/一键领取亮.png",
+        "pre_delay": 1000,
+        "post_delay": 1500,
+        "roi": [
+            550,
+            1160,
+            120,
+            50
+        ],
+        "next": [
+            "Click_返回主界面键",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     }
 }
