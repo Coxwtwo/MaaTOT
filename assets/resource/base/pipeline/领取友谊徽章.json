@@ -7,14 +7,11 @@
         ]
     },
     "Click_好友": {
-        "focus": {
-            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成友谊徽章领取</span>"
-        },
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/好友.png",
         "green_mask": true,
-        "post_delay": 800,
+        "post_delay": 2000,
         "roi": [
             205,
             147,
@@ -22,7 +19,27 @@
             47
         ],
         "next": [
-            "Click_一键领取亮"
+            "Click_一键领取亮_好友"
+        ]
+    },
+    "Click_一键领取亮_好友": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成友谊徽章领取</span>"
+        },
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/一键领取亮.png",
+        "pre_delay": 1000,
+        "post_delay": 1500,
+        "roi": [
+            550,
+            1160,
+            120,
+            50
+        ],
+        "next": [
+            "Click_返回主界面键",
+            "[JumpBack]Click_关闭奖励弹窗"
         ]
     }
 }

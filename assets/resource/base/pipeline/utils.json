@@ -127,6 +127,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/主界面菜单.png",
         "green_mask": true,
+        "post_delay": 2000,
         "roi": [
             22,
             150,
