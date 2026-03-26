@@ -1,6 +1,6 @@
 {
-    "Default": {
-        "timeout": 10000,
+    "OCR": {
+        "recognition": "OCR",
         "replace": [
             [
                 "A",
@@ -50,6 +50,12 @@
                 "36",
                 "-36"
             ]
+        ]
+    },
+    "Default": {
+        "timeout": 10000,
+        "on_error": [
+            "空节点"
         ]
     }
 }

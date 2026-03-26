@@ -51,6 +51,7 @@
             30,
             40
         ],
+        "post_delay": 1000,
         "next": [
             "Click_未名市任务"
         ]
@@ -68,7 +69,8 @@
             40
         ],
         "next": [
-            "Flag_进行中"
+            "Flag_进行中",
+            "Click_未名市任务"
         ]
     },
     "Flag_进行中": {
@@ -81,6 +83,9 @@
             168
         ],
         "next": [
+            "[JumpBack]Flag_排队的礼仪",
+            "[JumpBack]Flag_偶像的力量1",
+            "[JumpBack]Flag_歌舞未名",
             "[JumpBack]Flag_维护中央广场1",
             "[JumpBack]Flag_维护中央广场2",
             "[JumpBack]Flag_虚假交易",
@@ -88,7 +93,607 @@
             "[JumpBack]Flag_照顾花草2",
             "[JumpBack]Flag_暴力装修",
             "[JumpBack]Flag_高价纪念品",
+            "[JumpBack]Flag_帮忙送餐1",
+            "[JumpBack]Flag_帮忙送餐2",
+            "[JumpBack]Flag_劝说游客",
             "返回主界面"
+        ]
+    },
+    "Flag_劝说游客": {
+        "recognition": "OCR",
+        "expected": [
+            "劝说游客"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_和印产品体验区_劝说游客",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_和印产品体验区"
+        ]
+    },
+    "Flag_和印产品体验区_劝说游客": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印产品体验区定位图.png",
+        "roi": [
+            171,
+            189,
+            378,
+            179
+        ],
+        "threshold": 0.9,
+        "next": [
+            "[JumpBack]Swipe_劝说游客_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_劝说游客_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印产品体验区定位图.png",
+        "roi": [
+            171,
+            189,
+            378,
+            179
+        ],
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 700,
+        "next": [
+            "Swipe_劝说游客_2"
+        ]
+    },
+    "Swipe_劝说游客_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 3000,
+        "timeout": 2000,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Click_前往辩论"
+        ]
+    },
+    "Flag_帮忙送餐2": {
+        "recognition": "OCR",
+        "expected": [
+            "帮忙送餐（二",
+            "帮忙送餐\\(二"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_文华西街_帮忙送餐2",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_文华西街"
+        ]
+    },
+    "Flag_文华西街_帮忙送餐2": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/文华西街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            8,
+            743,
+            268,
+            326
+        ],
+        "next": [
+            "[JumpBack]Swipe_帮忙送餐2_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_帮忙送餐2_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/文华西街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            8,
+            743,
+            268,
+            326
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1700,
+        "next": [
+            "Swipe_帮忙送餐2_2"
+        ]
+    },
+    "Swipe_帮忙送餐2_2": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 10000,
+        "timeout": 1000,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Click_关闭未名市奖励弹窗"
+        ]
+    },
+    "Flag_帮忙送餐1": {
+        "recognition": "OCR",
+        "expected": [
+            "帮忙送餐（一",
+            "帮忙送餐\\(一"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_文华西街_帮忙送餐1",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_文华西街"
+        ]
+    },
+    "Flag_文华西街_帮忙送餐1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/文华西街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            8,
+            743,
+            268,
+            326
+        ],
+        "next": [
+            "[JumpBack]Swipe_帮忙送餐1_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_帮忙送餐1_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/文华西街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            8,
+            743,
+            268,
+            326
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1400,
+        "next": [
+            "Swipe_帮忙送餐1_2"
+        ]
+    },
+    "Swipe_帮忙送餐1_2": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 5000,
+        "timeout": 1000,
+        "next": [
+            "[JumpBack]Click_对话框标识"
+        ]
+    },
+    "Flag_偶像的力量1": {
+        "recognition": "OCR",
+        "expected": [
+            "偶像的力量"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央商业街_偶像的力量1",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央商业街"
+        ]
+    },
+    "Flag_中央商业街_偶像的力量1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "next": [
+            "[JumpBack]Swipe_偶像的力量1_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_偶像的力量1_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 200,
+        "next": [
+            "Swipe_偶像的力量1_2"
+        ]
+    },
+    "Swipe_偶像的力量1_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1000,
+        "timeout": 2000,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Flag_偶像的力量2"
+        ]
+    },
+    "Flag_偶像的力量2": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "未名市/红色EVENT.png"
+        ],
+        "roi": [
+            361,
+            489,
+            202,
+            193
+        ],
+        "next": [
+            "Swipe_偶像的力量2"
+        ]
+    },
+    "Swipe_偶像的力量2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 200,
+        "timeout": 2000,
+        "next": [
+            "Click_前往辩论",
+            "[JumpBack]Click_对话框标识"
+        ]
+    },
+    "Flag_歌舞未名": {
+        "recognition": "OCR",
+        "expected": [
+            "歌舞未名"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央商业街_歌舞未名",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央商业街"
+        ]
+    },
+    "Flag_中央商业街_歌舞未名": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "next": [
+            "[JumpBack]Swipe_歌舞未名_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_歌舞未名_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 175,
+        "next": [
+            "Swipe_歌舞未名_2"
+        ]
+    },
+    "Swipe_歌舞未名_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 17000,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Swipe_歌舞未名_3"
+        ]
+    },
+    "Swipe_歌舞未名_3": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街最右端定位图.png",
+        "pre_wait_freezes": 1000,
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1150,
+        "next": [
+            "Swipe_歌舞未名_4"
+        ]
+    },
+    "Swipe_歌舞未名_4": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_歌舞未名_5"
+        ]
+    },
+    "Swipe_歌舞未名_5": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 2000,
+        "next": [
+            "[JumpBack]Click_老奶奶拍视频",
+            "Click_关闭未名市奖励弹窗",
+            "[JumpBack]Click_对话框标识"
+        ]
+    },
+    "Click_老奶奶拍视频": {
+        "recognition": "OCR",
+        "expected": [
+            "在老奶奶左边",
+            "在老奶奶右边"
+        ],
+        "roi": [
+            159,
+            376,
+            393,
+            341
+        ]
+    },
+    "Flag_排队的礼仪": {
+        "recognition": "OCR",
+        "expected": [
+            "排队的礼仪"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央商业街_排队的礼仪",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央商业街"
+        ]
+    },
+    "Flag_中央商业街_排队的礼仪": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "next": [
+            "[JumpBack]Swipe_排队的礼仪_1",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_排队的礼仪_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 3000,
+        "next": [
+            "Swipe_排队的礼仪_2"
+        ]
+    },
+    "Swipe_排队的礼仪_2": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 300,
+        "next": [
+            "Click_关闭未名市奖励弹窗",
+            "Click_前往辩论",
+            "[JumpBack]Click_对话框标识"
         ]
     },
     "Flag_照顾花草2": {
@@ -383,7 +988,7 @@
             20,
             20
         ],
-        "end_hold": 1375,
+        "end_hold": 1275,
         "next": [
             "Swipe_中央广场_维护中央广场2_2_3"
         ]
@@ -405,6 +1010,7 @@
         "end_hold": 3000,
         "timeout": 2000,
         "next": [
+            "Click_关闭未名市奖励弹窗",
             "[JumpBack]Click_对话框标识"
         ]
     },
@@ -482,7 +1088,7 @@
             20,
             20
         ],
-        "end_hold": 600,
+        "end_hold": 400,
         "next": [
             "Swipe_中央广场_维护中央广场2_1_3"
         ]
@@ -583,8 +1189,8 @@
             20
         ],
         "end_hold": 500,
+        "timeout": 2000,
         "next": [
-            "Click_关闭未名市奖励弹窗",
             "[JumpBack]Click_对话框标识"
         ]
     },

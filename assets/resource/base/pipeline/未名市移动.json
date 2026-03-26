@@ -1,4 +1,277 @@
 {
+    "Flag_重置位置_和印产品体验区": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_和印产品体验区初始位置",
+            "[JumpBack]Swipe_和印大厅_和印产品体验区",
+            "[JumpBack]Flag_重置位置_和印大厅",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Swipe_和印大厅_和印产品体验区": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印大厅定位图.png",
+        "roi": [
+            264,
+            232,
+            281,
+            261
+        ],
+        "threshold": 0.9,
+        "pre_wait_freezes": 2000,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 3000
+    },
+    "Flag_和印产品体验区初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印产品体验区定位图.png",
+        "roi": [
+            171,
+            189,
+            378,
+            179
+        ],
+        "threshold": 0.9
+    },
+    "Flag_重置位置_和印大厅": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_和印大厅初始位置",
+            "[JumpBack]Flag_Inverse_未名市移动_和印大厅",
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_Inverse_未名市移动_和印大厅": {
+        "recognition": "OCR",
+        "expected": "和印大厅",
+        "inverse": true,
+        "roi": [
+            490,
+            197,
+            198,
+            129
+        ],
+        "next": [
+            "Click_未名市移动_和印大厅"
+        ]
+    },
+    "Click_未名市移动_和印大厅": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "post_delay": 2000,
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_选项和印大厅",
+            "[JumpBack]Flag_Inverse_定位_滑动至未名市地图左下角",
+            "[JumpBack]Swipe_滑动至滨河南区"
+        ]
+    },
+    "Flag_选项和印大厅": {
+        "recognition": "OCR",
+        "expected": "和印大厅",
+        "roi": [
+            105,
+            392,
+            511,
+            346
+        ],
+        "next": [
+            "Click_确定未名市地图移动",
+            "[JumpBack]Click_点击和印大厅",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Click_点击和印大厅": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "和印大厅",
+        "roi": [
+            105,
+            392,
+            511,
+            346
+        ]
+    },
+    "Flag_和印大厅初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印大厅定位图.png",
+        "roi": [
+            264,
+            232,
+            281,
+            261
+        ],
+        "threshold": 0.9
+    },
+    "Flag_重置位置_文华西街": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_文华西街初始位置",
+            "[JumpBack]Flag_Inverse_未名市移动_文华西街",
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_文华西街初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/文华西街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            8,
+            743,
+            268,
+            326
+        ]
+    },
+    "Flag_Inverse_未名市移动_文华西街": { //如果当前处在中央商业街，不会执行移动到文华西街
+        "recognition": "OCR",
+        "expected": "文华西街",
+        "inverse": true,
+        "roi": [
+            490,
+            197,
+            198,
+            129
+        ],
+        "next": [
+            "Click_未名市移动_文华西街"
+        ]
+    },
+    "Click_未名市移动_文华西街": { //节点执行时需要处在文华西街以外地图
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "post_delay": 2000,
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_选项文华西街",
+            "[JumpBack]Flag_Inverse_定位_滑动至未名市地图左下角",
+            "[JumpBack]Swipe_滑动至文华区"
+        ]
+    },
+    "Flag_选项文华西街": {
+        "recognition": "OCR",
+        "expected": "文华西街",
+        "roi": [
+            71,
+            359,
+            292,
+            179
+        ],
+        "next": [
+            "Click_确定未名市地图移动",
+            "[JumpBack]Click_点击文华西街",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Click_点击文华西街": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "文华西街",
+        "roi": [
+            71,
+            359,
+            292,
+            179
+        ]
+    },
+    "Swipe_滑动至文华区": {
+        "action": "Swipe",
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市地图左下角定位.png",
+        "begin": [
+            650,
+            900
+        ],
+        "end": [
+            50,
+            900
+        ],
+        "duration": 500,
+        "end_hold": 300,
+        "roi": [
+            70,
+            376,
+            347,
+            278
+        ],
+        "next": [
+            "Flag_文华区选项",
+            "[JumpBack]Click_点击文华区"
+        ]
+    },
+    "Click_点击文华区": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "未名市/文华区.png",
+        "post_delay": 2000,
+        "roi": [
+            222,
+            656,
+            428,
+            289
+        ]
+    },
+    "Flag_文华区选项": {
+        "recognition": "OCR",
+        "roi": [
+            161,
+            415,
+            156,
+            298
+        ],
+        "expected": [
+            "文华西街",
+            "研究中心",
+            "莫弈家",
+            "陆景和个人画室"
+        ]
+    },
     "Flag_重置位置_中央广场": {
         "recognition": "TemplateMatch",
         "template": "未名市/未名市移动.png",
