@@ -4,6 +4,7 @@
             "name": "异常副本",
             "entry": "异常副本",
             "option": [
+                "开始前自动补足体力",
                 "资源类型",
                 "异常副本复盘次数",
                 "使用能量饮料",
@@ -133,6 +134,16 @@
                                 "Click_复盘1次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "threshold": 15
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "threshold": 15
+                            }
                         }
                     }
                 },
@@ -144,6 +155,16 @@
                                 "Click_复盘2次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "threshold": 30
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "threshold": 30
+                            }
                         }
                     }
                 },
@@ -155,6 +176,16 @@
                                 "Click_复盘3次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "threshold": 45
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "threshold": 45
+                            }
                         }
                     }
                 }

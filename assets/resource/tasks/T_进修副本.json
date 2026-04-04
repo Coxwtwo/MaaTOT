@@ -4,8 +4,9 @@
             "name": "进修副本",
             "entry": "进修副本",
             "option": [
+                "开始前自动补足体力",
                 "进修关卡",
-                "复盘次数",
+                "进修副本复盘次数",
                 "使用能量饮料",
                 "能量饮料类型"
             ],
@@ -112,6 +113,54 @@
                         },
                         "Click_进入进修关卡": {
                             "expected": "03"
+                        }
+                    }
+                }
+            ]
+        },
+        "进修副本复盘次数": {
+            "type": "select",
+            "label": "复盘次数",
+            "cases": [
+                {
+                    "name": "1次",
+                    "pipeline_override": {
+                        "Flag_复盘确认弹窗": {
+                            "next": [
+                                "Click_复盘1次确定",
+                                "Flag_复盘次数最小"
+                            ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "threshold": 20
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "threshold": 20
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "2次",
+                    "pipeline_override": {
+                        "Flag_复盘确认弹窗": {
+                            "next": [
+                                "Click_复盘2次确定",
+                                "Flag_复盘次数最小"
+                            ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "threshold": 40
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "threshold": 40
+                            }
                         }
                     }
                 }

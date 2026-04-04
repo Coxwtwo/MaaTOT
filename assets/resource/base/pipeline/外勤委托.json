@@ -1,6 +1,7 @@
 {
     "外勤委托": {
         "next": [
+            "[JumpBack]体力检查",
             "Click_未名日程",
             "[JumpBack]返回主界面"
         ]
