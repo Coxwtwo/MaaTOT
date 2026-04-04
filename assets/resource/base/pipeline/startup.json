@@ -87,7 +87,9 @@
             "Flag_关闭广告弹窗",
             "[JumpBack]Click_关闭奖励弹窗",
             "[JumpBack]Click_返回上一级键",
-            "[JumpBack]Click_过期资源确定"
+            "[JumpBack]Click_过期资源确定",
+            "[JumpBack]Click_取消"
+            
         ]
     },
     "Flag_每日签到": {

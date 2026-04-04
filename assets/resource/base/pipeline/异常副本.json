@@ -1,6 +1,7 @@
 {
     "异常副本": {
         "next": [
+            "[JumpBack]体力检查",
             "Click_事件簿_异常",
             "[JumpBack]返回主界面"
         ]
