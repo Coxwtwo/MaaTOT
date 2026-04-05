@@ -1,0 +1,82 @@
+{
+    "体力检查": {
+        "next": [
+            "Click_主界面体力_体力检查",
+            "[JumpBack]返回主界面"
+        ]
+    },
+    "Click_主界面体力_体力检查": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "threshold": 0.6,
+        "template": [
+            "Button/主界面体力.png",
+            "Button/主界面体力倒计时.png"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            655,
+            1055,
+            40,
+            40
+        ],
+        "next": [
+            "Flag_体力补充弹窗_体力检查"
+        ]
+    },
+    "Flag_体力补充弹窗_体力检查": {
+        "recognition": "OCR",
+        "expected": "体力补充",
+        "post_delay": 800,
+        "roi": [
+            240,
+            270,
+            160,
+            80
+        ],
+        "next": [
+            "Flag_体力判断",
+            "Action_禁用体力检查"
+        ]
+    },
+    "Flag_体力判断": {
+        "recognition": "Custom",
+        "custom_recognition": "APCheck",
+        "custom_recognition_param": {
+            "ap_threshold": 0
+        },
+        "roi": [
+            380,
+            339,
+            180,
+            80
+        ],
+        "next": [
+            "Action_智能策略补充"
+        ]
+    },
+    "Action_智能策略补充": {
+        "action": "Custom",
+        "custom_action": "SmartReplenish",
+        "custom_action_param": {
+            "ap_threshold": 0
+        },
+        "next": [
+            "体力检查"
+        ]
+    },
+    "Action_禁用体力检查": {
+        "action": "Custom",
+        "custom_action": "DynamicOverride",
+        "custom_action_param": {
+            "target_node": "体力检查",
+            "override_content": {
+                "enabled": false
+            }
+        },
+        "next": [
+            "Click_取消"
+        ]
+    }
+}

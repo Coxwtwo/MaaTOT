@@ -3,6 +3,21 @@
         {
             "name": "试炼神殿",
             "entry": "试炼神殿",
+            "option": [
+                "开始前自动补足体力"
+            ],
+            "pipeline_override": {
+                "Flag_体力判断": {
+                    "custom_recognition_param": {
+                        "ap_threshold": 90
+                    }
+                },
+                "Action_智能策略补充": {
+                    "custom_action_param": {
+                        "ap_threshold": 90
+                    }
+                }
+            },
             "description": "<span style=\"font-size:15px\">打试炼神殿，需要有90体力且解锁最高难度。</span>"
         }
     ]

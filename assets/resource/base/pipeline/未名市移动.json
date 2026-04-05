@@ -74,9 +74,9 @@
         "inverse": true,
         "roi": [
             490,
-            197,
+            232,
             198,
-            129
+            58
         ],
         "next": [
             "Click_未名市移动_和印大厅"
@@ -169,9 +169,9 @@
         "inverse": true,
         "roi": [
             490,
-            197,
+            232,
             198,
-            129
+            58
         ],
         "next": [
             "Click_未名市移动_文华西街"
@@ -367,9 +367,9 @@
         "inverse": true,
         "roi": [
             490,
-            197,
+            232,
             198,
-            129
+            58
         ],
         "next": [
             "Click_未名市移动_中央商业街"
@@ -478,9 +478,9 @@
         "inverse": true,
         "roi": [
             490,
-            197,
+            232,
             198,
-            129
+            58
         ],
         "next": [
             "Click_未名市移动_锦兰区"
@@ -529,18 +529,134 @@
             300
         ]
     },
+    "Flag_重置位置_忒弥斯律所二楼": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_忒弥斯律所二楼初始位置",
+            "[JumpBack]Swipe_忒弥斯律所前台_忒弥斯律所二楼1",
+            "[JumpBack]Flag_重置位置_忒弥斯律所前台",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_忒弥斯律所二楼初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所二楼定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            304,
+            65,
+            216,
+            313
+        ]
+    },
+    "Swipe_忒弥斯律所前台_忒弥斯律所二楼1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所前台定位图.png",
+        "roi": [
+            0,
+            728,
+            262,
+            362
+        ],
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_忒弥斯律所前台_忒弥斯律所二楼2"
+        ]
+    },
+    "Swipe_忒弥斯律所前台_忒弥斯律所二楼2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 1500,
+        "next": [
+            "Click_前往二楼办公区_忒弥斯律所二楼"
+        ]
+    },
+    "Click_前往二楼办公区_忒弥斯律所二楼": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "二楼办公区",
+        "roi": [
+            101,
+            449,
+            517,
+            328
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "Flag_忒弥斯律所二楼初始位置",         
+            "Click_前往二楼办公区_忒弥斯律所二楼"
+        ]
+    },
+    "Flag_重置位置_忒弥斯律所前台": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_忒弥斯律所前台初始位置",
+            "[JumpBack]Flag_Inverse_未名市移动_忒弥斯律所",
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_忒弥斯律所前台初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所前台定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            0,
+            728,
+            262,
+            362
+        ]
+    },
     "Flag_Inverse_未名市移动_忒弥斯律所": { //如果当前处在忒弥斯律所，不会执行移动到忒弥斯律所
         "recognition": "OCR",
         "expected": [
-            "律所",
-            "左然办公室"
+            "律所前台"
         ],
         "inverse": true,
         "roi": [
-            490,
-            197,
-            198,
-            129
+            500,
+            238,
+            177,
+            53
         ],
         "next": [
             "Click_未名市移动_忒弥斯律所"

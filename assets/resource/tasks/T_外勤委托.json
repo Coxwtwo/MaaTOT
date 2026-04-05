@@ -4,11 +4,24 @@
             "name": "外勤委托",
             "entry": "外勤委托",
             "option": [
+                "开始前自动补足体力",
                 "外勤区域",
                 "外勤委托类型",
                 "使用能量饮料",
                 "能量饮料类型"
             ],
+            "pipeline_override": {
+                "Flag_体力判断": {
+                    "custom_recognition_param": {
+                        "ap_threshold": 40
+                    }
+                },
+                "Action_智能策略补充": {
+                    "custom_action_param": {
+                        "ap_threshold": 40
+                    }
+                }
+            },
             "description": "<span style=\"font-size:15px\">在指定区域内完成日常和庭审委托。</span>"
         }
     ],
