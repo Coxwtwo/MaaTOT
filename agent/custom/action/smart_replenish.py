@@ -99,7 +99,7 @@ class SmartReplenish(CustomAction):
             # 使用模板匹配实时定位图标位置
             match_res = context.run_recognition_direct(
                 JRecognitionType.TemplateMatch,
-                JTemplateMatch(template=cfg["template"], ap_threshold=0.7, roi=DRINK_SEARCH_ROI),
+                JTemplateMatch(template=cfg["template"], threshold=0.7, roi=DRINK_SEARCH_ROI),
                 img
             )
             
