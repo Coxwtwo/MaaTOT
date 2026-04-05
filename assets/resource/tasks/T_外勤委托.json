@@ -13,12 +13,12 @@
             "pipeline_override": {
                 "Flag_体力判断": {
                     "custom_recognition_param": {
-                        "threshold": 40
+                        "ap_threshold": 40
                     }
                 },
                 "Action_智能策略补充": {
                     "custom_action_param": {
-                        "threshold": 40
+                        "ap_threshold": 40
                     }
                 }
             },

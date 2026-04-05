@@ -137,12 +137,12 @@
                         },
                         "Flag_体力判断": {
                             "custom_recognition_param": {
-                                "threshold": 15
+                                "ap_threshold": 15
                             }
                         },
                         "Action_智能策略补充": {
                             "custom_action_param": {
-                                "threshold": 15
+                                "ap_threshold": 15
                             }
                         }
                     }
@@ -158,12 +158,12 @@
                         },
                         "Flag_体力判断": {
                             "custom_recognition_param": {
-                                "threshold": 30
+                                "ap_threshold": 30
                             }
                         },
                         "Action_智能策略补充": {
                             "custom_action_param": {
-                                "threshold": 30
+                                "ap_threshold": 30
                             }
                         }
                     }
@@ -179,12 +179,12 @@
                         },
                         "Flag_体力判断": {
                             "custom_recognition_param": {
-                                "threshold": 45
+                                "ap_threshold": 45
                             }
                         },
                         "Action_智能策略补充": {
                             "custom_action_param": {
-                                "threshold": 45
+                                "ap_threshold": 45
                             }
                         }
                     }

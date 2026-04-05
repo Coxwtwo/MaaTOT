@@ -133,12 +133,12 @@
                         },
                         "Flag_体力判断": {
                             "custom_recognition_param": {
-                                "threshold": 20
+                                "ap_threshold": 20
                             }
                         },
                         "Action_智能策略补充": {
                             "custom_action_param": {
-                                "threshold": 20
+                                "ap_threshold": 20
                             }
                         }
                     }
@@ -154,12 +154,12 @@
                         },
                         "Flag_体力判断": {
                             "custom_recognition_param": {
-                                "threshold": 40
+                                "ap_threshold": 40
                             }
                         },
                         "Action_智能策略补充": {
                             "custom_action_param": {
-                                "threshold": 40
+                                "ap_threshold": 40
                             }
                         }
                     }

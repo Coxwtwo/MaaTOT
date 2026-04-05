@@ -31,11 +31,11 @@ class SmartReplenish(CustomAction):
         try:
             # 1. 参数解析：获取由外部注入的体力目标阈值
             param_dict = json.loads(argv.custom_action_param)
-            threshold = param_dict.get("threshold", 0)
+            ap_threshold = param_dict.get("ap_threshold", 0)
         except (json.JSONDecodeError, TypeError):
-            threshold = 0
+            ap_threshold = 0
         
-        logger.info(f"SmartReplenish: 正在执行补给决策 (目标: {threshold})...")
+        logger.info(f"SmartReplenish: 正在执行补给决策 (目标: {ap_threshold})...")
 
         # 2. 图像捕获：显式等待并获取当前最新截图，确保感知的是最新 UI 状态
         context.tasker.controller.post_screencap().wait()
@@ -46,33 +46,33 @@ class SmartReplenish(CustomAction):
             return CustomAction.RunResult(success=False)
 
         # 3. 状态读数：OCR 识别当前体力数值
-        STAMINA_VALUE_ROI = [380, 339, 180, 80] 
-        res_stamina = context.run_recognition_direct(
+        ACTIONPOINT_VALUE_ROI = [380, 339, 180, 80] 
+        res_ap = context.run_recognition_direct(
             JRecognitionType.OCR,
-            JOCR(roi=STAMINA_VALUE_ROI),
+            JOCR(roi=ACTIONPOINT_VALUE_ROI),
             img
         )
         
-        current_stamina = 0
-        if res_stamina and res_stamina.all_results:
-            full_text = "".join([item.text for item in res_stamina.all_results])
+        current_ap = 0
+        if res_ap and res_ap.all_results:
+            full_text = "".join([item.text for item in res_ap.all_results])
             match = re.search(r"(\d+)", full_text)
             if match:
-                current_stamina = int(match.group(1))
+                current_ap = int(match.group(1))
 
         # 计算当前体力缺口
-        gap = threshold - current_stamina
+        gap = ap_threshold - current_ap
         if gap <= 0:
-            logger.info(f"SmartReplenish: 当前体力 {current_stamina} 已达标，无需补给")
+            logger.info(f"SmartReplenish: 当前体力 {current_ap} 已达标，无需补给")
             context.run_task("Action_禁用体力检查")
             return CustomAction.RunResult(success=False)
 
-        logger.info(f"SmartReplenish: 当前体力 {current_stamina}，缺口为 {gap}")
+        logger.info(f"SmartReplenish: 当前体力 {current_ap}，缺口为 {gap}")
 
         # 4. 资源动态搜索：定义饮料配置与搜索区域
         DRINK_SEARCH_ROI = [54, 562, 444, 224] # 锁定前两栏区域
         
-        # 配置药水的基础属性及库存数字相对于图标的相对偏移量
+        # 配置体力饮料的基础属性及库存数字相对于图标的相对偏移量
         drink_configs = [
             {
                 "id": "60",
@@ -99,7 +99,7 @@ class SmartReplenish(CustomAction):
             # 使用模板匹配实时定位图标位置
             match_res = context.run_recognition_direct(
                 JRecognitionType.TemplateMatch,
-                JTemplateMatch(template=cfg["template"], threshold=0.7, roi=DRINK_SEARCH_ROI),
+                JTemplateMatch(template=cfg["template"], ap_threshold=0.7, roi=DRINK_SEARCH_ROI),
                 img
             )
             

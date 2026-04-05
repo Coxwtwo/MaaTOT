@@ -42,9 +42,9 @@
     },
     "Flag_体力判断": {
         "recognition": "Custom",
-        "custom_recognition": "StaminaCheck",
+        "custom_recognition": "APCheck",
         "custom_recognition_param": {
-            "threshold": 0
+            "ap_threshold": 0
         },
         "roi": [
             380,
@@ -60,7 +60,7 @@
         "action": "Custom",
         "custom_action": "SmartReplenish",
         "custom_action_param": {
-            "threshold": 0
+            "ap_threshold": 0
         },
         "next": [
             "体力检查"

@@ -1,1 +1,1 @@
-from .stamina_check import StaminaCheck
+from .ap_check import APCheck

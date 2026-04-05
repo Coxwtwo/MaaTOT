@@ -66,7 +66,7 @@
 
 配置在节点的 `custom_action_param` 字段中：
 
-- `threshold` (int): **[选填]** 补给的目标体力阈值。默认值：`0`。
+- `ap_threshold` (int): **[选填]** 补给的目标体力阈值。默认值：`0`。
 
 ### 4. 输出结果 (返回逻辑)
 
@@ -88,7 +88,7 @@
 "Action_智能策略补充": {
     "action": "Custom",
     "custom_action": "SmartReplenish",
-    "custom_action_param": { "threshold": 90 },
+    "custom_action_param": { "ap_threshold": 90 },
     "next": [ "体力检查" ]
 }
 ```
