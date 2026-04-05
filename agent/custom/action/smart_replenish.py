@@ -42,6 +42,7 @@ class SmartReplenish(CustomAction):
         img = context.tasker.controller.cached_image
         if img is None:
             logger.error("SmartReplenish: 无法获取截图，动作中断")
+            context.run_task("Action_禁用体力检查")
             return CustomAction.RunResult(success=False)
 
         # 3. 状态读数：OCR 识别当前体力数值
@@ -63,16 +64,18 @@ class SmartReplenish(CustomAction):
         gap = threshold - current_stamina
         if gap <= 0:
             logger.info(f"SmartReplenish: 当前体力 {current_stamina} 已达标，无需补给")
+            context.run_task("Action_禁用体力检查")
             return CustomAction.RunResult(success=False)
 
         logger.info(f"SmartReplenish: 当前体力 {current_stamina}，缺口为 {gap}")
 
-        # 4. 资源动态搜索：在指定栏位区域内寻找能量饮料图标
+        # 4. 资源动态搜索：定义饮料配置与搜索区域
         DRINK_SEARCH_ROI = [54, 562, 444, 224] # 锁定前两栏区域
         
-        # 定义能量饮料配置及其相对于图标的库存数字偏移坐标
+        # 配置药水的基础属性及库存数字相对于图标的相对偏移量
         drink_configs = [
             {
+                "id": "60",
                 "name": "60能量饮料",
                 "template": "Button/60体力饮料.png",
                 "node": "Click_60体力饮料",
@@ -80,6 +83,7 @@ class SmartReplenish(CustomAction):
                 "count_offset_x": 101, "count_offset_y": 56, "count_w": 16, "count_h": 21
             },
             {
+                "id": "30",
                 "name": "30能量饮料",
                 "template": "Button/30体力饮料.png",
                 "node": "Click_30体力饮料",
@@ -88,7 +92,9 @@ class SmartReplenish(CustomAction):
             }
         ]
 
-        best_drink = None
+        # 收集所有在界面上可见（有库存）的饮料
+        available_drinks = {}
+        
         for cfg in drink_configs:
             # 使用模板匹配实时定位图标位置
             match_res = context.run_recognition_direct(
@@ -98,13 +104,13 @@ class SmartReplenish(CustomAction):
             )
             
             # 若图标不存在，根据游戏逻辑判定为该饮料已耗尽 (0库存不显示)
-            if not match_res:
+            if not match_res or not match_res.hit:
                 continue
             
             # 基础库存假设：图标存在即至少有 1 瓶
             inventory = 1 
             
-            # 尝试通过 OCR 获取精确的剩余瓶数（基于图标位置进行相对偏移识别）
+            # 尝试通过 OCR 获取精确的剩余瓶数
             box = match_res.best_result.box
             abs_x = (box.x if hasattr(box, 'x') else box[0])
             abs_y = (box.y if hasattr(box, 'y') else box[1])
@@ -118,22 +124,32 @@ class SmartReplenish(CustomAction):
                     inventory = int(m.group(1))
                     logger.info(f"SmartReplenish: {cfg['name']} 识别库存为 {inventory}")
             
-            # 决策判定：优先选 60 能量饮料补足大缺口
             if inventory > 0:
-                if cfg["value"] == 60 and gap >= 60:
-                    best_drink = cfg
-                    break
-                if cfg["value"] == 30 and not best_drink:
-                    best_drink = cfg
+                available_drinks[cfg["id"]] = cfg
 
-        # 5. 执行动作
+        # 5. 补给决策逻辑
+        best_drink = None
+        has_60 = "60" in available_drinks
+        has_30 = "30" in available_drinks
+        
+        if has_60 and has_30:
+            if gap >= 60:
+                best_drink = available_drinks["60"]
+            else:
+                best_drink = available_drinks["30"]
+        elif has_60:
+            best_drink = available_drinks["60"]
+        elif has_30:
+            best_drink = available_drinks["30"]
+
+        # 6. 执行动作或安全回退
         if best_drink:
             logger.info(f"SmartReplenish: 决定饮用一瓶 {best_drink['name']}")
-            # 触发对应节点的点击流程（点击图标 -> 点击弹窗确定按钮）
             context.run_task(best_drink["node"])
-            # 增加固定延时以等待 UI 动画返回主界面，以便后续 Pipeline 递归重新触发
             time.sleep(2.0)
             return CustomAction.RunResult(success=True)
-        
-        logger.warning("SmartReplenish: 未找到可用能量饮料，补给方案中断")
-        return CustomAction.RunResult(success=False)
+        else:
+            logger.warning("SmartReplenish: 未找到任何可用能量饮料，执行自我禁用回退逻辑")
+            # 库存枯竭时，主动触发禁用节点，防止主任务重复进入检查循环
+            context.run_task("Action_禁用体力检查")
+            return CustomAction.RunResult(success=False)
