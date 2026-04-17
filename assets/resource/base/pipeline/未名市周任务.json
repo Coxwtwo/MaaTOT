@@ -91,7 +91,7 @@
             "Flag_进入未名市任务"
         ]
     },
-    "Flag_进入未名市任务":{
+    "Flag_进入未名市任务": {
         "recognition": "OCR",
         "expected": "进行中",
         "roi": [
@@ -99,7 +99,7 @@
             61,
             220,
             168
-        ]    
+        ]
     },
     "Flag_进行中": {
         "recognition": "OCR",
@@ -114,15 +114,18 @@
             "Flag_暂无委托",
             "[JumpBack]Flag_排队的礼仪",
             "[JumpBack]Flag_偶像的力量1",
-            "[JumpBack]Flag_歌舞未名",
-            "[JumpBack]Flag_维护中央广场1",
-            "[JumpBack]Flag_维护中央广场2",
+            "[JumpBack]Flag_旅游地图1",
             "[JumpBack]Flag_虚假交易",
+            "[JumpBack]Flag_歌舞未名",
             "[JumpBack]Flag_照顾花草1",
-            "[JumpBack]Flag_照顾花草2",
             "[JumpBack]Flag_绶带鸟的礼物1",
+            "[JumpBack]Flag_照顾花草2",
             "[JumpBack]Flag_绶带鸟的礼物2",
             "[JumpBack]Flag_绶带鸟的礼物3",
+            "[JumpBack]Flag_维护中央广场1",
+            "[JumpBack]Flag_维护中央广场2",
+            "[JumpBack]Flag_旅游地图2",
+            "[JumpBack]Flag_潮流青年",
             "[JumpBack]Flag_暴力装修",
             "[JumpBack]Flag_收拾办公桌1",
             "[JumpBack]Flag_收拾办公桌2",
@@ -145,6 +148,306 @@
         ],
         "next": [
             "返回主界面"
+        ]
+    },
+    "Flag_潮流青年": {
+        "recognition": "OCR",
+        "expected": [
+            "潮流青年"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央广场_潮流青年",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央广场"
+        ]
+    },
+    "Flag_中央广场_潮流青年": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央广场定位图.png",
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
+        "next": [
+            "Swipe_潮流青年_1"
+        ]
+    },
+    "Swipe_潮流青年_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央广场定位图.png",
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
+        "next": [
+            "Swipe_潮流青年_2"
+        ]
+    },
+    "Swipe_潮流青年_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 2000,
+        "next": [
+            "Swipe_潮流青年_3"
+        ]
+    },
+    "Swipe_潮流青年_3": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 400,
+        "timeout": 2000,
+        "next": [
+            "Click_前往辩论",
+            "[JumpBack]Click_对话框标识"
+        ]
+    },
+    "Flag_旅游地图2": {
+        "recognition": "OCR",
+        "expected": [
+            "旅游地图\\(二",
+            "旅游地图（二"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央广场_旅游地图2",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央广场"
+        ]
+    },
+    "Flag_中央广场_旅游地图2": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央广场定位图.png",
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
+        "next": [
+            "Swipe_旅游地图2_1"
+        ]
+    },
+    "Swipe_旅游地图2_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央广场定位图.png",
+        "roi": [
+            69,
+            598,
+            317,
+            369
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
+        "next": [
+            "Swipe_旅游地图2_2"
+        ]
+    },
+    "Swipe_旅游地图2_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 400,
+        "next": [
+            "Swipe_旅游地图2_3"
+        ]
+    },
+    "Swipe_旅游地图2_3": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            650,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 3000,
+        "timeout": 2000,
+        "next": [
+            "Swipe_旅游地图2_4"
+        ]
+    },
+    "Swipe_旅游地图2_4": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Click_关闭未名市奖励弹窗"
+        ]
+    },
+    "Flag_旅游地图1": {
+        "recognition": "OCR",
+        "expected": [
+            "旅游地图\\(一",
+            "旅游地图（一"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_中央商业街_旅游地图1",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_中央商业街"
+        ]
+    },
+    "Flag_中央商业街_旅游地图1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            164,
+            897,
+            523,
+            220
+        ],
+        "next": [
+            "Swipe_旅游地图1_1"
+        ]
+    },
+    "Swipe_旅游地图1_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/中央商业街定位图.png",
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_旅游地图1_2"
+        ]
+    },
+    "Swipe_旅游地图1_2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850
+        ],
+        "end": [
+            350,
+            650
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_旅游地图1_3"
+        ]
+    },
+    "Swipe_旅游地图1_3": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850
+        ],
+        "end": [
+            550,
+            850
+        ],
+        "end_hold": 8000,
+        "timeout": 3000,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Click_未名市任务"
         ]
     },
     "Flag_劝说游客": {
@@ -466,6 +769,7 @@
         "timeout": 2000,
         "next": [
             "[JumpBack]Click_对话框标识",
+            "Click_前往辩论",
             "Flag_偶像的力量2",
             "Click_未名市任务"
         ]
@@ -2186,6 +2490,7 @@
             "Button/对话框标识2.png",
             "Button/对话框标识3.png"
         ],
+        "post_wait_freezes": 1000,
         "roi": [
             336,
             840,
@@ -2238,6 +2543,7 @@
         "recognition": "OCR",
         "expected": "获得奖励",
         "pre_delay": 1000,
+        "pre_wait_freezes": 1000,
         "post_delay": 1000,
         "target": [
             300,
