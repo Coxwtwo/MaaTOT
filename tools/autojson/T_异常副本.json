@@ -4,6 +4,7 @@
             "name": "异常副本",
             "entry": "异常副本",
             "option": [
+                "开始前自动补足体力",
                 "资源类型",
                 "异常副本复盘次数",
                 "使用能量饮料",
@@ -133,6 +134,16 @@
                                 "Click_复盘1次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "ap_threshold": 15
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "ap_threshold": 15
+                            }
                         }
                     }
                 },
@@ -144,6 +155,16 @@
                                 "Click_复盘2次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "ap_threshold": 30
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "ap_threshold": 30
+                            }
                         }
                     }
                 },
@@ -155,6 +176,16 @@
                                 "Click_复盘3次确定",
                                 "Flag_复盘次数最小"
                             ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "ap_threshold": 45
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "ap_threshold": 45
+                            }
                         }
                     }
                 }
@@ -164,6 +195,12 @@
             "type": "select",
             "label": "角色",
             "cases": [
+                {
+                    "name": "彼时少年",
+                    "option": [
+                        "夏彦彼时少年思绪残影关卡"
+                    ]
+                },
                 {
                     "name": "与子偕行",
                     "option": [
@@ -177,21 +214,15 @@
                     ]
                 },
                 {
-                    "name": "彼时少年",
+                    "name": "灼光",
                     "option": [
-                        "夏彦彼时少年思绪残影关卡"
+                        "夏彦灼光思绪残影关卡"
                     ]
                 },
                 {
                     "name": "心玥",
                     "option": [
                         "夏彦心玥思绪残影关卡"
-                    ]
-                },
-                {
-                    "name": "灼光",
-                    "option": [
-                        "夏彦灼光思绪残影关卡"
                     ]
                 }
             ]
@@ -556,6 +587,18 @@
             "label": "角色",
             "cases": [
                 {
+                    "name": "锋芒褪尽",
+                    "option": [
+                        "左然锋芒褪尽思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "长夜微明",
+                    "option": [
+                        "左然长夜微明思绪残影关卡"
+                    ]
+                },
+                {
                     "name": "抉择",
                     "option": [
                         "左然抉择思绪残影关卡"
@@ -574,15 +617,9 @@
                     ]
                 },
                 {
-                    "name": "锋芒褪尽",
+                    "name": "破茧",
                     "option": [
-                        "左然锋芒褪尽思绪残影关卡"
-                    ]
-                },
-                {
-                    "name": "长夜微明",
-                    "option": [
-                        "左然长夜微明思绪残影关卡"
+                        "左然破茧思绪残影关卡"
                     ]
                 }
             ]
@@ -957,21 +994,21 @@
             "label": "角色",
             "cases": [
                 {
-                    "name": "入局",
-                    "option": [
-                        "莫弈入局思绪残影关卡"
-                    ]
-                },
-                {
                     "name": "初光倾泻",
                     "option": [
                         "莫弈初光倾泻思绪残影关卡"
                     ]
                 },
                 {
-                    "name": "彷徨",
+                    "name": "入局",
                     "option": [
-                        "莫弈彷徨思绪残影关卡"
+                        "莫弈入局思绪残影关卡"
+                    ]
+                },
+                {
+                    "name": "繁嚣一梦",
+                    "option": [
+                        "莫弈繁嚣一梦思绪残影关卡"
                     ]
                 },
                 {
@@ -981,9 +1018,9 @@
                     ]
                 },
                 {
-                    "name": "繁嚣一梦",
+                    "name": "彷徨",
                     "option": [
-                        "莫弈繁嚣一梦思绪残影关卡"
+                        "莫弈彷徨思绪残影关卡"
                     ]
                 }
             ]
@@ -1338,15 +1375,21 @@
             "label": "角色",
             "cases": [
                 {
+                    "name": "心头撞鹿",
+                    "option": [
+                        "陆景和心头撞鹿思绪残影关卡"
+                    ]
+                },
+                {
                     "name": "坠入心扉",
                     "option": [
                         "陆景和坠入心扉思绪残影关卡"
                     ]
                 },
                 {
-                    "name": "心头撞鹿",
+                    "name": "静默之下",
                     "option": [
-                        "陆景和心头撞鹿思绪残影关卡"
+                        "陆景和静默之下思绪残影关卡"
                     ]
                 },
                 {
@@ -1359,12 +1402,6 @@
                     "name": "斡旋",
                     "option": [
                         "陆景和斡旋思绪残影关卡"
-                    ]
-                },
-                {
-                    "name": "静默之下",
-                    "option": [
-                        "陆景和静默之下思绪残影关卡"
                     ]
                 }
             ]
@@ -1983,6 +2020,25 @@
                             "expected": "18-10"
                         }
                     }
+                },
+                {
+                    "name": "19-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-06"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
                 }
             ]
         },
@@ -2217,6 +2273,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-07"
+                        }
+                    }
+                },
+                {
+                    "name": "19-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-06"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-14"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
@@ -2774,6 +2871,25 @@
                             "expected": "17-10"
                         }
                     }
+                },
+                {
+                    "name": "19-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
                 }
             ]
         },
@@ -2985,6 +3101,25 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-11"
+                        }
+                    }
+                },
+                {
+                    "name": "19-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
                         }
                     }
                 }
@@ -3217,6 +3352,28 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-22"
+                        }
+                    }
+                },
+                {
+                    "name": "19-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-15"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
@@ -3495,6 +3652,25 @@
                             "expected": "18-09"
                         }
                     }
+                },
+                {
+                    "name": "19-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
                 }
             ]
         },
@@ -3745,6 +3921,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-21"
+                        }
+                    }
+                },
+                {
+                    "name": "19-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-13"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
@@ -4177,6 +4394,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-17"
+                        }
+                    }
+                },
+                {
+                    "name": "19-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-01"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-09"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
@@ -4655,6 +4913,47 @@
                             "expected": "18-17"
                         }
                     }
+                },
+                {
+                    "name": "19-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-01"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-09"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -5085,6 +5384,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-18"
+                        }
+                    }
+                },
+                {
+                    "name": "19-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-02"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-10"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
@@ -5563,6 +5903,47 @@
                             "expected": "18-18"
                         }
                     }
+                },
+                {
+                    "name": "19-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-02"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-10"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -5993,6 +6374,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-19"
+                        }
+                    }
+                },
+                {
+                    "name": "19-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-03"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-11"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
@@ -6469,6 +6891,135 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-19"
+                        }
+                    }
+                },
+                {
+                    "name": "19-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-03"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-11"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                }
+            ]
+        },
+        "左然破茧思绪残影关卡": {
+            "type": "select",
+            "label": "破茧",
+            "cases": [
+                {
+                    "name": "19-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-04"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-08"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "19-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-12"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                },
+                {
+                    "name": "19-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E19P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "19-16"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
                         }
                     }
                 }
