@@ -42,7 +42,7 @@ def write_json(data: Dict[str, Any], file_path: Path):
 
 def clean_old_options(base_data: Dict[str, Any]) -> tuple[Dict[str, Any], List[str]]:
     """
-    清理 base_data["option"] 中所有包含"关卡"或"级别选择"的旧选项，
+    清理 base_data["option"] 中所有包含"关卡"或"选择"的旧选项，
     并记录清理前的原始键顺序。
     返回 (清理后的数据, 原始键列表)
     """
@@ -50,7 +50,7 @@ def clean_old_options(base_data: Dict[str, Any]) -> tuple[Dict[str, Any], List[s
     original_keys = list(option.keys())
 
     # 找出需要删除的键
-    keys_to_remove = [k for k in option if "关卡" in k or "级别选择" in k]
+    keys_to_remove = [k for k in option if "关卡" in k or "选择" in k]
     for k in keys_to_remove:
         option.pop(k, None)
 
