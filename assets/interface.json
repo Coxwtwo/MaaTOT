@@ -63,7 +63,8 @@
                         "Flag_复盘确认弹窗": {
                             "next": [
                                 "Click_复盘1次确定",
-                                "Flag_复盘次数最小"
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
                             ]
                         }
                     }
@@ -74,7 +75,8 @@
                         "Flag_复盘确认弹窗": {
                             "next": [
                                 "Click_复盘2次确定",
-                                "Flag_复盘次数最小"
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
                             ]
                         }
                     }
@@ -85,7 +87,8 @@
                         "Flag_复盘确认弹窗": {
                             "next": [
                                 "Click_复盘3次确定",
-                                "Flag_复盘次数最小"
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
                             ]
                         }
                     }
@@ -96,7 +99,8 @@
                         "Flag_复盘确认弹窗": {
                             "next": [
                                 "Click_复盘4次确定",
-                                "Flag_复盘次数最小"
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
                             ]
                         }
                     }
@@ -107,7 +111,8 @@
                         "Flag_复盘确认弹窗": {
                             "next": [
                                 "Click_复盘5次确定",
-                                "Flag_复盘次数最小"
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
                             ]
                         }
                     }
