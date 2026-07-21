@@ -531,6 +531,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/复盘减号亮.png",
         "green_mask": true,
+        "post_delay": 1000,
         "roi": [
             195,
             560,
