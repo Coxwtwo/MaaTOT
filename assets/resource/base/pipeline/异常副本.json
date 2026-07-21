@@ -43,10 +43,10 @@
         "template": "Debate/异常亮.png",
         "pre_delay": 1000,
         "roi": [
-            609,
-            166,
-            65,
-            35
+            596,
+            156,
+            80,
+            50
         ],
         "next": [
             "Click_主线换篇章按钮"
@@ -56,12 +56,13 @@
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Debate/异常暗.png",
+        "threshold": 0.64,
         "pre_delay": 1000,
         "roi": [
-            603,
-            167,
-            64,
-            34
+            596,
+            156,
+            80,
+            50
         ],
         "next": [
             "Click_主线换篇章按钮"
