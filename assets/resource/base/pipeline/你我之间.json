@@ -1,0 +1,23 @@
+{
+    "你我之间": {
+        "next": [
+            "Action_Niwome"
+        ]
+    },
+    "Action_Niwome": {
+        "action": "Custom",
+        "custom_action": "Niwome",
+        "custom_action_param": {
+            "step": "init"
+        },
+        "next": [
+            "Action_Niwome",
+            "停止任务"
+        ]
+    },
+    "Click_AndroidBack": {
+        "action": "Shell",
+        "cmd": "input keyevent 4",
+        "post_delay": 1500
+    }
+}

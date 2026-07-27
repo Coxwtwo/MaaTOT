@@ -1,0 +1,20 @@
+{
+    "消耗剩余体力": {
+        "next": [
+            "[JumpBack]体力检查",
+            "Action_SweepRemainingStamina"
+        ]
+    },
+    "Action_SweepRemainingStamina": {
+        "action": "Custom",
+        "custom_action": "SweepRemainingStamina",
+        "custom_action_param": {
+            "stage_index": 0,
+            "min_ap": 15
+        },
+        "next": [
+            "Action_SweepRemainingStamina",
+            "停止任务"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "task": [
+        {
+            "name": "你我之间日常清理",
+            "entry": "你我之间",
+            "option": [],
+            "description": "<span style=\"font-size:15px\">自动完成你我之间日常任务：记录心情、准备物品、完成打卡、回应动态。</span><br><span style=\"font-size:15px\">所有配置在 config/niwome_config.json 中修改。</span><br><span style=\"color:orange\">打卡默认需要有一项[工作]，否则可能导致任务无法正常进行。</span>"
+        }
+    ]
+}

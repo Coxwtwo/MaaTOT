@@ -1,211 +1,340 @@
 {
-    "interface_version": 2,
-    "name": "MaaTOT",
-    "label": "生煎包小助手",
-    "icon": "logo.ico",
-    "github": "https://github.com/Coxwtwo/MaaTOT",
-    "welcome": "欢迎食用生煎包OvO！\n\n不要在任何平台的未定事件簿官方账号下面提到MaaTOT！",
-    "contact": "./CONTACT.md",
-    "controller": [
-        {
-            "name": "ADB",
-            "label": "模拟器",
-            "type": "Adb",
-            "display_short_side": 720
-        }
-    ],
-    "resource": [
-        {
-            "name": "官服",
-            "path": [
-                "./resource/base"
-            ],
-            "controller": [
-                "ADB"
-            ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "./resource/base",
-                "./resource/bilibili"
-            ],
-            "controller": [
-                "ADB"
-            ]
-        },
-        {
-            "name": "国际服（简体中文）",
-            "path": [
-                "./resource/base",
-                "./resource/intl"
-            ],
-            "controller": [
-                "ADB"
-            ]
-        }
-    ],
-    "agent": {
-        "child_exec": "python",
-        "child_args": [
-            "-u",
-            "./../agent/main.py"
-        ]
+  "interface_version": 2,
+  "name": "MaaTOT",
+  "label": "生煎包小助手",
+  "icon": "logo.ico",
+  "github": "https://github.com/Coxwtwo/MaaTOT",
+  "welcome": "欢迎食用生煎包OvO！\n\n不要在任何平台的未定事件簿官方账号下面提到MaaTOT！",
+  "contact": "./CONTACT.md",
+  "controller": [
+    {
+      "name": "ADB",
+      "label": "模拟器",
+      "type": "Adb",
+      "display_short_side": 720
+    }
+  ],
+  "resource": [
+    {
+      "name": "官服",
+      "path": [
+        "./resource/base"
+      ],
+      "controller": [
+        "ADB"
+      ]
     },
-    "task": [],
-    "option": {
-        "复盘次数": {
-            "type": "select",
-            "cases": [
-                {
-                    "name": "1次",
-                    "pipeline_override": {
-                        "Flag_复盘确认弹窗": {
-                            "next": [
-                                "Click_复盘1次确定",
-                                "Flag_复盘次数最小",
-                                "[JumpBack]Click_复盘次数减号亮"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "2次",
-                    "pipeline_override": {
-                        "Flag_复盘确认弹窗": {
-                            "next": [
-                                "Click_复盘2次确定",
-                                "Flag_复盘次数最小",
-                                "[JumpBack]Click_复盘次数减号亮"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "3次",
-                    "pipeline_override": {
-                        "Flag_复盘确认弹窗": {
-                            "next": [
-                                "Click_复盘3次确定",
-                                "Flag_复盘次数最小",
-                                "[JumpBack]Click_复盘次数减号亮"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "4次",
-                    "pipeline_override": {
-                        "Flag_复盘确认弹窗": {
-                            "next": [
-                                "Click_复盘4次确定",
-                                "Flag_复盘次数最小",
-                                "[JumpBack]Click_复盘次数减号亮"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "5次",
-                    "pipeline_override": {
-                        "Flag_复盘确认弹窗": {
-                            "next": [
-                                "Click_复盘5次确定",
-                                "Flag_复盘次数最小",
-                                "[JumpBack]Click_复盘次数减号亮"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        "使用能量饮料": {
-            "type": "switch",
-            "cases": [
-                {
-                    "name": "Yes",
-                    "pipeline_override": {
-                        "Flag_体力不足弹窗": {
-                            "enabled": false
-                        }
-                    }
-                },
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "Flag_体力不足弹窗": {
-                            "enabled": true
-                        }
-                    }
-                }
-            ]
-        },
-        "能量饮料类型": {
-            "type": "select",
-            "cases": [
-                {
-                    "name": "30体力饮料",
-                    "pipeline_override": {
-                        "Click_能量饮料窗口": {
-                            "next": [
-                                "Click_30体力饮料"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "60体力饮料",
-                    "pipeline_override": {
-                        "Click_能量饮料窗口": {
-                            "next": [
-                                "Click_60体力饮料"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        "开始前自动补足体力": {
-            "type": "switch",
-            "cases": [
-                {
-                    "name": "Yes",
-                    "pipeline_override": {
-                        "体力检查": {
-                            "enabled": true
-                        }
-                    }
-                },
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "体力检查": {
-                            "enabled": false
-                        }
-                    }
-                }
-            ]
-        }
+    {
+      "name": "B 服",
+      "path": [
+        "./resource/base",
+        "./resource/bilibili"
+      ],
+      "controller": [
+        "ADB"
+      ]
     },
-    "import": [
-        "resource/tasks/preset/Daily.json",
-        "resource/tasks/T_startup.json",
-        "resource/tasks/T_领取邮件.json",
-        "resource/tasks/T_领取友谊徽章.json",
-        "resource/tasks/T_领取基地奖励.json",
-        "resource/tasks/T_好感度.json",
-        "resource/tasks/T_逸梦.json",
-        "resource/tasks/T_专属甜心.json",
-        "resource/tasks/T_进修副本.json",
-        "resource/tasks/T_异常副本.json",
-        "resource/tasks/T_外勤委托.json",
-        "resource/tasks/T_领取任务奖励.json",
-        "resource/tasks/T_领取绮思奖励.json",
-        "resource/tasks/T_试炼神殿.json",
-        "resource/tasks/T_shutdown.json",
-        "resource/tasks/T_购买免费礼包.json",
-        "resource/tasks/T_提交材料活动.json",
-        "resource/tasks/T_拼图活动.json",
-        "resource/tasks/T_翻格活动.json"
+    {
+      "name": "国际服（简体中文）",
+      "path": [
+        "./resource/base",
+        "./resource/intl"
+      ],
+      "controller": [
+        "ADB"
+      ]
+    }
+  ],
+  "agent": {
+    "child_exec": "./python/python.exe",
+    "child_args": [
+      "-u",
+      "./agent/main.py"
     ]
+  },
+  "task": [],
+  "option": {
+    "复盘次数": {
+      "type": "select",
+      "cases": [
+        {
+          "name": "1次",
+          "pipeline_override": {
+            "Flag_复盘确认弹窗": {
+              "next": [
+                "Click_复盘1次确定",
+                "Flag_复盘次数最小",
+                "[JumpBack]Click_复盘次数减号亮"
+              ]
+            }
+          }
+        },
+        {
+          "name": "2次",
+          "pipeline_override": {
+            "Flag_复盘确认弹窗": {
+              "next": [
+                "Click_复盘2次确定",
+                "Flag_复盘次数最小",
+                "[JumpBack]Click_复盘次数减号亮"
+              ]
+            }
+          }
+        },
+        {
+          "name": "3次",
+          "pipeline_override": {
+            "Flag_复盘确认弹窗": {
+              "next": [
+                "Click_复盘3次确定",
+                "Flag_复盘次数最小",
+                "[JumpBack]Click_复盘次数减号亮"
+              ]
+            }
+          }
+        },
+        {
+          "name": "4次",
+          "pipeline_override": {
+            "Flag_复盘确认弹窗": {
+              "next": [
+                "Click_复盘4次确定",
+                "Flag_复盘次数最小",
+                "[JumpBack]Click_复盘次数减号亮"
+              ]
+            }
+          }
+        },
+        {
+          "name": "5次",
+          "pipeline_override": {
+            "Flag_复盘确认弹窗": {
+              "next": [
+                "Click_复盘5次确定",
+                "Flag_复盘次数最小",
+                "[JumpBack]Click_复盘次数减号亮"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "使用能量饮料": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "Flag_体力不足弹窗": {
+              "enabled": false
+            }
+          }
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "Flag_体力不足弹窗": {
+              "enabled": true
+            }
+          }
+        }
+      ]
+    },
+    "剩余体力最低AP阈值": {
+      "type": "select",
+      "label": "扫荡最低AP",
+      "cases": [
+        {
+          "name": "15 AP (1次)",
+          "pipeline_override": {
+            "Action_SweepRemainingStamina": {
+              "custom_action_param": {
+                "stage_index": 0,
+                "min_ap": 15
+              }
+            }
+          }
+        },
+        {
+          "name": "30 AP (2次)",
+          "pipeline_override": {
+            "Action_SweepRemainingStamina": {
+              "custom_action_param": {
+                "stage_index": 0,
+                "min_ap": 30
+              }
+            }
+          }
+        },
+        {
+          "name": "45 AP (3次)",
+          "pipeline_override": {
+            "Action_SweepRemainingStamina": {
+              "custom_action_param": {
+                "stage_index": 0,
+                "min_ap": 45
+              }
+            }
+          }
+        }
+      ]
+    },
+    "试炼神殿执行日": {
+      "type": "select",
+      "label": "试炼神殿执行日",
+      "cases": [
+        {
+          "name": "每天",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": -1
+              }
+            }
+          }
+        },
+        {
+          "name": "周一",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 0
+              }
+            }
+          }
+        },
+        {
+          "name": "周二",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "周三",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 2
+              }
+            }
+          }
+        },
+        {
+          "name": "周四",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 3
+              }
+            }
+          }
+        },
+        {
+          "name": "周五",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 4
+              }
+            }
+          }
+        },
+        {
+          "name": "周六",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 5
+              }
+            }
+          }
+        },
+        {
+          "name": "周日",
+          "pipeline_override": {
+            "Action_WeekdayCheck": {
+              "custom_action_param": {
+                "target_weekday": 6
+              }
+            }
+          }
+        }
+      ]
+    },
+    "能量饮料类型": {
+      "type": "select",
+      "cases": [
+        {
+          "name": "30体力饮料",
+          "pipeline_override": {
+            "Click_能量饮料窗口": {
+              "next": [
+                "Click_30体力饮料"
+              ]
+            }
+          }
+        },
+        {
+          "name": "60体力饮料",
+          "pipeline_override": {
+            "Click_能量饮料窗口": {
+              "next": [
+                "Click_60体力饮料"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "开始前自动补足体力": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "体力检查": {
+              "enabled": true
+            }
+          }
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "体力检查": {
+              "enabled": false
+            }
+          }
+        }
+      ]
+    }
+  },
+  "import": [
+    "resource/tasks/preset/Daily.json",
+    "resource/tasks/T_startup.json",
+    "resource/tasks/T_领取邮件.json",
+    "resource/tasks/T_领取友谊徽章.json",
+    "resource/tasks/T_领取基地奖励.json",
+    "resource/tasks/T_好感度.json",
+    "resource/tasks/T_逸梦.json",
+    "resource/tasks/T_专属甜心.json",
+    "resource/tasks/T_进修副本.json",
+    "resource/tasks/T_异常副本.json",
+    "resource/tasks/T_消耗剩余体力.json",
+    "resource/tasks/T_你我之间.json",
+    "resource/tasks/T_外勤委托.json",
+    "resource/tasks/T_领取任务奖励.json",
+    "resource/tasks/T_领取绮思奖励.json",
+    "resource/tasks/T_试炼神殿.json",
+    "resource/tasks/T_shutdown.json",
+    "resource/tasks/T_购买免费礼包.json",
+    "resource/tasks/T_提交材料活动.json",
+    "resource/tasks/T_拼图活动.json",
+    "resource/tasks/T_翻格活动.json"
+  ],
+  "version": "v5.0.13",
+  "title": "MaaTOT v5.0.13 | 生煎包小助手"
 }

@@ -1,0 +1,21 @@
+{
+    "task": [
+        {
+            "name": "消耗剩余体力",
+            "entry": "消耗剩余体力",
+            "option": [
+                "开始前自动补足体力",
+                "剩余体力最低AP阈值"
+            ],
+            "pipeline_override": {
+                "Action_SweepRemainingStamina": {
+                    "custom_action_param": {
+                        "stage_index": 0,
+                        "min_ap": 15
+                    }
+                }
+            },
+            "description": "<span style=\"font-size:15px\">在所有日常任务完成后，从最新章向旧章扫荡异常副本，直到体力不足。</span><br><span style=\"font-size:15px\">跳过0剩余次数的关卡，优先3次回退到1次。扫荡顺序：亚宁篇→剑兰谷篇→海.森篇。</span><br><span style=\"color:orange\">功能测试中待优化</span>"
+        }
+    ]
+}

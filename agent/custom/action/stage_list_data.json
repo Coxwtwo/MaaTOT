@@ -1,0 +1,2591 @@
+[
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-16",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-15",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-14",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-13",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-12",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-11",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-10",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P2.png",
+      "threshold": 0.93
+    },
+    "stage": "19-09",
+    "list_bottom": "16",
+    "list_top": "9"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-08",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-07",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-06",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-05",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-04",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-03",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-02",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E19P1.png",
+      "threshold": 0.93
+    },
+    "stage": "19-01",
+    "list_bottom": "8"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-24"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-23"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-22"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-21"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-20"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-19"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-18"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-17"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-16"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-15"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-14"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P2.png",
+      "threshold": 0.93
+    },
+    "stage": "18-13"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-12"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-11"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-10"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-09"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-08"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-07"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-06"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-05"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-04"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-03"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-02"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E18P1.png",
+      "threshold": 0.93
+    },
+    "stage": "18-01"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-24"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-23"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-22"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-21"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-20"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-19"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-18"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-17"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-16"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-15"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-14"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P2.png",
+      "threshold": 0.93
+    },
+    "stage": "17-13"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-12"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-11"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-10"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-09"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-08"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-07"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-06"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-05"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-04"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-03"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-02"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E17P1.png",
+      "threshold": 0.93
+    },
+    "stage": "17-01"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-12"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-11"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-10"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-09"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-08"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-07"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-06"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-05"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-04"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-03"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-02"
+  },
+  {
+    "chapter": "亚宁篇",
+    "ep_override": {
+      "expected": "Episode.16"
+    },
+    "stage": "16-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.15"
+    },
+    "stage": "15-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-24"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-23"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-22"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-21"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-20"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-19"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-18"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-17"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-16"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-15"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-14"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P2.png",
+      "threshold": 0.93
+    },
+    "stage": "14-13"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E14P1.png",
+      "threshold": 0.93
+    },
+    "stage": "14-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.13"
+    },
+    "stage": "13-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.12"
+    },
+    "stage": "12-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-24"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-23"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-22"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-21"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-20"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-19"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-18"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-17"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-16"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-15"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-14"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P2.png",
+      "threshold": 0.93
+    },
+    "stage": "11-13"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E11P1.png",
+      "threshold": 0.93
+    },
+    "stage": "11-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.10"
+    },
+    "stage": "10-01"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-12"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-11"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-10"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-09"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-08"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-07"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-06"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-05"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-04"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-03"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-02"
+  },
+  {
+    "chapter": "剑兰谷篇",
+    "ep_override": {
+      "expected": "Episode.9"
+    },
+    "stage": "09-01"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-12"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-11"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-10"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-09"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-08"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-07"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-06"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-05"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-04"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-03"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-02"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.8"
+    },
+    "stage": "08-01"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-24"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-23"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-22"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-21"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-20"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-19"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-18"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-17"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-15"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P2.png",
+      "threshold": 0.93
+    },
+    "stage": "07-13"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-12"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-11"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-10"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-09"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-08"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-07"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-06"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-05"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-04"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-03"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-02"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E7P1.png",
+      "threshold": 0.93
+    },
+    "stage": "07-01"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-24"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-23"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-22"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-21"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-20"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-19"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-18"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-17"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-15"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P2.png",
+      "threshold": 0.93
+    },
+    "stage": "06-13"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-12"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-11"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-10"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-09"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-08"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-07"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-06"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-05"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-04"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-03"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-02"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E6P1.png",
+      "threshold": 0.93
+    },
+    "stage": "06-01"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-36"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-35"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-34"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-33"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-32"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-31"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-30"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-29"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-28"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-27"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-26"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P3.png",
+      "threshold": 0.93
+    },
+    "stage": "05-25"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-24"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-23"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-22"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-21"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-20"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-19"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-18"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-17"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-15"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P2.png",
+      "threshold": 0.93
+    },
+    "stage": "05-13"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-12"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-11"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-10"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-09"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-08"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-07"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-06"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-05"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "recognition": "TemplateMatch",
+      "template": "Debate/E5P1.png",
+      "threshold": 0.93
+    },
+    "stage": "05-04"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-14",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-13",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-12",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-11",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-10",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-09",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-08",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-07",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-06",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-05",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.4"
+    },
+    "stage": "04-04",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-14",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-13",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-12",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-11",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-10",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-09",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-08",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-07",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-06",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-05",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.3"
+    },
+    "stage": "03-04",
+    "list_bottom": "14"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.2"
+    },
+    "stage": "02-16",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.2"
+    },
+    "stage": "02-12",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.2"
+    },
+    "stage": "02-08",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.2"
+    },
+    "stage": "02-04",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.1"
+    },
+    "stage": "01-16",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.1"
+    },
+    "stage": "01-12",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.1"
+    },
+    "stage": "01-08",
+    "list_bottom": "16"
+  },
+  {
+    "chapter": "海.森篇",
+    "ep_override": {
+      "expected": "Episode.1"
+    },
+    "stage": "01-04",
+    "list_bottom": "16"
+  }
+]

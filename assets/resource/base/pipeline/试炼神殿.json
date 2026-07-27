@@ -1,7 +1,16 @@
 {
     "试炼神殿": {
         "next": [
-            "[JumpBack]体力检查",
+            "Action_WeekdayCheck"
+        ]
+    },
+    "Action_WeekdayCheck": {
+        "action": "Custom",
+        "custom_action": "WeekdayCheck",
+        "custom_action_param": {
+            "target_weekday": -1
+        },
+        "next": [
             "Click_事件簿_活动_当期_试炼神殿",
             "[JumpBack]返回主界面"
         ]
@@ -68,6 +77,7 @@
         ],
         "next": [
             "Flag_试炼神殿_400",
+            "[JumpBack]体力检查",
             "Click_试炼神殿_继续",
             "Click_试炼神殿_困难",
             "Flag_In_x3倍数"
