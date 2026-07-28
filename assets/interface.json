@@ -119,52 +119,6 @@
                 }
             ]
         },
-        "使用能量饮料": {
-            "type": "switch",
-            "cases": [
-                {
-                    "name": "Yes",
-                    "pipeline_override": {
-                        "Flag_体力不足弹窗": {
-                            "enabled": false
-                        }
-                    }
-                },
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "Flag_体力不足弹窗": {
-                            "enabled": true
-                        }
-                    }
-                }
-            ]
-        },
-        "能量饮料类型": {
-            "type": "select",
-            "cases": [
-                {
-                    "name": "30体力饮料",
-                    "pipeline_override": {
-                        "Click_能量饮料窗口": {
-                            "next": [
-                                "Click_30体力饮料"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "60体力饮料",
-                    "pipeline_override": {
-                        "Click_能量饮料窗口": {
-                            "next": [
-                                "Click_60体力饮料"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
         "开始前自动补足体力": {
             "type": "switch",
             "cases": [
