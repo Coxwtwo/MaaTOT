@@ -1,6 +1,20 @@
 {
     "试炼神殿": {
         "next": [
+            "Judge_试炼神殿_Weekly"
+        ]
+    },
+    "Judge_试炼神殿_Weekly": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "JudgeWeeklyTask",
+                "custom_action_param": {
+                    "task_key": "trial_sanctuary_weekly"
+                }
+            }
+        },
+        "next": [
             "[JumpBack]体力检查",
             "Click_事件簿_活动_当期_试炼神殿",
             "[JumpBack]返回主界面"

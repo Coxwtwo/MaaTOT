@@ -1,6 +1,20 @@
 {
     "好感度": {
         "next": [
+            "Judge_好感度_Daily"
+        ]
+    },
+    "Judge_好感度_Daily": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "JudgeDailyTask",
+                "custom_action_param": {
+                    "task_key": "favorability_daily"
+                }
+            }
+        },
+        "next": [
             "Click_主界面手机",
             "[JumpBack]返回主界面"
         ]
