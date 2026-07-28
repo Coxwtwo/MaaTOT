@@ -4,7 +4,8 @@
             "name": "试炼神殿",
             "entry": "试炼神殿",
             "option": [
-                "开始前自动补足体力"
+                "开始前自动补足体力",
+                "试炼神殿周常刷新日"
             ],
             "pipeline_override": {
                 "Flag_体力判断": {
@@ -20,5 +21,118 @@
             },
             "description": "<span style=\"font-size:15px\">打试炼神殿，需要有90体力且解锁最高难度。</span>"
         }
-    ]
+    ],
+    "option": {
+        "试炼神殿周常刷新日": {
+            "type": "select",
+            "label": "周常刷新日",
+            "cases": [
+                {
+                    "name": "周一",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周二",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周三",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周四",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 3
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周五",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 4
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周六",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 5
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周日",
+                    "pipeline_override": {
+                        "Judge_试炼神殿_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "trial_sanctuary_weekly",
+                                        "reset_weekday": 6
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }
