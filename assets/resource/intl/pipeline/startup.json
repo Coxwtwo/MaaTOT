@@ -7,6 +7,7 @@
             "Flag_更新版本",
             "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Click_下载确定",
+            "[JumpBack]Flag_DownLoading",
             "[JumpBack]Click_账号登录",
             "[JumpBack]Click_关闭奖励弹窗",
             "[JumpBack]Click_返回主界面键",
@@ -50,6 +51,7 @@
             "[JumpBack]Flag_StartLoadingVersion",
             "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Click_下载确定",
+            "[JumpBack]Flag_DownLoading",
             "[JumpBack]Click_账号登录",
             "[JumpBack]Flag_MihoyoSlogan"
         ]

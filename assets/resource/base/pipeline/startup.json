@@ -7,6 +7,7 @@
             "Flag_更新版本",
             "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Click_下载确定",
+            "[JumpBack]Flag_DownLoading",
             "[JumpBack]Click_点击官服登录账号",
             "[JumpBack]Click_账号登录",
             "[JumpBack]Flag_官服接受协议",
@@ -49,6 +50,7 @@
             "[JumpBack]Flag_StartLoadingVersion",
             "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Click_下载确定",
+            "[JumpBack]Flag_DownLoading",
             "[JumpBack]Click_点击官服登录账号",
             "[JumpBack]Click_账号登录",
             "[JumpBack]Flag_官服接受协议",
@@ -139,6 +141,18 @@
             700,
             93,
             47
+        ]
+    },
+    "Flag_DownLoading": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/DownLoading.png",
+        "pre_delay": 800,
+        "post_delay": 5000,
+        "roi": [
+            614,
+            1150,
+            68,
+            70
         ]
     },
     "Click_点击进入": {
