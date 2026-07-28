@@ -91,5 +91,24 @@
         "next": [
             "Click_确定"
         ]
+    },
+    "Click_120体力饮料": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已饮用120体力饮料</span>"
+        },
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/120体力饮料.png",
+        "green_mask": true,
+        "post_delay": 1000,
+        "roi": [
+            90,
+            590,
+            555,
+            180
+        ],
+        "next": [
+            "Click_确定"
+        ]
     }
 }
