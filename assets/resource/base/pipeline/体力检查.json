@@ -78,5 +78,16 @@
         "next": [
             "Click_取消"
         ]
+    },
+    "Flag_体力补充弹窗": {
+        "recognition": "OCR",
+        "expected": "体力补充",
+        "post_delay": 800,
+        "roi": [
+            240,
+            270,
+            160,
+            80
+        ]
     }
 }
