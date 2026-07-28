@@ -21,8 +21,8 @@ on:
 
 env:
   MaaFw_version: v5.12.2
-  MFAA_version: v2.10.9
-  MXU_version: "v1.19.6"
+  MFAA_version: v2.11.8
+  MXU_version: v2.3.1
   app_name: MaaTOT
 
 permissions:
