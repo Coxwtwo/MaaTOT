@@ -89,7 +89,6 @@
             "[JumpBack]Click_返回上一级键",
             "[JumpBack]Click_过期资源确定",
             "[JumpBack]Click_取消"
-            
         ]
     },
     "Flag_每日签到": {
@@ -210,13 +209,16 @@
     },
     "Flag_StartLoadingVersion": {
         "recognition": "TemplateMatch",
-        "template": "StartUp/StartLoading.png",
+        "template": [
+            "StartUp/StartLoading.png",
+            "StartUp/StartLoadingVersion.png"
+        ],
         "post_delay": 3000,
         "roi": [
-            112,
-            960,
-            480,
-            184
+            60,
+            900,
+            600,
+            300
         ]
     },
     "Flag_ThemisLoading": {
