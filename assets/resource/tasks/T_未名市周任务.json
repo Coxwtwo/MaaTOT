@@ -2,7 +2,123 @@
     "task": [
         {
             "name": "未名市周任务",
-            "entry": "未名市周任务"
+            "entry": "未名市周任务",
+            "option": [
+                "未名市周常刷新日"
+            ]
         }
-    ]
+    ],
+    "option": {
+        "未名市周常刷新日": {
+            "type": "select",
+            "label": "周常刷新日",
+            "cases": [
+                {
+                    "name": "周一",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周二",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周三",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周四",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 3
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周五",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 4
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周六",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 5
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "周日",
+                    "pipeline_override": {
+                        "Judge_未名市_Weekly": {
+                            "action": {
+                                "param": {
+                                    "custom_action_param": {
+                                        "task_key": "stellis_city_weekly",
+                                        "reset_weekday": 6
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }

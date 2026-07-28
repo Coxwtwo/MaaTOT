@@ -1,6 +1,20 @@
 {
     "未名市周任务": {
         "next": [
+            "Judge_未名市_Weekly"
+        ]
+    },
+    "Judge_未名市_Weekly": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "JudgeWeeklyTask",
+                "custom_action_param": {
+                    "task_key": "stellis_city_weekly"
+                }
+            }
+        },
+        "next": [
             "Click_未名日程_未名市",
             "[JumpBack]返回主界面"
         ]
