@@ -25,10 +25,6 @@ env:
   MXU_version: v2.3.1
   app_name: MaaTOT
 
-permissions:
-  contents: write
-  actions: write
-
 jobs:
   meta:
     runs-on: ubuntu-latest
