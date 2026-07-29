@@ -1,6 +1,20 @@
 {
     "专属甜心": {
         "next": [
+            "Judge_专属甜心_Daily"
+        ]
+    },
+    "Judge_专属甜心_Daily": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "JudgeDailyTask",
+                "custom_action_param": {
+                    "task_key": "sweetheart_daily"
+                }
+            }
+        },
+        "next": [
             "Click_甜心缩",
             "Click_甜心伸",
             "[JumpBack]返回主界面"
