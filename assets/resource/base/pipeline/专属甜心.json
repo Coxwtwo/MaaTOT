@@ -15,38 +15,30 @@
             }
         },
         "next": [
-            "Click_甜心缩",
-            "Click_甜心伸",
+            "Click_主界面甜心",
             "[JumpBack]返回主界面"
         ]
     },
-    "Click_甜心缩": {
+    "Click_主界面甜心": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "专属甜心/甜心右手缩.png",
-        "pre_delay": 800,
-        "post_delay": 5000,
-        "roi": [
-            0,
-            778,
-            12,
-            16
+        "template": [
+            "专属甜心/甜心夏彦1.png",
+            "专属甜心/甜心左然1.png",
+            "专属甜心/甜心莫弈1.png",
+            "专属甜心/甜心陆景和1.png",
+            "专属甜心/甜心夏彦2.png",
+            "专属甜心/甜心左然2.png",
+            "专属甜心/甜心莫弈2.png",
+            "专属甜心/甜心陆景和2.png"
         ],
-        "next": [
-            "Click_剪刀"
-        ]
-    },
-    "Click_甜心伸": {
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "专属甜心/甜心右手伸.png",
         "pre_delay": 800,
         "post_delay": 5000,
         "roi": [
             0,
-            778,
-            12,
-            16
+            774,
+            56,
+            64
         ],
         "next": [
             "Click_剪刀"

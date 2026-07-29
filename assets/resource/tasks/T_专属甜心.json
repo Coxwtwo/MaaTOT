@@ -29,8 +29,7 @@
                     "pipeline_override": {
                         "专属甜心": {
                             "next": [
-                                "Click_甜心缩",
-                                "Click_甜心伸",
+                                "Click_主界面甜心",
                                 "[JumpBack]返回主界面"
                             ]
                         }
