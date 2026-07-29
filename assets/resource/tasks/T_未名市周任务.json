@@ -4,11 +4,41 @@
             "name": "未名市周任务",
             "entry": "未名市周任务",
             "option": [
-                "未名市周常刷新日"
+                "未名市每周周期开关"
             ]
         }
     ],
     "option": {
+        "未名市每周周期开关": {
+            "type": "switch",
+            "label": "每周仅运行一次",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "option": [
+                        "未名市周常刷新日"
+                    ],
+                    "pipeline_override": {
+                        "未名市周任务": {
+                            "next": [
+                                "Judge_未名市_Weekly"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "未名市周任务": {
+                            "next": [
+                                "Click_未名日程_未名市",
+                                "[JumpBack]返回主界面"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         "未名市周常刷新日": {
             "type": "select",
             "label": "周常刷新日",

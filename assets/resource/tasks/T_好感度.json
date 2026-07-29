@@ -4,7 +4,8 @@
             "name": "好感度",
             "entry": "好感度",
             "option": [
-                "好感度男主"
+                "好感度男主",
+                "好感度每日周期开关"
             ],
             "description": "<span style=\"font-size:15px\">通过触摸的方式获取好感度至每日上限。只能指定单个男主获取好感至每日上限。</span>"
         }
@@ -42,6 +43,33 @@
                     "pipeline_override": {
                         "Click_选择好感男主": {
                             "template": "好感/好感陆景和.png"
+                        }
+                    }
+                }
+            ]
+        },
+        "好感度每日周期开关": {
+            "type": "switch",
+            "label": "每日仅运行一次",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "好感度": {
+                            "next": [
+                                "Judge_好感度_Daily"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "好感度": {
+                            "next": [
+                                "Click_主界面手机",
+                                "[JumpBack]返回主界面"
+                            ]
                         }
                     }
                 }

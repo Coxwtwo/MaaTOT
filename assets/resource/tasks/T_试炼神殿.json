@@ -5,7 +5,7 @@
             "entry": "试炼神殿",
             "option": [
                 "开始前自动补足体力",
-                "试炼神殿周常刷新日"
+                "试炼神殿每周周期开关"
             ],
             "pipeline_override": {
                 "Flag_体力判断": {
@@ -23,6 +23,37 @@
         }
     ],
     "option": {
+        "试炼神殿每周周期开关": {
+            "type": "switch",
+            "label": "每周仅运行一次",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "option": [
+                        "试炼神殿周常刷新日"
+                    ],
+                    "pipeline_override": {
+                        "试炼神殿": {
+                            "next": [
+                                "Judge_试炼神殿_Weekly"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "试炼神殿": {
+                            "next": [
+                                "[JumpBack]体力检查",
+                                "Click_事件簿_活动_当期_试炼神殿",
+                                "[JumpBack]返回主界面"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         "试炼神殿周常刷新日": {
             "type": "select",
             "label": "周常刷新日",
