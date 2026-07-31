@@ -1,0 +1,510 @@
+{
+    "你我之间": {
+        "next": [
+            "Judge_你我之间_Daily"
+        ]
+    },
+    // ========== 每日周期判断 ==========
+    "Judge_你我之间_Daily": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "JudgeDailyTask",
+                "custom_action_param": {
+                    "task_key": "niwozhijian_daily"
+                }
+            }
+        },
+        "next": [
+            "Click_主界面手机_你我之间",
+            "[JumpBack]返回主界面"
+        ]
+    },
+    // ========== 主界面手机入口（复用好感度模板，图片已存在）==========
+    "Click_主界面手机_你我之间": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "好感/手机.png",
+            "好感/手机_你我之间夏彦.png",
+            "好感/手机_你我之间左然.png",
+            "好感/手机_你我之间莫弈.png",
+            "好感/手机_你我之间陆景和.png"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            45,
+            1005,
+            50,
+            50
+        ],
+        "next": [
+            "Click_手机界面你我之间"
+        ]
+    },
+    // ========== 手机界面 OCR 进入"你我之间" ==========
+    "Click_手机界面你我之间": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "之间",
+            "你我之间"
+        ], // 实测中OCR只识别出"之间"，"你我"识别不出
+        "pre_delay": 800,
+        "post_delay": 3000, // 入场有小动画，等动画结束
+        "roi": [
+            40,
+            500,
+            250,
+            200
+        ],
+        "next": [
+            "返回你我之间首页_记录心情"
+        ]
+    },
+    // ========== 分发：回你我之间首页（跳过每日签到弹窗）→ 任务1 ==========
+    "返回你我之间首页_记录心情": {
+        "next": [
+            "Flag_你我之间首页_记录心情",
+            "[JumpBack]Click_对话框标识_你我之间",
+            "[JumpBack]Click_跳过每日签到弹窗_你我之间",
+            "[JumpBack]Click_返回你我之间主界面"
+        ]
+    },
+    "Flag_你我之间首页_记录心情": {
+        "recognition": "OCR",
+        "expected": [
+            "共感等级",
+            "点滴日常"
+        ], // 首页特征：ROI内匹配到共感等级/点滴日常即为主页
+        "pre_delay": 500,
+        "post_delay": 800,
+        "roi": [
+            462,
+            136,
+            238,
+            202
+        ],
+        "next": [
+            "Click_此时此刻_记录心情"
+        ]
+    },
+    // ========== 任务1：记录心情 ==========
+    "Click_此时此刻_记录心情": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "此时此刻"
+        ],
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            0,
+            150,
+            720,
+            1000
+        ],
+        "next": [
+            "Click_右上角选项_记录心情"
+        ]
+    },
+    "Click_右上角选项_记录心情": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/此时此刻右上角按钮.png",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            632,
+            27,
+            43,
+            39
+        ], // 实测：右上角按钮位置
+        "next": [
+            "Click_记录心情菜单_记录心情"
+        ]
+    },
+    "Click_记录心情菜单_记录心情": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "记录心情"
+        ],
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            0,
+            0,
+            720,
+            600
+        ], // 覆盖右上角区域（菜单从右上角按钮下拉），如仍漏再缩小
+        "next": [
+            "Flag_发布窗口_记录心情", // 有"发布"按钮 → 发布窗口存在 → 继续发布
+            "返回你我之间首页_准备物品" // 无"发布"按钮=当天已发布过 → 直接回首页
+        ]
+    },
+    "Flag_发布窗口_记录心情": {
+        "recognition": "OCR",
+        "expected": [
+            "发布"
+        ],
+        "pre_delay": 800,
+        "post_delay": 500,
+        "roi": [
+            205,
+            969,
+            292,
+            96
+        ], // 发布按钮位置（未发布时存在）
+        "next": [
+            "Click_发布_记录心情"
+        ]
+    },
+    "Click_发布_记录心情": {
+        "action": "Click",
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">记录心情发布完成</span>"
+        },
+        "recognition": "OCR",
+        "expected": [
+            "发布"
+        ], //只罩大字按钮，避开"每日仅可发布一次"小字
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            205,
+            969,
+            292,
+            96
+        ], // 实测发布按钮位置
+        "next": [
+            "返回你我之间首页_准备物品"
+        ]
+    },
+    // ========== 分发：回你我之间首页 → 任务2 ==========
+    "返回你我之间首页_准备物品": {
+        "next": [
+            "Flag_你我之间首页_准备物品",
+            "[JumpBack]Click_对话框标识_你我之间",
+            "[JumpBack]Click_跳过每日签到弹窗_你我之间",
+            "[JumpBack]Click_返回你我之间主界面"
+        ]
+    },
+    "Flag_你我之间首页_准备物品": {
+        "recognition": "OCR",
+        "expected": [
+            "共感等级",
+            "点滴日常"
+        ], // 首页特征：ROI内匹配到共感等级/点滴日常即为主页
+        "pre_delay": 500,
+        "post_delay": 800,
+        "roi": [
+            462,
+            136,
+            238,
+            202
+        ],
+        "next": [
+            "Click_下次外出_准备物品"
+        ]
+    },
+    // ========== 任务2：准备物品 ==========
+    "Click_下次外出_准备物品": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "下次外出"
+        ], // 只搜右半屏避免误点"本次外出"
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            360,
+            0,
+            360,
+            1280
+        ], // 右半屏
+        "next": [
+            "Click_伞_准备物品"
+        ]
+    },
+    "Click_伞_准备物品": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "伞"
+        ],
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            55,
+            276,
+            145,
+            170
+        ], // 实测：伞文字区域
+        "target": true,
+        "target_offset": [
+            0,
+            -80,
+            0,
+            0
+        ], // 估算：点击文字上方的图案，需实测
+        "next": [
+            "Click_选择结果_准备物品"
+        ]
+    },
+    "Click_选择结果_准备物品": {
+        "action": "Click",
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">准备物品完成</span>"
+        },
+        "recognition": "OCR",
+        "expected": [
+            "确认选择",
+            "已选择"
+        ], // 任一命中即点击，需实测变体
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            480,
+            946,
+            216,
+            149
+        ], // 实测：确认选择/已选择区域
+        "next": [
+            "返回你我之间首页_回应动态"
+        ]
+    },
+    // ========== 分发：回你我之间首页 → 任务3 ==========
+    "返回你我之间首页_回应动态": {
+        "next": [
+            "Flag_你我之间首页_回应动态",
+            "Flag_已选择_回应动态", // 特殊：识别到"已选择" → 点X关闭回主页面
+            "[JumpBack]Click_对话框标识_你我之间",
+            "[JumpBack]Click_跳过每日签到弹窗_你我之间",
+            "[JumpBack]Click_返回你我之间主界面"
+        ]
+    },
+    "Flag_已选择_回应动态": {
+        "recognition": "OCR",
+        "expected": [
+            "已选择"
+        ],
+        "pre_delay": 500,
+        "post_delay": 500,
+        "roi": [
+            480,
+            946,
+            216,
+            149
+        ], // 复用确认选择/已选择识别区域
+        "next": [
+            "Click_关闭已选择_回应动态"
+        ]
+    },
+    "Click_关闭已选择_回应动态": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/你我之间_出行物品_夏彦_X.png",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            633,
+            207,
+            45,
+            41
+        ], // 实测：已选择弹窗的X关闭按钮
+        "next": [
+            "返回你我之间首页_回应动态"
+        ]
+    },
+    "Flag_你我之间首页_回应动态": {
+        "recognition": "OCR",
+        "expected": [
+            "共感等级",
+            "点滴日常"
+        ], // 首页特征：ROI内匹配到共感等级/点滴日常即为主页
+        "pre_delay": 500,
+        "post_delay": 800,
+        "roi": [
+            462,
+            136,
+            238,
+            202
+        ],
+        "next": [
+            "Click_最新动态_回应动态"
+        ]
+    },
+    // ========== 任务3：回应动态 ==========
+    "Click_最新动态_回应动态": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "最新动态"
+        ], // 需实测变体
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            0,
+            150,
+            720,
+            1000
+        ], // 需实测：首页"最新动态"位置
+        "next": [
+            "Click_点此回应_回应动态"
+        ]
+    },
+    "Click_点此回应_回应动态": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "点此回应"
+        ], // 需实测变体
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            0,
+            200,
+            720,
+            900
+        ], // 需实测：动态列表区
+        "next": [
+            "Click_NICE_回应动态"
+        ]
+    },
+    "Click_NICE_回应动态": {
+        "action": "Click",
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">回应动态完成</span>"
+        },
+        "recognition": "OCR",
+        "expected": [
+            "NICE"
+        ], // 需实测：彩色文字
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            0,
+            0,
+            720,
+            1280
+        ], // 全屏识别NICE（位置不固定）
+        "next": [
+            "返回你我之间首页_完成打卡"
+        ]
+    },
+    // ========== 分发：回你我之间首页 → 任务4 ==========
+    "返回你我之间首页_完成打卡": {
+        "next": [
+            "Flag_你我之间首页_完成打卡",
+            "[JumpBack]Click_对话框标识_你我之间",
+            "[JumpBack]Click_跳过每日签到弹窗_你我之间",
+            "[JumpBack]Click_返回你我之间主界面"
+        ]
+    },
+    "Flag_你我之间首页_完成打卡": {
+        "recognition": "OCR",
+        "expected": [
+            "共感等级",
+            "点滴日常"
+        ], // 首页特征：ROI内匹配到共感等级/点滴日常即为主页
+        "pre_delay": 500,
+        "post_delay": 800,
+        "roi": [
+            462,
+            136,
+            238,
+            202
+        ],
+        "next": [
+            "Click_习惯打卡_完成打卡"
+        ]
+    },
+    // ========== 任务4：完成打卡 ==========
+    "Click_习惯打卡_完成打卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "习惯打卡"
+        ], // 需实测变体
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            0,
+            150,
+            720,
+            1000
+        ],
+        "next": [
+            "Click_工作_完成打卡"
+        ]
+    },
+    "Click_工作_完成打卡": {
+        "action": "Click",
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">习惯打卡完成</span>"
+        },
+        "recognition": "OCR",
+        "expected": [
+            "工作"
+        ], // 需实测变体
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            0,
+            400,
+            720,
+            800
+        ], // 需实测：打卡页"工作"位置
+        "next": [
+            "返回主界面"
+        ]
+    },
+    // ========== 支撑节点（被分发节点引用）==========
+    "Click_对话框标识_你我之间": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "Button/对话框标识1.png",
+            "Button/对话框标识2.png",
+            "Button/对话框标识3.png"
+        ],
+        "post_wait_freezes": 1000,
+        "roi": [
+            336,
+            840,
+            48,
+            50
+        ] // 剧情对话出现时点对话框推进（参考未名市周任务）
+    },
+    "Click_跳过每日签到弹窗_你我之间": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/你我之间_出行物品_夏彦_X.png",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "roi": [
+            513,
+            332,
+            196,
+            180
+        ] // 实测：每日签到弹窗的X关闭按钮（与出行物品同款）
+    },
+    "Click_返回你我之间主界面": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "Button/你我之间返回_夏彦.png",
+            "Button/你我之间返回_陆景和.png"
+        ], // 夏彦可匹配3人，陆景和单独一张
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            35,
+            23,
+            76,
+            43
+        ] // 实测：你我之间返回首页按钮
+    }
+}

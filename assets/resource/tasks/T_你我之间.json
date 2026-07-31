@@ -1,0 +1,41 @@
+{
+    "task": [
+        {
+            "name": "你我之间",
+            "entry": "你我之间",
+            "option": [
+                "你我之间每日周期开关"
+            ],
+            "description": "<span style=\"font-size:15px\">自动完成记录心情（默认为开心）、准备物品（默认为伞）、回应动态（默认为NICE）、习惯打卡（默认为工作）四项日常。注意习惯打卡必须设置一项”工作“。</span>"
+        }
+    ],
+    "option": {
+        "你我之间每日周期开关": {
+            "type": "switch",
+            "label": "每日仅运行一次",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "你我之间": {
+                            "next": [
+                                "Judge_你我之间_Daily"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "你我之间": {
+                            "next": [
+                                "Click_主界面手机_你我之间",
+                                "[JumpBack]返回主界面"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
