@@ -225,8 +225,36 @@
             36
         ],
         "next": [
-            "Click_选择准备物品"
+            "Click_选择准备物品",
+            "[JumpBack]Swipe_向上滑动寻找准备物品"
         ]
+    },
+    "Swipe_向上滑动寻找准备物品": {
+        "action": "Swipe",
+        "duration": 300,
+        "begin": [
+            75,
+            780,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            285,
+            30,
+            30
+        ],
+        "next": [
+            "HitsLimiter_Swipe_向上滑动寻找准备物品"
+        ]
+    },
+    "HitsLimiter_Swipe_向上滑动寻找准备物品": {
+        "action": "Custom",
+        "custom_action": "HitsLimiter",
+        "custom_action_param": {
+            "current_count": 1,
+            "max_count": 10
+        }
     },
     "Click_选择准备物品": {
         "action": "Click",
