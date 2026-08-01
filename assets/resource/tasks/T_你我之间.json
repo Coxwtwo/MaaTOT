@@ -5,9 +5,9 @@
             "entry": "你我之间",
             "option": [
                 "你我之间每日周期开关",
-                "准备物品"
+                "出行物品"
             ],
-            "description": "<span style=\"font-size:15px\">自动完成记录心情（默认为开心）、准备物品、回应动态（默认为NICE）、习惯打卡（默认为工作）四项日常。注意习惯打卡必须设置一项「工作」。</span>"
+            "description": "<span style=\"font-size:15px\">自动完成记录心情（默认为开心）、出行物品、回应动态（默认为NICE）、习惯打卡（默认为工作）四项日常。注意习惯打卡必须设置一项「工作」。</span>"
         }
     ],
     "option": {
@@ -38,44 +38,44 @@
                 }
             ]
         },
-        "准备物品": {
+        "出行物品": {
             "type": "select",
-            "label": "准备物品角色",
+            "label": "出行物品角色",
             "cases": [
                 {
                     "name": "夏彦",
                     "option": [
-                        "夏彦准备物品"
+                        "夏彦出行物品"
                     ]
                 },
                 {
                     "name": "左然",
                     "option": [
-                        "左然准备物品"
+                        "左然出行物品"
                     ]
                 },
                 {
                     "name": "莫弈",
                     "option": [
-                        "莫弈准备物品"
+                        "莫弈出行物品"
                     ]
                 },
                 {
                     "name": "陆景和",
                     "option": [
-                        "陆景和准备物品"
+                        "陆景和出行物品"
                     ]
                 }
             ]
         },
-        "夏彦准备物品": {
+        "夏彦出行物品": {
             "type": "select",
-            "label": "准备物品",
+            "label": "出行物品",
             "cases": [
                 {
                     "name": "伞",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "伞"
                         }
                     }
@@ -83,7 +83,7 @@
                 {
                     "name": "电子书",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "电子书"
                         }
                     }
@@ -91,7 +91,7 @@
                 {
                     "name": "应急包",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "应急包"
                         }
                     }
@@ -99,7 +99,7 @@
                 {
                     "name": "充电宝",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "充电宝"
                         }
                     }
@@ -107,7 +107,7 @@
                 {
                     "name": "口罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "口罩"
                         }
                     }
@@ -115,21 +115,21 @@
                 {
                     "name": "蒸汽眼罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "蒸汽眼罩"
                         }
                     }
                 }
             ]
         },
-        "左然准备物品": {
+        "左然出行物品": {
             "type": "select",
-            "label": "准备物品",
+            "label": "出行物品",
             "cases": [
                 {
                     "name": "伞",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "伞"
                         }
                     }
@@ -137,7 +137,7 @@
                 {
                     "name": "电子书",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "电子书"
                         }
                     }
@@ -145,7 +145,7 @@
                 {
                     "name": "应急包",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "应急包"
                         }
                     }
@@ -153,7 +153,7 @@
                 {
                     "name": "充电宝",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "充电宝"
                         }
                     }
@@ -161,7 +161,7 @@
                 {
                     "name": "口罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "口罩"
                         }
                     }
@@ -169,21 +169,21 @@
                 {
                     "name": "蒸汽眼罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "蒸汽眼罩"
                         }
                     }
                 }
             ]
         },
-        "莫弈准备物品": {
+        "莫弈出行物品": {
             "type": "select",
-            "label": "准备物品",
+            "label": "出行物品",
             "cases": [
                 {
                     "name": "伞",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "伞"
                         }
                     }
@@ -191,7 +191,7 @@
                 {
                     "name": "电子书",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "电子书"
                         }
                     }
@@ -199,7 +199,7 @@
                 {
                     "name": "应急包",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "应急包"
                         }
                     }
@@ -207,7 +207,7 @@
                 {
                     "name": "充电宝",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "充电宝"
                         }
                     }
@@ -215,7 +215,7 @@
                 {
                     "name": "口罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "口罩"
                         }
                     }
@@ -223,21 +223,21 @@
                 {
                     "name": "蒸汽眼罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "蒸汽眼罩"
                         }
                     }
                 }
             ]
         },
-        "陆景和准备物品": {
+        "陆景和出行物品": {
             "type": "select",
-            "label": "准备物品",
+            "label": "出行物品",
             "cases": [
                 {
                     "name": "伞",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "伞"
                         }
                     }
@@ -245,7 +245,7 @@
                 {
                     "name": "电子书",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "电子书"
                         }
                     }
@@ -253,7 +253,7 @@
                 {
                     "name": "应急包",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "应急包"
                         }
                     }
@@ -261,7 +261,7 @@
                 {
                     "name": "充电宝",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "充电宝"
                         }
                     }
@@ -269,7 +269,7 @@
                 {
                     "name": "口罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "口罩"
                         }
                     }
@@ -277,7 +277,7 @@
                 {
                     "name": "蒸汽眼罩",
                     "pipeline_override": {
-                        "Click_选择准备物品": {
+                        "Click_选择出行物品": {
                             "expected": "蒸汽眼罩"
                         }
                     }

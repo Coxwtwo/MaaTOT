@@ -142,7 +142,7 @@
         ],
         "next": [
             "Flag_发布窗口_记录心情", // 有"发布"按钮 → 发布窗口存在 → 继续发布
-            "返回你我之间首页_准备物品" // 无"发布"按钮=当天已发布过 → 直接回首页
+            "返回你我之间首页_出行物品" // 无"发布"按钮=当天已发布过 → 直接回首页
         ]
     },
     "Flag_发布窗口_记录心情": {
@@ -180,19 +180,19 @@
             42
         ], // 实测发布按钮位置
         "next": [
-            "返回你我之间首页_准备物品"
+            "返回你我之间首页_出行物品"
         ]
     },
     // ========== 分发：回你我之间首页 → 任务2 ==========
-    "返回你我之间首页_准备物品": {
+    "返回你我之间首页_出行物品": {
         "next": [
-            "Flag_你我之间首页_准备物品",
+            "Flag_你我之间首页_出行物品",
             "[JumpBack]Click_对话框标识_你我之间",
             "[JumpBack]Click_跳过每日签到弹窗_你我之间",
             "[JumpBack]Click_返回你我之间主界面"
         ]
     },
-    "Flag_你我之间首页_准备物品": {
+    "Flag_你我之间首页_出行物品": {
         "recognition": "OCR",
         "expected": [
             "点滴日常"
@@ -206,11 +206,11 @@
             33
         ],
         "next": [
-            "Click_下次外出_准备物品"
+            "Click_下次外出_出行物品"
         ]
     },
-    // ========== 任务2：准备物品 ==========
-    "Click_下次外出_准备物品": {
+    // ========== 任务2：出行物品 ==========
+    "Click_下次外出_出行物品": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -225,11 +225,11 @@
             36
         ],
         "next": [
-            "Click_选择准备物品",
-            "[JumpBack]Swipe_向上滑动寻找准备物品"
+            "Click_选择出行物品",
+            "[JumpBack]Swipe_向上滑动寻找出行物品"
         ]
     },
-    "Swipe_向上滑动寻找准备物品": {
+    "Swipe_向上滑动寻找出行物品": {
         "action": "Swipe",
         "duration": 300,
         "begin": [
@@ -245,10 +245,10 @@
             30
         ],
         "next": [
-            "HitsLimiter_Swipe_向上滑动寻找准备物品"
+            "HitsLimiter_Swipe_向上滑动寻找出行物品"
         ]
     },
-    "HitsLimiter_Swipe_向上滑动寻找准备物品": {
+    "HitsLimiter_Swipe_向上滑动寻找出行物品": {
         "action": "Custom",
         "custom_action": "HitsLimiter",
         "custom_action_param": {
@@ -256,7 +256,7 @@
             "max_count": 10
         }
     },
-    "Click_选择准备物品": {
+    "Click_选择出行物品": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "By_User_Setttings",
@@ -275,13 +275,13 @@
             0
         ],
         "next": [
-            "Click_选择结果_准备物品"
+            "Click_选择结果_出行物品"
         ]
     },
-    "Click_选择结果_准备物品": {
+    "Click_选择结果_出行物品": {
         "action": "Click",
         "focus": {
-            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">准备物品完成</span>"
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">出行物品完成</span>"
         },
         "recognition": "OCR",
         "expected": [
