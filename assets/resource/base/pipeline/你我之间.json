@@ -113,15 +113,15 @@
     "Click_右上角选项_记录心情": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/此时此刻右上角按钮.png",
+        "template": "好感/此时此刻右上角编辑按钮.png",
         "pre_delay": 800,
         "post_delay": 800,
         "roi": [
-            632,
-            27,
-            43,
-            39
-        ], // 实测：右上角按钮位置
+            628,
+            24,
+            52,
+            46
+        ],
         "next": [
             "Click_记录心情菜单_记录心情"
         ]
@@ -304,15 +304,16 @@
     "Click_关闭已选择_回应动态": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/你我之间_出行物品_夏彦_X.png",
+        "template": "好感/你我之间XKey.png",
+        "green_mask": true,
         "pre_delay": 800,
         "post_delay": 1000,
         "roi": [
-            633,
-            207,
-            45,
-            41
-        ], // 实测：已选择弹窗的X关闭按钮
+            628,
+            200,
+            64,
+            52
+        ],
         "next": [
             "返回你我之间首页_回应动态"
         ]
@@ -491,30 +492,29 @@
     "Click_跳过每日签到弹窗_你我之间": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "Button/你我之间_出行物品_夏彦_X.png",
+        "template": "好感/你我之间XKey.png",
+        "green_mask": true,
         "pre_delay": 1000,
         "post_delay": 1000,
         "roi": [
-            513,
-            332,
-            196,
-            180
-        ] // 实测：每日签到弹窗的X关闭按钮（与出行物品同款）
+            624,
+            370,
+            64,
+            48
+        ]
     },
     "Click_返回你我之间主界面": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": [
-            "Button/你我之间返回_夏彦.png",
-            "Button/你我之间返回_陆景和.png"
-        ], // 夏彦可匹配3人，陆景和单独一张
+        "template": "好感/你我之间Back.png",
+        "green_mask": true,
         "pre_delay": 800,
         "post_delay": 1000,
         "roi": [
-            35,
-            23,
-            76,
-            43
-        ] // 实测：你我之间返回首页按钮
+            52,
+            18,
+            40,
+            50
+        ]
     }
 }
