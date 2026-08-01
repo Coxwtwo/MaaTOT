@@ -208,6 +208,7 @@
         "recognition": "TemplateMatch",
         "template": "好感/你我之间backhome.png",
         "green_mask": true,
+        "threshold": 0.58,
         "roi": [
             144,
             14,

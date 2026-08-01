@@ -508,6 +508,7 @@
         "recognition": "TemplateMatch",
         "template": "好感/你我之间Back.png",
         "green_mask": true,
+        "threshold": 0.58,
         "pre_delay": 800,
         "post_delay": 1000,
         "roi": [
