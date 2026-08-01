@@ -10,6 +10,8 @@
             "[JumpBack]Click_X按钮",
             "[JumpBack]Click_退出手机",
             "[JumpBack]Click_退出好感交流",
+            "[JumpBack]Click_返回你我之间主界面",
+            "[JumpBack]Click_你我之间返回游戏主界面",
             "[JumpBack]Click_确定",
             "[JumpBack]Click_试炼神殿_返回主界面",
             "[JumpBack]Click_等级提升"
@@ -153,7 +155,9 @@
     "Click_结束": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "结束",
+        "expected": [
+            "结束(?!充电)"
+        ], // 避免在你我之间误匹配"结束充电了"
         "pre_wait_freezes": {
             "time": 800,
             "target": [
@@ -195,6 +199,21 @@
             1074,
             59,
             57
+        ]
+    },
+    "Click_你我之间返回游戏主界面": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 2000,
+        "recognition": "TemplateMatch",
+        "template": "好感/你我之间backhome.png",
+        "green_mask": true,
+        "threshold": 0.58,
+        "roi": [
+            144,
+            14,
+            64,
+            56
         ]
     },
     "Click_一键领取亮": {
