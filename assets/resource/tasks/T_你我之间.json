@@ -7,7 +7,7 @@
                 "你我之间每日周期开关",
                 "出行物品"
             ],
-            "description": "<span style=\"font-size:15px\">自动完成记录心情（默认为开心）、出行物品、回应动态（默认为NICE）、习惯打卡（默认为工作）四项日常。注意习惯打卡必须设置一项「工作」。</span>"
+            "description": "<span style=\"font-size:15px\">自动完成记录心情（默认为开心）、准备出行物品、回应动态（默认为NICE）、习惯打卡（默认为工作）四项日常。注意习惯打卡必须设置一项「工作」。</span>"
         }
     ],
     "option": {
@@ -119,6 +119,110 @@
                             "expected": "蒸汽眼罩"
                         }
                     }
+                },
+                {
+                    "name": "便利贴",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "便利贴"
+                        }
+                    }
+                },
+                {
+                    "name": "蓝牙耳机",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "蓝牙耳机"
+                        }
+                    }
+                },
+                {
+                    "name": "偏振镜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "偏振镜"
+                        }
+                    }
+                },
+                {
+                    "name": "复古单反相机",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "复古单反相机"
+                        }
+                    }
+                },
+                {
+                    "name": "护手霜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "护手霜"
+                        }
+                    }
+                },
+                {
+                    "name": "墨镜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "墨镜"
+                        }
+                    }
+                },
+                {
+                    "name": "心愿纸条",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "心愿纸条"
+                        }
+                    }
+                },
+                {
+                    "name": "钢笔",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "钢笔"
+                        }
+                    }
+                },
+                {
+                    "name": "花生减脂粮",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "花生减脂粮"
+                        }
+                    }
+                },
+                {
+                    "name": "烤棉花糖",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "烤棉花糖"
+                        }
+                    }
+                },
+                {
+                    "name": "便携工具包",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "便携工具包"
+                        }
+                    }
+                },
+                {
+                    "name": "USB闪存盘",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "USB闪存盘"
+                        }
+                    }
+                },
+                {
+                    "name": "防蚊水",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "防蚊水"
+                        }
+                    }
                 }
             ]
         },
@@ -171,6 +275,110 @@
                     "pipeline_override": {
                         "Click_选择出行物品": {
                             "expected": "蒸汽眼罩"
+                        }
+                    }
+                },
+                {
+                    "name": "颈枕",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "颈枕"
+                        }
+                    }
+                },
+                {
+                    "name": "蓝牙耳机",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "蓝牙耳机"
+                        }
+                    }
+                },
+                {
+                    "name": "车载挂钩",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "车载挂钩"
+                        }
+                    }
+                },
+                {
+                    "name": "狮子头磁铁夹",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "狮子头磁铁夹"
+                        }
+                    }
+                },
+                {
+                    "name": "护手霜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "护手霜"
+                        }
+                    }
+                },
+                {
+                    "name": "墨镜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "墨镜"
+                        }
+                    }
+                },
+                {
+                    "name": "心愿纸条",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "心愿纸条"
+                        }
+                    }
+                },
+                {
+                    "name": "钢笔",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "钢笔"
+                        }
+                    }
+                },
+                {
+                    "name": "折叠袋",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "折叠袋"
+                        }
+                    }
+                },
+                {
+                    "name": "油泼辣子糖",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "油泼辣子糖"
+                        }
+                    }
+                },
+                {
+                    "name": "防蚊水",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "防蚊水"
+                        }
+                    }
+                },
+                {
+                    "name": "守护手绳",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "守护手绳"
+                        }
+                    }
+                },
+                {
+                    "name": "白梅袖扣",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "白梅袖扣"
                         }
                     }
                 }
@@ -227,6 +435,110 @@
                             "expected": "蒸汽眼罩"
                         }
                     }
+                },
+                {
+                    "name": "便携粘毛器",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "便携粘毛器"
+                        }
+                    }
+                },
+                {
+                    "name": "蓝牙耳机",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "蓝牙耳机"
+                        }
+                    }
+                },
+                {
+                    "name": "钥匙扣灯",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "钥匙扣灯"
+                        }
+                    }
+                },
+                {
+                    "name": "小金鱼茶宠",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "小金鱼茶宠"
+                        }
+                    }
+                },
+                {
+                    "name": "防蚊水",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "防蚊水"
+                        }
+                    }
+                },
+                {
+                    "name": "墨镜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "墨镜"
+                        }
+                    }
+                },
+                {
+                    "name": "心愿纸条",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "心愿纸条"
+                        }
+                    }
+                },
+                {
+                    "name": "钢笔",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "钢笔"
+                        }
+                    }
+                },
+                {
+                    "name": "眼镜布",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "眼镜布"
+                        }
+                    }
+                },
+                {
+                    "name": "清凉薄荷可可巧克力",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "清凉薄荷可可巧克力"
+                        }
+                    }
+                },
+                {
+                    "name": "扑克牌",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "扑克牌"
+                        }
+                    }
+                },
+                {
+                    "name": "小茶包",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "小茶包"
+                        }
+                    }
+                },
+                {
+                    "name": "护手霜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "护手霜"
+                        }
+                    }
                 }
             ]
         },
@@ -279,6 +591,110 @@
                     "pipeline_override": {
                         "Click_选择出行物品": {
                             "expected": "蒸汽眼罩"
+                        }
+                    }
+                },
+                {
+                    "name": "润喉糖",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "润喉糖"
+                        }
+                    }
+                },
+                {
+                    "name": "蓝牙耳机",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "蓝牙耳机"
+                        }
+                    }
+                },
+                {
+                    "name": "手绘颜料",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "手绘颜料"
+                        }
+                    }
+                },
+                {
+                    "name": "果仁黑巧",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "果仁黑巧"
+                        }
+                    }
+                },
+                {
+                    "name": "防蚊水",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "防蚊水"
+                        }
+                    }
+                },
+                {
+                    "name": "墨镜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "墨镜"
+                        }
+                    }
+                },
+                {
+                    "name": "心愿纸条",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "心愿纸条"
+                        }
+                    }
+                },
+                {
+                    "name": "钢笔",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "钢笔"
+                        }
+                    }
+                },
+                {
+                    "name": "触控笔",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "触控笔"
+                        }
+                    }
+                },
+                {
+                    "name": "冰淇淋奶糖",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "冰淇淋奶糖"
+                        }
+                    }
+                },
+                {
+                    "name": "香芋慕斯饼干",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "香芋慕斯饼干"
+                        }
+                    }
+                },
+                {
+                    "name": "口袋巾",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "口袋巾"
+                        }
+                    }
+                },
+                {
+                    "name": "护手霜",
+                    "pipeline_override": {
+                        "Click_选择出行物品": {
+                            "expected": "护手霜"
                         }
                     }
                 }
