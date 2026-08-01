@@ -225,15 +225,13 @@
             36
         ],
         "next": [
-            "Click_伞_准备物品"
+            "Click_选择准备物品"
         ]
     },
-    "Click_伞_准备物品": {
+    "Click_选择准备物品": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": [
-            "伞"
-        ],
+        "expected": "By_User_Setttings",
         "pre_delay": 800,
         "post_delay": 1000,
         "roi": [
