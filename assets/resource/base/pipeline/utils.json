@@ -2,6 +2,7 @@
     "返回主界面": {
         "next": [
             "Flag_主界面任务",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Click_关闭奖励弹窗",
             "[JumpBack]Click_返回主界面键",
             "[JumpBack]Click_返回上一级键",
@@ -710,6 +711,30 @@
             "Click_复盘结束",
             "[JumpBack]Click_等级提升"
         ]
+    },
+    "Click_对话框标识": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "Button/对话框标识1.png",
+            "Button/对话框标识2.png",
+            "Button/对话框标识3.png"
+        ],
+        "roi": [
+            336,
+            840,
+            48,
+            50
+        ],
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                58,
+                694,
+                590,
+                186
+            ]
+        }
     },
     "停止任务": {
         "focus": {
