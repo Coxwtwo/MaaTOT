@@ -37,6 +37,9 @@
             "Click_进入进修副本",
             "Flag_进修副本列表最下端",
             "[JumpBack]Swipe_向上滑动寻找进修副本"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Flag_进修副本列表最下端": {
@@ -53,10 +56,14 @@
             "Click_进入进修副本",
             "Flag_进修副本列表最上端",
             "[JumpBack]Swipe_向下滑动寻找进修副本"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Swipe_向上滑动寻找进修副本": {
         "action": "Swipe",
+        "max_hit": 10,
         "duration": 400,
         "begin": [
             75,
@@ -69,18 +76,7 @@
             450,
             30,
             30
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向上滑动寻找进修副本"
         ]
-    },
-    "HitsLimiter_Swipe_向上滑动寻找进修副本": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Flag_进修副本列表最上端": {
         "recognition": "OCR",
@@ -98,6 +94,7 @@
     },
     "Swipe_向下滑动寻找进修副本": {
         "action": "Swipe",
+        "max_hit": 10,
         "duration": 400,
         "begin": [
             75,
@@ -110,18 +107,7 @@
             600,
             30,
             30
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向下滑动寻找进修副本"
         ]
-    },
-    "HitsLimiter_Swipe_向下滑动寻找进修副本": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Click_进入进修副本": {
         "action": "Click",

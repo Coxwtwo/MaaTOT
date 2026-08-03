@@ -114,6 +114,9 @@
             "Click_进入异常副本",
             "Flag_异常副本列表最下端",
             "[JumpBack]Swipe_向上滑动寻找异常副本"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Flag_异常副本列表最下端": {
@@ -133,10 +136,14 @@
             "Click_进入异常副本",
             "Flag_异常副本列表最上端",
             "[JumpBack]Swipe_向下滑动寻找异常副本"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Swipe_向上滑动寻找异常副本": {
         "action": "Swipe",
+        "max_hit": 10,
         "post_delay": 1000,
         "duration": 400,
         "begin": [
@@ -150,21 +157,11 @@
             450,
             30,
             30
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向上滑动寻找异常副本"
         ]
-    },
-    "HitsLimiter_Swipe_向上滑动寻找异常副本": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Swipe_向下滑动寻找异常副本": {
         "action": "Swipe",
+        "max_hit": 10,
         "post_delay": 1000,
         "duration": 400,
         "begin": [
@@ -178,18 +175,7 @@
             600,
             30,
             30
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向下滑动寻找异常副本"
         ]
-    },
-    "HitsLimiter_Swipe_向下滑动寻找异常副本": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Flag_异常副本列表最上端": {
         "recognition": "OCR",
@@ -225,6 +211,9 @@
             "Click_进入异常关卡",
             "Flag_异常关卡列表最下端",
             "[JumpBack]Swipe_向上滑动寻找异常关卡"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Flag_异常关卡列表最下端": {
@@ -246,6 +235,9 @@
             "Click_进入异常关卡",
             "Flag_异常关卡列表最上端",
             "[JumpBack]Swipe_向下滑动寻找异常关卡"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Flag_异常关卡列表最上端": {
@@ -269,6 +261,7 @@
     },
     "Swipe_向上滑动寻找异常关卡": {
         "action": "Swipe",
+        "max_hit": 10,
         "post_delay": 1000,
         "duration": 400,
         "begin": [
@@ -282,21 +275,11 @@
             450,
             30,
             30
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向上滑动寻找异常关卡"
         ]
-    },
-    "HitsLimiter_Swipe_向上滑动寻找异常关卡": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Swipe_向下滑动寻找异常关卡": {
         "action": "Swipe",
+        "max_hit": 10,
         "post_delay": 1000,
         "duration": 400,
         "begin": [
@@ -310,18 +293,7 @@
             600,
             30,
             30
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向下滑动寻找异常关卡"
         ]
-    },
-    "HitsLimiter_Swipe_向下滑动寻找异常关卡": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Click_进入异常关卡": {
         "action": "Click",

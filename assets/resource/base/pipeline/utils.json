@@ -712,6 +712,9 @@
         ]
     },
     "停止任务": {
+        "focus": {
+            "Node.Action.Starting": "<span style=\"color:Red\">任务出错，已停止</span>"
+        },
         "action": "StopTask"
     },
     "空节点": {}

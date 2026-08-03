@@ -47,6 +47,7 @@
     },
     "Swipe_向右滑动寻找提交材料活动": {
         "action": "Swipe",
+        "max_hit": 10,
         "duration": 800,
         "post_wait_freezes": 400,
         "timeout": 10000,
@@ -61,18 +62,7 @@
             1140,
             30,
             60
-        ],
-        "next": [
-            "HitsLimiter_Swipe_向右滑动寻找提交材料活动"
         ]
-    },
-    "HitsLimiter_Swipe_向右滑动寻找提交材料活动": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 10
-        }
     },
     "Flag_提交材料活动": {
         "recognition": "OCR",
@@ -107,6 +97,9 @@
         "next": [
             "Flag_提交材料活动",
             "[JumpBack]Swipe_向右滑动寻找提交材料活动"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Click_提交材料活动": {

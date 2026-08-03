@@ -80,28 +80,21 @@
             "Flag_今日好感度获取完毕",
             "[JumpBack]Click_好感度等级提升",
             "[JumpBack]Click_触摸获得好感"
+        ],
+        "on_error": [
+            "停止任务"
         ]
     },
     "Click_触摸获得好感": {
         "action": "Click",
+        "max_hit": 40,
         "post_delay": 1000,
         "target": [
             310,
             750,
             100,
             100
-        ],
-        "next": [
-            "HitsLimiter_Click_触摸获得好感"
         ]
-    },
-    "HitsLimiter_Click_触摸获得好感": {
-        "action": "Custom",
-        "custom_action": "HitsLimiter",
-        "custom_action_param": {
-            "current_count": 1,
-            "max_count": 40
-        }
     },
     "Flag_今日好感度获取完毕": {
         "focus": {
