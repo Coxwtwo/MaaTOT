@@ -29,7 +29,7 @@
     git clone --recurse-submodules <你的仓库的 git 链接> -b main
     ```
 
-    注意不要忘记 **--recursive**，否则可能导致OCR异常失败
+    注意不要忘记 **--recurse-submodules**，否则可能导致OCR异常失败
 
     如已克隆但发现资源缺失，可运行:
 
