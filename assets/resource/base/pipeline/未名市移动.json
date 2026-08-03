@@ -384,7 +384,10 @@
     "Swipe_滑动至文华区": {
         "action": "Swipe",
         "recognition": "TemplateMatch",
-        "template": "未名市/未名市地图左下角定位.png",
+        "template": [
+            "未名市/未名市地图左下角定位1.png",
+            "未名市/未名市地图左下角定位2.png"
+        ],
         "begin": [
             650,
             900
@@ -393,7 +396,7 @@
             50,
             900
         ],
-        "duration": 500,
+        "duration": 1000,
         "end_hold": 300,
         "roi": [
             70,
@@ -556,7 +559,10 @@
     "Swipe_滑动至滨河南区": {
         "action": "Swipe",
         "recognition": "TemplateMatch",
-        "template": "未名市/未名市地图左下角定位.png",
+        "template": [
+            "未名市/未名市地图左下角定位1.png",
+            "未名市/未名市地图左下角定位2.png"
+        ],
         "begin": [
             650,
             900
@@ -565,7 +571,7 @@
             50,
             900
         ],
-        "duration": 500,
+        "duration": 1000,
         "end_hold": 300,
         "roi": [
             70,
@@ -865,7 +871,10 @@
     },
     "Flag_Inverse_定位_滑动至未名市地图左下角": {
         "recognition": "TemplateMatch",
-        "template": "未名市/未名市地图左下角定位.png",
+        "template": [
+            "未名市/未名市地图左下角定位1.png",
+            "未名市/未名市地图左下角定位2.png"
+        ],
         "inverse": true,
         "roi": [
             70,
@@ -880,7 +889,10 @@
     },
     "Flag_定位_滑动至未名市地图左下角": {
         "recognition": "TemplateMatch",
-        "template": "未名市/未名市地图左下角定位.png",
+        "template": [
+            "未名市/未名市地图左下角定位1.png",
+            "未名市/未名市地图左下角定位2.png"
+        ],
         "roi": [
             70,
             376,
@@ -891,15 +903,14 @@
     "Swipe_滑动至未名市地图左下角": {
         "action": "Swipe",
         "begin": [
-            150,
-            950
+            250,
+            850
         ],
         "end": [
             550,
             550
         ],
-        "duration": 500,
-        "end_hold": 200
+        "duration": 600
     },
     "Click_确定未名市地图移动": {
         "action": "Click",
