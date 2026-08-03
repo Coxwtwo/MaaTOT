@@ -65,7 +65,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "By_User_Setttings"
+            "by_user_settings"
         ],
         "pre_delay": 800,
         "post_delay": 800,
@@ -102,7 +102,7 @@
     "Flag_Inverse_委托类型": {
         "recognition": "OCR",
         "expected": [
-            "By_User_Setttings"
+            "by_user_settings"
         ],
         "pre_delay": 800,
         "post_delay": 800,
@@ -137,7 +137,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "By_User_Setttings"
+            "by_user_settings"
         ],
         "pre_delay": 800,
         "post_delay": 800,

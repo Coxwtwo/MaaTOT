@@ -112,7 +112,7 @@
     "Click_进入进修副本": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "By_User_Setttings",
+        "expected": "by_user_settings",
         "post_delay": 1500,
         "roi": [
             95,
@@ -159,7 +159,7 @@
     "Click_进入进修关卡": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "By_User_Setttings",
+        "expected": "by_user_settings",
         "post_delay": 2000,
         "target_offset": [
             50,

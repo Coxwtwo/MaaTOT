@@ -252,7 +252,7 @@
     "Click_选择出行物品": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "By_User_Setttings",
+        "expected": "by_user_settings",
         "pre_delay": 800,
         "post_delay": 1000,
         "roi": [
