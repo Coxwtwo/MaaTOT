@@ -140,12 +140,12 @@
             "[JumpBack]Flag_维护中央广场2",
             "[JumpBack]Flag_旅游地图2",
             "[JumpBack]Flag_潮流青年",
+            "[JumpBack]Flag_高价纪念品",
             "[JumpBack]Flag_打印文件1",
             "[JumpBack]Flag_打印文件2",
             "[JumpBack]Flag_暴力装修",
             "[JumpBack]Flag_收拾办公桌1",
             "[JumpBack]Flag_收拾办公桌2",
-            "[JumpBack]Flag_高价纪念品",
             "[JumpBack]Flag_帮忙送餐1",
             "[JumpBack]Flag_帮忙送餐2",
             "[JumpBack]Flag_饮品派送1",
@@ -1334,6 +1334,7 @@
     },
     "Click_老奶奶拍视频": {
         "recognition": "OCR",
+        "action": "Click",
         "expected": [
             "在老奶奶左边",
             "在老奶奶右边"
@@ -2414,11 +2415,13 @@
             20,
             20
         ],
-        "end_hold": 1000,
+        "end_hold": 1500,
         "timeout": 2000,
+        "post_wait_freezes": 2000,
         "next": [
             "[JumpBack]Click_对话框标识",
-            "Click_关闭未名市奖励弹窗"
+            "Click_关闭未名市奖励弹窗",
+            "Click_未名市任务"
         ]
     },
     "Flag_暴力装修": {
