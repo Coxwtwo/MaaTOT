@@ -71,7 +71,9 @@
         ],
         "end_hold": 1500,
         "next": [
-            "Click_前往一楼办公区_忒弥斯律所一楼"
+            "Flag_忒弥斯律所一楼初始位置",
+            "[JumpBack]Click_前往一楼办公区_忒弥斯律所一楼",
+            "[JumpBack]Flag_TipsLoading"
         ]
     },
     "Click_前往一楼办公区_忒弥斯律所一楼": {
@@ -84,12 +86,7 @@
             517,
             328
         ],
-        "pre_wait_freezes": 500,
-        "next": [
-            "Flag_忒弥斯律所一楼初始位置",
-            "Click_前往一楼办公区_忒弥斯律所一楼",
-            "[JumpBack]Flag_TipsLoading"
-        ]
+        "pre_wait_freezes": 500
     },
     "Flag_重置位置_和印休闲区": {
         "recognition": "TemplateMatch",
@@ -764,7 +761,8 @@
         ],
         "end_hold": 1500,
         "next": [
-            "Click_前往二楼办公区_忒弥斯律所二楼"
+            "Flag_忒弥斯律所二楼初始位置",
+            "[JumpBack]Click_前往二楼办公区_忒弥斯律所二楼"
         ]
     },
     "Click_前往二楼办公区_忒弥斯律所二楼": {
@@ -777,11 +775,7 @@
             517,
             328
         ],
-        "post_wait_freezes": 1000,
-        "next": [
-            "Flag_忒弥斯律所二楼初始位置",
-            "Click_前往二楼办公区_忒弥斯律所二楼"
-        ]
+        "post_wait_freezes": 1000
     },
     "Flag_重置位置_忒弥斯律所前台": {
         "recognition": "TemplateMatch",
@@ -880,7 +874,8 @@
             278
         ],
         "next": [
-            "Swipe_滑动至未名市地图左下角"
+            "Flag_定位_滑动至未名市地图左下角",
+            "[JumpBack]Swipe_滑动至未名市地图左下角"
         ]
     },
     "Flag_定位_滑动至未名市地图左下角": {
@@ -904,11 +899,7 @@
             550
         ],
         "duration": 500,
-        "end_hold": 200,
-        "next": [
-            "Flag_定位_滑动至未名市地图左下角",
-            "Swipe_滑动至未名市地图左下角"
-        ]
+        "end_hold": 200
     },
     "Click_确定未名市地图移动": {
         "action": "Click",
