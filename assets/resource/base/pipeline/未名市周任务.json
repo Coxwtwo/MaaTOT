@@ -936,7 +936,7 @@
     },
     "Swipe_歌舞未名_3": {
         "recognition": "TemplateMatch",
-        "template": "未名市/中央商业街最右端定位图.png",
+        "template": "未名市/未名市移动.png",
         "pre_wait_freezes": 1000,
         "roi": [
             0,
