@@ -910,14 +910,24 @@
             550,
             550
         ],
-        "duration": 600
+        "duration": 600,
+        "end_hold": 200
     },
     "Click_确定未名市地图移动": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "确定",
         "pre_delay": 500,
-        "post_delay": 5000,
+        "post_wait_freezes": {
+            "time": 2000,
+            "target": [
+                141,
+                242,
+                433,
+                382
+            ]
+        },
+        "post_delay": 1000,
         "roi": [
             550,
             700,
