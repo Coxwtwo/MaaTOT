@@ -1,48 +1,76 @@
 {
     "task": [
         {
-            "name": "思绪张数任务（未完成）",
+            "name": "思绪张数任务",
             "entry": "思绪张数任务",
             "option": [
-                "思绪张数任务辩论次数"
+                "思绪张数任务辩论次数",
+                "消失的黄金协理关卡"
             ],
-            "description": "<span style=\"font-size:15px\">打消失的黄金协理04，战力不足时也会进行辩论</span><br><span style=\"font-size:15px\">使用前请手动打一遍协理04</span>"
+            "description": "<span style=\"font-size:15px\">打消失的黄金协理关卡，战力不足时也会进行辩论</span><br><span style=\"font-size:15px\">使用前请手动打一遍协理04</span>"
         }
     ],
     "option": {
         "思绪张数任务辩论次数": {
+            "type": "input",
+            "label": "辩论次数",
+            "inputs": [
+                {
+                    "name": "辩论次数",
+                    "default": "10",
+                    "pipeline_type": "int",
+                    "verify": "^\\d+$",
+                    "pattern_msg": "辩论次数格式错误，请输入纯数字"
+                }
+            ],
+            "pipeline_override": {
+                "Click_协理关卡_黄金": {
+                    "max_hit": "{辩论次数}"
+                }
+            }
+        },
+        "消失的黄金协理关卡": {
             "type": "select",
+            "label": "选择关卡",
+            "default_case": "协理04",
             "cases": [
                 {
-                    "name": "3次",
+                    "name": "协理01",
                     "pipeline_override": {
-                        "HitsLimiter_Click_协理04_黄金": {
-                            "custom_action_param": {
-                                "current_count": 0,
-                                "max_count": 3
-                            }
+                        "Click_协理关卡_黄金": {
+                            "expected": [
+                                "协理01"
+                            ]
                         }
                     }
                 },
                 {
-                    "name": "5次",
+                    "name": "协理02",
                     "pipeline_override": {
-                        "HitsLimiter_Click_协理04_黄金": {
-                            "custom_action_param": {
-                                "current_count": 0,
-                                "max_count": 5
-                            }
+                        "Click_协理关卡_黄金": {
+                            "expected": [
+                                "协理02"
+                            ]
                         }
                     }
                 },
                 {
-                    "name": "10次",
+                    "name": "协理03",
                     "pipeline_override": {
-                        "HitsLimiter_Click_协理04_黄金": {
-                            "custom_action_param": {
-                                "current_count": 0,
-                                "max_count": 10
-                            }
+                        "Click_协理关卡_黄金": {
+                            "expected": [
+                                "协理03"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "协理04",
+                    "pipeline_override": {
+                        "Click_协理关卡_黄金": {
+                            "expected": [
+                                "协理04"
+                            ]
                         }
                     }
                 }

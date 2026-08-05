@@ -162,6 +162,7 @@
         "resource/tasks/T_提交材料活动.json",
         "resource/tasks/T_拼图活动.json",
         "resource/tasks/T_翻格活动.json",
-        "resource/tasks/T_你我之间.json"
+        "resource/tasks/T_你我之间.json",
+        "resource/tasks/T_思绪张数任务.json"
     ]
 }
