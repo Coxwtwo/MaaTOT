@@ -149,7 +149,8 @@
             "[JumpBack]Flag_饮品派送1",
             "[JumpBack]Flag_饮品派送2",
             "[JumpBack]Flag_劝说游客",
-            "[JumpBack]Flag_整理货架1"
+            "[JumpBack]Flag_整理货架1",
+            "[JumpBack]Flag_整理货架2"
         ]
     },
     "Flag_暂无委托": {
