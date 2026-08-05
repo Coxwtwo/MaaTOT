@@ -5,6 +5,7 @@
             "entry": "外勤委托",
             "option": [
                 "开始前自动补足体力",
+                "自动补足体力数值",
                 "外勤区域",
                 "外勤委托类型"
             ],
@@ -20,10 +21,36 @@
                     }
                 }
             },
-            "description": "<span style=\"font-size:15px\">在指定区域内完成日常和庭审委托。</span>"
+            "description": "<span style=\"font-size:15px\">在指定区域内完成日常和庭审委托。外勤委托辩论失败后会再次辩论，直到体力用尽。</span>"
         }
     ],
     "option": {
+        "自动补足体力数值": {
+            "type": "input",
+            "label": "自动补足体力数值",
+            "inputs": [
+                {
+                    "name": "体力值",
+                    "description": "填写自动补足体力的阈值",
+                    "default": "40",
+                    "pipeline_type": "int",
+                    "verify": "^\\d+$",
+                    "pattern_msg": "体力值格式错误，请输入纯数字"
+                }
+            ],
+            "pipeline_override": {
+                "Flag_体力判断": {
+                    "custom_recognition_param": {
+                        "ap_threshold": "{体力值}"
+                    }
+                },
+                "Action_智能策略补充": {
+                    "custom_action_param": {
+                        "ap_threshold": "{体力值}"
+                    }
+                }
+            }
+        },
         "外勤区域": {
             "type": "select",
             "cases": [

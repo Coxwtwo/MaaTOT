@@ -188,7 +188,7 @@
             850
         ],
         "next": [
-            "Click_开始处理外勤委托"
+            "Click_开始处理外勤委托_庭审委托"
         ]
     },
     "Flag_委托搜寻中": {
@@ -282,6 +282,111 @@
             "Click_居中开始辩论",
             "Flag_疲劳值上限弹窗",
             "[JumpBack]Flag_体力补充弹窗"
+        ]
+    },
+    "Click_开始处理外勤委托_庭审委托": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "开始处理"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            277,
+            872,
+            164,
+            52
+        ],
+        "next": [
+            "Flag_体力不足弹窗",
+            "Flag_战力不足_庭审委托",
+            "Click_居中开始辩论_庭审委托",
+            "Flag_疲劳值上限弹窗",
+            "[JumpBack]Flag_体力补充弹窗"
+        ]
+    },
+    "Flag_战力不足_庭审委托": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Orange\">战力不足，庭审委托可能进行多次辩论</span>"
+        },
+        "recognition": "ColorMatch",
+        "roi": [
+            570,
+            130,
+            100,
+            36
+        ],
+        "lower": [
+            155,
+            71,
+            58
+        ],
+        "upper": [
+            213,
+            82,
+            63
+        ],
+        "count": 100,
+        "next": [
+            "Click_居中开始辩论_庭审委托"
+        ]
+    },
+    "Click_居中开始辩论_庭审委托": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">开始辩论</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 4000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ],
+        "next": [
+            "Flag_自动出卡已开启_庭审委托",
+            "[JumpBack]Click_开启自动出卡"
+        ]
+    },
+    "Flag_自动出卡已开启_庭审委托": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_暂时休庭_庭审委托",
+            "Click_点击继续",
+            "Click_结束",
+            "[JumpBack]Flag_自动出卡中"
+        ]
+    },
+    "Flag_暂时休庭_庭审委托": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Orange\">庭审委托暂时休庭，体力充足时将再次辩论</span>"
+        },
+        "recognition": "OCR",
+        "expected": "暂时休庭",
+        "pre_delay": 800,
+        "roi": [
+            73,
+            337,
+            314,
+            98
+        ],
+        "next": [
+            "Click_结束"
         ]
     }
 }
