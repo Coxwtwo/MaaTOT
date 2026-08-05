@@ -8,13 +8,11 @@
 
 Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
 
-自定义动作`HitsLimiter` 参考 [MAA_SnowBreak](https://github.com/overflow65537/MAA_SnowBreak)的`Count` 。
-
 ---
 
 ## 自定义模块一览
 
-所有自定义代码位于 `agent/custom/` 目录下，分为三类：
+所有自定义代码位于 `agent/custom/` 目录下，分为两类：
 
 | 类型 | 目录 |
 | --- | --- |
@@ -26,7 +24,6 @@ Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
 
 | 注册名 | 类型 | 文件 | 功能 |
 | --- | --- | --- | --- |
-| `HitsLimiter` | Action | `hits_limiter.py` | 命中次数计数器，用于控制重复操作 |
 | `SmartReplenish` | Action | `smart_replenish.py` | 智能选择能量饮料（按保质期和体力缺口） |
 | `DynamicOverride` | Action | `dynamic_override.py` | 运行时动态修改 Pipeline 节点配置 |
 | `JudgeDailyTask` | Action | `periodic_task.py` | 每日任务周期控制（当日完成后自动跳过） |
@@ -38,57 +35,6 @@ Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
 ## 自定义动作 (Custom Action)
 
 `agent\custom\action`下存放了基于 MaaFramework 自定义动作接口实现的逻辑决策模块。
-
----
-
-## HitsLimiter (命中次数计数器)
-
-用于追踪并限制某个特定逻辑节点的执行次数。
-
-### 1. 功能概述
-
-- **自我计数**：该动作作用于挂载它的当前节点。
-- **持久化更新**：利用 `context.override_pipeline` 实时修改内存中该节点的参数。
-
-### 2. 适用范围
-
-- **使用情景**：适用于任何需要限制重复尝试次数的场景，如**滑动寻找目标、重试点击**等。
-- **限制**：仅能对自身节点进行计数，不能直接跨节点共享计数值。
-
-### 3. 输入参数 (JSON 传入)
-
-配置在节点的 `custom_action_param` 字段中：
-
-- `current_count` (int): **[必填]** 起始计数值（通常建议设为 1）。
-- `max_count` (int): **[必填]** 允许执行的最大上限次数。
-- `next_nodes` (List[string]): **[选填]** 达到上限后依次执行的任务列表。默认值：`["返回主菜单", "停止任务"]`。
-
-### 4. 输出结果 (返回逻辑)
-
-- **Success (True)**：始终返回成功。
-
-### 5. 使用方法示例
-
-为滑动动作挂载计数器。若滑动次数达到 10 次，则会执行"返回主界面"节点：
-
-```json
-"Swipe_向下滑动寻找往期活动": {
-    "action": "Swipe",
-    "duration": 400,
-    "begin": [75,650,30,30],
-    "end": [75,450,30,30],
-    "next": ["HitsLimiter_Swipe_向下滑动寻找往期活动"
-    ]
-},
-"HitsLimiter_Swipe_向下滑动寻找往期活动": {
-    "action": "Custom",
-    "custom_action": "HitsLimiter",
-    "custom_action_param": {
-        "current_count": 1,
-        "max_count": 10
-    }
-}
-```
 
 ---
 

@@ -54,7 +54,7 @@ MaaTOT 是基于 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 开发�
 
 - **禁止无界面信息编写 Pipeline**：严禁在未向 AI 提供游戏界面截图、界面跳转逻辑等上下文的情况下，让 AI 直接编写 Pipeline。MaaFramework 的 Pipeline 强依赖游戏界面与业务逻辑，缺乏界面信息的 AI 只能依赖幻觉和项目已有代码拼凑，产出代码质量极低。充分的信息至少包括：每个识别节点需提供 `roi` 与模板图片，并说明界面间的跳转关系（从哪个界面、点击什么、跳转到何处）。不满足以上条件的 PR 将被维护者直接关闭。
 - **协议合规性**：所有 Pipeline JSON 字段必须严格遵循 MaaFramework Pipeline 协议规范（见下方相关文档链接）。在新增或修改节点时，务必核对字段名称、类型及取值范围。
-- **节点命名**：MaaTOT 约定前缀 `Click_` / `Swipe_` / `Flag_` / `Flag_Inverse_` / `Action_` / `Judge_` / `HitsLimiter_`，入口节点无前缀。详见 [编码规范 §2.2](docs/zh_cn/develop/编码规范.md#22-节点命名规范)。
+- **节点命名**：MaaTOT 约定前缀 `Click_` / `Swipe_` / `Flag_` / `Flag_Inverse_` / `Action_` / `Judge_`，入口节点无前缀。详见 [编码规范 §2.2](docs/zh_cn/develop/编码规范.md#22-节点命名规范)。
 - **防死循环**：盲动作节点（无 `recognition` 的 Swipe/Click）使用 `max_hit` 限制命中次数，父节点 `next` 末尾追加 fallback。
 - **识别驱动**：每一步操作基于识别。推荐 `识别 A → 点击 A → 识别 B → 点击 B`，禁止 `整体识别一次 → 点击 A → 点击 B → 点击 C`。
 - **减少硬延迟**：优先 `pre_wait_freezes` / `post_wait_freezes`，避免 `pre_delay` / `post_delay` / `timeout`。

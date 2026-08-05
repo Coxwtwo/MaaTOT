@@ -1109,7 +1109,70 @@ Flag_进行中 → [JumpBack]Flag_排队的礼仪 → next → Swipe_排队的�
 
 ## <span id="思绪张数任务">思绪张数任务.json</span>
 
-> ⚠️ **计划中** — 用于往期活动中的思绪张数统计任务。通过事件簿进入活动页面，在往期活动列表中左右滑动寻找目标活动（黄金篇章等），进入后执行相关任务。
+用于完成思绪张数任务，在「消失的黄金」活动中不消耗体力刷取思绪张数。
+
+### 流程概览
+
+```mermaid
+flowchart LR
+    n0["思绪张数任务"] -->|next| n1["Click_事件簿_活动_往期_黄金"]
+    n0 -.->|JumpBack| n2["返回主界面"]
+    n1 -->|next| n3["Click_活动_往期_黄金"]
+    n3 -->|next| n4["Flag_In往期_黄金<br>(TemplateMatch: 往期亮.png)"]
+    n3 -->|next| n5["Click_往期_黄金<br>(TemplateMatch: 往期暗.png)"]
+    n4 -->|next| n6["Flag_In全部活动_黄金<br>(OCR: 全部活动)"]
+    n5 -->|next| n6
+```
+
+进入事件簿 → 点击活动页签 → 切换到往期活动列表页。
+
+```mermaid
+flowchart LR
+    n6["Flag_In全部活动_黄金"] -->|next| n7["Click_消失的黄金"]
+    n6 -->|next| n8["Flag_往期活动列表最下端_黄金"]
+    n6 -.->|JumpBack| n9["Swipe_向上滑动寻找往期活动<br>(max_hit: 20)"]
+
+    n8 -->|next| n7
+    n8 -->|next| n10["Flag_往期活动列表最上端"]
+    n8 -.->|JumpBack| n11["Swipe_向下滑动寻找往期活动<br>(max_hit: 10)"]
+
+    n10 -->|next| n12["返回主界面"]
+```
+
+在往期活动列表中上下滑动寻找「消失的黄金」活动入口。
+
+```mermaid
+flowchart LR
+    n7["Click_消失的黄金"] -->|next| n13["Click_诺斯塔岛调查"]
+    n13 -->|next| n14["Click_消失的黄金副本"]
+    n14 -->|next| n15["Flag_In工作协理_黄金"]
+
+    n15 -->|next| n16["[JumpBack]Click_协理关卡_黄金<br>(max_hit: 10, expected: by_user_settings)"]
+    n15 -->|next| n17["Click_返回主界面键"]
+```
+
+进入活动后依次点击进入副本，到达工作协理界面后循环刷取用户指定的关卡。
+
+```mermaid
+flowchart LR
+    n16["Click_协理关卡_黄金"] -->|next| n18["Click_前往_黄金"]
+    n18 -->|next| n19["Click_展开编组_黄金"]
+    n19 -->|next| n20["Click_选择编组_黄金"]
+    n20 -->|next| n21["Click_收起编组_黄金"]
+    n21 -->|next| n22["Click_居中开始辩论_黄金"]
+    n22 -->|next| n23["Flag_自动出卡已开启_黄金"]
+    n22 -.->|JumpBack| n24["Click_开启自动出卡"]
+    n23 -->|next| n25["Click_点击继续"]
+    n23 -->|next| n26["Flag_辩论失败_黄金"]
+    n23 -.->|JumpBack| n27["Flag_自动出卡中"]
+    n26 -->|next| n28["Click_结束"]
+```
+
+每次循环：点击关卡 → 前往 → 选择"张数任务"编组 → 开始辩论 → 自动出卡战斗 → 点击继续（或辩论失败后继续）。
+
+### 循环控制
+
+关卡循环通过 `[JumpBack]Click_协理关卡_黄金` 实现——每次战斗结束后回到工作协理界面，重新点击关卡进入下一轮。`Click_协理关卡_黄金` 节点设置 `max_hit: 10` 限制最大循环次数，用户可设置目标关卡名称和最大循环次数。
 
 ## <span id="拼图活动">拼图活动.json</span>
 
