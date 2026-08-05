@@ -91,11 +91,11 @@
             197
         ],
         "next": [
+            "Flag_主界面任务",
             "[JumpBack]Flag_Inverse_委托类型",
             "Flag_委托搜寻中",
             "[JumpBack]Click_庭审委托",
             "Flag_疲劳值满",
-            "Flag_主界面任务",
             "[JumpBack]Click_日常委托"
         ]
     },
