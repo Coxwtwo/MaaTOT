@@ -32,7 +32,7 @@ class SmartReplenish(CustomAction):
         """
         # ==================== 内置配置参数 ====================
         # 当前体力数值的 OCR 识别区域
-        ACTIONPOINT_VALUE_ROI = [380, 339, 180, 80]
+        ACTIONPOINT_VALUE_ROI = [313, 339, 174, 80]
         # 补给界面中饮料图标的整体搜索区域
         DRINK_SEARCH_ROI = [54, 562, 597, 224]
 
