@@ -1178,7 +1178,7 @@
             20,
             20
         ],
-        "end_hold": 1150,
+        "end_hold": 1350,
         "post_wait_freezes": {
             "time": 200,
             "target": [
@@ -1276,7 +1276,7 @@
             20,
             20
         ],
-        "end_hold": 200,
+        "end_hold": 175,
         "post_wait_freezes": {
             "time": 200,
             "target": [
