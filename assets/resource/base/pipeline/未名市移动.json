@@ -10,9 +10,9 @@
         ],
         "next": [
             "Flag_忒弥斯律所一楼初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Swipe_忒弥斯律所前台_忒弥斯律所一楼1",
-            "[JumpBack]Flag_重置位置_忒弥斯律所前台",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_重置位置_忒弥斯律所前台"
         ]
     },
     "Flag_忒弥斯律所一楼初始位置": {
@@ -99,9 +99,9 @@
         ],
         "next": [
             "Flag_和印休闲区初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Swipe_和印大厅_和印休闲区_1",
-            "[JumpBack]Flag_重置位置_和印大厅",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_重置位置_和印大厅"
         ]
     },
     "Flag_和印休闲区初始位置": {
@@ -171,9 +171,9 @@
         ],
         "next": [
             "Flag_和印产品体验区初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Swipe_和印大厅_和印产品体验区",
-            "[JumpBack]Flag_重置位置_和印大厅",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_重置位置_和印大厅"
         ]
     },
     "Swipe_和印大厅_和印产品体验区": {
@@ -224,9 +224,9 @@
         ],
         "next": [
             "Flag_和印大厅初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Flag_Inverse_未名市移动_和印大厅",
-            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
     "Flag_Inverse_未名市移动_和印大厅": {
@@ -308,9 +308,9 @@
         ],
         "next": [
             "Flag_文华西街初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Flag_Inverse_未名市移动_文华西街",
-            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
     "Flag_文华西街初始位置": {
@@ -447,10 +447,10 @@
         ],
         "next": [
             "Flag_中央广场初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Swipe_中央商业街_中央广场",
             "[JumpBack]Flag_Inverse_未名市移动_中央商业街",
-            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
     "Flag_中央广场初始位置": {
@@ -509,9 +509,9 @@
         ],
         "next": [
             "Flag_中央商业街初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Flag_Inverse_未名市移动_中央商业街",
-            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
     "Flag_中央商业街初始位置": {
@@ -707,9 +707,9 @@
         ],
         "next": [
             "Flag_忒弥斯律所二楼初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Swipe_忒弥斯律所前台_忒弥斯律所二楼1",
-            "[JumpBack]Flag_重置位置_忒弥斯律所前台",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_重置位置_忒弥斯律所前台"
         ]
     },
     "Flag_忒弥斯律所二楼初始位置": {
@@ -794,9 +794,9 @@
         ],
         "next": [
             "Flag_忒弥斯律所前台初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Flag_Inverse_未名市移动_忒弥斯律所",
-            "[JumpBack]Flag_Inverse_未名市移动_锦兰区",
-            "[JumpBack]Flag_TipsLoading"
+            "[JumpBack]Flag_Inverse_未名市移动_锦兰区"
         ]
     },
     "Flag_忒弥斯律所前台初始位置": {
