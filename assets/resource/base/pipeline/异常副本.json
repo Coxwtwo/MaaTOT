@@ -120,18 +120,15 @@
         ]
     },
     "Flag_异常副本列表最下端": {
-        "recognition": "OCR",
-        "expected": [
-            "Episode.8",
-            "Episode.15"
+        "recognition": "TemplateMatch",
+        "template": [
+            "Debate/E8.png",
+            "Debate/E15.png",
+            "Debate/E19P2.png"
         ],
+        "threshold": [0.8],
         "pre_delay": 1000,
-        "roi": [
-            60,
-            960,
-            252,
-            100
-        ],
+        "roi": [39,979,282,95],
         "next": [
             "Click_进入异常副本",
             "Flag_异常副本列表最上端",
