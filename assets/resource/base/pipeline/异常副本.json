@@ -180,7 +180,7 @@
     "Flag_异常副本列表最上端": {
         "recognition": "OCR",
         "expected": [
-            "Episode.1",
+            "^Episode.1$",
             "Episode.9",
             "Episode.16"
         ],
