@@ -126,9 +126,14 @@
             "Debate/E15.png",
             "Debate/E19P2.png"
         ],
-        "threshold": [0.8],
+        "threshold": 0.93,
         "pre_delay": 1000,
-        "roi": [39,979,282,95],
+        "roi": [
+            60,
+            960,
+            252,
+            100
+        ],
         "next": [
             "Click_进入异常副本",
             "Flag_异常副本列表最上端",
