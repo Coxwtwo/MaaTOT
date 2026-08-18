@@ -150,7 +150,9 @@
             "[JumpBack]Flag_饮品派送2",
             "[JumpBack]Flag_劝说游客",
             "[JumpBack]Flag_整理货架1",
-            "[JumpBack]Flag_整理货架2"
+            "[JumpBack]Flag_整理货架2",
+            "[JumpBack]Flag_整理卷宗1",
+            "[JumpBack]Flag_整理卷宗2"
         ]
     },
     "Flag_暂无委托": {
@@ -4284,6 +4286,282 @@
             20
         ],
         "end_hold": 2000,
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                0,
+                0,
+                718,
+                350
+            ]
+        },
+        "next": [
+            "[JumpBack]Click_对话框标识_未名市",
+            "[JumpBack]Click_关闭奖励弹窗_未名市",
+            "[JumpBack]Click_前往辩论_未名市",
+            "Click_未名市任务"
+        ]
+    },
+    "Flag_整理卷宗1": {
+        "recognition": "OCR",
+        "expected": [
+            "整理卷宗（一",
+            "整理卷宗\\(一"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Swipe_整理卷宗1_1",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_忒弥斯律所一楼"
+        ]
+    },
+    "Swipe_整理卷宗1_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所一楼定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            291,
+            790,
+            236,
+            242
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 800,
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                0,
+                0,
+                718,
+                350
+            ]
+        },
+        "next": [
+            "[JumpBack]Click_对话框标识_未名市",
+            "[JumpBack]Click_关闭奖励弹窗_未名市",
+            "[JumpBack]Click_前往辩论_未名市",
+            "Swipe_整理卷宗1_2",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_整理卷宗1_2": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 2400,
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                0,
+                0,
+                718,
+                350
+            ]
+        },
+        "next": [
+            "[JumpBack]Click_对话框标识_未名市",
+            "[JumpBack]Click_关闭奖励弹窗_未名市",
+            "[JumpBack]Click_前往辩论_未名市",
+            "Swipe_整理卷宗1_3",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_整理卷宗1_3": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1600,
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                0,
+                0,
+                718,
+                350
+            ]
+        },
+        "next": [
+            "[JumpBack]Click_对话框标识_未名市",
+            "[JumpBack]Click_关闭奖励弹窗_未名市",
+            "[JumpBack]Click_前往辩论_未名市",
+            "Click_未名市任务"
+        ]
+    },
+    "Flag_整理卷宗2": {
+        "recognition": "OCR",
+        "expected": [
+            "整理卷宗（二",
+            "整理卷宗\\(二"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Swipe_整理卷宗2_1",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_忒弥斯律所一楼"
+        ]
+    },
+    "Swipe_整理卷宗2_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所一楼定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            291,
+            790,
+            236,
+            242
+        ],
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 800,
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                0,
+                0,
+                718,
+                350
+            ]
+        },
+        "next": [
+            "[JumpBack]Click_对话框标识_未名市",
+            "[JumpBack]Click_关闭奖励弹窗_未名市",
+            "[JumpBack]Click_前往辩论_未名市",
+            "Swipe_整理卷宗2_2",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_整理卷宗2_2": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 2500,
+        "post_wait_freezes": {
+            "time": 200,
+            "target": [
+                0,
+                0,
+                718,
+                350
+            ]
+        },
+        "next": [
+            "[JumpBack]Click_对话框标识_未名市",
+            "[JumpBack]Click_关闭奖励弹窗_未名市",
+            "[JumpBack]Click_前往辩论_未名市",
+            "Swipe_整理卷宗2_3",
+            "Click_未名市任务"
+        ]
+    },
+    "Swipe_整理卷宗2_3": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1500,
         "post_wait_freezes": {
             "time": 200,
             "target": [
