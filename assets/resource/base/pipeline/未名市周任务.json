@@ -2922,8 +2922,23 @@
             "[JumpBack]Click_对话框标识_未名市",
             "[JumpBack]Click_关闭奖励弹窗_未名市",
             "[JumpBack]Click_前往辩论_未名市",
-            "Click_前往二楼办公区",
+            "Click_暴力装修_前往二楼办公区",
             "Click_未名市任务"
+        ]
+    },
+    "Click_暴力装修_前往二楼办公区": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "二楼办公区",
+        "roi": [
+            101,
+            449,
+            517,
+            328
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "Swipe_暴力装修_3"
         ]
     },
     "Swipe_暴力装修_3": {
@@ -4334,21 +4349,6 @@
             230,
             110,
             200
-        ]
-    },
-    "Click_前往二楼办公区": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": "二楼办公区",
-        "roi": [
-            101,
-            449,
-            517,
-            328
-        ],
-        "post_wait_freezes": 1000,
-        "next": [
-            "Swipe_暴力装修_3"
         ]
     },
     "Click_前往辩论_未名市": {
