@@ -4610,6 +4610,9 @@
         ]
     },
     "Click_关闭奖励弹窗_未名市": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">未名市周任务获得奖励</span>"
+        },
         "action": "Click",
         "recognition": "OCR",
         "expected": "获得奖励",
