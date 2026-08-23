@@ -174,7 +174,7 @@
             "返回主界面"
         ]
     },
-    "Flag_奇妙问答":{
+    "Flag_奇妙问答": {
         "recognition": "OCR",
         "expected": [
             "奇妙问答"
@@ -191,7 +191,7 @@
             "[JumpBack]Flag_重置位置_中央商业街"
         ]
     },
-    "Swipe_奇妙问答_1":{
+    "Swipe_奇妙问答_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/中央商业街定位图.png",
         "threshold": 0.9,
@@ -232,7 +232,7 @@
             "Click_未名市任务"
         ]
     },
-    "Swipe_奇妙问答_2":{
+    "Swipe_奇妙问答_2": {
         "recognition": "TemplateMatch",
         "template": "未名市/未名市移动.png",
         "roi": [
@@ -272,7 +272,7 @@
             "Click_未名市任务"
         ]
     },
-    "Click_对话选项_奇妙问答_未名市":{
+    "Click_对话选项_奇妙问答_未名市": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -2654,7 +2654,7 @@
             "Click_未名市任务"
         ]
     },
-    "Flag_日常的善意1":{
+    "Flag_日常的善意1": {
         "recognition": "OCR",
         "expected": [
             "日常的善意（一",
@@ -2670,9 +2670,9 @@
             "Swipe_日常的善意1_1",
             "[JumpBack]Flag_退出未名市任务",
             "[JumpBack]Flag_重置位置_忒弥斯律所前台"
-        ] 
+        ]
     },
-    "Swipe_日常的善意1_1":{
+    "Swipe_日常的善意1_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/忒弥斯律所前台定位图.png",
         "threshold": 0.9,
@@ -2752,7 +2752,7 @@
             "Click_未名市任务"
         ]
     },
-    "Flag_日常的善意2":{
+    "Flag_日常的善意2": {
         "recognition": "OCR",
         "expected": [
             "日常的善意（二",
@@ -2768,9 +2768,9 @@
             "Swipe_日常的善意2_1",
             "[JumpBack]Flag_退出未名市任务",
             "[JumpBack]Flag_重置位置_忒弥斯律所一楼"
-        ] 
+        ]
     },
-    "Swipe_日常的善意2_1":{
+    "Swipe_日常的善意2_1": {
         "recognition": "TemplateMatch",
         "template": "未名市/忒弥斯律所一楼定位图.png",
         "threshold": 0.9,
@@ -2997,7 +2997,6 @@
         "expected": [
             "打印文件（二",
             "打印文件\\(二"
-
         ],
         "roi": [
             0,
