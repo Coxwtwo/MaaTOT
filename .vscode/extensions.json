@@ -1,5 +1,7 @@
 {
     "recommendations": [
+        "windsland52.maa-log-analyzer",
+        "esbenp.prettier-vscode",
         "ms-python.black-formatter",
         "nekosu.maa-support",
         "davidanson.vscode-markdownlint"
