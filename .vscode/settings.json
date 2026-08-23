@@ -31,6 +31,7 @@
         }
     ],
     "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.insertSpaces": true,
         "editor.tabSize": 4,
@@ -43,6 +44,7 @@
         "**/assets/**/*.json": "jsonc"
     },
     "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.insertSpaces": true,
         "editor.tabSize": 4,
