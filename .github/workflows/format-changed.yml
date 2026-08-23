@@ -1,0 +1,68 @@
+name: format changed files
+
+on:
+  push:
+    paths:
+      - ".github/workflows/format-changed.yml"
+      - "assets/**"
+  workflow_dispatch:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check Prettier version
+        run: npx prettier --version
+
+      - name: Get changed JSON files
+        id: changed-files
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          # 禁用 Git 路径名引用，防止中文/特殊字符被转义为 \xxx
+          git config --global core.quotepath false
+
+          # 使用 -z (NUL 分隔) 安全处理含空格/特殊字符的文件名
+          git diff --name-only -z "$BEFORE" "$AFTER" -- \
+            'assets/**/*.json' \
+            'assets/**/*.jsonc' > changed-files.raw
+
+          if [ -s changed-files.raw ]; then
+            echo "any_changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "any_changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Format changed files
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          while IFS= read -r -d '' file || [ -n "$file" ]; do
+            [ -n "$file" ] || continue
+            npx prettier --write "$file"
+          done < changed-files.raw
+
+      - name: Clean up temp files
+        run: rm -f changed-files.raw
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "style: auto-format changed JSON files"
+          branch: ${{ github.ref_name }}
