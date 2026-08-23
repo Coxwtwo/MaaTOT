@@ -1,4 +1,7 @@
 * text=auto eol=lf
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
 interface.json linguist-language=JSON-with-Comments
 tasks/*.json linguist-language=JSON-with-Comments
 resource/**/default_pipeline.json linguist-language=JSON-with-Comments
