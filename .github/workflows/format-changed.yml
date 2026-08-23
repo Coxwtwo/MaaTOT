@@ -53,9 +53,10 @@ jobs:
       - name: Format changed files
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
+          # 强制 Prettier 使用 LF
           while IFS= read -r -d '' file || [ -n "$file" ]; do
             [ -n "$file" ] || continue
-            npx prettier --write "$file"
+            npx prettier --write --end-of-line lf "$file"
           done < changed-files.raw
 
       - name: Clean up temp files
