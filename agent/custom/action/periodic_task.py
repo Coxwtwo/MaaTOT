@@ -27,9 +27,10 @@ class JudgeDailyTask(CustomAction):
     """
     通用每日任务控制
 
-    在 config/maatot_data.json 中按 task_key 存储时间戳，
+    读取 config/maatot_data.json ，按 task_key 存储的时间戳判断是否该运行，
     格式：{"<task_key>": 1719500000000}
-    每日任务控制的 task_key 以 daily 结尾
+    每日任务控制的 task_key 以 daily 结尾。
+    本动作只判断、不写时间戳；时间戳由 MarkTaskDone 在任务成功后写入。
 
     custom_action_param:
         task_key (str):  [必填] 任务的唯一标识键。
@@ -37,7 +38,7 @@ class JudgeDailyTask(CustomAction):
         reset_hour (int): [选填] 每日刷新时刻（小时），默认 5（即 05:00）。
 
     如果当天已执行过，本节点的 next 会被清空，后续流程自然终止；
-    如果是新一天或首次执行，记录时间戳后继续沿 next 流转。
+    如果是新一天或首次执行，直接继续沿 next 流转。
     """
 
     def run(
@@ -57,10 +58,7 @@ class JudgeDailyTask(CustomAction):
         now_ms = int(time.time() * 1000)
 
         if stored_ms is None:
-            data[task_key] = now_ms
-            save_json(CONFIG_PATH, data)
-
-            logger.info(f"[{task_key}] 首次执行，记录时间戳，允许任务继续")
+            logger.info(f"[{task_key}] 首次执行，允许任务继续")
 
             return CustomAction.RunResult(success=True)
 
@@ -96,10 +94,7 @@ class JudgeDailyTask(CustomAction):
             logger.info(f"[{task_key}] 今日已完成，跳过")
 
         else:
-            data[task_key] = now_ms
-            save_json(CONFIG_PATH, data)
-
-            logger.info(f"[{task_key}] 新一天开始，更新记录，允许任务继续")
+            logger.info(f"[{task_key}] 新一天开始，允许任务继续")
 
         return CustomAction.RunResult(success=True)
 
@@ -109,9 +104,10 @@ class JudgeWeeklyTask(CustomAction):
     """
     通用周任务控制
 
-    在 config/maatot_data.json 中按 task_key 存储时间戳，
+    读取 config/maatot_data.json ，按 task_key 存储的时间戳判断是否该运行，
     格式：{"<task_key>": 1719500000000}
-    每周任务控制的 task_key 以 weekly 结尾
+    每周任务控制的 task_key 以 weekly 结尾。
+    本动作只判断、不写时间戳；时间戳由 MarkTaskDone 在任务成功后写入。
 
     custom_action_param:
         task_key (str):      [必填] 任务的唯一标识键。
@@ -120,7 +116,7 @@ class JudgeWeeklyTask(CustomAction):
         reset_hour (int):    [选填] 刷新时刻（小时），默认 5（即 05:00）。
 
     如果本周已执行过，本节点的 next 会被清空，后续流程自然终止；
-    如果是新一周或首次执行，记录时间戳后继续沿 next 流转。
+    如果是新一周或首次执行，直接继续沿 next 流转。
     """
 
     def run(
@@ -141,9 +137,7 @@ class JudgeWeeklyTask(CustomAction):
         now_ms = int(time.time() * 1000)
         # 首次执行
         if stored_ms is None:
-            data[task_key] = now_ms
-            save_json(CONFIG_PATH, data)
-            logger.info(f"[{task_key}] 首次执行，记录时间戳，允许任务继续")
+            logger.info(f"[{task_key}] 首次执行，允许任务继续")
             return CustomAction.RunResult(success=True)
 
         # 计算当前周期的起点（最近一次 reset_weekday reset_hour:00）
@@ -169,8 +163,38 @@ class JudgeWeeklyTask(CustomAction):
             context.override_next(argv.node_name, [])
             logger.info(f"[{task_key}] 本周已完成，跳过")
         else:
-            data[task_key] = now_ms
-            save_json(CONFIG_PATH, data)
-            logger.info(f"[{task_key}] 新一周开始，更新记录，允许任务继续")
+            logger.info(f"[{task_key}] 新一周开始，允许任务继续")
+
+        return CustomAction.RunResult(success=True)
+
+
+@AgentServer.custom_action("MarkTaskDone")
+class MarkTaskDone(CustomAction):
+    """
+    通用周期任务成功标记
+
+    在任务成功后，按 task_key 写入当前时间戳到 config/maatot_data.json，
+    格式：{"<task_key>": 1719500000000}。
+    与 JudgeDailyTask / JudgeWeeklyTask 配合使用：Judge 只判断是否该运行，
+    本动作在成功后记录时间戳，避免任务失败也被记录为已完成。
+
+    custom_action_param:
+        task_key (str): [必填] 任务的唯一标识键，需与对应 Judge 节点一致。
+    """
+
+    def run(
+        self,
+        context: Context,
+        argv: CustomAction.RunArg,
+    ) -> CustomAction.RunResult:
+
+        param_dict = parse_params(argv.custom_action_param, "task_key")
+        task_key = param_dict.get("task_key")
+
+        data = load_json(CONFIG_PATH, {})
+        data[task_key] = int(time.time() * 1000)
+        save_json(CONFIG_PATH, data)
+
+        logger.info(f"[{task_key}] 任务成功完成，记录时间戳")
 
         return CustomAction.RunResult(success=True)

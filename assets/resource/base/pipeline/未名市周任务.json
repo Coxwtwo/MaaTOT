@@ -171,6 +171,20 @@
             80
         ],
         "next": [
+            "Mark_未名市_Weekly_Done"
+        ]
+    },
+    "Mark_未名市_Weekly_Done": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "MarkTaskDone",
+                "custom_action_param": {
+                    "task_key": "stellis_city_weekly"
+                }
+            }
+        },
+        "next": [
             "返回主界面"
         ]
     },

@@ -484,6 +484,20 @@
             479
         ],
         "next": [
+            "Mark_你我之间_Done"
+        ]
+    },
+    "Mark_你我之间_Done": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "MarkTaskDone",
+                "custom_action_param": {
+                    "task_key": "niwozhijian_daily"
+                }
+            }
+        },
+        "next": [
             "[JumpBack]Click_取消你我之间取消打卡",
             "返回主界面"
         ]

@@ -295,7 +295,7 @@
             30
         ],
         "next": [
-            "Click_返回主界面键"
+            "Mark_专属甜心_Done"
         ]
     },
     "Flag_蜜意甜心值不足": {
@@ -310,6 +310,20 @@
             156,
             34
         ],
+        "next": [
+            "Mark_专属甜心_Done"
+        ]
+    },
+    "Mark_专属甜心_Done": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "MarkTaskDone",
+                "custom_action_param": {
+                    "task_key": "sweetheart_daily"
+                }
+            }
+        },
         "next": [
             "Click_返回主界面键"
         ]

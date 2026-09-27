@@ -7,4 +7,5 @@ __all__ = [
     "DynamicOverride",
     "JudgeDailyTask",
     "JudgeWeeklyTask",
+    "MarkTaskDone",
 ]

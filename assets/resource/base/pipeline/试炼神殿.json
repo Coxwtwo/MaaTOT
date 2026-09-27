@@ -101,6 +101,20 @@
             80
         ],
         "next": [
+            "Mark_试炼神殿_Weekly_Done"
+        ]
+    },
+    "Mark_试炼神殿_Weekly_Done": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "MarkTaskDone",
+                "custom_action_param": {
+                    "task_key": "trial_sanctuary_weekly"
+                }
+            }
+        },
+        "next": [
             "Click_试炼神殿_返回主界面"
         ]
     },
@@ -325,7 +339,7 @@
             90
         ],
         "next": [
-            "Click_试炼神殿_返回主界面"
+            "Mark_试炼神殿_Weekly_Done"
         ]
     },
     "Click_试炼神殿_返回主界面": {

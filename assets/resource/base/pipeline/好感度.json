@@ -109,6 +109,20 @@
             33
         ],
         "next": [
+            "Mark_好感度_Done"
+        ]
+    },
+    "Mark_好感度_Done": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "MarkTaskDone",
+                "custom_action_param": {
+                    "task_key": "favorability_daily"
+                }
+            }
+        },
+        "next": [
             "Click_退出好感交流"
         ]
     },
