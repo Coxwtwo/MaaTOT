@@ -26,8 +26,9 @@ Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
 | --- | --- | --- | --- |
 | `SmartReplenish` | Action | `smart_replenish.py` | 智能选择能量饮料（按保质期和体力缺口） |
 | `DynamicOverride` | Action | `dynamic_override.py` | 运行时动态修改 Pipeline 节点配置 |
-| `JudgeDailyTask` | Action | `periodic_task.py` | 每日任务周期控制（当日完成后自动跳过） |
-| `JudgeWeeklyTask` | Action | `periodic_task.py` | 每周任务周期控制（本周完成后自动跳过） |
+| `JudgeDailyTask` | Action | `periodic_task.py` | 每日任务周期判断（当日完成后自动跳过） |
+| `JudgeWeeklyTask` | Action | `periodic_task.py` | 每周任务周期判断（本周完成后自动跳过） |
+| `MarkTaskDone` | Action | `periodic_task.py` | 周期任务成功标记（任务成功后写入时间戳） |
 | `APCheck` | Recognition | `ap_check.py` | 体力值 OCR 识别与阈值比较 |
 
 ---
@@ -139,13 +140,13 @@ Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
 
 ## JudgeDailyTask (每日任务周期控制)
 
-用于控制每日任务的执行频率，确保同一任务在每天只执行一次。通过持久化时间戳来判断当天是否已完成。
+用于控制每日任务的执行频率，确保同一任务在每天只执行一次。通过持久化时间戳来判断当天是否已完成。本动作只判断、不写时间戳，时间戳由 `MarkTaskDone` 在任务成功后写入。
 
 ### 1. 功能概述
 
 - **周期判断**：在 `config/maatot_data.json` 中按 `task_key` 存储上次执行的时间戳（毫秒）。
 - **自动跳过**：如果当天（以 `reset_hour` 为分界）已执行过，则通过 `context.override_next()` 清空当前节点的 `next` 列表，后续流程自然终止。
-- **首次执行**：如果是首次执行或新的一天，记录当前时间戳并允许任务继续沿 `next` 流转。
+- **首次执行**：如果是首次执行或新的一天，不写时间戳，直接允许任务继续沿 `next` 流转。
 
 ### 2. 适用范围
 
@@ -204,13 +205,13 @@ Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
 
 ## JudgeWeeklyTask (每周任务周期控制)
 
-用于控制每周任务的执行频率，确保同一任务在每周只执行一次。与 `JudgeDailyTask` 逻辑类似，但周期分界以周为单位。
+用于控制每周任务的执行频率，确保同一任务在每周只执行一次。与 `JudgeDailyTask` 逻辑类似，但周期分界以周为单位。本动作只判断、不写时间戳，时间戳由 `MarkTaskDone` 在任务成功后写入。
 
 ### 1. 功能概述
 
 - **周期判断**：在 `config/maatot_data.json` 中按 `task_key` 存储上次执行的时间戳（毫秒）。
 - **自动跳过**：如果本周（以 `reset_weekday` + `reset_hour` 为分界）已执行过，则通过 `context.override_next()` 清空当前节点的 `next` 列表。
-- **首次执行**：如果是首次执行或新的一周，记录当前时间戳并允许任务继续。
+- **首次执行**：如果是首次执行或新的一周，不写时间戳，直接允许任务继续。
 
 ### 2. 适用范围
 
@@ -262,6 +263,46 @@ Agent 相关代码参考 [M9A](https://github.com/MAA1999/M9A)。
     "next": [
         "Click_试炼神殿",
         "[JumpBack]返回主界面"
+    ]
+}
+```
+
+---
+
+## MarkTaskDone (周期任务成功标记)
+
+在任务成功后写入时间戳，与 `JudgeDailyTask` / `JudgeWeeklyTask` 配合使用：Judge 只判断是否该运行，本动作在成功后记录时间戳，避免任务失败也被记录为已完成。
+
+### 1. 功能概述
+
+- **成功标记**：在 `config/maatot_data.json` 中按 `task_key` 写入当前时间戳（毫秒）。
+- **与 Judge 分工**：`Judge*` 节点挂在入口做判断（不写时间戳），`MarkTaskDone` 节点挂在任务成功终点之后（如带绿色 `focus` 成功提示的节点）。
+
+### 2. 输入参数 (JSON 传入)
+
+- `task_key` (string): **[必填]** 任务的唯一标识键，需与对应 Judge 节点的 `task_key` 一致。
+
+### 3. 输出结果 (返回逻辑)
+
+- **Success (True)**：始终返回成功。
+
+### 4. 使用方法示例
+
+在任务成功终点之后挂载成功标记：
+
+```json
+"Mark_好感度_Done": {
+    "action": {
+        "type": "Custom",
+        "param": {
+            "custom_action": "MarkTaskDone",
+            "custom_action_param": {
+                "task_key": "favorability_daily"
+            }
+        }
+    },
+    "next": [
+        "Click_退出好感交流"
     ]
 }
 ```
