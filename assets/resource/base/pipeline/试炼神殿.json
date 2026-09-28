@@ -136,6 +136,7 @@
             "[JumpBack]Click_试炼神殿_自动战斗暗",
             "[JumpBack]Flag_自动出卡已开启_试炼神殿",
             "Click_试炼神殿完成",
+            "Flag_试炼神殿_400",
             "[JumpBack]Flag_试炼神殿_获得奖励"
         ]
     },
@@ -230,6 +231,7 @@
             "[JumpBack]Click_试炼神殿_自动战斗暗",
             "[JumpBack]Flag_自动出卡已开启_试炼神殿",
             "Click_试炼神殿完成",
+            "Flag_试炼神殿_400",
             "[JumpBack]Flag_试炼神殿_获得奖励",
             "Flag_试炼神殿体力不足弹窗"
         ]
