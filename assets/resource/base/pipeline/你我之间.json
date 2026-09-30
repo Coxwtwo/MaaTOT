@@ -409,8 +409,7 @@
         },
         "recognition": "OCR",
         "expected": [
-            "NICE",
-            "[Nn][Ii][Cc][Ee]" // OCR 经常把 NICE 的 c 读成小写
+            "[Nn][Ii][Cc][Ee]" // 匹配任意大小写组合的 "nice"、"Nice"、"NICE" 等
         ],
         "pre_delay": 800,
         "post_delay": 1500,
