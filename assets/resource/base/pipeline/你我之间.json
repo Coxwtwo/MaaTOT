@@ -409,16 +409,17 @@
         },
         "recognition": "OCR",
         "expected": [
-            "NICE"
+            "[Nn][Ii][Cc][Ee]" // 匹配任意大小写组合的 "nice"、"Nice"、"NICE" 等
+
         ],
         "pre_delay": 800,
         "post_delay": 1500,
         "roi": [
-            79,
+            358,
             163,
-            583,
+            72,
             810
-        ],
+        ], // 只取「NICE」贴纸所在的一列(x 358~430)
         "next": [
             "返回你我之间首页_完成打卡"
         ]
