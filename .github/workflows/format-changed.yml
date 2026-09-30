@@ -14,23 +14,52 @@ jobs:
       contents: write
 
     steps:
+      - name: Check whether this is a merge commit
+        id: check-merge
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          # Merge pull request 产生的提交已经在 PR 中完成格式化，
+          # 因此主分支上的 merge commit 不再重复执行格式化。
+          if printf '%s' "$COMMIT_MESSAGE" | grep -qE '^Merge pull request #[0-9]+ from '; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Detected GitHub pull request merge commit. Skipping formatting."
+            exit 0
+          fi
+
+          # 防止某些 GitHub push event 提供全 0 的 before SHA，
+          # 后续 git diff 会因此报 fatal: bad object。
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Detected zero before SHA. Skipping formatting."
+            exit 0
+          fi
+
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
       - uses: actions/checkout@v4
+        if: steps.check-merge.outputs.skip != 'true'
         with:
           fetch-depth: 0
 
       - name: Setup Node.js
+        if: steps.check-merge.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
 
       - name: Install dependencies
+        if: steps.check-merge.outputs.skip != 'true'
         run: npm ci
 
       - name: Check Prettier version
+        if: steps.check-merge.outputs.skip != 'true'
         run: npx prettier --version
 
       - name: Get changed JSON files
+        if: steps.check-merge.outputs.skip != 'true'
         id: changed-files
         env:
           BEFORE: ${{ github.event.before }}
@@ -45,13 +74,19 @@ jobs:
             'assets/**/*.jsonc' > changed-files.raw
 
           if [ -s changed-files.raw ]; then
+            echo "Changed JSON files:"
+            while IFS= read -r -d '' file; do
+              printf '%s\n' "$file"
+            done < changed-files.raw
+
             echo "any_changed=true" >> "$GITHUB_OUTPUT"
           else
+            echo "No changed JSON files."
             echo "any_changed=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Format changed files
-        if: steps.changed-files.outputs.any_changed == 'true'
+        if: steps.check-merge.outputs.skip != 'true' && steps.changed-files.outputs.any_changed == 'true'
         run: |
           # 强制 Prettier 使用 LF
           while IFS= read -r -d '' file || [ -n "$file" ]; do
@@ -60,9 +95,11 @@ jobs:
           done < changed-files.raw
 
       - name: Clean up temp files
+        if: always() && steps.check-merge.outputs.skip != 'true'
         run: rm -f changed-files.raw
 
       - name: Commit changes
+        if: steps.check-merge.outputs.skip != 'true' && steps.changed-files.outputs.any_changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "style: auto-format changed JSON files"
