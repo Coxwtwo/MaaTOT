@@ -102,5 +102,5 @@ jobs:
         if: steps.check-merge.outputs.skip != 'true' && steps.changed-files.outputs.any_changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "style: auto-format changed JSON files"
+          commit_message: "style: auto-format changed JSON files [skip changelog]"
           branch: ${{ github.ref_name }}
