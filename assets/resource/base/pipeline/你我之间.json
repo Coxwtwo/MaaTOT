@@ -410,6 +410,7 @@
         "recognition": "OCR",
         "expected": [
             "[Nn][Ii][Cc][Ee]" // 匹配任意大小写组合的 "nice"、"Nice"、"NICE" 等
+
         ],
         "pre_delay": 800,
         "post_delay": 1500,
