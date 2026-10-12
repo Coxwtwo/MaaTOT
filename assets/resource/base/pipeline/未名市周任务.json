@@ -3719,7 +3719,12 @@
         },
         "pre_wait_freezes": {
             "time": 500,
-            "target": [46,583,647,185]
+            "target": [
+                46,
+                583,
+                647,
+                185
+            ]
         },
         "next": [
             "[JumpBack]Click_对话框标识_未名市",
