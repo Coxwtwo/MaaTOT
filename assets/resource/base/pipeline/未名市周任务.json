@@ -2653,7 +2653,7 @@
         ],
         "end_hold": 400,
         "post_wait_freezes": {
-            "time": 200,
+            "time": 3000,
             "target": [
                 0,
                 0,
@@ -3716,6 +3716,10 @@
                 718,
                 350
             ]
+        },
+        "pre_wait_freezes": {
+            "time": 500,
+            "target": [46,583,647,185]
         },
         "next": [
             "[JumpBack]Click_对话框标识_未名市",

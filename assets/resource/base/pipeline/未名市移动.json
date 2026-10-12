@@ -768,6 +768,7 @@
         "end_hold": 1500,
         "next": [
             "Flag_忒弥斯律所二楼初始位置",
+            "[JumpBack]Flag_TipsLoading",
             "[JumpBack]Click_前往二楼办公区_忒弥斯律所二楼"
         ]
     },
@@ -781,7 +782,7 @@
             517,
             328
         ],
-        "post_wait_freezes": 1000
+        "post_delay": 10000
     },
     "Flag_重置位置_忒弥斯律所前台": {
         "recognition": "TemplateMatch",
