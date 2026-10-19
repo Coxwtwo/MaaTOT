@@ -214,7 +214,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "抓取",
-        "post_delay": 5000,
+        "post_delay": 4000,
         "roi": [
             322,
             973,
@@ -245,12 +245,13 @@
             "TimeLimitedEvent/红色礼球.png",
             "TimeLimitedEvent/金色礼球.png"
         ],
+        "threshold": 0.4,
         "post_delay": 5000,
         "roi": [
-            260,
-            420,
-            200,
-            200
+            276,
+            436,
+            168,
+            168
         ],
         // 图片截取大小 [280, 440, 160, 160]
         "next": [
@@ -270,6 +271,12 @@
             353,
             199,
             61
+        ],
+        "target_offset": [
+            0,
+            -340,
+            0,
+            0
         ],
         "next": [
             "Flag_主界面任务",
