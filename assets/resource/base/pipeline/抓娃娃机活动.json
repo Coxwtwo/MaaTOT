@@ -1,0 +1,263 @@
+{
+    "抓娃娃机活动": {
+        "next": [
+            "Click_活动_限时抓娃娃机活动",
+            "[JumpBack]返回主界面"
+        ]
+    },
+    "Click_活动_限时抓娃娃机活动": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/活动.png",
+        "pre_wait_freezes": 800,
+        "post_delay": 3000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ],
+        "next": [
+            "寻找抓娃娃机活动"
+        ]
+    },
+    "寻找抓娃娃机活动": {
+        "next": [
+            "Flag_抓娃娃机活动",
+            "Flag_每日签到_抓娃娃机活动",
+            "[JumpBack]Swipe_向左滑动寻找抓娃娃机活动"
+        ]
+    },
+    "Swipe_向左滑动寻找抓娃娃机活动": {
+        "action": "Swipe",
+        "duration": 800,
+        "post_delay": 800,
+        "begin": [
+            640,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            45,
+            1140,
+            30,
+            60
+        ]
+    },
+    "Swipe_向右滑动寻找抓娃娃机活动": {
+        "action": "Swipe",
+        "max_hit": 10,
+        "duration": 800,
+        "post_wait_freezes": 400,
+        "timeout": 10000,
+        "begin": [
+            45,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            245,
+            1140,
+            30,
+            60
+        ]
+    },
+    "Flag_抓娃娃机活动": {
+        "recognition": "OCR",
+        "expected": [
+            "遇夏恋花"
+        ],
+        "post_delay": 3000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Click_抓娃娃机活动"
+        ]
+    },
+    "Flag_每日签到_抓娃娃机活动": {
+        "recognition": "OCR",
+        "expected": [
+            "每日",
+            "签到"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Flag_抓娃娃机活动",
+            "[JumpBack]Swipe_向右滑动寻找抓娃娃机活动"
+        ],
+        "on_error": [
+            "停止任务"
+        ]
+    },
+    "Click_抓娃娃机活动": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "遇夏恋花"
+        ],
+        "post_delay": 1500,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Flag_抓娃娃机开始游戏一次",
+            "Flag_每日首次免费",
+            "[JumpBack]Click_X按钮"
+        ]
+    },
+    "Flag_抓娃娃机开始游戏一次": {
+        "recognition": "OCR",
+        "expected": [
+            "1次"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            336,
+            1004,
+            47,
+            25
+        ],
+        "next": [
+            "Flag_每日首次免费",
+            "Flag_Inverse_每日首次免费"
+        ]
+    },
+    "Flag_Inverse_每日首次免费": {
+        "recognition": "OCR",
+        "expected": [
+            "每日首次免费"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            307,
+            885,
+            157,
+            41
+        ],
+        "next": [
+            "Flag_主界面任务",
+            "[JumpBack]Click_返回上一级键"
+        ]
+    },
+    "Flag_每日首次免费": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">已完成抓娃娃机每日免费抓取</span>"
+        },
+        "recognition": "OCR",
+        "expected": [
+            "每日首次免费"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            307,
+            885,
+            157,
+            41
+        ],
+        "next": [
+            "Click_抓娃娃机开始游戏一次"
+        ]
+    },
+
+    "Click_抓娃娃机开始游戏一次": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">抓娃娃机抓取一次</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "开始游戏"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            302,
+            965,
+            117,
+            39
+        ],
+        "next": [
+            "Click_抓娃娃机抓取"
+        ]
+    },
+    "Click_抓娃娃机抓取": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "抓取",
+        "post_delay": 5000,
+        "roi": [
+            322,
+            973,
+            76,
+            41
+        ],
+        "next": [
+            "Click_抓娃娃机开启礼球",
+            "[JumpBack]Flag_抓娃娃机抓取中"
+        ]
+    },
+    "Flag_抓娃娃机抓取中": {
+        "recognition": "OCR",
+        "expected": "抓取中",
+        "post_delay": 1000,
+        "roi": [
+            200,
+            973,
+            500,
+            41
+        ]
+    },
+    "Click_抓娃娃机开启礼球": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "TimeLimitedEvent/蓝色礼球.png",
+            "TimeLimitedEvent/红色礼球.png",
+            "TimeLimitedEvent/金色礼球.png"
+        ],
+        "post_delay": 5000,
+        "roi": [
+            260,
+            420,
+            200,
+            200
+        ],
+        // 图片截取大小 [280, 440, 160, 160]
+        "next": [
+            "Click_抓娃娃机礼球奖励"
+        ]
+    },
+    "Click_抓娃娃机礼球奖励": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已完成抓娃娃机每日免费抓取</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "恭喜获得",
+        "post_delay": 5000,
+        "roi": [
+            261,
+            353,
+            199,
+            61
+        ],
+        "next": [
+            "Flag_主界面任务",
+            "[JumpBack]Click_返回上一级键"
+        ]
+    }
+}
