@@ -138,6 +138,7 @@
         ]
     },
     "Flag_Inverse_每日首次免费": {
+        "inverse": true,
         "recognition": "OCR",
         "expected": [
             "每日首次免费"
