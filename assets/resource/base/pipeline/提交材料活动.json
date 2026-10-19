@@ -144,6 +144,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
+            "提供补给",
             "选择",
             "心动方案"
         ],
