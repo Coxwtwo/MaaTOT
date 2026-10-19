@@ -115,22 +115,22 @@
             110
         ],
         "next": [
-            "Flag_抓娃娃机开始游戏一次",
+            "Flag_抓娃娃机开始游戏",
             "Flag_每日首次免费",
             "[JumpBack]Click_X按钮"
         ]
     },
-    "Flag_抓娃娃机开始游戏一次": {
+    "Flag_抓娃娃机开始游戏": {
         "recognition": "OCR",
         "expected": [
-            "1次"
+            "开始游戏"
         ],
         "post_delay": 1000,
         "roi": [
-            336,
-            1004,
-            47,
-            25
+            302,
+            965,
+            117,
+            39
         ],
         "next": [
             "Flag_每日首次免费",
@@ -171,13 +171,28 @@
             41
         ],
         "next": [
-            "Click_抓娃娃机开始游戏一次"
+            "Flag_抓娃娃机开始游戏一次"
         ]
     },
-
-    "Click_抓娃娃机开始游戏一次": {
+    "Flag_抓娃娃机开始游戏一次": {
+        "recognition": "OCR",
+        "expected": [
+            "1次"
+        ],
+        "post_delay": 1000,
+        "roi": [
+            336,
+            1004,
+            47,
+            25
+        ],
+        "next": [
+            "Click_抓娃娃机开始游戏"
+        ]
+    },
+    "Click_抓娃娃机开始游戏": {
         "focus": {
-            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">抓娃娃机抓取一次</span>"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">抓娃娃机抓取</span>"
         },
         "action": "Click",
         "recognition": "OCR",
