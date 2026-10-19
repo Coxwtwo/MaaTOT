@@ -67,8 +67,8 @@
     "Flag_提交材料活动": {
         "recognition": "OCR",
         "expected": [
-            "邂逅",
-            "幻梦"
+            "思迹",
+            "回音"
         ],
         "post_delay": 3000,
         "roi": [
@@ -106,8 +106,8 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "邂逅",
-            "幻梦"
+            "思迹",
+            "回音"
         ],
         "post_delay": 1500,
         "roi": [
