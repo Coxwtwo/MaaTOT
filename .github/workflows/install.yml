@@ -21,8 +21,8 @@ on:
 
 env:
   MaaFw_version: v5.12.2
-  MFAA_version: v2.11.8
-  MXU_version: v2.3.1
+  MFAA_version: v2.16.2
+  MXU_version: v2.8.0
   app_name: MaaTOT
 
 jobs:
