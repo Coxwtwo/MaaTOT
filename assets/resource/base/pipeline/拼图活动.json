@@ -67,8 +67,8 @@
     "Flag_限时拼图活动": {
         "recognition": "OCR",
         "expected": [
-            "[予子]爱",
-            "[未术]名"
+            "岁悦",
+            "同欢"
         ],
         "post_delay": 3000,
         "roi": [
@@ -106,8 +106,8 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "[予子]爱",
-            "[未术]名"
+            "岁悦",
+            "同欢"
         ],
         "post_delay": 2500,
         "roi": [
