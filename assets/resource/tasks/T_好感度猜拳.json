@@ -1,0 +1,98 @@
+{
+    "task": [
+        {
+            "name": "好感度_猜拳",
+            "entry": "好感度_猜拳",
+            "option": [
+                "好感度_男主_猜拳",
+                "好感度_猜拳次数",
+                "好感度_每日周期开关_猜拳"
+            ],
+            "description": "<span style=\"font-size:15px\">进行多次猜拳游戏，不会判断好感度有没有到每日上限。</span>"
+        }
+    ],
+    "option": {
+        "好感度_男主_猜拳": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "夏彦",
+                    "pipeline_override": {
+                        "Click_选择好感男主_猜拳": {
+                            "template": "好感/好感夏彦.png"
+                        }
+                    }
+                },
+                {
+                    "name": "左然",
+                    "pipeline_override": {
+                        "Click_选择好感男主_猜拳": {
+                            "template": "好感/好感左然.png"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈",
+                    "pipeline_override": {
+                        "Click_选择好感男主_猜拳": {
+                            "template": "好感/好感莫弈.png"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和",
+                    "pipeline_override": {
+                        "Click_选择好感男主_猜拳": {
+                            "template": "好感/好感陆景和.png"
+                        }
+                    }
+                }
+            ]
+        },
+        "好感度_猜拳次数": {
+            "type": "input",
+            "label": "猜拳次数",
+            "inputs": [
+                {
+                    "name": "猜拳次数",
+                    "default": "3",
+                    "pipeline_type": "int",
+                    "verify": "^\\d+$",
+                    "pattern_msg": "猜拳次数格式错误，请输入纯数字"
+                }
+            ],
+            "pipeline_override": {
+                "Swipe_按住猜拳": {
+                    "max_hit": "{猜拳次数}"
+                }
+            }
+        },
+        "好感度_每日周期开关_猜拳": {
+            "type": "switch",
+            "label": "每日仅运行一次",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "好感度_猜拳": {
+                            "next": [
+                                "Judge_好感度_猜拳_Daily"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "好感度_猜拳": {
+                            "next": [
+                                "Click_主界面手机_猜拳",
+                                "[JumpBack]返回主界面"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

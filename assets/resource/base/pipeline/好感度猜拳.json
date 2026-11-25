@@ -1,0 +1,183 @@
+{
+    "好感度_猜拳": {
+        "next": [
+            "Judge_好感度_猜拳_Daily"
+        ]
+    },
+    "Judge_好感度_猜拳_Daily": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "JudgeDailyTask",
+                "custom_action_param": {
+                    "task_key": "favorability_rps_daily"
+                }
+            }
+        },
+        "next": [
+            "Click_主界面手机_猜拳",
+            "[JumpBack]返回主界面"
+        ]
+    },
+    "Click_主界面手机_猜拳": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "好感/手机.png",
+            "好感/手机_你我之间夏彦.png",
+            "好感/手机_你我之间左然.png",
+            "好感/手机_你我之间莫弈.png",
+            "好感/手机_你我之间陆景和.png"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            45,
+            1005,
+            50,
+            50
+        ],
+        "next": [
+            "Click_选择好感男主_猜拳"
+        ]
+    },
+    "Click_选择好感男主_猜拳": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "",
+        "pre_delay": 1000,
+        "roi": [
+            120,
+            135,
+            500,
+            320
+        ],
+        "next": [
+            "Click_好感交流_猜拳"
+        ]
+    },
+    "Click_好感交流_猜拳": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "交流",
+            "交",
+            "立"
+        ],
+        "pre_delay": 1000,
+        "post_delay": 3000,
+        "roi": [
+            38,
+            1084,
+            57,
+            28
+        ],
+        "next": [
+            "Click_好感游戏_猜拳"
+        ]
+    },
+    "Click_好感游戏_猜拳": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "好感/好感交流_游戏.png",
+        "pre_delay": 1000,
+        "roi": [
+            650,
+            1080,
+            64,
+            46
+        ],
+        "next": [
+            "Click_猜拳"
+        ]
+    },
+    "Click_猜拳": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "好感/猜拳.png",
+        "green_mask": true,
+        "pre_delay": 1000,
+        "post_delay": 4000,
+        "roi": [
+            633,
+            818,
+            65,
+            313
+        ],
+        "next": [
+            "Flag_In_按住猜拳"
+        ]
+    },
+    "Flag_In_按住猜拳": {
+        "recognition": "OCR",
+        "expected": [
+            "按住",
+            "猜拳"
+        ],
+        "pre_delay": 1000,
+        "roi": [
+            300,
+            1070,
+            100,
+            50
+        ],
+        "next": [
+            "[JumpBack]Click_好感度等级提升",
+            "[JumpBack]Swipe_按住猜拳",
+            "Click_退出好感交流_猜拳"
+        ],
+        "on_error": [
+            "停止任务"
+        ]
+    },
+    "Swipe_按住猜拳": {
+        "max_hit": 3,
+        "action": "Swipe",
+        "recognition": "OCR",
+        "expected": [
+            "按住",
+            "猜拳"
+        ],
+        "post_delay": 14000,
+        "duration": 400,
+        "begin": true,
+        "end": [
+            360,
+            700,
+            40,
+            40
+        ]
+    },
+    "Click_退出好感交流_猜拳": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">今日猜拳任务完成</span>"
+        },
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "好感/好感返回键.png",
+        "roi": [
+            10,
+            1074,
+            59,
+            57
+        ],
+        "next": [
+            "Mark_好感度_猜拳_Done"
+        ]
+    },
+    "Mark_好感度_猜拳_Done": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "MarkTaskDone",
+                "custom_action_param": {
+                    "task_key": "favorability_rps_daily"
+                }
+            }
+        },
+        "next": [
+            "Click_退出好感交流"
+        ]
+    }
+}
