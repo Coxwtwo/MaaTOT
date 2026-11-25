@@ -163,6 +163,50 @@
                             }
                         }
                     }
+                },
+                {
+                    "name": "3次",
+                    "pipeline_override": {
+                        "Flag_复盘确认弹窗": {
+                            "next": [
+                                "Click_复盘3次确定",
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
+                            ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "ap_threshold": 60
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "ap_threshold": 60
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "4次",
+                    "pipeline_override": {
+                        "Flag_复盘确认弹窗": {
+                            "next": [
+                                "Click_复盘4次确定",
+                                "Flag_复盘次数最小",
+                                "[JumpBack]Click_复盘次数减号亮"
+                            ]
+                        },
+                        "Flag_体力判断": {
+                            "custom_recognition_param": {
+                                "ap_threshold": 80
+                            }
+                        },
+                        "Action_智能策略补充": {
+                            "custom_action_param": {
+                                "ap_threshold": 80
+                            }
+                        }
+                    }
                 }
             ]
         }
