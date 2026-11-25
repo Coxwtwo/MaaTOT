@@ -139,6 +139,9 @@
     },
     "Flag_Inverse_每日首次免费": {
         "inverse": true,
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">未识别到免费抓取次数</span>"
+        },
         "recognition": "OCR",
         "expected": [
             "每日首次免费"
@@ -157,7 +160,7 @@
     },
     "Flag_每日首次免费": {
         "focus": {
-            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">已完成抓娃娃机每日免费抓取</span>"
+            "Node.Recognition.Succeeded": "<span style=\"color:Dimgray\">存在免费抓取次数</span>"
         },
         "recognition": "OCR",
         "expected": [
