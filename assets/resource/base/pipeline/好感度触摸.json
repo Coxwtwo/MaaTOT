@@ -1,25 +1,25 @@
 {
-    "好感度": {
+    "好感度_触摸": {
         "next": [
-            "Judge_好感度_Daily"
+            "Judge_好感度_触摸_Daily"
         ]
     },
-    "Judge_好感度_Daily": {
+    "Judge_好感度_触摸_Daily": {
         "action": {
             "type": "Custom",
             "param": {
                 "custom_action": "JudgeDailyTask",
                 "custom_action_param": {
-                    "task_key": "favorability_daily"
+                    "task_key": "favorability_touch_daily"
                 }
             }
         },
         "next": [
-            "Click_主界面手机",
+            "Click_主界面手机_触摸",
             "[JumpBack]返回主界面"
         ]
     },
-    "Click_主界面手机": {
+    "Click_主界面手机_触摸": {
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": [
@@ -38,10 +38,10 @@
             50
         ],
         "next": [
-            "Click_选择好感男主"
+            "Click_选择好感男主_触摸"
         ]
     },
-    "Click_选择好感男主": {
+    "Click_选择好感男主_触摸": {
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "",
@@ -53,10 +53,10 @@
             320
         ],
         "next": [
-            "Click_好感交流"
+            "Click_好感交流_触摸"
         ]
     },
-    "Click_好感交流": {
+    "Click_好感交流_触摸": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -65,6 +65,7 @@
             "立"
         ],
         "pre_delay": 1000,
+        "post_delay": 3000,
         "roi": [
             38,
             1084,
@@ -72,20 +73,29 @@
             28
         ],
         "next": [
-            "触摸获得好感"
+            "Flag_In_好感交流_触摸"
         ]
     },
-    "触摸获得好感": {
+    "Flag_In_好感交流_触摸": {
+        "recognition": "TemplateMatch",
+        "template": "好感/好感交流_换装.png",
+        "pre_delay": 1000,
+        "roi": [
+            650,
+            944,
+            64,
+            52
+        ],
         "next": [
-            "Flag_今日好感度获取完毕",
+            "Flag_今日好感度获取完毕_触摸",
             "[JumpBack]Click_好感度等级提升",
-            "[JumpBack]Click_触摸获得好感"
+            "[JumpBack]Click_获得好感_触摸"
         ],
         "on_error": [
             "停止任务"
         ]
     },
-    "Click_触摸获得好感": {
+    "Click_获得好感_触摸": {
         "action": "Click",
         "max_hit": 40,
         "post_delay": 1000,
@@ -96,7 +106,7 @@
             100
         ]
     },
-    "Flag_今日好感度获取完毕": {
+    "Flag_今日好感度获取完毕_触摸": {
         "focus": {
             "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">今日好感度获取完毕</span>"
         },
@@ -109,16 +119,16 @@
             33
         ],
         "next": [
-            "Mark_好感度_Done"
+            "Mark_好感度_触摸_Done"
         ]
     },
-    "Mark_好感度_Done": {
+    "Mark_好感度_触摸_Done": {
         "action": {
             "type": "Custom",
             "param": {
                 "custom_action": "MarkTaskDone",
                 "custom_action_param": {
-                    "task_key": "favorability_daily"
+                    "task_key": "favorability_touch_daily"
                 }
             }
         },

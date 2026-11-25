@@ -1,23 +1,23 @@
 {
     "task": [
         {
-            "name": "好感度",
-            "entry": "好感度",
+            "name": "好感度_触摸",
+            "entry": "好感度_触摸",
             "option": [
-                "好感度男主",
-                "好感度每日周期开关"
+                "好感度_男主_触摸",
+                "好感度_每日周期开关_触摸"
             ],
             "description": "<span style=\"font-size:15px\">通过触摸的方式获取好感度至每日上限。只能指定单个男主获取好感至每日上限。</span>"
         }
     ],
     "option": {
-        "好感度男主": {
+        "好感度_男主_触摸": {
             "type": "select",
             "cases": [
                 {
                     "name": "夏彦",
                     "pipeline_override": {
-                        "Click_选择好感男主": {
+                        "Click_选择好感男主_触摸": {
                             "template": "好感/好感夏彦.png"
                         }
                     }
@@ -25,7 +25,7 @@
                 {
                     "name": "左然",
                     "pipeline_override": {
-                        "Click_选择好感男主": {
+                        "Click_选择好感男主_触摸": {
                             "template": "好感/好感左然.png"
                         }
                     }
@@ -33,7 +33,7 @@
                 {
                     "name": "莫弈",
                     "pipeline_override": {
-                        "Click_选择好感男主": {
+                        "Click_选择好感男主_触摸": {
                             "template": "好感/好感莫弈.png"
                         }
                     }
@@ -41,23 +41,23 @@
                 {
                     "name": "陆景和",
                     "pipeline_override": {
-                        "Click_选择好感男主": {
+                        "Click_选择好感男主_触摸": {
                             "template": "好感/好感陆景和.png"
                         }
                     }
                 }
             ]
         },
-        "好感度每日周期开关": {
+        "好感度_每日周期开关_触摸": {
             "type": "switch",
             "label": "每日仅运行一次",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "好感度": {
+                        "好感度_触摸": {
                             "next": [
-                                "Judge_好感度_Daily"
+                                "Judge_好感度_触摸_Daily"
                             ]
                         }
                     }
@@ -65,9 +65,9 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "好感度": {
+                        "好感度_触摸": {
                             "next": [
-                                "Click_主界面手机",
+                                "Click_主界面手机_触摸",
                                 "[JumpBack]返回主界面"
                             ]
                         }
