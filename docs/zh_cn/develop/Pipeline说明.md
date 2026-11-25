@@ -486,7 +486,7 @@ flowchart LR
     n9 -->|next| n12["Click_复盘进修关卡"]
     n12 -->|next| n13["Flag_复盘确认弹窗"]
     n12 -->|next| n14["Flag_体力不足弹窗<br>(在interface中设定是否开启)"]
-    n12 -->|next| n15["Flag_使用工作证页面"]
+    n12 -->|next| n15["Flag_使用工作证弹窗"]
     n12 -.->|JumpBack| z["Flag_体力补充弹窗"]
     z3 -.->|return| n12
     z -->|next| z1["Click_能量饮料窗口"]
@@ -503,7 +503,7 @@ flowchart LR
 
     n14["Flag_体力不足弹窗<br>(在interface中设定是否开启)"] -->|next| n20["Click_取消喝饮料"]
     n20 --->|next| n07["返回主界面"]
-    n15["Flag_使用工作证页面"] -->|next| n21["Click_取消使用工作证"]
+    n15["Flag_使用工作证弹窗"] -->|next| n21["Click_取消使用工作证"]
     n21 --->|next| n07["返回主界面"]
 ```
 

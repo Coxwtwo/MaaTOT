@@ -34,7 +34,7 @@
             54
         ],
         "next": [
-            "Click_进入进修副本",
+            "Flag_进入进修副本",
             "Flag_进修副本列表最下端",
             "[JumpBack]Swipe_向上滑动寻找进修副本"
         ],
@@ -53,7 +53,7 @@
             100
         ],
         "next": [
-            "Click_进入进修副本",
+            "Flag_进入进修副本",
             "Flag_进修副本列表最上端",
             "[JumpBack]Swipe_向下滑动寻找进修副本"
         ],
@@ -109,10 +109,24 @@
             30
         ]
     },
+    "Flag_进入进修副本": {
+        "recognition": "OCR",
+        "expected": "by_user_settings",
+        "roi": [
+            95,
+            275,
+            185,
+            860
+        ],
+        "next": [
+            "Click_进入进修副本"
+        ]
+    },
     "Click_进入进修副本": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "by_user_settings",
+        "pre_delay": 1000,
         "post_delay": 1500,
         "roi": [
             95,
@@ -191,13 +205,14 @@
         "next": [
             "Flag_复盘确认弹窗",
             "Flag_体力不足弹窗",
-            "Flag_使用工作证页面",
+            "Flag_使用工作证弹窗",
             "[JumpBack]Flag_体力补充弹窗"
         ]
     },
-    "Flag_使用工作证页面": {
+    "Flag_使用工作证弹窗": {
         "recognition": "OCR",
         "expected": "当前关卡可进行次数",
+        "post_delay": 1000,
         "roi": [
             271,
             328,
@@ -226,10 +241,11 @@
             "返回主界面"
         ]
     },
-    "Click_工作证减号": {
+    "Click_工作证张数减号亮": {
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/工作证减号亮.png",
+        "post_delay": 1000,
         "roi": [
             440,
             530,
@@ -237,15 +253,129 @@
             80
         ]
     },
-    "Click_工作证加号": {
+    "Click_工作证张数加号亮": {
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/工作证加号亮.png",
+        "post_delay": 1000,
         "roi": [
             555,
             530,
             100,
             80
+        ]
+    },
+    "Flag_工作证张数5张": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Orange\">无法使用指定张数工作证，任务终止</span>"
+        },
+        "recognition": "OCR",
+        "expected": "5",
+        "post_delay": 1000,
+        "roi": [
+            534,
+            410,
+            36,
+            47
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_工作证1张使用": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已使用工作证1张</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "1",
+        "post_delay": 1000,
+        "roi": [
+            534,
+            410,
+            40,
+            50
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            102
+        ],
+        "next": [
+            "Click_复盘进修关卡"
+        ]
+    },
+    "Click_工作证2张使用": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已使用工作证2张</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "2",
+        "post_delay": 1000,
+        "roi": [
+            534,
+            410,
+            40,
+            50
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            102
+        ],
+        "next": [
+            "Click_复盘进修关卡"
+        ]
+    },
+    "Click_工作证3张使用": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已使用工作证3张</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "3",
+        "post_delay": 1000,
+        "roi": [
+            534,
+            410,
+            40,
+            50
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            102
+        ],
+        "next": [
+            "Click_复盘进修关卡"
+        ]
+    },
+    "Click_工作证4张使用": {
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:Limegreen\">已使用工作证4张</span>"
+        },
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "4",
+        "post_delay": 1000,
+        "roi": [
+            534,
+            410,
+            40,
+            50
+        ],
+        "target": [
+            570,
+            755,
+            80,
+            102
+        ],
+        "next": [
+            "Click_复盘进修关卡"
         ]
     }
 }

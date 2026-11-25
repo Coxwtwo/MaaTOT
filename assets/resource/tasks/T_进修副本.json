@@ -18,6 +18,9 @@
                 {
                     "name": "会展顾问（未名币）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "会展顾问"
+                        },
                         "Click_进入进修副本": {
                             "expected": "会展顾问"
                         },
@@ -29,6 +32,9 @@
                 {
                     "name": "业务考核（思绪经验）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "业务考核"
+                        },
                         "Click_进入进修副本": {
                             "expected": "业务考核"
                         },
@@ -40,6 +46,9 @@
                 {
                     "name": "推理应用（夏彦）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "推理应用"
+                        },
                         "Click_进入进修副本": {
                             "expected": "推理应用"
                         },
@@ -51,6 +60,9 @@
                 {
                     "name": "案件分析（左然）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "案件分析"
+                        },
                         "Click_进入进修副本": {
                             "expected": "案件分析"
                         },
@@ -62,6 +74,9 @@
                 {
                     "name": "心理治疗（莫弈）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "心理治疗"
+                        },
                         "Click_进入进修副本": {
                             "expected": "心理治疗"
                         },
@@ -73,6 +88,9 @@
                 {
                     "name": "法务咨询（陆景和）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "法务咨询"
+                        },
                         "Click_进入进修副本": {
                             "expected": "法务咨询"
                         },
@@ -84,6 +102,9 @@
                 {
                     "name": "危机干预（逻辑）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "危机干预"
+                        },
                         "Click_进入进修副本": {
                             "expected": "危机干预"
                         },
@@ -95,6 +116,9 @@
                 {
                     "name": "问题疏导（共情）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "问题疏导"
+                        },
                         "Click_进入进修副本": {
                             "expected": "问题疏导"
                         },
@@ -106,6 +130,9 @@
                 {
                     "name": "心理咨询（直觉）",
                     "pipeline_override": {
+                        "Flag_进入进修副本": {
+                            "expected": "心理咨询"
+                        },
                         "Click_进入进修副本": {
                             "expected": "心理咨询"
                         },
